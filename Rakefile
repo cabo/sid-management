@@ -1,6 +1,7 @@
 require 'pp'
 require 'json'
 require 'csv'
+require 'iana-registry.rb'
 
 task :rsync => [:rfcmod_rsync, :manual_rsync]
 
@@ -31,6 +32,8 @@ end
 
 task :build_sids do
   Dir.chdir("build")
+  
+  reg = IANA::Registry.load("yang-sid")
 
   rfcmod_files = Dir["../rfcmod/*.yang"]
 
@@ -75,7 +78,7 @@ task :build_sids do
   sid_state = []
 
   CSV.open("../stats.csv", 'wb') do |csv|
-    csv << %w[modname nsids nalloc]
+    csv << %w[modname nsids nalloc iana_ep iana_sz comments]
 
     lastmod.each do |modname, prefix, rev|
       filename1 = "#{modname}#{rev && "@" + rev}"
@@ -100,12 +103,25 @@ task :build_sids do
           end
         end
       end
+
+      ep = nil; sz = nil; comments = []
+      registry_path = "//xmlns:registry[@id='yang-sid-range']/xmlns:record[xmlns:module/text()='#{modname}']"
+      REXML::XPath.each(reg.root, registry_path, IANA::Registry::NS) do |x|
+        ep = Integer(x.elements['value'].text)
+        sz = Integer(x.elements['entry_size'].text)
+        # pp [modname, ep, sz]
+      end
+
+
       sids = JSON.load_file(sid_filename)
       nsids = sids["ietf-sid-file:sid-file"]["item"].count
       nalloc = (((nsids + 2)/3*4)+49)/50*50 # maybe do a better rounding algorithm
       total_sids += nalloc
       needed_sids += nsids
-      ret = [sid_filename, nsids, nalloc]
+      if sz && nalloc != sz
+        comments << "alloc mismatch: #{sz} != #{nalloc}"
+      end
+      ret = [sid_filename, nsids, nalloc, ep, sz, comments.join(" ")]
       # p ret
       sid_state << ret
       csv << ret
