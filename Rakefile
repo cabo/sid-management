@@ -127,3 +127,8 @@ task :clean do
     File.delete(fn)
   end
 end
+
+task :install do
+  sh "bundle install"
+end
+
