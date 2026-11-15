@@ -2,7 +2,7 @@
 
 This repository provides tooling and cached information that could be used by designated experts of the [yang-sid registry](https://www.iana.org/assignments/yang-sid) to interact with IANA.
 
-Warning: this currently uses whatever version of pyang you have installed.
+Warning: this currently uses whatever version of [pyang](https://github.com/mbj4668/pyang) you have installed.
 pyang 2.7.1 has a known problem with handling SIDs that include choices and cases.
 
 SPDX-License-Identifier: MIT
