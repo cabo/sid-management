@@ -1,0 +1,283 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-yang-library",
+    "module-revision": "2019-01-04",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-datastores",
+        "module-revision": "2018-02-14"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-yang-library",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module-set-id",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/conformance-type",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/deviation",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/deviation/name",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/deviation/revision",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/feature",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/name",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/namespace",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/revision",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/schema",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/submodule",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/submodule/name",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/submodule/revision",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/submodule/schema",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library-change",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library-change/module-set-id",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library-update",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library-update/content-id",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/content-id",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/datastore",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/datastore/name",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/datastore/schema",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/import-only-module",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/import-only-module/location",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/import-only-module/name",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/import-only-module/namespace",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/import-only-module/revision",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/import-only-module/submodule",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/import-only-module/submodule/location",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/import-only-module/submodule/name",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/import-only-module/submodule/revision",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/deviation",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/feature",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/location",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/name",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/namespace",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/revision",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/submodule",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/submodule/location",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/submodule/name",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/submodule/revision",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/name",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/schema",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/schema/module-set",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/schema/name",
+        "sid": "80050"
+      }
+    ]
+  }
+}

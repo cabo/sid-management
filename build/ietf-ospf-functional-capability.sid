@@ -1,0 +1,93 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ospf-functional-capability",
+    "module-revision": "2026-09-16",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-ospf",
+        "module-revision": "2022-10-19"
+      },
+      {
+        "module-name": "iana-ospf-functional-cap-bits",
+        "module-revision": "2026-01-28"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ospf-functional-capability",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/ospf:router-capabilities-tlv/router-functional-capabilities",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/ospf:router-capabilities-tlv/router-functional-capabilities/functional-capability",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/ospf:router-capabilities-tlv/router-functional-capabilities",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/ospf:router-capabilities-tlv/router-functional-capabilities/functional-capability",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/ospf:router-capabilities-tlv/router-functional-capabilities",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/ospf:router-capabilities-tlv/router-functional-capabilities/functional-capability",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/ospf:router-capabilities-tlv/router-functional-capabilities",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/ospf:router-capabilities-tlv/router-functional-capabilities/functional-capability",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/ospf:router-capabilities-tlv/router-functional-capabilities",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/ospf:router-capabilities-tlv/router-functional-capabilities/functional-capability",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/ospf:router-capabilities-tlv/router-functional-capabilities",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-functional-capability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/ospf:router-capabilities-tlv/router-functional-capabilities/functional-capability",
+        "sid": "80012"
+      }
+    ]
+  }
+}

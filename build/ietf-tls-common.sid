@@ -1,0 +1,258 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-tls-common",
+    "module-revision": "2024-10-10",
+    "dependency-revision": [
+      {
+        "module-name": "iana-tls-cipher-suite-algs",
+        "module-revision": "2024-10-16"
+      },
+      {
+        "module-name": "ietf-crypto-types",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-keystore",
+        "module-revision": "2024-10-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-tls-common",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tls-version-base",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tls12",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tls13",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "algorithm-discovery",
+        "sid": "80004"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "asymmetric-key-pair-generation",
+        "sid": "80005"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "hello-params",
+        "sid": "80006"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tls12",
+        "sid": "80007"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tls13",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/algorithm",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/num-bits",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/cleartext",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/cleartext/cleartext",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/encrypted",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/encrypted/encrypted",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/encrypted/encrypted/encrypted-by",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/encrypted/encrypted/encrypted-by/central-asymmetric-key-ref",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/encrypted/encrypted/encrypted-by/central-asymmetric-key-ref/asymmetric-key-ref",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/encrypted/encrypted/encrypted-by/central-symmetric-key-ref",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/encrypted/encrypted/encrypted-by/central-symmetric-key-ref/symmetric-key-ref",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/hidden",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/input/private-key-encoding/private-key-encoding/hidden/hidden",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/hidden",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/hidden/location",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-format",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-type",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-type/cleartext-private-key",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-type/cleartext-private-key/cleartext-private-key",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-type/encrypted-private-key",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-type/encrypted-private-key/encrypted-private-key",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-by",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-value",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-value-format",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-type/hidden-private-key",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/private-key-type/hidden-private-key/hidden-private-key",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/public-key",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:generate-asymmetric-key-pair/output/key-or-hidden/key/public-key-format",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:supported-algorithms",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tls-common:supported-algorithms/supported-algorithm",
+        "sid": "80045"
+      }
+    ]
+  }
+}

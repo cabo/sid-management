@@ -1,0 +1,762 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-vrrp",
+    "module-revision": "2018-03-13",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-ip",
+        "module-revision": "2018-02-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-vrrp",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "address-list-error",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "backup",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "checksum-error",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "initialize",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "interval-error",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ip-ttl-error",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "master",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "packet-length-error",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "version-error",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrid-error",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-error-global",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-error-virtual-router",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-higher-priority-backup",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-interface-down",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-interface-up",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-lower-priority-master",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-master-timeout",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-no-primary-ip-address",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-no-virtual-ip-addresses",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-none",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-owner-preempt",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-preempt-hold-timeout",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-primary-ip-address",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-shutdown",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-startup",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-type",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-event-virtual-ip-addresses",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-state-type",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-v2",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-v3",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-version",
+        "sid": "80031"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "validate-address-list-errors",
+        "sid": "80032"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "validate-interval-errors",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/accept-mode",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/advertise-interval-choice",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/advertise-interval-choice/v2",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/advertise-interval-choice/v2/advertise-interval-sec",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/advertise-interval-choice/v3",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/advertise-interval-choice/v3/advertise-interval-centi-sec",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/is-owner",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/last-adv-source",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/last-event",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/log-state-change",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/master-down-interval",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/new-master-reason",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/preempt",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/preempt/enabled",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/preempt/hold-time",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/priority",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/skew-time",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/state",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics/address-list-errors",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics/advertisement-rcvd",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics/advertisement-sent",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics/discontinuity-datetime",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics/interval-errors",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics/invalid-type-pkts-rcvd",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics/master-transitions",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics/packet-length-errors",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics/priority-zero-pkts-rcvd",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/statistics/priority-zero-pkts-sent",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/track",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/track/interfaces",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/track/interfaces/interface",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/track/interfaces/interface/interface",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/track/interfaces/interface/priority-decrement",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/track/networks",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/track/networks/network",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/track/networks/network/prefix",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/track/networks/network/priority-decrement",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/up-datetime",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/version",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/virtual-ipv4-addresses",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/virtual-ipv4-addresses/virtual-ipv4-address",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/virtual-ipv4-addresses/virtual-ipv4-address/ipv4-address",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-vrrp:vrrp/vrrp-instance/vrid",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/accept-mode",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/advertise-interval-centi-sec",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/is-owner",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/last-adv-source",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/last-event",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/log-state-change",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/master-down-interval",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/new-master-reason",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/preempt",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/preempt/enabled",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/preempt/hold-time",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/priority",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/skew-time",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/state",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics/address-list-errors",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics/advertisement-rcvd",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics/advertisement-sent",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics/discontinuity-datetime",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics/interval-errors",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics/invalid-type-pkts-rcvd",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics/master-transitions",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics/packet-length-errors",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics/priority-zero-pkts-rcvd",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/statistics/priority-zero-pkts-sent",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/track",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/track/interfaces",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/track/interfaces/interface",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/track/interfaces/interface/interface",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/track/interfaces/interface/priority-decrement",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/track/networks",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/track/networks/network",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/track/networks/network/prefix",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/track/networks/network/priority-decrement",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/up-datetime",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/version",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/virtual-ipv6-addresses",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/virtual-ipv6-addresses/virtual-ipv6-address",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/virtual-ipv6-addresses/virtual-ipv6-address/ipv6-address",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-vrrp:vrrp/vrrp-instance/vrid",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-new-master-event",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-new-master-event/master-ip-address",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-new-master-event/new-master-reason",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-protocol-error-event",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-protocol-error-event/protocol-error-reason",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-virtual-router-error-event",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-virtual-router-error-event/interface",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-virtual-router-error-event/ip-version",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-virtual-router-error-event/ip-version/ipv4",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-virtual-router-error-event/ip-version/ipv4/ipv4",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-virtual-router-error-event/ip-version/ipv4/ipv4/vrid",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-virtual-router-error-event/ip-version/ipv6",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-virtual-router-error-event/ip-version/ipv6/ipv6",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-virtual-router-error-event/ip-version/ipv6/ipv6/vrid",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp-virtual-router-error-event/virtual-router-error-reason",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp/interfaces",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp/statistics",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp/statistics/checksum-errors",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp/statistics/discontinuity-datetime",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp/statistics/ip-ttl-errors",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp/statistics/version-errors",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp/statistics/vrid-errors",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-vrrp:vrrp/virtual-routers",
+        "sid": "80145"
+      }
+    ]
+  }
+}

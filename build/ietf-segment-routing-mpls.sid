@@ -1,0 +1,396 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-segment-routing-mpls",
+    "module-revision": "2021-05-26",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ietf-segment-routing",
+        "module-revision": "2021-05-26"
+      },
+      {
+        "module-name": "ietf-segment-routing-common",
+        "module-revision": "2021-05-26"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-segment-routing-mpls",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mapping-server",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "protocol-srgb",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/connected-prefix-sid-map",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/connected-prefix-sid-map/connected-prefix-sid",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/connected-prefix-sid-map/connected-prefix-sid/algorithm",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/connected-prefix-sid-map/connected-prefix-sid/last-hop-behavior",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/connected-prefix-sid-map/connected-prefix-sid/prefix",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/connected-prefix-sid-map/connected-prefix-sid/range",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/connected-prefix-sid-map/connected-prefix-sid/start-sid",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/connected-prefix-sid-map/connected-prefix-sid/value-type",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/local-prefix-sid",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/local-prefix-sid/local-prefix-sid",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/local-prefix-sid/local-prefix-sid/algorithm",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/local-prefix-sid/local-prefix-sid/prefix",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/local-prefix-sid/local-prefix-sid/range",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/local-prefix-sid/local-prefix-sid/start-sid",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/local-prefix-sid/local-prefix-sid/value-type",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/mapping-server",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/mapping-server/policy",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/mapping-server/policy/entries",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/mapping-server/policy/entries/mapping-entry",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/mapping-server/policy/entries/mapping-entry/algorithm",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/mapping-server/policy/entries/mapping-entry/prefix",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/mapping-server/policy/entries/mapping-entry/range",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/mapping-server/policy/entries/mapping-entry/start-sid",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/mapping-server/policy/entries/mapping-entry/value-type",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/bindings/mapping-server/policy/name",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/label-blocks",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/label-blocks/free",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/label-blocks/lower-bound",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/label-blocks/scope",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/label-blocks/size",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/label-blocks/upper-bound",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/label-blocks/used",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/sid-db",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/sid-db/sid",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/sid-db/sid/algorithm",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/sid-db/sid/binding-type",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/sid-db/sid/scope",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/sid-db/sid/sid",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/sid-db/sid/source",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/sid-db/sid/source-protocol",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/sid-db/sid/target",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/sid-db/sid/used",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/srgb",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/srgb/srgb",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/srgb/srgb/lower-bound",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/srgb/srgb/upper-bound",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/srlb",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/srlb/srlb",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/srlb/srlb/lower-bound",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing/ietf-segment-routing-mpls:sr-mpls/srlb/srlb/upper-bound",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-global-sid-collision",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-global-sid-collision/index",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-global-sid-collision/new-sid-rtr-id",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-global-sid-collision/original-sid-rtr-id",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-global-sid-collision/original-target",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-global-sid-collision/received-target",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-global-sid-collision/routing-protocol",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-index-out-of-range",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-index-out-of-range/received-index",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-index-out-of-range/received-target",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-index-out-of-range/routing-protocol",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-srgb-collision",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-srgb-collision/srgb-collisions",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-srgb-collision/srgb-collisions/lower-bound",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-srgb-collision/srgb-collisions/originating-rtr-id",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-srgb-collision/srgb-collisions/routing-protocol",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-segment-routing-mpls:segment-routing-srgb-collision/srgb-collisions/upper-bound",
+        "sid": "80071"
+      }
+    ]
+  }
+}

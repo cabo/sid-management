@@ -1,0 +1,491 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-pim-rp",
+    "module-revision": "2022-10-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-pim-base",
+        "module-revision": "2022-10-19"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-pim-rp",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bootstrap",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rp-info-source-type",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rp-mode",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "static",
+        "sid": "80004"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "bsr",
+        "sid": "80005"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "bsr-election-state",
+        "sid": "80006"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "candidate-interface",
+        "sid": "80007"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "candidate-ipv4",
+        "sid": "80008"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "candidate-ipv6",
+        "sid": "80009"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "static-rp-override",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-rp:pim-rp-event",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-rp:pim-rp-event/event-type",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-rp:pim-rp-event/group",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-rp:pim-rp-event/instance-af-ref",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-rp:pim-rp-event/is-rpt",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-rp:pim-rp-event/message-origin",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-rp:pim-rp-event/mode",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-rp:pim-rp-event/rp-address",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-candidate",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-candidate/hash-mask-length",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-candidate/interface-or-address",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-candidate/interface-or-address/interface",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-candidate/interface-or-address/interface/interface",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-candidate/interface-or-address/ipv4-address",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-candidate/interface-or-address/ipv4-address/ipv4-address",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-candidate/interface-or-address/ipv6-address",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-candidate/interface-or-address/ipv6-address/ipv6-address",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-candidate/priority",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr-next-bootstrap",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr/address",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr/hash-mask-length",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr/priority",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/bsr/up-time",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/election-state",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/election-state/candidate",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/election-state/candidate/candidate-bsr-state",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/election-state/non-candidate",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/election-state/non-candidate/non-candidate-bsr-state",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate-next-advertisement",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/interface",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/interface/mode",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/interface/name",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/interface/policy-name",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/ipv4-address",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/ipv4-address/address",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/ipv4-address/mode",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/ipv4-address/policy-name",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/ipv6-address",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/ipv6-address/address",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/ipv6-address/mode",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp-candidate/ipv6-address/policy-name",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp/policy-name",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp/rp-address",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/bsr/rp/up-time",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv4-rp",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv4-rp/expiration",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv4-rp/info-source-address",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv4-rp/info-source-type",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv4-rp/mode",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv4-rp/rp-address",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv4-rp/up-time",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv6-rp",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv6-rp/expiration",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv6-rp/info-source-address",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv6-rp/info-source-type",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv6-rp/mode",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv6-rp/rp-address",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-list/ipv6-rp/up-time",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings/ipv4-rp",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings/ipv4-rp/expiration",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings/ipv4-rp/group-range",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings/ipv4-rp/rp-address",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings/ipv4-rp/up-time",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings/ipv6-rp",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings/ipv6-rp/expiration",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings/ipv6-rp/group-range",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings/ipv6-rp/rp-address",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/rp-mappings/ipv6-rp/up-time",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/static-rp",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/static-rp/ipv4-rp",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/static-rp/ipv4-rp/rp-address",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/static-rp/ipv6-rp",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/static-rp/ipv6-rp/rp-address",
+        "sid": "80090"
+      }
+    ]
+  }
+}

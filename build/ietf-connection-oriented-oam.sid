@@ -1,0 +1,1058 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-connection-oriented-oam",
+    "module-revision": "2019-04-16",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-connection-oriented-oam",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "command-sub-type",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cross-connect-defect",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cv-defect",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "defect-types",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "identifier-format",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "identifier-format-integer",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "invalid-oam-defect",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "loss-of-continuity",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "name-format",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "name-format-null",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "on-demand",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "proactive",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rdi",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "remote-mep-defect",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "technology-types",
+        "sid": "80015"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "connectivity-verification",
+        "sid": "80016"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "continuity-check",
+        "sid": "80017"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mip",
+        "sid": "80018"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "traceroute",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/cc-transmit-interval",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/cos-id",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/count",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/destination-mep",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/destination-mep/mep-address",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/destination-mep/mep-address/ip-address",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/destination-mep/mep-address/ip-address/ip-address",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/destination-mep/mep-address/mac-address",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/destination-mep/mep-address/mac-address/mac-address",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/destination-mep/mep-id",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/destination-mep/mep-id-format",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/destination-mep/mep-id/mep-id-int",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/destination-mep/mep-id/mep-id-int/mep-id-int",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/ma-name-string",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/md-level",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/md-name-string",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/packet-size",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/source-mep",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/sub-type",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/technology",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/input/ttl",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/output",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/output/monitor-stats",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/output/monitor-stats/monitor-null",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-check/output/monitor-stats/monitor-null/monitor-null",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/cos-id",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/count",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/destination-mep",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/destination-mep/mep-address",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/destination-mep/mep-address/ip-address",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/destination-mep/mep-address/ip-address/ip-address",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/destination-mep/mep-address/mac-address",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/destination-mep/mep-address/mac-address/mac-address",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/destination-mep/mep-id",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/destination-mep/mep-id-format",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/destination-mep/mep-id/mep-id-int",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/destination-mep/mep-id/mep-id-int/mep-id-int",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/interval",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/ma-name-string",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/md-level",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/md-name-string",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/packet-size",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/source-mep",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/sub-type",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/input/ttl",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/output",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/output/monitor-stats",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/output/monitor-stats/monitor-null",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:continuity-verification/output/monitor-stats/monitor-null/monitor-null",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/defect",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/defect-type",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/defect/defect-code",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/defect/defect-code/defect-code",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/defect/defect-null",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/defect/defect-null/defect-null",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/generating-mepid",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/generating-mepid/mep-id",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/generating-mepid/mep-id-format",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/generating-mepid/mep-id/mep-id-int",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/generating-mepid/mep-id/mep-id-int/mep-id-int",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/ma-name-string",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/md-name-string",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/mep-name",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-cleared-notification/technology",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/defect",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/defect-type",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/defect/defect-code",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/defect/defect-code/defect-code",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/defect/defect-null",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/defect/defect-null/defect-null",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/generating-mepid",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/generating-mepid/mep-id",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/generating-mepid/mep-id-format",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/generating-mepid/mep-id/mep-id-int",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/generating-mepid/mep-id/mep-id-int/mep-id-int",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/ma-name-string",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/md-name-string",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/mep-name",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:defect-condition-notification/technology",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/cc-enable",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/connectivity-context",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/connectivity-context/context-null",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/connectivity-context/context-null/context-null",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/cos-id",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/ma-name",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/ma-name-format",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/ma-name-string",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/ma-name/ma-name-null",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/ma-name/ma-name-null/ma-name-null",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/cc-enable",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/cos-id",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/mep-address",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/mep-address/ip-address",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/mep-address/ip-address/ip-address",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/mep-address/mac-address",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/mep-address/mac-address/mac-address",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/mep-id",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/mep-id-format",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/mep-id/mep-id-int",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/mep-id/mep-id-int/mep-id-int",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/mep-name",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/cos-id",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep-address",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep-address/mep-address",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep-address/mep-address/ip-address",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep-address/mep-address/ip-address/ip-address",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep-address/mep-address/mac-address",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep-address/mep-address/mac-address/mac-address",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep/mep-id",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep/mep-id-format",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep/mep-id/mep-id-int",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/destination-mep/mep-id/mep-id-int/mep-id-int",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mep/session/session-cookie",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mip",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mip/interface",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mip/mip-address",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mip/mip-address/ip-address",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mip/mip-address/ip-address/ip-address",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mip/mip-address/mac-address",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mip/mip-address/mac-address/mac-address",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/mas/ma/mip/name",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/md-level",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/md-name",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/md-name-format",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/md-name-string",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/md-name/md-name-null",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/md-name/md-name-null/md-name-null",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:domains/domain/technology",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/command-sub-type",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/cos-id",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/count",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/destination-mep",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/destination-mep/mep-address",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/destination-mep/mep-address/ip-address",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/destination-mep/mep-address/ip-address/ip-address",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/destination-mep/mep-address/mac-address",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/destination-mep/mep-address/mac-address/mac-address",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/destination-mep/mep-id",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/destination-mep/mep-id-format",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/destination-mep/mep-id/mep-id-int",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/destination-mep/mep-id/mep-id-int/mep-id-int",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/interval",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/ma-name-string",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/md-level",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/md-name-string",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/source-mep",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/input/ttl",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/destination-mep",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/destination-mep/mep-address",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/destination-mep/mep-address/ip-address",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/destination-mep/mep-address/ip-address/ip-address",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/destination-mep/mep-address/mac-address",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/destination-mep/mep-address/mac-address/mac-address",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/destination-mep/mep-id",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/destination-mep/mep-id-format",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/destination-mep/mep-id/mep-id-int",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/destination-mep/mep-id/mep-id-int/mep-id-int",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/mip",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/mip/interface",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/mip/mip-address",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/mip/mip-address/ip-address",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/mip/mip-address/ip-address/ip-address",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/mip/mip-address/mac-address",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/mip/mip-address/mac-address/mac-address",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/monitor-stats",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/monitor-stats/monitor-null",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/monitor-stats/monitor-null/monitor-null",
+        "sid": "80203"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/response-index",
+        "sid": "80204"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connection-oriented-oam:traceroute/output/response/ttl",
+        "sid": "80205"
+      }
+    ]
+  }
+}

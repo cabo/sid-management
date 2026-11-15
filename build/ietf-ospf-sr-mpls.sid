@@ -1,0 +1,1938 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ospf-sr-mpls",
+    "module-revision": "2025-12-09",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "iana-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-segment-routing-common",
+        "module-revision": "2021-05-26"
+      },
+      {
+        "module-name": "ietf-segment-routing-mpls",
+        "module-revision": "2021-05-26"
+      },
+      {
+        "module-name": "ietf-ospf",
+        "module-revision": "2022-10-19"
+      },
+      {
+        "module-name": "ietf-ospfv3-extended-lsa",
+        "module-revision": "2024-06-07"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ospf-sr-mpls",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "adj-sid-flag",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "b-flag",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e-flag",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "extended-prefix-range-flag",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "g-flag",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ia-flag",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l-flag",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lg-flag",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "m-flag",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "np-flag",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "p-flag",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "prefix-sid-flag",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "v-flag",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vi-flag",
+        "sid": "80014"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "remote-lfa-sr",
+        "sid": "80015"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ti-lfa",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs/adj-sid-sub-tlv",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs/adj-sid-sub-tlv/adj-sid-flags",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs/adj-sid-sub-tlv/adj-sid-flags/flag",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs/adj-sid-sub-tlv/mt-id",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-index",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-label",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/adj-sid-sub-tlvs/adj-sid-sub-tlv/weight",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/lan-adj-sid-flags",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/lan-adj-sid-flags/flag",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/mt-id",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/neighbor-router-id",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/sid",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/sid/sid-index",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/sid/sid-label",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-link-opaque/ospf:extended-link-tlv/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/weight",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/af",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/extended-prefix-range-flags",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/extended-prefix-range-flags/flag",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-length",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/mt-id",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags/flag",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/range-size",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/length",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/type",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/value",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/mt-id",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags/flag",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/range-size",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/sid",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/sid/sid-index",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/sid/sid-index/index-value",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/sid/sid-label",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/sid/sid-label/label-value",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/range-size",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/sid",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/sid/sid-index",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/sid/sid-index/index-value",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/sid/sid-label",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/sid/sid-label/label-value",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sr-algorithm-tlv",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sr-algorithm-tlv/sr-algorithm",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/srms-preference-tlv",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/srms-preference-tlv/preference",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/range-size",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/sid",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/sid/sid-index",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/sid/sid-index/index-value",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/sid/sid-label",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/sid/sid-label/label-value",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/range-size",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/sid",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/sid/sid-index",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/sid/sid-index/index-value",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/sid/sid-label",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/sid/sid-label/label-value",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sr-algorithm-tlv",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sr-algorithm-tlv/sr-algorithm",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/srms-preference-tlv",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/srms-preference-tlv/preference",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags/flag",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/af",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-length",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags/flag",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/range-size",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/length",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/type",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/value",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags/flag",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/af",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-length",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags/flag",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/range-size",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/length",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/type",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/value",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags/flag",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/af",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-length",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags/flag",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/range-size",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs",
+        "sid": "80203"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv",
+        "sid": "80204"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/length",
+        "sid": "80205"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/type",
+        "sid": "80206"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/value",
+        "sid": "80207"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/adj-sid-sub-tlvs",
+        "sid": "80208"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/adj-sid-sub-tlvs/adj-sid-sub-tlv",
+        "sid": "80209"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/adj-sid-sub-tlvs/adj-sid-sub-tlv/adj-sid-flags",
+        "sid": "80210"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/adj-sid-sub-tlvs/adj-sid-sub-tlv/adj-sid-flags/flag",
+        "sid": "80211"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid",
+        "sid": "80212"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-index",
+        "sid": "80213"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80214"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-label",
+        "sid": "80215"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80216"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/adj-sid-sub-tlvs/adj-sid-sub-tlv/weight",
+        "sid": "80217"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs",
+        "sid": "80218"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv",
+        "sid": "80219"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/lan-adj-sid-flags",
+        "sid": "80220"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/lan-adj-sid-flags/flag",
+        "sid": "80221"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/neighbor-router-id",
+        "sid": "80222"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/sid",
+        "sid": "80223"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/sid/sid-index",
+        "sid": "80224"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80225"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/sid/sid-label",
+        "sid": "80226"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80227"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-router/ospfv3-e-lsa:e-router-tlvs/ospfv3-e-lsa:link-tlv/ospfv3-e-lsa:sub-tlvs/lan-adj-sid-sub-tlvs/lan-adj-sid-sub-tlv/weight",
+        "sid": "80228"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-link/ospfv3-e-lsa:e-link-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs",
+        "sid": "80229"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-link/ospfv3-e-lsa:e-link-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80230"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-link/ospfv3-e-lsa:e-link-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80231"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-link/ospfv3-e-lsa:e-link-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags",
+        "sid": "80232"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-link/ospfv3-e-lsa:e-link-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags/flag",
+        "sid": "80233"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-link/ospfv3-e-lsa:e-link-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80234"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-link/ospfv3-e-lsa:e-link-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80235"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-link/ospfv3-e-lsa:e-link-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80236"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-link/ospfv3-e-lsa:e-link-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80237"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-link/ospfv3-e-lsa:e-link-tlvs/ospfv3-e-lsa:intra-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80238"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/segment-routing",
+        "sid": "80239"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/segment-routing/adjacency-sid",
+        "sid": "80240"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/segment-routing/adjacency-sid/adj-sids",
+        "sid": "80241"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/segment-routing/adjacency-sid/adj-sids/protected",
+        "sid": "80242"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/segment-routing/adjacency-sid/adj-sids/value",
+        "sid": "80243"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/segment-routing/adjacency-sid/adj-sids/value-type",
+        "sid": "80244"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/segment-routing/adjacency-sid/adj-sids/weight",
+        "sid": "80245"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/segment-routing/adjacency-sid/advertise-adj-group-sid",
+        "sid": "80246"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/segment-routing/adjacency-sid/advertise-adj-group-sid/group-id",
+        "sid": "80247"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/segment-routing/adjacency-sid/advertise-protection",
+        "sid": "80248"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs",
+        "sid": "80249"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv",
+        "sid": "80250"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/af",
+        "sid": "80251"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/extended-prefix-range-flags",
+        "sid": "80252"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/extended-prefix-range-flags/flag",
+        "sid": "80253"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix",
+        "sid": "80254"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-length",
+        "sid": "80255"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs",
+        "sid": "80256"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80257"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80258"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/mt-id",
+        "sid": "80259"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags",
+        "sid": "80260"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags/flag",
+        "sid": "80261"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80262"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80263"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80264"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80265"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80266"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/range-size",
+        "sid": "80267"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs",
+        "sid": "80268"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv",
+        "sid": "80269"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/length",
+        "sid": "80270"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/type",
+        "sid": "80271"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/value",
+        "sid": "80272"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs",
+        "sid": "80273"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80274"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80275"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/mt-id",
+        "sid": "80276"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags",
+        "sid": "80277"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags/flag",
+        "sid": "80278"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80279"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80280"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80281"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80282"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80283"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs",
+        "sid": "80284"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv",
+        "sid": "80285"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/range-size",
+        "sid": "80286"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/sid",
+        "sid": "80287"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/sid/sid-index",
+        "sid": "80288"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/sid/sid-index/index-value",
+        "sid": "80289"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/sid/sid-label",
+        "sid": "80290"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/local-block-tlvs/local-block-tlv/sid/sid-label/label-value",
+        "sid": "80291"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs",
+        "sid": "80292"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv",
+        "sid": "80293"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/range-size",
+        "sid": "80294"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/sid",
+        "sid": "80295"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/sid/sid-index",
+        "sid": "80296"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/sid/sid-index/index-value",
+        "sid": "80297"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/sid/sid-label",
+        "sid": "80298"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sid-range-tlvs/sid-range-tlv/sid/sid-label/label-value",
+        "sid": "80299"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sr-algorithm-tlv",
+        "sid": "80300"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/sr-algorithm-tlv/sr-algorithm",
+        "sid": "80301"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/srms-preference-tlv",
+        "sid": "80302"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:ri-opaque/srms-preference-tlv/preference",
+        "sid": "80303"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs",
+        "sid": "80304"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv",
+        "sid": "80305"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/range-size",
+        "sid": "80306"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/sid",
+        "sid": "80307"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/sid/sid-index",
+        "sid": "80308"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/sid/sid-index/index-value",
+        "sid": "80309"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/sid/sid-label",
+        "sid": "80310"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/local-block-tlvs/local-block-tlv/sid/sid-label/label-value",
+        "sid": "80311"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs",
+        "sid": "80312"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv",
+        "sid": "80313"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/range-size",
+        "sid": "80314"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/sid",
+        "sid": "80315"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/sid/sid-index",
+        "sid": "80316"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/sid/sid-index/index-value",
+        "sid": "80317"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/sid/sid-label",
+        "sid": "80318"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sid-range-tlvs/sid-range-tlv/sid/sid-label/label-value",
+        "sid": "80319"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sr-algorithm-tlv",
+        "sid": "80320"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/sr-algorithm-tlv/sr-algorithm",
+        "sid": "80321"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/srms-preference-tlv",
+        "sid": "80322"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospf:router-information/srms-preference-tlv/preference",
+        "sid": "80323"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs",
+        "sid": "80324"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80325"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80326"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags",
+        "sid": "80327"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags/flag",
+        "sid": "80328"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80329"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80330"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80331"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80332"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/ospfv3-e-lsa:sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80333"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs",
+        "sid": "80334"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv",
+        "sid": "80335"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/af",
+        "sid": "80336"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix",
+        "sid": "80337"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-length",
+        "sid": "80338"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs",
+        "sid": "80339"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80340"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80341"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags",
+        "sid": "80342"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/ospfv3-prefix-sid-flags/flag",
+        "sid": "80343"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80344"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80345"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80346"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80347"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80348"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/range-size",
+        "sid": "80349"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs",
+        "sid": "80350"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv",
+        "sid": "80351"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/length",
+        "sid": "80352"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/type",
+        "sid": "80353"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-extended-prefix-range-tlvs/extended-prefix-range-tlv/unknown-tlvs/unknown-tlv/value",
+        "sid": "80354"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/segment-routing",
+        "sid": "80355"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/segment-routing/bindings",
+        "sid": "80356"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/segment-routing/bindings/advertise",
+        "sid": "80357"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/segment-routing/bindings/advertise/policies",
+        "sid": "80358"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/segment-routing/bindings/receive",
+        "sid": "80359"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/segment-routing/enabled",
+        "sid": "80360"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/ietf-ospf-sr-mpls:segment-routing",
+        "sid": "80361"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/fast-reroute/lfa/ietf-ospf-sr-mpls:ti-lfa",
+        "sid": "80362"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/fast-reroute/lfa/ietf-ospf-sr-mpls:ti-lfa/enabled",
+        "sid": "80363"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/fast-reroute/lfa/ietf-ospf-sr-mpls:ti-lfa/selection-tie-breakers",
+        "sid": "80364"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/fast-reroute/lfa/ietf-ospf-sr-mpls:ti-lfa/selection-tie-breakers/node-protection",
+        "sid": "80365"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/fast-reroute/lfa/ietf-ospf-sr-mpls:ti-lfa/selection-tie-breakers/node-protection/priority",
+        "sid": "80366"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/fast-reroute/lfa/ietf-ospf-sr-mpls:ti-lfa/selection-tie-breakers/srlg-disjoint",
+        "sid": "80367"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/fast-reroute/lfa/ietf-ospf-sr-mpls:ti-lfa/selection-tie-breakers/srlg-disjoint/priority",
+        "sid": "80368"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/fast-reroute/lfa/remote-lfa/ietf-ospf-sr-mpls:use-segment-routing-path",
+        "sid": "80369"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/neighbors/neighbor/ietf-ospf-sr-mpls:adjacency-sid",
+        "sid": "80370"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/neighbors/neighbor/ietf-ospf-sr-mpls:adjacency-sid/protection-requested",
+        "sid": "80371"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/neighbors/neighbor/ietf-ospf-sr-mpls:adjacency-sid/value",
+        "sid": "80372"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/neighbors/neighbor/ietf-ospf-sr-mpls:adjacency-sid/weight",
+        "sid": "80373"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/ietf-ospf-sr-mpls:protocol-srgb",
+        "sid": "80374"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/ietf-ospf-sr-mpls:protocol-srgb/srgb",
+        "sid": "80375"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/ietf-ospf-sr-mpls:protocol-srgb/srgb/lower-bound",
+        "sid": "80376"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/ietf-ospf-sr-mpls:protocol-srgb/srgb/upper-bound",
+        "sid": "80377"
+      }
+    ]
+  }
+}

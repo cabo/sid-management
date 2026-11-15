@@ -1,0 +1,39 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-pim-dm",
+    "module-revision": "2022-10-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-pim-base",
+        "module-revision": "2022-10-19"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-pim-dm",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-dm:dm",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/interfaces/interface/address-family/ietf-pim-dm:dm",
+        "sid": "80002"
+      }
+    ]
+  }
+}

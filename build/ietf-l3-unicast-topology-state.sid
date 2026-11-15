@@ -1,0 +1,388 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-l3-unicast-topology-state",
+    "module-revision": "2018-02-26",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-network-state",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-network-topology-state",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-l3-unicast-topology",
+        "module-revision": "2018-02-26"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-l3-unicast-topology-state",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/l3-topology-attributes",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/l3-topology-attributes/flag",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/l3-topology-attributes/name",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l3-link-attributes",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l3-link-attributes/flag",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l3-link-attributes/metric1",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l3-link-attributes/metric2",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l3-link-attributes/name",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:network-types/l3-unicast-topology",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l3-node-attributes",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l3-node-attributes/flag",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l3-node-attributes/name",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l3-node-attributes/prefix",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l3-node-attributes/prefix/flag",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l3-node-attributes/prefix/metric",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l3-node-attributes/prefix/prefix",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l3-node-attributes/router-id",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l3-termination-point-attributes",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l3-termination-point-attributes/termination-point-type",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l3-termination-point-attributes/termination-point-type/interface-name",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l3-termination-point-attributes/termination-point-type/interface-name/interface-name",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l3-termination-point-attributes/termination-point-type/ip",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l3-termination-point-attributes/termination-point-type/ip/ip-address",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l3-termination-point-attributes/termination-point-type/unnumbered",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l3-termination-point-attributes/termination-point-type/unnumbered/unnumbered-id",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-link-event",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-link-event/l3-event-type",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-link-event/l3-link-attributes",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-link-event/l3-link-attributes/flag",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-link-event/l3-link-attributes/metric1",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-link-event/l3-link-attributes/metric2",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-link-event/l3-link-attributes/name",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-link-event/l3-unicast-topology",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-link-event/link-ref",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-link-event/network-ref",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/l3-event-type",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/l3-node-attributes",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/l3-node-attributes/flag",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/l3-node-attributes/name",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/l3-node-attributes/prefix",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/l3-node-attributes/prefix/flag",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/l3-node-attributes/prefix/metric",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/l3-node-attributes/prefix/prefix",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/l3-node-attributes/router-id",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/l3-unicast-topology",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/network-ref",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-node-event/node-ref",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-prefix-event",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-prefix-event/l3-event-type",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-prefix-event/l3-unicast-topology",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-prefix-event/network-ref",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-prefix-event/node-ref",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-prefix-event/prefix",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-prefix-event/prefix/flag",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-prefix-event/prefix/metric",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:l3-prefix-event/prefix/prefix",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/l3-event-type",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/l3-termination-point-attributes",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/l3-termination-point-attributes/termination-point-type",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/l3-termination-point-attributes/termination-point-type/interface-name",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/l3-termination-point-attributes/termination-point-type/interface-name/interface-name",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/l3-termination-point-attributes/termination-point-type/ip",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/l3-termination-point-attributes/termination-point-type/ip/ip-address",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/l3-termination-point-attributes/termination-point-type/unnumbered",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/l3-termination-point-attributes/termination-point-type/unnumbered/unnumbered-id",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/l3-unicast-topology",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/network-ref",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/node-ref",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l3-unicast-topology-state:termination-point-event/tp-ref",
+        "sid": "80071"
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dots-mapping",
+    "module-revision": "2022-06-20",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-dots-data-channel",
+        "module-revision": "2020-05-28"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dots-mapping",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "dots-telemetry",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ietf-dots-mapping:vendor-mapping-enabled",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/ietf-dots-mapping:vendor-mapping",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/ietf-dots-mapping:vendor-mapping/vendor",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/ietf-dots-mapping:vendor-mapping/vendor/attack-mapping",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/ietf-dots-mapping:vendor-mapping/vendor/attack-mapping/attack-description",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/ietf-dots-mapping:vendor-mapping/vendor/attack-mapping/attack-id",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/ietf-dots-mapping:vendor-mapping/vendor/description-lang",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/ietf-dots-mapping:vendor-mapping/vendor/last-updated",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/ietf-dots-mapping:vendor-mapping/vendor/vendor-id",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/ietf-dots-mapping:vendor-mapping/vendor/vendor-name",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/ietf-dots-mapping:vendor-mapping",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/ietf-dots-mapping:vendor-mapping/vendor",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/ietf-dots-mapping:vendor-mapping/vendor/attack-mapping",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/ietf-dots-mapping:vendor-mapping/vendor/attack-mapping/attack-description",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/ietf-dots-mapping:vendor-mapping/vendor/attack-mapping/attack-id",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/ietf-dots-mapping:vendor-mapping/vendor/description-lang",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/ietf-dots-mapping:vendor-mapping/vendor/last-updated",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/ietf-dots-mapping:vendor-mapping/vendor/vendor-id",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/ietf-dots-mapping:vendor-mapping/vendor/vendor-name",
+        "sid": "80020"
+      }
+    ]
+  }
+}

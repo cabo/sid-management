@@ -1,0 +1,33 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-packet-fields",
+    "module-revision": "2019-03-04",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-ethertypes",
+        "module-revision": "2019-03-04"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-packet-fields",
+        "sid": "80000"
+      }
+    ]
+  }
+}

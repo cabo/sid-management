@@ -1,0 +1,672 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-tpm-remote-attestation",
+    "module-revision": "2024-12-05",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-hardware",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-keystore",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-tcg-algs",
+        "module-revision": "2024-12-05"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-tpm-remote-attestation",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "attested_event_log_type",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bios",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ima",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "netequip_boot",
+        "sid": "80004"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "bios",
+        "sid": "80005"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ima",
+        "sid": "80006"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mtpm",
+        "sid": "80007"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "netequip_boot",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-selector",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-selector/index-type",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-selector/index-type/index",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-selector/index-type/index/last-index-number",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-selector/index-type/last-entry",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-selector/index-type/last-entry/last-entry-value",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-selector/index-type/timestamp",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-selector/index-type/timestamp/timestamp",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-selector/log-entry-quantity",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-selector/name",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/input/log-type",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios/bios-event-logs",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios/bios-event-logs/bios-event-entry",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios/bios-event-logs/bios-event-entry/digest-list",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios/bios-event-logs/bios-event-entry/digest-list/digest",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios/bios-event-logs/bios-event-entry/digest-list/hash-algo",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios/bios-event-logs/bios-event-entry/event-data",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios/bios-event-logs/bios-event-entry/event-number",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios/bios-event-logs/bios-event-entry/event-size",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios/bios-event-logs/bios-event-entry/event-type",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/bios/bios-event-logs/bios-event-entry/pcr-index",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs/ima-event-entry",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs/ima-event-entry/event-number",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs/ima-event-entry/filedata-hash",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs/ima-event-entry/filedata-hash-algorithm",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs/ima-event-entry/filename-hint",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs/ima-event-entry/ima-template",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs/ima-event-entry/pcr-index",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs/ima-event-entry/signature",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs/ima-event-entry/template-hash",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/ima/ima-event-logs/ima-event-entry/template-hash-algorithm",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs/boot-event-entry",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs/boot-event-entry/event-number",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs/boot-event-entry/filedata-hash",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs/boot-event-entry/filedata-hash-algorithm",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs/boot-event-entry/filename-hint",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs/boot-event-entry/ima-template",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs/boot-event-entry/pcr-index",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs/boot-event-entry/signature",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs/boot-event-entry/template-hash",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/log-result/attested_event_log_type/netequip_boot/boot-event-logs/boot-event-entry/template-hash-algorithm",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/name",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:log-retrieval/output/system-event-logs/node-data/up-time",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/attester-supported-algos",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/attester-supported-algos/tpm12-asymmetric-signing",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/attester-supported-algos/tpm12-hash",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/attester-supported-algos/tpm20-asymmetric-signing",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/attester-supported-algos/tpm20-hash",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/compute-nodes",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/compute-nodes/compute-node",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/compute-nodes/compute-node/node-id",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/compute-nodes/compute-node/node-location",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/compute-nodes/compute-node/node-name",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/compute-nodes/compute-node/node-physical-index",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/certificates",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/certificates/certificate",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/certificates/certificate/keystore-ref",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/certificates/certificate/name",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/certificates/certificate/type",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/compute-node",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/firmware-version",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/hardware-based",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/manufacturer",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/name",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/path",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/physical-index",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/status",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/tpm12-hash-algo",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/tpm12-pcrs",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/tpm20-pcr-bank",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/tpm20-pcr-bank/pcr-index",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:rats-support-structures/tpms/tpm/tpm20-pcr-bank/tpm20-hash-algo",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/input",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/input/tpm12-attestation-challenge",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/input/tpm12-attestation-challenge/certificate-name",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/input/tpm12-attestation-challenge/nonce-value",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/input/tpm12-attestation-challenge/pcr-index",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/output",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/output/tpm12-attestation-response",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/output/tpm12-attestation-response/certificate-name",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/output/tpm12-attestation-response/pcr-data",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/output/tpm12-attestation-response/sig",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/output/tpm12-attestation-response/up-time",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm12-challenge-response-attestation/output/tpm12-attestation-response/version-info",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/input",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/input/tpm20-attestation-challenge",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/input/tpm20-attestation-challenge/certificate-name",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/input/tpm20-attestation-challenge/nonce-value",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/input/tpm20-attestation-challenge/tpm20-pcr-selection",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/input/tpm20-attestation-challenge/tpm20-pcr-selection/pcr-index",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/input/tpm20-attestation-challenge/tpm20-pcr-selection/tpm20-hash-algo",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output/tpm20-attestation-response",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output/tpm20-attestation-response/certificate-name",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output/tpm20-attestation-response/quote-data",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output/tpm20-attestation-response/quote-signature",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output/tpm20-attestation-response/unsigned-pcr-values",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output/tpm20-attestation-response/unsigned-pcr-values/pcr-values",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output/tpm20-attestation-response/unsigned-pcr-values/pcr-values/pcr-index",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output/tpm20-attestation-response/unsigned-pcr-values/pcr-values/pcr-value",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output/tpm20-attestation-response/unsigned-pcr-values/tpm20-hash-algo",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tpm-remote-attestation:tpm20-challenge-response-attestation/output/tpm20-attestation-response/up-time",
+        "sid": "80127"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-mud-tls",
+    "module-revision": "2025-04-18",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-mud",
+        "module-revision": "2019-01-28"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-mud-tls",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mud:mud/ietf-mud-tls:is-tls-dtls-profile-supported",
+        "sid": "80001"
+      }
+    ]
+  }
+}

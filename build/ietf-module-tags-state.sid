@@ -1,0 +1,49 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-module-tags-state",
+    "module-revision": "2021-01-04",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-module-tags",
+        "module-revision": "2021-01-04"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-module-tags-state",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-module-tags-state:module-tags-state",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-module-tags-state:module-tags-state/module",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-module-tags-state:module-tags-state/module/name",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-module-tags-state:module-tags-state/module/tag",
+        "sid": "80004"
+      }
+    ]
+  }
+}

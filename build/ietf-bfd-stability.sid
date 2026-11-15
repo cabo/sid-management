@@ -1,0 +1,108 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-bfd-stability",
+    "module-revision": "2026-06-29",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-bfd",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd-ip-sh",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd-ip-mh",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd-lag",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd-mpls",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-key-chain",
+        "module-revision": "2017-06-15"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-bfd-stability",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "null-auth",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "stability",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-stability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/bfd:bfd/bfd-ip-mh:ip-mh/bfd-ip-mh:session-groups/bfd-ip-mh:session-group/bfd-ip-mh:sessions/bfd-ip-mh:session-statistics/lost-packet-count",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-stability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/bfd:bfd/bfd-ip-sh:ip-sh/bfd-ip-sh:sessions/bfd-ip-sh:session/bfd-ip-sh:session-statistics/lost-packet-count",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-stability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/bfd:bfd/bfd-lag:lag/bfd-lag:sessions/bfd-lag:session/bfd-lag:member-links/bfd-lag:micro-bfd-ipv4/bfd-lag:session-statistics/lost-packet-count",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-stability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/bfd:bfd/bfd-lag:lag/bfd-lag:sessions/bfd-lag:session/bfd-lag:member-links/bfd-lag:micro-bfd-ipv6/bfd-lag:session-statistics/lost-packet-count",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-stability:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/bfd:bfd/bfd-mpls:mpls/bfd-mpls:session-groups/bfd-mpls:session-group/bfd-mpls:sessions/bfd-mpls:session-statistics/lost-packet-count",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/ietf-bfd-stability:stability",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/sessions/session/ietf-bfd-stability:stability",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-lag:lag/sessions/session/ietf-bfd-stability:stability",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-mpls:mpls/session-groups/session-group/ietf-bfd-stability:stability",
+        "sid": "80011"
+      }
+    ]
+  }
+}

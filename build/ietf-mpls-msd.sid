@@ -1,0 +1,73 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-mpls-msd",
+    "module-revision": "2025-01-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-mpls",
+        "module-revision": "2020-12-18"
+      },
+      {
+        "module-name": "iana-msd-types",
+        "module-revision": "2025-01-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-mpls-msd",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-mpls:mpls/ietf-mpls-msd:node-msds",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-mpls:mpls/ietf-mpls-msd:node-msds/node-msd",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-mpls:mpls/ietf-mpls-msd:node-msds/node-msd/msd-type",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-mpls:mpls/ietf-mpls-msd:node-msds/node-msd/msd-value",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-mpls:mpls/interfaces/interface/ietf-mpls-msd:link-msds",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-mpls:mpls/interfaces/interface/ietf-mpls-msd:link-msds/link-msd",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-mpls:mpls/interfaces/interface/ietf-mpls-msd:link-msds/link-msd/msd-type",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-mpls:mpls/interfaces/interface/ietf-mpls-msd:link-msds/link-msd/msd-value",
+        "sid": "80008"
+      }
+    ]
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-microwave-types",
+    "module-revision": "2019-06-19",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-microwave-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "E1",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "STM-1",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bpsk",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bpsk-light",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bpsk-strong",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "coding-modulation",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "half-bpsk",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "half-bpsk-light",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "half-bpsk-strong",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "one-plus-one",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "one-plus-zero",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-1024",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-1024-light",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-1024-strong",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-128",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-128-light",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-128-strong",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-16",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-16-light",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-16-strong",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-2048",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-2048-light",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-2048-strong",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-256",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-256-light",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-256-strong",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-32",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-32-light",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-32-strong",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-4",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-4-light",
+        "sid": "80031"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-4-strong",
+        "sid": "80032"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-4096",
+        "sid": "80033"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-4096-light",
+        "sid": "80034"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-4096-strong",
+        "sid": "80035"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-512",
+        "sid": "80036"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-512-light",
+        "sid": "80037"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-512-strong",
+        "sid": "80038"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-64",
+        "sid": "80039"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-64-light",
+        "sid": "80040"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam-64-strong",
+        "sid": "80041"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qpsk",
+        "sid": "80042"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rlt-mode",
+        "sid": "80043"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tdm-type",
+        "sid": "80044"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "two-plus-zero",
+        "sid": "80045"
+      }
+    ]
+  }
+}

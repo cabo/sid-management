@@ -1,0 +1,225 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ethernet-segment",
+    "module-revision": "2022-09-20",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ethernet-segment",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "all-active",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "default-7432",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "df-election-methods",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "es-redundancy-mode",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "esi-type",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "esi-type-0-operator",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "esi-type-1-lacp",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "esi-type-2-bridge",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "esi-type-3-mac",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "esi-type-4-router-id",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "esi-type-5-asn",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "highest-random-weight",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "preference",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "single-active",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/df-election",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/df-election/df-election-method",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/df-election/election-wait-time",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/df-election/revertive",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice/auto-assigned",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice/auto-assigned/esi-auto",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice/auto-assigned/esi-auto/auto-ethernet-segment-identifier",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice/auto-assigned/esi-auto/auto-mode",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice/auto-assigned/esi-auto/auto-mode/from-pool",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice/auto-assigned/esi-auto/auto-mode/from-pool/esi-pool-name",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice/auto-assigned/esi-auto/auto-mode/full-auto",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice/auto-assigned/esi-auto/auto-mode/full-auto/auto",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice/directly-assigned",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-choice/directly-assigned/ethernet-segment-identifier",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-redundancy-mode",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/esi-type",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/member",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/member/interface-id",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/member/ne-id",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/name",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/pbb",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/pbb/backbone-src-mac",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ethernet-segment:ethernet-segments/ethernet-segment/split-horizon-filtering",
+        "sid": "80040"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1183 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-nat",
+    "module-revision": "2019-01-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-nat",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "basic-nat44",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "clat",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dst-nat",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "eam",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "napt44",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "nat-type",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "nat64",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "nptv6",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "siit",
+        "sid": "80009"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "basic-nat44",
+        "sid": "80010"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "clat",
+        "sid": "80011"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "dst-nat",
+        "sid": "80012"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "eam",
+        "sid": "80013"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "napt44",
+        "sid": "80014"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "nat64",
+        "sid": "80015"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "nptv6",
+        "sid": "80016"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "siit",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat-instance-event",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat-instance-event/id",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat-instance-event/notify-addresses-threshold",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat-instance-event/notify-ports-threshold",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat-instance-event/notify-subscribers-threshold",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat-pool-event",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat-pool-event/id",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat-pool-event/notify-pool-threshold",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat-pool-event/policy-id",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat-pool-event/pool-id",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/address-and-port-dependent-filtering",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/address-and-port-dependent-mapping-support",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/address-dependent-filtering",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/address-dependent-mapping-support",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/address-roundrobin-support",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/endpoint-independent-filtering-support",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/endpoint-independent-mapping-support",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/fragment-behavior",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/nat-flavor",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/paired-address-pooling-support",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/per-interface-binding",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/port-parity-preservation-support",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/port-preservation-suport",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/port-randomization-support",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/port-range-allocation-support",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/restricted-port-support",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/static-mapping-support",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/transport-protocols",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/transport-protocols/protocol-id",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/capabilities/transport-protocols/protocol-name",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/connection-limits",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/connection-limits/limit-per-instance",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/connection-limits/limit-per-protocol",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/connection-limits/limit-per-protocol/limit",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/connection-limits/limit-per-protocol/protocol-id",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/connection-limits/limit-per-subscriber",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/enable",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/id",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-limits",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-limits/limit-address-mappings",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-limits/limit-per-protocol",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-limits/limit-per-protocol/limit",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-limits/limit-per-protocol/protocol-id",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-limits/limit-port-mappings",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-limits/limit-subscribers",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/external-dst-address",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/external-dst-port",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/external-dst-port/end-port-number",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/external-dst-port/start-port-number",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/external-src-address",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/external-src-port",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/external-src-port/end-port-number",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/external-src-port/start-port-number",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/index",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/internal-dst-address",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/internal-dst-port",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/internal-dst-port/end-port-number",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/internal-dst-port/start-port-number",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/internal-src-address",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/internal-src-port",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/internal-src-port/end-port-number",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/internal-src-port/start-port-number",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/lifetime",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/transport-protocol",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/type",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/name",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/nat-pass-through",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/nat-pass-through/id",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/nat-pass-through/port",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/nat-pass-through/prefix",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/notification-limits",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/notification-limits/notify-addresses-usage",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/notification-limits/notify-interval",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/notification-limits/notify-ports-usage",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/notification-limits/notify-subscribers-limit",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/per-interface-binding",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/address-allocation-type",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/algs",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/algs/dst-transport-port",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/algs/dst-transport-port/end-port-number",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/algs/dst-transport-port/start-port-number",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/algs/name",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/algs/src-transport-port",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/algs/src-transport-port/end-port-number",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/algs/src-transport-port/start-port-number",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/algs/status",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/algs/transport-protocol",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/all-algs-enable",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/clat-parameters",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/clat-parameters/clat-ipv6-prefixes",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/clat-parameters/clat-ipv6-prefixes/ipv6-prefix",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/clat-parameters/ipv4-prefixes",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/clat-parameters/ipv4-prefixes/ipv4-prefix",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/dst-ip-address-pool",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/dst-ip-address-pool/dst-in-ip-pool",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/dst-ip-address-pool/dst-out-ip-pool",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/dst-ip-address-pool/pool-id",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/dst-nat-enable",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/eam",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/eam/ipv4-prefix",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/eam/ipv6-prefix",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/external-ip-address-pool",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/external-ip-address-pool/external-ip-pool",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/external-ip-address-pool/pool-id",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/external-realm",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/external-realm/realm-type",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/external-realm/realm-type/interface",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/external-realm/realm-type/interface/external-interface",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/filtering-type",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/fragment-behavior",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/fragments-limit",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/id",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/mapping-type",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/nat64-prefixes",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/nat64-prefixes/destination-ipv4-prefix",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/nat64-prefixes/destination-ipv4-prefix/ipv4-prefix",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/nat64-prefixes/nat64-prefix",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/nat64-prefixes/stateless-enable",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/notify-pool-usage",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/notify-pool-usage/high-threshold",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/notify-pool-usage/low-threshold",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/notify-pool-usage/notify-interval",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/notify-pool-usage/pool-id",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/nptv6-prefixes",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/nptv6-prefixes/external-ipv6-prefix",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/nptv6-prefixes/internal-ipv6-prefix",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-allocation-type",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-quota",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-quota/port-limit",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-quota/quota-type",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set-restrict",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set-restrict/port-type",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set-restrict/port-type/port-range",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set-restrict/port-type/port-range/end-port-number",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set-restrict/port-type/port-range/start-port-number",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set-restrict/port-type/port-set-algo",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set-restrict/port-type/port-set-algo/psid",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set-restrict/port-type/port-set-algo/psid-len",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set-restrict/port-type/port-set-algo/psid-offset",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set/port-set-size",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/port-set/port-set-timeout",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/subscriber-mask-v6",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/subscriber-match",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/subscriber-match/match-id",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/subscriber-match/subnet",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/fragment-min-timeout",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/hold-down-max",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/hold-down-timeout",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/icmp-timeout",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/per-port-timeout",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/per-port-timeout/port-number",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/per-port-timeout/protocol",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/per-port-timeout/timeout",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/tcp-idle-timeout",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/tcp-in-syn-timeout",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/tcp-trans-close-timeout",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/tcp-trans-open-timeout",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/timers/udp-timeout",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/transport-protocols",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/transport-protocols/protocol-id",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/transport-protocols/protocol-name",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/discontinuity-time",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/mappings-statistics",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/mappings-statistics/total-active-subscribers",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/mappings-statistics/total-address-mappings",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/mappings-statistics/total-per-protocol",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/mappings-statistics/total-per-protocol/protocol-id",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/mappings-statistics/total-per-protocol/total",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/mappings-statistics/total-port-mappings",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/addresses-allocated",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/addresses-free",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/per-pool-stats",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/per-pool-stats/discontinuity-time",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/per-pool-stats/pool-id",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/per-pool-stats/pool-stats",
+        "sid": "80203"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/per-pool-stats/pool-stats/addresses-allocated",
+        "sid": "80204"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/per-pool-stats/pool-stats/addresses-free",
+        "sid": "80205"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/per-pool-stats/port-stats",
+        "sid": "80206"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/per-pool-stats/port-stats/ports-allocated",
+        "sid": "80207"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/per-pool-stats/port-stats/ports-free",
+        "sid": "80208"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/ports-stats",
+        "sid": "80209"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/ports-stats/ports-allocated",
+        "sid": "80210"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/pools-stats/ports-stats/ports-free",
+        "sid": "80211"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics",
+        "sid": "80212"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-address-bytes",
+        "sid": "80213"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-address-limit-bytes",
+        "sid": "80214"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-address-limit-packets",
+        "sid": "80215"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-address-packets",
+        "sid": "80216"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-bytes",
+        "sid": "80217"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-fragments",
+        "sid": "80218"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-packets",
+        "sid": "80219"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-port-bytes",
+        "sid": "80220"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-port-limit-bytes",
+        "sid": "80221"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-port-limit-packets",
+        "sid": "80222"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-port-packets",
+        "sid": "80223"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-subscriber-limit-bytes",
+        "sid": "80224"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/dropped-subscriber-limit-packets",
+        "sid": "80225"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/rcvd-bytes",
+        "sid": "80226"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/rcvd-packets",
+        "sid": "80227"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/sent-bytes",
+        "sid": "80228"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/traffic-statistics/sent-packets",
+        "sid": "80229"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/type",
+        "sid": "80230"
+      }
+    ]
+  }
+}

@@ -1,0 +1,972 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dhcpv6-server",
+    "module-revision": "2022-06-20",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-dhcpv6-common",
+        "module-revision": "2022-06-20"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dhcpv6-server",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "na-assignment",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "prefix-delegation",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:address-pool-utilization-threshold-exceeded",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:address-pool-utilization-threshold-exceeded/allocated-address-count",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:address-pool-utilization-threshold-exceeded/max-allocated-addresses",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:address-pool-utilization-threshold-exceeded/pool-id",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:address-pool-utilization-threshold-exceeded/total-pool-addresses",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:decline-received",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:decline-received/declined-resources",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:decline-received/declined-resources/resource-type",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:decline-received/declined-resources/resource-type/declined-address",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:decline-received/declined-resources/resource-type/declined-address/address",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:decline-received/declined-resources/resource-type/declined-prefix",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:decline-received/declined-resources/resource-type/declined-prefix/prefix",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:decline-received/duid",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:delete-address-lease",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:delete-address-lease/input",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:delete-address-lease/input/lease-address-to-delete",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:delete-address-lease/output",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:delete-address-lease/output/return-message",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:delete-prefix-lease",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:delete-prefix-lease/input",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:delete-prefix-lease/input/lease-prefix-to-delete",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:delete-prefix-lease/output",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:delete-prefix-lease/output/return-message",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/allocation-time",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/client-duid",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/ia-id",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/last-renew-rebind",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/lease-t1",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/lease-t2",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/leased-address",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/preferred-lifetime",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/status",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/status/code",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/status/message",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/active-lease/valid-lifetime",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/allocated-count",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/active-leases/total-count",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/end-address",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/host-reservations",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/host-reservations/host-reservation",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/host-reservations/host-reservation/client-duid",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/host-reservations/host-reservation/option-set-id",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/host-reservations/host-reservation/preferred-lifetime",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/host-reservations/host-reservation/rapid-commit",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/host-reservations/host-reservation/rebind-time",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/host-reservations/host-reservation/renew-time",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/host-reservations/host-reservation/reserved-addr",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/host-reservations/host-reservation/valid-lifetime",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/max-address-utilization",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/option-set-id",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/pool-id",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/pool-prefix",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/preferred-lifetime",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/rapid-commit",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/rebind-time",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/renew-time",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/start-address",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/address-pools/address-pool/valid-lifetime",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/description",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/id",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/network-prefix",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/option-set-id",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/preferred-lifetime",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/allocation-time",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/client-duid",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/ia-id",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/last-renew-rebind",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/lease-t1",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/lease-t2",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/leased-prefix",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/preferred-lifetime",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/status",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/status/code",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/status/message",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/active-lease/valid-lifetime",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/allocated-count",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/active-leases/total-count",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/client-prefix-length",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations/option-set-id",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations/preferred-lifetime",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations/prefix-reservation",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations/prefix-reservation/client-duid",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations/prefix-reservation/reserved-prefix",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations/prefix-reservation/reserved-prefix-len",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations/rapid-commit",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations/rebind-time",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations/renew-time",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/host-reservations/valid-lifetime",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/max-pd-space-utilization",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/option-set-id",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/pool-id",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/pool-prefix",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/preferred-lifetime",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/rapid-commit",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/rebind-time",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/renew-time",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/prefix-pools/prefix-pool/valid-lifetime",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/rapid-commit",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/rebind-time",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/renew-time",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/allocation-range/valid-lifetime",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/option-set-id",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/preferred-lifetime",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/rapid-commit",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/rebind-time",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/renew-time",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/advertise-count",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/confirm-count",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/decline-count",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/discarded-message-count",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/discontinuity-time",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/information-request-count",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/rebind-count",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/reconfigure-count",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/release-count",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/renew-count",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/reply-count",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/request-count",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/statistics/solicit-count",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/allocation-ranges/valid-lifetime",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/class-selector",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/enabled",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/auth-option",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/auth-option/algorithm",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/auth-option/protocol",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/auth-option/protocol/conf-token",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/auth-option/protocol/conf-token/token-auth-information",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/auth-option/protocol/rkap",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/auth-option/protocol/rkap/auth-info-value",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/auth-option/protocol/rkap/datatype",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/auth-option/rdm",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/auth-option/replay-detection",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/description",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/inf-max-rt-option",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/inf-max-rt-option/inf-max-rt-value",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/info-refresh-time-option",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/info-refresh-time-option/info-refresh-time",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/option-set-id",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/preference-option",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/preference-option/pref-value",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/rapid-commit-option",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/reconfigure-accept-option",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/reconfigure-message-option",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/reconfigure-message-option/msg-type",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/server-unicast-option",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/server-unicast-option/server-address",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/sol-max-rt-option",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/sol-max-rt-option/sol-max-rt-value",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/vendor-specific-information-options",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/vendor-specific-information-options/vendor-specific-information-option",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/vendor-specific-information-options/vendor-specific-information-option/enterprise-number",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/vendor-specific-information-options/vendor-specific-information-option/vendor-option-data",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/vendor-specific-information-options/vendor-specific-information-option/vendor-option-data/sub-option-code",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/option-sets/option-set/vendor-specific-information-options/vendor-specific-information-option/vendor-option-data/sub-option-data",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/server-duid",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:dhcpv6-server/vendor-config",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:invalid-client-detected",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:invalid-client-detected/description",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:invalid-client-detected/duid",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:invalid-client-detected/message-type",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:non-success-code-sent",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:non-success-code-sent/duid",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:non-success-code-sent/status",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:non-success-code-sent/status/code",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:non-success-code-sent/status/message",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:prefix-pool-utilization-threshold-exceeded",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:prefix-pool-utilization-threshold-exceeded/allocated-prefixes-count",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:prefix-pool-utilization-threshold-exceeded/max-allocated-prefixes",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:prefix-pool-utilization-threshold-exceeded/pool-id",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-server:prefix-pool-utilization-threshold-exceeded/total-pool-prefixes",
+        "sid": "80187"
+      }
+    ]
+  }
+}

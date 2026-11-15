@@ -1,0 +1,404 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ucl-acl",
+    "module-revision": "2026-10-07",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-access-control-list",
+        "module-revision": "2019-03-04"
+      },
+      {
+        "module-name": "ietf-schedule",
+        "module-revision": "2026-03-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ucl-acl",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "application-group",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "device-group",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "endpoint-group-type",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "group-acl-type",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mixed-eth-group-type",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mixed-eth-ipv4-group-type",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mixed-eth-ipv4-ipv6-group-type",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mixed-eth-ipv6-group-type",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mixed-ipv4-group-type",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mixed-ipv4-ipv6-group-type",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mixed-ipv6-group-type",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "user-group",
+        "sid": "80012"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "group",
+        "sid": "80013"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "match-on-group",
+        "sid": "80014"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mixed-eth-group",
+        "sid": "80015"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mixed-eth-ipv4-group",
+        "sid": "80016"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mixed-eth-ipv4-ipv6-group",
+        "sid": "80017"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mixed-eth-ipv6-group",
+        "sid": "80018"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mixed-ipv4-group",
+        "sid": "80019"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mixed-ipv4-ipv6-group",
+        "sid": "80020"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mixed-ipv6-group",
+        "sid": "80021"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "schedule",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/period/period",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/period/period/period-description",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/period/period/period-start",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/period/period/period-type",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/period/period/period-type/duration",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/period/period/period-type/duration/duration",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/period/period/period-type/explicit",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/period/period/period-type/explicit/period-end",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/period/period/time-zone-identifier",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/byday",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/byday/direction",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/byday/weekday",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/byhour",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/byminute",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/bymonthday",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/bysecond",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/bysetpos",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/byyearday",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/byyearmonth",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/byyearweek",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/exception-dates",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/frequency",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/interval",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/period",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/period/period-description",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/period/period-start",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/period/period-type",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/period/period-type/duration",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/period/period-type/duration/duration",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/period/period-type/explicit",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/period/period-type/explicit/period-end",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/period/time-zone-identifier",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/recurrence-description",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/recurrence-end",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/recurrence-end/count",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/recurrence-end/count/count",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/recurrence-end/until",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/recurrence-end/until/until",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/recurrence-first",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/recurrence-first/duration",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/recurrence-first/start-time",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/time-zone-identifier",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/ietf-ucl-acl:effective-schedule/schedule-type/recurrence/recurrence/workweek-start",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-ucl-acl:endpoint-group",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-ucl-acl:endpoint-group/destination-group-id",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-ucl-acl:endpoint-group/source-group-id",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/ietf-ucl-acl:endpoint-groups",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/ietf-ucl-acl:endpoint-groups/endpoint-group",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/ietf-ucl-acl:endpoint-groups/endpoint-group/group-id",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/ietf-ucl-acl:endpoint-groups/endpoint-group/group-type",
+        "sid": "80075"
+      }
+    ]
+  }
+}

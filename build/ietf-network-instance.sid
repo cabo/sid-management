@@ -1,0 +1,158 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-network-instance",
+    "module-revision": "2019-01-21",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-ip",
+        "module-revision": "2018-02-22"
+      },
+      {
+        "module-name": "ietf-yang-schema-mount",
+        "module-revision": "2019-01-14"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-network-instance",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/ietf-network-instance:bind-ni-name",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/ietf-network-instance:bind-ni-name",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-network-instance:bind-ni-name",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:bind-ni-name-failed",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:bind-ni-name-failed/error-info",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:bind-ni-name-failed/interface",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:bind-ni-name-failed/interface/bind-ni-name",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:bind-ni-name-failed/ipv4",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:bind-ni-name-failed/ipv4/bind-ni-name",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:bind-ni-name-failed/ipv6",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:bind-ni-name-failed/ipv6/bind-ni-name",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:bind-ni-name-failed/name",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/description",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/enabled",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/name",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/ni-type",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/root-type",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/root-type/vrf-root",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/root-type/vrf-root/vrf-root",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/root-type/vsi-root",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/root-type/vsi-root/vsi-root",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/root-type/vv-root",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-instance:network-instances/network-instance/root-type/vv-root/vv-root",
+        "sid": "80025"
+      }
+    ]
+  }
+}

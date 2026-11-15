@@ -1,0 +1,115 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "iana-tunnel-type",
+    "module-revision": "2019-11-16",
+    "dependency-revision": [
+      {
+        "module-name": "iana-if-type",
+        "module-revision": "2014-05-08"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "iana-tunnel-type",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aplusp",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atmp",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "direct",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dslite",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gre",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iphttps",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isatap",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l2f",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l2tp",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "minimal",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "msdp",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "other",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pptp",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sixoverfour",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sixtofour",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "softwiremesh",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "teredo",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "udp",
+        "sid": "80018"
+      }
+    ]
+  }
+}

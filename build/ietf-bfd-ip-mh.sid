@@ -1,0 +1,367 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-bfd-ip-mh",
+    "module-revision": "2022-09-22",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-bfd-types",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-bfd-ip-mh",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-ip-mh:multihop-notification",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-ip-mh:multihop-notification/dest-addr",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-ip-mh:multihop-notification/local-discr",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-ip-mh:multihop-notification/new-state",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-ip-mh:multihop-notification/path-type",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-ip-mh:multihop-notification/remote-discr",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-ip-mh:multihop-notification/session-index",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-ip-mh:multihop-notification/source-addr",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-ip-mh:multihop-notification/state-change-reason",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-ip-mh:multihop-notification/time-of-last-state-change",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/admin-down",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/authentication",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/authentication/key-chain",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/authentication/meticulous",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/demand-enabled",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/dest-addr",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/interval-config-type",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/interval-config-type/single-interval",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/interval-config-type/single-interval/min-interval",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/interval-config-type/tx-rx-intervals",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/interval-config-type/tx-rx-intervals/desired-min-tx-interval",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/interval-config-type/tx-rx-intervals/required-min-rx-interval",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/local-multiplier",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/rx-ttl",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/demand-capability",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/dest-port",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/ip-encapsulation",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/local-discriminator",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/path-type",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/remote-discriminator",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/remote-multiplier",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/detection-mode",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/detection-time",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/echo-tx-interval-in-use",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/local-diagnostic",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/local-state",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/negotiated-rx-interval",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/negotiated-tx-interval",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/remote-authenticated",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/remote-authentication-type",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/remote-diagnostic",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/remote-state",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-running/session-index",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-statistics",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-statistics/admin-down-count",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-statistics/create-time",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-statistics/down-count",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-statistics/last-down-time",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-statistics/last-up-time",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-statistics/receive-invalid-packet-count",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-statistics/receive-packet-count",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-statistics/send-failed-packet-count",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/session-statistics/send-packet-count",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/sessions/source-port",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/source-addr",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/session-groups/session-group/tx-ttl",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/summary",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/summary/number-of-sessions",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/summary/number-of-sessions-admin-down",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/summary/number-of-sessions-down",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-mh:ip-mh/summary/number-of-sessions-up",
+        "sid": "80066"
+      }
+    ]
+  }
+}

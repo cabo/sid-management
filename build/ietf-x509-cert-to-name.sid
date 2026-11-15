@@ -1,0 +1,60 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-x509-cert-to-name",
+    "module-revision": "2014-12-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-x509-cert-to-name",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cert-to-name",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "common-name",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "san-any",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "san-dns-name",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "san-ip-address",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "san-rfc822-name",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "specified",
+        "sid": "80007"
+      }
+    ]
+  }
+}

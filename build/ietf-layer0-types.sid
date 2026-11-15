@@ -1,0 +1,94 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-layer0-types",
+    "module-revision": "2021-08-13",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-layer0-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cwdm-20nm",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cwdm-ch-spc-type",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dwdm-100ghz",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dwdm-12p5ghz",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dwdm-25ghz",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dwdm-50ghz",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dwdm-ch-spc-type",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "flexi-ch-spc-6p25ghz",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "flexi-ch-spc-type",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "flexi-grid-dwdm",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "flexi-slot-width-granularity",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "flexi-swg-12p5ghz",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l0-grid-type",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "wson-grid-cwdm",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "wson-grid-dwdm",
+        "sid": "80015"
+      }
+    ]
+  }
+}

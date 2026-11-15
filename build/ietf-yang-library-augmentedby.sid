@@ -1,0 +1,35 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-yang-library-augmentedby",
+    "module-revision": "2026-08-26",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-library",
+        "module-revision": "2019-01-04"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-yang-library-augmentedby",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:modules-state/module/ietf-yang-library-augmentedby:augmented-by",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-library:yang-library/module-set/module/ietf-yang-library-augmentedby:augmented-by",
+        "sid": "80002"
+      }
+    ]
+  }
+}

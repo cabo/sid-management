@@ -1,0 +1,48 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dots-signal-control",
+    "module-revision": "2021-09-02",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-dots-signal-channel",
+        "module-revision": "2021-09-02"
+      },
+      {
+        "module-name": "ietf-yang-structure-ext",
+        "module-revision": "2020-06-17"
+      },
+      {
+        "module-name": "ietf-dots-data-channel",
+        "module-revision": "2020-05-28"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dots-signal-control",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/ietf-dots-signal-control:acl-list",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/ietf-dots-signal-control:acl-list/acl-name",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/ietf-dots-signal-control:acl-list/activation-type",
+        "sid": "80003"
+      }
+    ]
+  }
+}

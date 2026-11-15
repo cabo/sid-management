@@ -1,0 +1,40 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-service-assurance-device",
+    "module-revision": "2023-07-11",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-service-assurance",
+        "module-revision": "2023-07-11"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-service-assurance-device",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "device-type",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/parameter/ietf-service-assurance-device:parameters/parameters",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/parameter/ietf-service-assurance-device:parameters/parameters/device",
+        "sid": "80003"
+      }
+    ]
+  }
+}

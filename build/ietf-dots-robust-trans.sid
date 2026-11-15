@@ -1,0 +1,389 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dots-robust-trans",
+    "module-revision": "2023-02-28",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-dots-signal-channel",
+        "module-revision": "2021-09-02"
+      },
+      {
+        "module-name": "ietf-yang-structure-ext",
+        "module-revision": "2020-06-17"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dots-robust-trans",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/max-payloads",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/max-payloads/current-value",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/max-payloads/direction",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/max-payloads/direction/server-to-client-only",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/max-payloads/direction/server-to-client-only/max-value",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/max-payloads/direction/server-to-client-only/min-value",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-max-retransmit",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-max-retransmit/current-value",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-max-retransmit/direction",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-max-retransmit/direction/server-to-client-only",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-max-retransmit/direction/server-to-client-only/max-value",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-max-retransmit/direction/server-to-client-only/min-value",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-partial-timeout",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-partial-timeout/current-value-decimal",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-partial-timeout/direction",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-partial-timeout/direction/server-to-client-only",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-partial-timeout/direction/server-to-client-only/max-value-decimal",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-partial-timeout/direction/server-to-client-only/min-value-decimal",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-probing-wait",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-probing-wait/current-value-decimal",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-probing-wait/direction",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-probing-wait/direction/server-to-client-only",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-probing-wait/direction/server-to-client-only/max-value-decimal",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-probing-wait/direction/server-to-client-only/min-value-decimal",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-receive-timeout",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-receive-timeout/current-value-decimal",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-receive-timeout/direction",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-receive-timeout/direction/server-to-client-only",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-receive-timeout/direction/server-to-client-only/max-value-decimal",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-receive-timeout/direction/server-to-client-only/min-value-decimal",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-timeout",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-timeout/current-value-decimal",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-timeout/direction",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-timeout/direction/server-to-client-only",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-timeout/direction/server-to-client-only/max-value-decimal",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:idle-config/non-timeout/direction/server-to-client-only/min-value-decimal",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/max-payloads",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/max-payloads/current-value",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/max-payloads/direction",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/max-payloads/direction/server-to-client-only",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/max-payloads/direction/server-to-client-only/max-value",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/max-payloads/direction/server-to-client-only/min-value",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-max-retransmit",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-max-retransmit/current-value",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-max-retransmit/direction",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-max-retransmit/direction/server-to-client-only",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-max-retransmit/direction/server-to-client-only/max-value",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-max-retransmit/direction/server-to-client-only/min-value",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-partial-timeout",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-partial-timeout/current-value-decimal",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-partial-timeout/direction",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-partial-timeout/direction/server-to-client-only",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-partial-timeout/direction/server-to-client-only/max-value-decimal",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-partial-timeout/direction/server-to-client-only/min-value-decimal",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-probing-wait",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-probing-wait/current-value-decimal",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-probing-wait/direction",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-probing-wait/direction/server-to-client-only",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-probing-wait/direction/server-to-client-only/max-value-decimal",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-probing-wait/direction/server-to-client-only/min-value-decimal",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-receive-timeout",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-receive-timeout/current-value-decimal",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-receive-timeout/direction",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-receive-timeout/direction/server-to-client-only",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-receive-timeout/direction/server-to-client-only/max-value-decimal",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-receive-timeout/direction/server-to-client-only/min-value-decimal",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-timeout",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-timeout/current-value-decimal",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-timeout/direction",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-timeout/direction/server-to-client-only",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-timeout/direction/server-to-client-only/max-value-decimal",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-robust-trans:/dots-signal:dots-signal/dots-signal:message-type/dots-signal:signal-config/dots-signal:mitigating-config/non-timeout/direction/server-to-client-only/min-value-decimal",
+        "sid": "80072"
+      }
+    ]
+  }
+}

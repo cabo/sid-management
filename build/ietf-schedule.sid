@@ -1,0 +1,149 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-schedule",
+    "module-revision": "2026-03-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-system",
+        "module-revision": "2014-08-06"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-schedule",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "conflicted",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "daily",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "disabled",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "discard-action-type",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "enabled",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "error",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "finished",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frequency-type",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hourly",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "minutely",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "monthly",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "one-shot",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "out-of-date",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "period",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "recurrence",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "schedule-state",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "schedule-type",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "secondly",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "silently-discard",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "warning",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "weekly",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "yearly",
+        "sid": "80022"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "basic-recurrence",
+        "sid": "80023"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "icalendar-recurrence",
+        "sid": "80024"
+      }
+    ]
+  }
+}

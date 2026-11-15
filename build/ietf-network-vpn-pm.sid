@@ -1,0 +1,616 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-network-vpn-pm",
+    "module-revision": "2023-03-20",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-vpn-common",
+        "module-revision": "2022-02-11"
+      },
+      {
+        "module-name": "ietf-network",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-network-topology",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-lime-time-types",
+        "module-revision": "2019-04-16"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-network-vpn-pm",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "asbr",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "node-type",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "p",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pe",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-source-bgpls",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-source-ioam",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-source-owamp",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-source-stamp",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-source-twamp",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-source-type",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-source-y-1731",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-type",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-type-network-link",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-type-vpn-inter-access",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-type-vpn-tunnel",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-vpn-pm:/nw:networks/nw:network/nw:node/entry-summary",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-vpn-pm:/nw:networks/nw:network/nw:node/entry-summary/ipv4-num",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-vpn-pm:/nw:networks/nw:network/nw:node/entry-summary/ipv4-num/maximum-routes",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-vpn-pm:/nw:networks/nw:network/nw:node/entry-summary/ipv4-num/total-active-routes",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-vpn-pm:/nw:networks/nw:network/nw:node/entry-summary/ipv6-num",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-vpn-pm:/nw:networks/nw:network/nw:node/entry-summary/ipv6-num/maximum-routes",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-vpn-pm:/nw:networks/nw:network/nw:node/entry-summary/ipv6-num/total-active-routes",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-vpn-pm:/nw:networks/nw:network/nw:node/entry-summary/mac-num",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-vpn-pm:/nw:networks/nw:network/nw:node/entry-summary/mac-num/maximum-mac-entries",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-vpn-pm:/nw:networks/nw:network/nw:node/entry-summary/mac-num/total-active-mac-entries",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/high-percentile",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/intermediate-percentile",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/low-percentile",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/measurement-interval",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/end-time",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/class-id",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/delay-statistics",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/delay-statistics/high-delay-percentile",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/delay-statistics/intermediate-delay-percentile",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/delay-statistics/low-delay-percentile",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/delay-statistics/max-delay-value",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/delay-statistics/min-delay-value",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/delay-statistics/unit-value",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/jitter-statistics",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/jitter-statistics/high-jitter-percentile",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/jitter-statistics/intermediate-jitter-percentile",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/jitter-statistics/low-jitter-percentile",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/jitter-statistics/max-jitter-value",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/jitter-statistics/min-jitter-value",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/jitter-statistics/unit-value",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/loss-statistics",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/loss-statistics/loss-ratio",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics-per-class/loss-statistics/packet-loss-count",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/delay-statistics",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/delay-statistics/high-delay-percentile",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/delay-statistics/intermediate-delay-percentile",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/delay-statistics/low-delay-percentile",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/delay-statistics/max-delay-value",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/delay-statistics/min-delay-value",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/delay-statistics/unit-value",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/jitter-statistics",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/jitter-statistics/high-jitter-percentile",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/jitter-statistics/intermediate-jitter-percentile",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/jitter-statistics/low-jitter-percentile",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/jitter-statistics/max-jitter-value",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/jitter-statistics/min-jitter-value",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/jitter-statistics/unit-value",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/loss-statistics",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/loss-statistics/loss-ratio",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/one-way-pm-statistics/loss-statistics/packet-loss-count",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/pm-source",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-attributes/start-time",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/pm/pm-type",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/vpn-pm-type",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/vpn-pm-type/inter-vpn-access-interface",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/vpn-pm-type/inter-vpn-access-interface/inter-vpn-access-interface",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/vpn-pm-type/vpn-tunnel",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-network-vpn-pm:perf-mon/vpn-pm-type/vpn-tunnel/vpn-tunnel-type",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/network-types/ietf-network-vpn-pm:service",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/network-types/ietf-network-vpn-pm:service/service-type",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/network-types/ietf-network-vpn-pm:service/vpn-id",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/network-types/ietf-network-vpn-pm:service/vpn-service-topology",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/inbound-broadcast",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/inbound-discards",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/inbound-errors",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/inbound-multicast",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/inbound-octets",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/inbound-unicast",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/inbound-unknown-protocol",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/last-updated",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/outbound-broadcast",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/outbound-discards",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/outbound-errors",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/outbound-multicast",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/outbound-octets",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/outbound-unicast",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/inbound-broadcast",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/inbound-discards",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/inbound-errors",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/inbound-multicast",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/inbound-octets",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/inbound-unicast",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/inbound-unknown-protocol",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/last-updated",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/network-access-id",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/outbound-broadcast",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/outbound-discards",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/outbound-errors",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/outbound-multicast",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/outbound-octets",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-network-vpn-pm:pm-statistics/vpn-network-access/outbound-unicast",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-vpn-pm:node-type",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-vpn-pm:role",
+        "sid": "80115"
+      }
+    ]
+  }
+}

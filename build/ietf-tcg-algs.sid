@@ -1,0 +1,309 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-tcg-algs",
+    "module-revision": "2024-12-05",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-tcg-algs",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_AES",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_CAMELLIA",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_CBC",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_CCM",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_CFB",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_CMAC",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_CTR",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_EAX",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_ECB",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_ECC",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_ECDAA",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_ECDH",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_ECDSA",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_ECMQV",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_ECSCHNORR",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_EDDSA",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_GCM",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_HMAC",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_KDF1_SP800_108",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_KDF1_SP800_56A",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_KDF2",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_KEYEDHASH",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_KW",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_KWP",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_MGF1",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_NULL",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_OAEP",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_OFB",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_RSA",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_RSAES",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_RSAPSS",
+        "sid": "80031"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_RSASSA",
+        "sid": "80032"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SHA1",
+        "sid": "80033"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SHA256",
+        "sid": "80034"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SHA384",
+        "sid": "80035"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SHA3_256",
+        "sid": "80036"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SHA3_384",
+        "sid": "80037"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SHA3_512",
+        "sid": "80038"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SHA512",
+        "sid": "80039"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SM2",
+        "sid": "80040"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SM3_256",
+        "sid": "80041"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SM4",
+        "sid": "80042"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_SYMCIPHER",
+        "sid": "80043"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_TDES",
+        "sid": "80044"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "TPM_ALG_XOR",
+        "sid": "80045"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "anonymous_signing",
+        "sid": "80046"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "asymmetric",
+        "sid": "80047"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cryptoprocessor",
+        "sid": "80048"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "encryption_mode",
+        "sid": "80049"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hash",
+        "sid": "80050"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "method",
+        "sid": "80051"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "object_type",
+        "sid": "80052"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "signing",
+        "sid": "80053"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "symmetric",
+        "sid": "80054"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tpm12",
+        "sid": "80055"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tpm20",
+        "sid": "80056"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tpm12",
+        "sid": "80057"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tpm20",
+        "sid": "80058"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ssh-server",
+    "module-revision": "2024-10-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "iana-crypt-hash",
+        "module-revision": "2014-08-06"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-crypto-types",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-truststore",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-keystore",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-ssh-common",
+        "module-revision": "2024-10-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ssh-server",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "local-user-auth-hostbased",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "local-user-auth-none",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "local-user-auth-password",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "local-user-auth-publickey",
+        "sid": "80004"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "local-users-supported",
+        "sid": "80005"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ssh-server-keepalives",
+        "sid": "80006"
+      }
+    ]
+  }
+}

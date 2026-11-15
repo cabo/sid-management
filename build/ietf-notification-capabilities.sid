@@ -1,0 +1,139 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-notification-capabilities",
+    "module-revision": "2022-02-17",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-push",
+        "module-revision": "2019-09-09"
+      },
+      {
+        "module-name": "ietf-system-capabilities",
+        "module-revision": "2022-02-17"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-notification-capabilities",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities/max-nodes-per-update",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities/minimum-dampening-period",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities/on-change-supported",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities/periodic-notifications-supported",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities/supported-excluded-change-type",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities/update-period",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities/update-period/minimum-update-period",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities/update-period/minimum-update-period/minimum-update-period",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities/update-period/supported-update-period",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/subscription-capabilities/update-period/supported-update-period/supported-update-period",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities/max-nodes-per-update",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities/minimum-dampening-period",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities/on-change-supported",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities/periodic-notifications-supported",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities/supported-excluded-change-type",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities/update-period",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities/update-period/minimum-update-period",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities/update-period/minimum-update-period/minimum-update-period",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities/update-period/supported-update-period",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-notification-capabilities:/sysc:system-capabilities/sysc:datastore-capabilities/sysc:per-node-capabilities/subscription-capabilities/update-period/supported-update-period/supported-update-period",
+        "sid": "80022"
+      }
+    ]
+  }
+}

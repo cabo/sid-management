@@ -1,0 +1,139 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "iana-bgp-l2-encaps",
+    "module-revision": "2022-09-20",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "iana-bgp-l2-encaps",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-aal5",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-cell",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-to-vcc",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-to-vpc",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bgp-l2-encaps-type",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cas",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "circuit-emulation",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dlci",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ds1",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e1",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e3",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "esf",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ethernet-raw-mode",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ethernet-tagged-mode",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fr-port-mode",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frame-relay",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hdlc",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "layer-2-transport",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ppp",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sf",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "structure-aware",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "t1",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "t3",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vpls",
+        "sid": "80024"
+      }
+    ]
+  }
+}

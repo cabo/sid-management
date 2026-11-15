@@ -1,0 +1,114 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-network-topology-state",
+    "module-revision": "2018-02-26",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-network-state",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-network-topology",
+        "module-revision": "2018-02-26"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-network-topology-state",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link/destination",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link/destination/dest-node",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link/destination/dest-tp",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link/link-id",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link/source",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link/source/source-node",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link/source/source-tp",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link/supporting-link",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link/supporting-link/link-ref",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/ietf-network-topology-state:link/supporting-link/network-ref",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-network-topology-state:termination-point",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-network-topology-state:termination-point/supporting-termination-point",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-network-topology-state:termination-point/supporting-termination-point/network-ref",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-network-topology-state:termination-point/supporting-termination-point/node-ref",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-network-topology-state:termination-point/supporting-termination-point/tp-ref",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-network-topology-state:termination-point/tp-id",
+        "sid": "80017"
+      }
+    ]
+  }
+}

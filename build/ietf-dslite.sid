@@ -1,0 +1,166 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dslite",
+    "module-revision": "2019-01-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "iana-if-type",
+        "module-revision": "2014-05-08"
+      },
+      {
+        "module-name": "ietf-nat",
+        "module-revision": "2019-01-10"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dslite",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dslite",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "aftr",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "b4",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dslite:b4-address-change-limit-policy-violation",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dslite:b4-address-change-limit-policy-violation/address",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dslite:b4-address-change-limit-policy-violation/id",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dslite:b4-address-change-limit-policy-violation/policy-id",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-dslite:aftr-ipv6-addr",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-dslite:ipv4-address",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-dslite:ipv6-address",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-dslite:tunnel-mtu",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-dslite:v6-v4-dscp-preservation",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/ietf-dslite:b4-ipv6-address",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/ietf-dslite:b4-ipv6-address/address",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/ietf-dslite:b4-ipv6-address/last-address-change",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/ietf-dslite:external-v4-dscp",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/ietf-dslite:internal-v4-dscp",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/mapping-table/mapping-entry/ietf-dslite:v6-dscp",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/ietf-dslite:b4-address-change-limit",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/ietf-dslite:max-softwires-per-subscriber",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/ietf-dslite:mss-clamping",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/ietf-dslite:mss-clamping/enable",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/ietf-dslite:mss-clamping/mss-value",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/policy/ietf-dslite:state-migrate",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nat:nat/instances/instance/statistics/mappings-statistics/ietf-dslite:active-softwires",
+        "sid": "80025"
+      }
+    ]
+  }
+}

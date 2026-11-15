@@ -1,0 +1,35 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-bfd-met-keyed-isaac",
+    "module-revision": "2026-06-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-key-chain",
+        "module-revision": "2017-06-15"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-bfd-met-keyed-isaac",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "optimized-md5-meticulous-keyed-isaac",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "optimized-sha1-meticulous-keyed-isaac",
+        "sid": "80002"
+      }
+    ]
+  }
+}

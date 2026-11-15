@@ -1,0 +1,99 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-yang-schema-mount",
+    "module-revision": "2019-01-14",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-yang-schema-mount",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/mount-point",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/mount-point/config",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/mount-point/label",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/mount-point/module",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/mount-point/schema-ref",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/mount-point/schema-ref/inline",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/mount-point/schema-ref/inline/inline",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/mount-point/schema-ref/shared-schema",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/mount-point/schema-ref/shared-schema/shared-schema",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/mount-point/schema-ref/shared-schema/shared-schema/parent-reference",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/namespace",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/namespace/prefix",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-schema-mount:schema-mounts/namespace/uri",
+        "sid": "80014"
+      }
+    ]
+  }
+}

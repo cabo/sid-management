@@ -1,0 +1,44 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ospf-unreachable-links",
+    "module-revision": "2026-09-16",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-ospf",
+        "module-revision": "2022-10-19"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ospf-unreachable-links",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/ietf-ospf-unreachable-links:unreachable-link-advertisement",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/ietf-ospf-unreachable-links:unreachable-link-advertisement/enabled",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/ietf-ospf-unreachable-links:advertise-unreachable-link",
+        "sid": "80003"
+      }
+    ]
+  }
+}

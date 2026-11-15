@@ -1,0 +1,848 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-access-control-list",
+    "module-revision": "2019-03-04",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-packet-fields",
+        "module-revision": "2019-03-04"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-access-control-list",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "accept",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "acl-base",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "drop",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "eth-acl-type",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "forwarding-action",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipv4-acl-type",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipv6-acl-type",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "log-action",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "log-none",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "log-syslog",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mixed-eth-ipv4-acl-type",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mixed-eth-ipv4-ipv6-acl-type",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mixed-eth-ipv6-acl-type",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "reject",
+        "sid": "80014"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "acl-aggregate-stats",
+        "sid": "80015"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "eth",
+        "sid": "80016"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "interface-attachment",
+        "sid": "80017"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "interface-stats",
+        "sid": "80018"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ipv4",
+        "sid": "80019"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ipv6",
+        "sid": "80020"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "match-on-eth",
+        "sid": "80021"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "match-on-icmp",
+        "sid": "80022"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "match-on-ipv4",
+        "sid": "80023"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "match-on-ipv6",
+        "sid": "80024"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "match-on-tcp",
+        "sid": "80025"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "match-on-udp",
+        "sid": "80026"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mixed-eth-ipv4",
+        "sid": "80027"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mixed-eth-ipv4-ipv6",
+        "sid": "80028"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mixed-eth-ipv6",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/actions",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/actions/forwarding",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/actions/logging",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/egress-interface",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ingress-interface",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l2",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l2/eth",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l2/eth/eth",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l2/eth/eth/destination-mac-address",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l2/eth/eth/destination-mac-address-mask",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l2/eth/eth/ethertype",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l2/eth/eth/source-mac-address",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l2/eth/eth/source-mac-address-mask",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/destination-network",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/destination-network/destination-ipv4-network",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/destination-network/destination-ipv4-network/destination-ipv4-network",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/dscp",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/ecn",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/flags",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/identification",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/ihl",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/length",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/offset",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/protocol",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/source-network",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/source-network/source-ipv4-network",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/source-network/source-ipv4-network/source-ipv4-network",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv4/ipv4/ttl",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/destination-network",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/destination-network/destination-ipv6-network",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/destination-network/destination-ipv6-network/destination-ipv6-network",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/dscp",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/ecn",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/flow-label",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/length",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/protocol",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/source-network",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/source-network/source-ipv6-network",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/source-network/source-ipv6-network/source-ipv6-network",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l3/ipv6/ipv6/ttl",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/icmp",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/icmp/icmp",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/icmp/icmp/code",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/icmp/icmp/rest-of-header",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/icmp/icmp/type",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/acknowledgement-number",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/data-offset",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port/range-or-operator",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port/range-or-operator/port-range-or-operator",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port/range-or-operator/port-range-or-operator/operator",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port/range-or-operator/port-range-or-operator/operator/operator",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port/range-or-operator/port-range-or-operator/operator/port",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port/range-or-operator/port-range-or-operator/range",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port/range-or-operator/port-range-or-operator/range/lower-port",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port/range-or-operator/port-range-or-operator/range/upper-port",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/flags",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/options",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/reserved",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/sequence-number",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/source-port",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port/range-or-operator",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port/range-or-operator/port-range-or-operator",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port/range-or-operator/port-range-or-operator/operator",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port/range-or-operator/port-range-or-operator/operator/operator",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port/range-or-operator/port-range-or-operator/operator/port",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port/range-or-operator/port-range-or-operator/range",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port/range-or-operator/port-range-or-operator/range/lower-port",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port/range-or-operator/port-range-or-operator/range/upper-port",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/urgent-pointer",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/tcp/tcp/window-size",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/destination-port",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port/range-or-operator",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port/range-or-operator/port-range-or-operator",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port/range-or-operator/port-range-or-operator/operator",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port/range-or-operator/port-range-or-operator/operator/operator",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port/range-or-operator/port-range-or-operator/operator/port",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port/range-or-operator/port-range-or-operator/range",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port/range-or-operator/port-range-or-operator/range/lower-port",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port/range-or-operator/port-range-or-operator/range/upper-port",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/length",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/source-port",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port/range-or-operator",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port/range-or-operator/port-range-or-operator",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port/range-or-operator/port-range-or-operator/operator",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port/range-or-operator/port-range-or-operator/operator/operator",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port/range-or-operator/port-range-or-operator/operator/port",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port/range-or-operator/port-range-or-operator/range",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port/range-or-operator/port-range-or-operator/range/lower-port",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port/range-or-operator/port-range-or-operator/range/upper-port",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/name",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/statistics",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/statistics/matched-octets",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/statistics/matched-packets",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/name",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/type",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/egress",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/egress/acl-sets",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/egress/acl-sets/acl-set",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/egress/acl-sets/acl-set/ace-statistics",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/egress/acl-sets/acl-set/ace-statistics/matched-octets",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/egress/acl-sets/acl-set/ace-statistics/matched-packets",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/egress/acl-sets/acl-set/ace-statistics/name",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/egress/acl-sets/acl-set/name",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/ingress",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/ingress/acl-sets",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/ingress/acl-sets/acl-set",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/ingress/acl-sets/acl-set/ace-statistics",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/ingress/acl-sets/acl-set/ace-statistics/matched-octets",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/ingress/acl-sets/acl-set/ace-statistics/matched-packets",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/ingress/acl-sets/acl-set/ace-statistics/name",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/ingress/acl-sets/acl-set/name",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/attachment-points/interface/interface-id",
+        "sid": "80163"
+      }
+    ]
+  }
+}

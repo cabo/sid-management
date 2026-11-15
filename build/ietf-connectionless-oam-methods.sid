@@ -1,0 +1,1874 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-connectionless-oam-methods",
+    "module-revision": "2019-04-16",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-connectionless-oam",
+        "module-revision": "2019-04-16"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-connectionless-oam-methods",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fail-path-verification",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fail-reach",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "invalid-cc",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "invalid-pd",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-id",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-id-bier",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-id-internet",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-id-meta-data",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-id-mpls",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-id-mpls-tp",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-id-proprietary",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-id-sfc",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-id-twamp",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-internet-number",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "status-code",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "status-sub-code",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "success-path-verification",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "success-reach",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/count",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/ipv4-address",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/ipv4-address/ipv4-address",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/ipv6-address",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/ipv6-address/ipv6-address",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/mac-address",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/mac-address/mac-address",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/system-info",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/system-info/router-id",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-type",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/bgp",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/bgp/bgp",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/ip-prefix",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/ip-prefix/ip-prefix",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id/lsp-id",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/group-ip-address",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/source-address",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn/as-number",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/pw",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/pw/pw-id",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/pw/remote-pe-address",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/tunnel",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/tunnel/tunnel-interface",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/vpls",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/vpls/receiver-ve-id",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/vpls/route-distinguisher",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-attribute/tp-attribute-value/vpls/sender-ve-id",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/destination-tp/tp-location-type",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/outbound-interface",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/packet-size",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/session-type",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/source-interface",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/ttl",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/input/vrf",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/ingress-intf-name",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/ipv4-address",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/ipv4-address/ipv4-address",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/ipv6-address",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/ipv6-address/ipv6-address",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/mac-address",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/mac-address/mac-address",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/ni",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/system-info",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/system-info/router-id",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-type",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/bgp",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/bgp/bgp",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/ip-prefix",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/ip-prefix/ip-prefix",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id/lsp-id",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/group-ip-address",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/source-address",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn/as-number",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/pw",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/pw/pw-id",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/pw/remote-pe-address",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/tunnel",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/tunnel/tunnel-interface",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/vpls",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/vpls/receiver-ve-id",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/vpls/route-distinguisher",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-attribute/tp-attribute-value/vpls/sender-ve-id",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/dest-test-point/tp-location-type",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/hop-cnt",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/response-info",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/response-info/protocol-id",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/response-info/protocol-id-meta-data",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/response-info/status-code",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/response-info/status-sub-code",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/sequence-number",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-delay-statistics",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-delay-statistics/average-delay-value",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-delay-statistics/max-delay-value",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-delay-statistics/min-delay-value",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-delay-statistics/time-unit-value",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-error-statistics",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-error-statistics/loss-ratio",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-error-statistics/packet-loss-count",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-error-statistics/packet-reorder-count",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-error-statistics/packets-dup-count",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-error-statistics/packets-out-of-seq-count",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-jitter-statistics",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-jitter-statistics/average-jitter-value",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-jitter-statistics/max-jitter-value",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-jitter-statistics/min-jitter-value",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-jitter-statistics/unit-value",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-packet-statistics",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-packet-statistics/rx-bad-packet",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-packet-statistics/rx-packet-count",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-packet-statistics/tx-packet-count",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/session-packet-statistics/tx-packet-failed",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/egress-intf-name",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/ipv4-address",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/ipv4-address/ipv4-address",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/ipv6-address",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/ipv6-address/ipv6-address",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/mac-address",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/mac-address/mac-address",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/ni",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/system-info",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/system-info/router-id",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-type",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/bgp",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/bgp/bgp",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/ip-prefix",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/ip-prefix/ip-prefix",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id/lsp-id",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/group-ip-address",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/source-address",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn/as-number",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/pw",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/pw/pw-id",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/pw/remote-pe-address",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/tunnel",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/tunnel/tunnel-interface",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/vpls",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/vpls/receiver-ve-id",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/vpls/route-distinguisher",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-attribute/tp-attribute-value/vpls/sender-ve-id",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:continuity-check/output/src-test-point/tp-location-type",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/ipv4-address",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/ipv4-address/ipv4-address",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/ipv6-address",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/ipv6-address/ipv6-address",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/mac-address",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/mac-address/mac-address",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/system-info",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/system-info/router-id",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-type",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/bgp",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/bgp/bgp",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/ip-prefix",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/ip-prefix/ip-prefix",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id/lsp-id",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/group-ip-address",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/source-address",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn/as-number",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/pw",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/pw/pw-id",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/pw/remote-pe-address",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/tunnel",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/tunnel/tunnel-interface",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/vpls",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/vpls/receiver-ve-id",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/vpls/route-distinguisher",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-attribute/tp-attribute-value/vpls/sender-ve-id",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/destination-tp/tp-location-type",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/max-ttl",
+        "sid": "80203"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/outbound-interface",
+        "sid": "80204"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/session-type",
+        "sid": "80205"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/source-interface",
+        "sid": "80206"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/input/vrf",
+        "sid": "80207"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output",
+        "sid": "80208"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point",
+        "sid": "80209"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/ipv4-address",
+        "sid": "80210"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/ipv4-address/ipv4-address",
+        "sid": "80211"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/ipv6-address",
+        "sid": "80212"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/ipv6-address/ipv6-address",
+        "sid": "80213"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/mac-address",
+        "sid": "80214"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/mac-address/mac-address",
+        "sid": "80215"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/ni",
+        "sid": "80216"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/system-info",
+        "sid": "80217"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/system-info/router-id",
+        "sid": "80218"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute",
+        "sid": "80219"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-type",
+        "sid": "80220"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value",
+        "sid": "80221"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/bgp",
+        "sid": "80222"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/bgp/bgp",
+        "sid": "80223"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/ip-prefix",
+        "sid": "80224"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/ip-prefix/ip-prefix",
+        "sid": "80225"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp",
+        "sid": "80226"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address",
+        "sid": "80227"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id",
+        "sid": "80228"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id/lsp-id",
+        "sid": "80229"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address",
+        "sid": "80230"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/group-ip-address",
+        "sid": "80231"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/source-address",
+        "sid": "80232"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn",
+        "sid": "80233"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn/as-number",
+        "sid": "80234"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/pw",
+        "sid": "80235"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/pw/pw-id",
+        "sid": "80236"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/pw/remote-pe-address",
+        "sid": "80237"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/tunnel",
+        "sid": "80238"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/tunnel/tunnel-interface",
+        "sid": "80239"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/vpls",
+        "sid": "80240"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/vpls/receiver-ve-id",
+        "sid": "80241"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/vpls/route-distinguisher",
+        "sid": "80242"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-attribute/tp-attribute-value/vpls/sender-ve-id",
+        "sid": "80243"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/dest-test-point/tp-location-type",
+        "sid": "80244"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/hop-cnt",
+        "sid": "80245"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info",
+        "sid": "80246"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list",
+        "sid": "80247"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/app-meta-data",
+        "sid": "80248"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/egress-intf-name",
+        "sid": "80249"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/icmp-timestamp-32bit",
+        "sid": "80250"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/icmp-timestamp-32bit/timestamp-millisec",
+        "sid": "80251"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/index",
+        "sid": "80252"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/ingress-intf-name",
+        "sid": "80253"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/ipv4-address",
+        "sid": "80254"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/ipv4-address/ipv4-address",
+        "sid": "80255"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/ipv6-address",
+        "sid": "80256"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/ipv6-address/ipv6-address",
+        "sid": "80257"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/mac-address",
+        "sid": "80258"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/mac-address/mac-address",
+        "sid": "80259"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/ni",
+        "sid": "80260"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/ntp-timestamp-32bit",
+        "sid": "80261"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/ntp-timestamp-32bit/timestamp-nanosec",
+        "sid": "80262"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/ntp-timestamp-32bit/timestamp-sec",
+        "sid": "80263"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/queue-depth",
+        "sid": "80264"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/system-info",
+        "sid": "80265"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/system-info/router-id",
+        "sid": "80266"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/timestamp-64bit",
+        "sid": "80267"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/timestamp-64bit/timestamp-nanosec",
+        "sid": "80268"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/timestamp-64bit/timestamp-sec",
+        "sid": "80269"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/timestamp-80bit",
+        "sid": "80270"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/timestamp-80bit/timestamp-nanosec",
+        "sid": "80271"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/timestamp-80bit/timestamp-sec",
+        "sid": "80272"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/timestamp-type",
+        "sid": "80273"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute",
+        "sid": "80274"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-type",
+        "sid": "80275"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value",
+        "sid": "80276"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/bgp",
+        "sid": "80277"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/bgp/bgp",
+        "sid": "80278"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/ip-prefix",
+        "sid": "80279"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/ip-prefix/ip-prefix",
+        "sid": "80280"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/mpls-mldp",
+        "sid": "80281"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/mpls-mldp/root-address",
+        "sid": "80282"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id",
+        "sid": "80283"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id/lsp-id",
+        "sid": "80284"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address",
+        "sid": "80285"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/group-ip-address",
+        "sid": "80286"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/source-address",
+        "sid": "80287"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn",
+        "sid": "80288"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn/as-number",
+        "sid": "80289"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/pw",
+        "sid": "80290"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/pw/pw-id",
+        "sid": "80291"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/pw/remote-pe-address",
+        "sid": "80292"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/tunnel",
+        "sid": "80293"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/tunnel/tunnel-interface",
+        "sid": "80294"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/vpls",
+        "sid": "80295"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/vpls/receiver-ve-id",
+        "sid": "80296"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/vpls/route-distinguisher",
+        "sid": "80297"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-attribute/tp-attribute-value/vpls/sender-ve-id",
+        "sid": "80298"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/tp-location-type",
+        "sid": "80299"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-trace-info/path-trace-info-list/transit-delay",
+        "sid": "80300"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-verification",
+        "sid": "80301"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-verification/flow-info",
+        "sid": "80302"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-verification/session-path-verification-statistics",
+        "sid": "80303"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-verification/session-path-verification-statistics/failed-count",
+        "sid": "80304"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/path-verification/session-path-verification-statistics/verified-count",
+        "sid": "80305"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/response-list",
+        "sid": "80306"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/response-list/protocol-id",
+        "sid": "80307"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/response-list/protocol-id-meta-data",
+        "sid": "80308"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/response-list/response-index",
+        "sid": "80309"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/response-list/status-code",
+        "sid": "80310"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/response-list/status-sub-code",
+        "sid": "80311"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/sequence-number",
+        "sid": "80312"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-delay-statistics",
+        "sid": "80313"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-delay-statistics/average-delay-value",
+        "sid": "80314"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-delay-statistics/max-delay-value",
+        "sid": "80315"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-delay-statistics/min-delay-value",
+        "sid": "80316"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-delay-statistics/time-unit-value",
+        "sid": "80317"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-error-statistics",
+        "sid": "80318"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-error-statistics/loss-ratio",
+        "sid": "80319"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-error-statistics/packet-loss-count",
+        "sid": "80320"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-error-statistics/packet-reorder-count",
+        "sid": "80321"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-error-statistics/packets-dup-count",
+        "sid": "80322"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-error-statistics/packets-out-of-seq-count",
+        "sid": "80323"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-jitter-statistics",
+        "sid": "80324"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-jitter-statistics/average-jitter-value",
+        "sid": "80325"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-jitter-statistics/max-jitter-value",
+        "sid": "80326"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-jitter-statistics/min-jitter-value",
+        "sid": "80327"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-jitter-statistics/unit-value",
+        "sid": "80328"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-packet-statistics",
+        "sid": "80329"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-packet-statistics/rx-bad-packet",
+        "sid": "80330"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-packet-statistics/rx-packet-count",
+        "sid": "80331"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-packet-statistics/tx-packet-count",
+        "sid": "80332"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/session-packet-statistics/tx-packet-failed",
+        "sid": "80333"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point",
+        "sid": "80334"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/ipv4-address",
+        "sid": "80335"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/ipv4-address/ipv4-address",
+        "sid": "80336"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/ipv6-address",
+        "sid": "80337"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/ipv6-address/ipv6-address",
+        "sid": "80338"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/mac-address",
+        "sid": "80339"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/mac-address/mac-address",
+        "sid": "80340"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/ni",
+        "sid": "80341"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/system-info",
+        "sid": "80342"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/system-info/router-id",
+        "sid": "80343"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute",
+        "sid": "80344"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-type",
+        "sid": "80345"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value",
+        "sid": "80346"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/bgp",
+        "sid": "80347"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/bgp/bgp",
+        "sid": "80348"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/ip-prefix",
+        "sid": "80349"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/ip-prefix/ip-prefix",
+        "sid": "80350"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp",
+        "sid": "80351"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address",
+        "sid": "80352"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id",
+        "sid": "80353"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/global-id/lsp-id",
+        "sid": "80354"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address",
+        "sid": "80355"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/group-ip-address",
+        "sid": "80356"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/ip-address/source-address",
+        "sid": "80357"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn",
+        "sid": "80358"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/mpls-mldp/root-address/vpn/as-number",
+        "sid": "80359"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/pw",
+        "sid": "80360"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/pw/pw-id",
+        "sid": "80361"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/pw/remote-pe-address",
+        "sid": "80362"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/tunnel",
+        "sid": "80363"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/tunnel/tunnel-interface",
+        "sid": "80364"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/vpls",
+        "sid": "80365"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/vpls/receiver-ve-id",
+        "sid": "80366"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/vpls/route-distinguisher",
+        "sid": "80367"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-attribute/tp-attribute-value/vpls/sender-ve-id",
+        "sid": "80368"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-connectionless-oam-methods:path-discovery/output/src-test-point/tp-location-type",
+        "sid": "80369"
+      }
+    ]
+  }
+}

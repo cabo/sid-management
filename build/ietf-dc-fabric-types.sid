@@ -1,0 +1,170 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dc-fabric-types",
+    "module-revision": "2019-02-25",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-network",
+        "module-revision": "2018-02-26"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dc-fabric-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "access",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "acl-redirect",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bandwidth",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "border",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-100G",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-100M",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-10G",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-10M",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-1G",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-1M",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-25G",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-400G",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-40G",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "device-role",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dynamic-route-exchange",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "eth",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "external",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fabric-port-role",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fabric-type",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "internal",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ip-mapping",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "leaf",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "port-type",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "serial",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "service-capability",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "spine",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trill-fabric",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vlan-fabric",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vxlan-fabric",
+        "sid": "80029"
+      }
+    ]
+  }
+}

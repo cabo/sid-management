@@ -1,0 +1,144 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-sztp-bootstrap-server",
+    "module-revision": "2019-04-30",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-sztp-bootstrap-server",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "onboarding-server",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "redirect-server",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/hw-model",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/nonce",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/os-name",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/os-version",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/signed-data-preferred",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/output",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/output/conveyed-information",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/output/owner-certificate",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/output/ownership-voucher",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/output/reporting-level",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress/input",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress/input/message",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress/input/progress-type",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress/input/ssh-host-keys",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress/input/ssh-host-keys/ssh-host-key",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress/input/ssh-host-keys/ssh-host-key/algorithm",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress/input/ssh-host-keys/ssh-host-key/key-data",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress/input/trust-anchor-certs",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress/input/trust-anchor-certs/trust-anchor-cert",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:report-progress/output",
+        "sid": "80025"
+      }
+    ]
+  }
+}

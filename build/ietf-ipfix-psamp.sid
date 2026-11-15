@@ -1,0 +1,2614 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ipfix-psamp",
+    "module-revision": "2012-09-05",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ipfix-psamp",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "BOB",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "CRC",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "IPSX",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "accuracy",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "exportMode",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "exportingReliability",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "extendedTypeInformation",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fallback",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "flowKeys",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hashFunction",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "loadBalancing",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "meteringReliability",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "meteringStatistics",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "optionsType",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "parallel",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "reducingRedundancy",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "selectionSequence",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "selectionStatistics",
+        "sid": "80018"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "collector",
+        "sid": "80019"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "exporter",
+        "sid": "80020"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "fileReader",
+        "sid": "80021"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "fileWriter",
+        "sid": "80022"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "immediateCache",
+        "sid": "80023"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "meter",
+        "sid": "80024"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "naturalCache",
+        "sid": "80025"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "permanentCache",
+        "sid": "80026"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "psampFilterHash",
+        "sid": "80027"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "psampFilterMatch",
+        "sid": "80028"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "psampSampCountBased",
+        "sid": "80029"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "psampSampRandOutOfN",
+        "sid": "80030"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "psampSampTimeBased",
+        "sid": "80031"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "psampSampUniProb",
+        "sid": "80032"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tcpTransport",
+        "sid": "80033"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "timeoutCache",
+        "sid": "80034"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "udpTransport",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout/cacheField",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout/cacheField/ieEnterpriseNumber",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout/cacheField/ieLength",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout/cacheField/isFlowKey",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout/cacheField/name",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout/cacheField/nameOrId",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout/cacheField/nameOrId/ieId",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout/cacheField/nameOrId/ieId/ieId",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout/cacheField/nameOrId/ieName",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/immediateCache/immediateCache/cacheLayout/cacheField/nameOrId/ieName/ieName",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/activeFlows",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/activeTimeout",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout/cacheField",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout/cacheField/ieEnterpriseNumber",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout/cacheField/ieLength",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout/cacheField/isFlowKey",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout/cacheField/name",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout/cacheField/nameOrId",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout/cacheField/nameOrId/ieId",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout/cacheField/nameOrId/ieId/ieId",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout/cacheField/nameOrId/ieName",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/cacheLayout/cacheField/nameOrId/ieName/ieName",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/exportInterval",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/idleTimeout",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/maxFlows",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/naturalCache/naturalCache/unusedCacheEntries",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/activeFlows",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/activeTimeout",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout/cacheField",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout/cacheField/ieEnterpriseNumber",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout/cacheField/ieLength",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout/cacheField/isFlowKey",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout/cacheField/name",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout/cacheField/nameOrId",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout/cacheField/nameOrId/ieId",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout/cacheField/nameOrId/ieId/ieId",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout/cacheField/nameOrId/ieName",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/cacheLayout/cacheField/nameOrId/ieName/ieName",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/exportInterval",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/idleTimeout",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/maxFlows",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/permanentCache/permanentCache/unusedCacheEntries",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/activeFlows",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/activeTimeout",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout/cacheField",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout/cacheField/ieEnterpriseNumber",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout/cacheField/ieLength",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout/cacheField/isFlowKey",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout/cacheField/name",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout/cacheField/nameOrId",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout/cacheField/nameOrId/ieId",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout/cacheField/nameOrId/ieId/ieId",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout/cacheField/nameOrId/ieName",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/cacheLayout/cacheField/nameOrId/ieName/ieName",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/exportInterval",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/idleTimeout",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/maxFlows",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/CacheType/timeoutCache/timeoutCache/unusedCacheEntries",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/cacheDiscontinuityTime",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/dataRecords",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/exportingProcess",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/meteringProcessId",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/cache/name",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/exportingProcess",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/bytes",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/file",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/fileReaderDiscontinuityTime",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/messages",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/name",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/optionsTemplates",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/records",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/accessTime",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/field",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/field/ieEnterpriseNumber",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/field/ieId",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/field/ieLength",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/field/isFlowKey",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/field/isScope",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/observationDomainId",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/setId",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/templateDataRecords",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/templateDiscontinuityTime",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/template/templateId",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/fileReader/templates",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/name",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/localIPAddress",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/localPort",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/name",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportLayerSecurity",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportLayerSecurity/localCertificationAuthorityDN",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportLayerSecurity/localSubjectDN",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportLayerSecurity/localSubjectFQDN",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportLayerSecurity/remoteCertificationAuthorityDN",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportLayerSecurity/remoteSubjectDN",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportLayerSecurity/remoteSubjectFQDN",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/bytes",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/destinationAddress",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/destinationPort",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/discardedMessages",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/ipfixVersion",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/messages",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/optionsTemplates",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/rate",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/records",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/sctpAssocId",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/sourceAddress",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/sourcePort",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/status",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/accessTime",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/field",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/field/ieEnterpriseNumber",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/field/ieId",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/field/ieLength",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/field/isFlowKey",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/field/isScope",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/observationDomainId",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/setId",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/templateDataRecords",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/templateDiscontinuityTime",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/template/templateId",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/templates",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/transportSessionDiscontinuityTime",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/sctpCollector/transportSession/transportSessionStartTime",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/localIPAddress",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/localPort",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/name",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportLayerSecurity",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportLayerSecurity/localCertificationAuthorityDN",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportLayerSecurity/localSubjectDN",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportLayerSecurity/localSubjectFQDN",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportLayerSecurity/remoteCertificationAuthorityDN",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportLayerSecurity/remoteSubjectDN",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportLayerSecurity/remoteSubjectFQDN",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/bytes",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/destinationAddress",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/destinationPort",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/discardedMessages",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/ipfixVersion",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/messages",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/optionsTemplates",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/rate",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/records",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/sctpAssocId",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/sourceAddress",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/sourcePort",
+        "sid": "80203"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/status",
+        "sid": "80204"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template",
+        "sid": "80205"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/accessTime",
+        "sid": "80206"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/field",
+        "sid": "80207"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/field/ieEnterpriseNumber",
+        "sid": "80208"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/field/ieId",
+        "sid": "80209"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/field/ieLength",
+        "sid": "80210"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/field/isFlowKey",
+        "sid": "80211"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/field/isScope",
+        "sid": "80212"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/observationDomainId",
+        "sid": "80213"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/setId",
+        "sid": "80214"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/templateDataRecords",
+        "sid": "80215"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/templateDiscontinuityTime",
+        "sid": "80216"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/template/templateId",
+        "sid": "80217"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/templates",
+        "sid": "80218"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/transportSessionDiscontinuityTime",
+        "sid": "80219"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/tcpCollector/transportSession/transportSessionStartTime",
+        "sid": "80220"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector",
+        "sid": "80221"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/localIPAddress",
+        "sid": "80222"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/localPort",
+        "sid": "80223"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/name",
+        "sid": "80224"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/optionsTemplateLifePacket",
+        "sid": "80225"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/optionsTemplateLifeTime",
+        "sid": "80226"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/templateLifePacket",
+        "sid": "80227"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/templateLifeTime",
+        "sid": "80228"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportLayerSecurity",
+        "sid": "80229"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportLayerSecurity/localCertificationAuthorityDN",
+        "sid": "80230"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportLayerSecurity/localSubjectDN",
+        "sid": "80231"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportLayerSecurity/localSubjectFQDN",
+        "sid": "80232"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportLayerSecurity/remoteCertificationAuthorityDN",
+        "sid": "80233"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportLayerSecurity/remoteSubjectDN",
+        "sid": "80234"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportLayerSecurity/remoteSubjectFQDN",
+        "sid": "80235"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession",
+        "sid": "80236"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/bytes",
+        "sid": "80237"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/destinationAddress",
+        "sid": "80238"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/destinationPort",
+        "sid": "80239"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/discardedMessages",
+        "sid": "80240"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/ipfixVersion",
+        "sid": "80241"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/messages",
+        "sid": "80242"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/optionsTemplates",
+        "sid": "80243"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/rate",
+        "sid": "80244"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/records",
+        "sid": "80245"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/sctpAssocId",
+        "sid": "80246"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/sourceAddress",
+        "sid": "80247"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/sourcePort",
+        "sid": "80248"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/status",
+        "sid": "80249"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template",
+        "sid": "80250"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/accessTime",
+        "sid": "80251"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/field",
+        "sid": "80252"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/field/ieEnterpriseNumber",
+        "sid": "80253"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/field/ieId",
+        "sid": "80254"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/field/ieLength",
+        "sid": "80255"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/field/isFlowKey",
+        "sid": "80256"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/field/isScope",
+        "sid": "80257"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/observationDomainId",
+        "sid": "80258"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/setId",
+        "sid": "80259"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/templateDataRecords",
+        "sid": "80260"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/templateDiscontinuityTime",
+        "sid": "80261"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/template/templateId",
+        "sid": "80262"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/templates",
+        "sid": "80263"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/transportSessionDiscontinuityTime",
+        "sid": "80264"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/collectingProcess/udpCollector/transportSession/transportSessionStartTime",
+        "sid": "80265"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess",
+        "sid": "80266"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination",
+        "sid": "80267"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters",
+        "sid": "80268"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter",
+        "sid": "80269"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter",
+        "sid": "80270"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/bytes",
+        "sid": "80271"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/discardedMessages",
+        "sid": "80272"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/file",
+        "sid": "80273"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/fileWriterDiscontinuityTime",
+        "sid": "80274"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/ipfixVersion",
+        "sid": "80275"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/messages",
+        "sid": "80276"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/optionsTemplates",
+        "sid": "80277"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/records",
+        "sid": "80278"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template",
+        "sid": "80279"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/accessTime",
+        "sid": "80280"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/field",
+        "sid": "80281"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/field/ieEnterpriseNumber",
+        "sid": "80282"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/field/ieId",
+        "sid": "80283"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/field/ieLength",
+        "sid": "80284"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/field/isFlowKey",
+        "sid": "80285"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/field/isScope",
+        "sid": "80286"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/observationDomainId",
+        "sid": "80287"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/setId",
+        "sid": "80288"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/templateDataRecords",
+        "sid": "80289"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/templateDiscontinuityTime",
+        "sid": "80290"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/template/templateId",
+        "sid": "80291"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/fileWriter/fileWriter/templates",
+        "sid": "80292"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter",
+        "sid": "80293"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter",
+        "sid": "80294"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/destinationIPAddress",
+        "sid": "80295"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/destinationPort",
+        "sid": "80296"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/indexOrName",
+        "sid": "80297"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/indexOrName/ifIndex",
+        "sid": "80298"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/indexOrName/ifIndex/ifIndex",
+        "sid": "80299"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/indexOrName/ifName",
+        "sid": "80300"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/indexOrName/ifName/ifName",
+        "sid": "80301"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/ipfixVersion",
+        "sid": "80302"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/rateLimit",
+        "sid": "80303"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/sendBufferSize",
+        "sid": "80304"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/sourceIPAddress",
+        "sid": "80305"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/timedReliability",
+        "sid": "80306"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportLayerSecurity",
+        "sid": "80307"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportLayerSecurity/localCertificationAuthorityDN",
+        "sid": "80308"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportLayerSecurity/localSubjectDN",
+        "sid": "80309"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportLayerSecurity/localSubjectFQDN",
+        "sid": "80310"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportLayerSecurity/remoteCertificationAuthorityDN",
+        "sid": "80311"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportLayerSecurity/remoteSubjectDN",
+        "sid": "80312"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportLayerSecurity/remoteSubjectFQDN",
+        "sid": "80313"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession",
+        "sid": "80314"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/bytes",
+        "sid": "80315"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/destinationAddress",
+        "sid": "80316"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/destinationPort",
+        "sid": "80317"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/discardedMessages",
+        "sid": "80318"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/ipfixVersion",
+        "sid": "80319"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/messages",
+        "sid": "80320"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/optionsTemplates",
+        "sid": "80321"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/rate",
+        "sid": "80322"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/records",
+        "sid": "80323"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/sctpAssocId",
+        "sid": "80324"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/sourceAddress",
+        "sid": "80325"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/sourcePort",
+        "sid": "80326"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/status",
+        "sid": "80327"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template",
+        "sid": "80328"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/accessTime",
+        "sid": "80329"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/field",
+        "sid": "80330"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/field/ieEnterpriseNumber",
+        "sid": "80331"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/field/ieId",
+        "sid": "80332"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/field/ieLength",
+        "sid": "80333"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/field/isFlowKey",
+        "sid": "80334"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/field/isScope",
+        "sid": "80335"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/observationDomainId",
+        "sid": "80336"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/setId",
+        "sid": "80337"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/templateDataRecords",
+        "sid": "80338"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/templateDiscontinuityTime",
+        "sid": "80339"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/template/templateId",
+        "sid": "80340"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/templates",
+        "sid": "80341"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/transportSessionDiscontinuityTime",
+        "sid": "80342"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/sctpExporter/sctpExporter/transportSession/transportSessionStartTime",
+        "sid": "80343"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter",
+        "sid": "80344"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter",
+        "sid": "80345"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/destinationIPAddress",
+        "sid": "80346"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/destinationPort",
+        "sid": "80347"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/indexOrName",
+        "sid": "80348"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/indexOrName/ifIndex",
+        "sid": "80349"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/indexOrName/ifIndex/ifIndex",
+        "sid": "80350"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/indexOrName/ifName",
+        "sid": "80351"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/indexOrName/ifName/ifName",
+        "sid": "80352"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/ipfixVersion",
+        "sid": "80353"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/rateLimit",
+        "sid": "80354"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/sendBufferSize",
+        "sid": "80355"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/sourceIPAddress",
+        "sid": "80356"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportLayerSecurity",
+        "sid": "80357"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportLayerSecurity/localCertificationAuthorityDN",
+        "sid": "80358"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportLayerSecurity/localSubjectDN",
+        "sid": "80359"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportLayerSecurity/localSubjectFQDN",
+        "sid": "80360"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportLayerSecurity/remoteCertificationAuthorityDN",
+        "sid": "80361"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportLayerSecurity/remoteSubjectDN",
+        "sid": "80362"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportLayerSecurity/remoteSubjectFQDN",
+        "sid": "80363"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession",
+        "sid": "80364"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/bytes",
+        "sid": "80365"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/destinationAddress",
+        "sid": "80366"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/destinationPort",
+        "sid": "80367"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/discardedMessages",
+        "sid": "80368"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/ipfixVersion",
+        "sid": "80369"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/messages",
+        "sid": "80370"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/optionsTemplates",
+        "sid": "80371"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/rate",
+        "sid": "80372"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/records",
+        "sid": "80373"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/sctpAssocId",
+        "sid": "80374"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/sourceAddress",
+        "sid": "80375"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/sourcePort",
+        "sid": "80376"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/status",
+        "sid": "80377"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template",
+        "sid": "80378"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/accessTime",
+        "sid": "80379"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/field",
+        "sid": "80380"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/field/ieEnterpriseNumber",
+        "sid": "80381"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/field/ieId",
+        "sid": "80382"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/field/ieLength",
+        "sid": "80383"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/field/isFlowKey",
+        "sid": "80384"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/field/isScope",
+        "sid": "80385"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/observationDomainId",
+        "sid": "80386"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/setId",
+        "sid": "80387"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/templateDataRecords",
+        "sid": "80388"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/templateDiscontinuityTime",
+        "sid": "80389"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/template/templateId",
+        "sid": "80390"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/templates",
+        "sid": "80391"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/transportSessionDiscontinuityTime",
+        "sid": "80392"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/tcpExporter/tcpExporter/transportSession/transportSessionStartTime",
+        "sid": "80393"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter",
+        "sid": "80394"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter",
+        "sid": "80395"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/destinationIPAddress",
+        "sid": "80396"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/destinationPort",
+        "sid": "80397"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/indexOrName",
+        "sid": "80398"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/indexOrName/ifIndex",
+        "sid": "80399"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/indexOrName/ifIndex/ifIndex",
+        "sid": "80400"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/indexOrName/ifName",
+        "sid": "80401"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/indexOrName/ifName/ifName",
+        "sid": "80402"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/ipfixVersion",
+        "sid": "80403"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/maxPacketSize",
+        "sid": "80404"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/optionsTemplateRefreshPacket",
+        "sid": "80405"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/optionsTemplateRefreshTimeout",
+        "sid": "80406"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/rateLimit",
+        "sid": "80407"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/sendBufferSize",
+        "sid": "80408"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/sourceIPAddress",
+        "sid": "80409"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/templateRefreshPacket",
+        "sid": "80410"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/templateRefreshTimeout",
+        "sid": "80411"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportLayerSecurity",
+        "sid": "80412"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportLayerSecurity/localCertificationAuthorityDN",
+        "sid": "80413"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportLayerSecurity/localSubjectDN",
+        "sid": "80414"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportLayerSecurity/localSubjectFQDN",
+        "sid": "80415"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportLayerSecurity/remoteCertificationAuthorityDN",
+        "sid": "80416"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportLayerSecurity/remoteSubjectDN",
+        "sid": "80417"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportLayerSecurity/remoteSubjectFQDN",
+        "sid": "80418"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession",
+        "sid": "80419"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/bytes",
+        "sid": "80420"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/destinationAddress",
+        "sid": "80421"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/destinationPort",
+        "sid": "80422"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/discardedMessages",
+        "sid": "80423"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/ipfixVersion",
+        "sid": "80424"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/messages",
+        "sid": "80425"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/optionsTemplates",
+        "sid": "80426"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/rate",
+        "sid": "80427"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/records",
+        "sid": "80428"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/sctpAssocId",
+        "sid": "80429"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/sourceAddress",
+        "sid": "80430"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/sourcePort",
+        "sid": "80431"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/status",
+        "sid": "80432"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template",
+        "sid": "80433"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/accessTime",
+        "sid": "80434"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/field",
+        "sid": "80435"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/field/ieEnterpriseNumber",
+        "sid": "80436"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/field/ieId",
+        "sid": "80437"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/field/ieLength",
+        "sid": "80438"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/field/isFlowKey",
+        "sid": "80439"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/field/isScope",
+        "sid": "80440"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/observationDomainId",
+        "sid": "80441"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/setId",
+        "sid": "80442"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/templateDataRecords",
+        "sid": "80443"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/templateDiscontinuityTime",
+        "sid": "80444"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/template/templateId",
+        "sid": "80445"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/templates",
+        "sid": "80446"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/transportSessionDiscontinuityTime",
+        "sid": "80447"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/DestinationParameters/udpExporter/udpExporter/transportSession/transportSessionStartTime",
+        "sid": "80448"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/destination/name",
+        "sid": "80449"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/exportMode",
+        "sid": "80450"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/exportingProcessId",
+        "sid": "80451"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/name",
+        "sid": "80452"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/options",
+        "sid": "80453"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/options/name",
+        "sid": "80454"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/options/optionsTimeout",
+        "sid": "80455"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/exportingProcess/options/optionsType",
+        "sid": "80456"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/observationPoint",
+        "sid": "80457"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/observationPoint/direction",
+        "sid": "80458"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/observationPoint/entPhysicalIndex",
+        "sid": "80459"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/observationPoint/entPhysicalName",
+        "sid": "80460"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/observationPoint/ifIndex",
+        "sid": "80461"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/observationPoint/ifName",
+        "sid": "80462"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/observationPoint/name",
+        "sid": "80463"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/observationPoint/observationDomainId",
+        "sid": "80464"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/observationPoint/observationPointId",
+        "sid": "80465"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/observationPoint/selectionProcess",
+        "sid": "80466"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess",
+        "sid": "80467"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/cache",
+        "sid": "80468"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/name",
+        "sid": "80469"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selectionSequence",
+        "sid": "80470"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selectionSequence/observationDomainId",
+        "sid": "80471"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selectionSequence/selectionSequenceId",
+        "sid": "80472"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector",
+        "sid": "80473"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method",
+        "sid": "80474"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash",
+        "sid": "80475"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash",
+        "sid": "80476"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/digestOutput",
+        "sid": "80477"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/hashFunction",
+        "sid": "80478"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/initializerValue",
+        "sid": "80479"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/ipPayloadOffset",
+        "sid": "80480"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/ipPayloadSize",
+        "sid": "80481"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/outputRangeMax",
+        "sid": "80482"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/outputRangeMin",
+        "sid": "80483"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/selectedRange",
+        "sid": "80484"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/selectedRange/max",
+        "sid": "80485"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/selectedRange/min",
+        "sid": "80486"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterHash/filterHash/selectedRange/name",
+        "sid": "80487"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterMatch",
+        "sid": "80488"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterMatch/filterMatch",
+        "sid": "80489"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterMatch/filterMatch/ieEnterpriseNumber",
+        "sid": "80490"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterMatch/filterMatch/nameOrId",
+        "sid": "80491"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterMatch/filterMatch/nameOrId/ieId",
+        "sid": "80492"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterMatch/filterMatch/nameOrId/ieId/ieId",
+        "sid": "80493"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterMatch/filterMatch/nameOrId/ieName",
+        "sid": "80494"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterMatch/filterMatch/nameOrId/ieName/ieName",
+        "sid": "80495"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/filterMatch/filterMatch/value",
+        "sid": "80496"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampCountBased",
+        "sid": "80497"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampCountBased/sampCountBased",
+        "sid": "80498"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampCountBased/sampCountBased/packetInterval",
+        "sid": "80499"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampCountBased/sampCountBased/packetSpace",
+        "sid": "80500"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampRandOutOfN",
+        "sid": "80501"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampRandOutOfN/sampRandOutOfN",
+        "sid": "80502"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampRandOutOfN/sampRandOutOfN/population",
+        "sid": "80503"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampRandOutOfN/sampRandOutOfN/size",
+        "sid": "80504"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampTimeBased",
+        "sid": "80505"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampTimeBased/sampTimeBased",
+        "sid": "80506"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampTimeBased/sampTimeBased/timeInterval",
+        "sid": "80507"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampTimeBased/sampTimeBased/timeSpace",
+        "sid": "80508"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampUniProb",
+        "sid": "80509"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampUniProb/sampUniProb",
+        "sid": "80510"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/sampUniProb/sampUniProb/probability",
+        "sid": "80511"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/selectAll",
+        "sid": "80512"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/Method/selectAll/selectAll",
+        "sid": "80513"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/name",
+        "sid": "80514"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/packetsDropped",
+        "sid": "80515"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/packetsObserved",
+        "sid": "80516"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipfix-psamp:ipfix/selectionProcess/selector/selectorDiscontinuityTime",
+        "sid": "80517"
+      }
+    ]
+  }
+}

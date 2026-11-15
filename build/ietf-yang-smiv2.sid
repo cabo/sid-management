@@ -1,0 +1,24 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-yang-smiv2",
+    "module-revision": "2012-06-22",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-yang-smiv2",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "object-identity",
+        "sid": "80001"
+      }
+    ]
+  }
+}

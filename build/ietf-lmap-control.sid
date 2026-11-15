@@ -1,0 +1,623 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-lmap-control",
+    "module-revision": "2017-08-08",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-lmap-common",
+        "module-revision": "2017-08-08"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-lmap-control",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/agent",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/agent/agent-id",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/agent/controller-timeout",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/agent/group-id",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/agent/last-started",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/agent/measurement-point",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/agent/report-agent-id",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/agent/report-group-id",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/agent/report-measurement-point",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities/tag",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities/tasks",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities/tasks/task",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities/tasks/task/function",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities/tasks/task/function/role",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities/tasks/task/function/uri",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities/tasks/task/name",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities/tasks/task/program",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities/tasks/task/version",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/capabilities/version",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/cycle-interval",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar/calendar",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar/calendar/day-of-month",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar/calendar/day-of-week",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar/calendar/end",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar/calendar/hour",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar/calendar/minute",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar/calendar/month",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar/calendar/second",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar/calendar/start",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/calendar/calendar/timezone-offset",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/controller-connected",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/controller-connected/controller-connected",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/controller-lost",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/controller-lost/controller-lost",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/immediate",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/immediate/immediate",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/one-off",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/one-off/one-off",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/one-off/one-off/time",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/periodic",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/periodic/periodic",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/periodic/periodic/end",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/periodic/periodic/interval",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/periodic/periodic/start",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/startup",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/event-type/startup/startup",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/name",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/events/event/random-spread",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/destination",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/failures",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/invocations",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/last-completion",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/last-failed-completion",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/last-failed-message",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/last-failed-status",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/last-invocation",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/last-message",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/last-status",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/name",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/option",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/option/id",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/option/name",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/option/value",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/overlaps",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/parameters",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/parameters/extension",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/state",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/storage",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/suppression-tag",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/suppressions",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/tag",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/action/task",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/execution-mode",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/failures",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/invocations",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/last-invocation",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/name",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/overlaps",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/start",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/state",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/stop",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/stop/duration",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/stop/duration/duration",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/stop/end",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/stop/end/end",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/storage",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/suppression-tag",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/suppressions",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/schedules/schedule/tag",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/suppressions",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/suppressions/suppression",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/suppressions/suppression/end",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/suppressions/suppression/match",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/suppressions/suppression/name",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/suppressions/suppression/start",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/suppressions/suppression/state",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/suppressions/suppression/stop-running",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task/function",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task/function/role",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task/function/uri",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task/name",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task/option",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task/option/id",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task/option/name",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task/option/value",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task/program",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-lmap-control:lmap/tasks/task/tag",
+        "sid": "80118"
+      }
+    ]
+  }
+}

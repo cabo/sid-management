@@ -1,0 +1,428 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ioam",
+    "module-revision": "2024-08-27",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-access-control-list",
+        "module-revision": "2019-03-04"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-lime-time-types",
+        "module-revision": "2019-04-16"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ioam",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "acl-filter",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "action-decapsulate",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "action-encapsulate",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "action-transit",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "default-namespace",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e2e-seq-num-32",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e2e-seq-num-64",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e2e-timestamp-fraction",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e2e-timestamp-seconds",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e2e-type",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "filter",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipv6",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "namespace",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "node-action",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "nsh",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pot-type",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pot-type-0",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-buffer-occupancy",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-checksum-complement",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-hop-lim-node-id",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-hop-lim-node-id-wide",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-if-id",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-if-id-wide",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-namespace-data",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-namespace-data-wide",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-opaque-state-snapshot",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-queue-depth",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-timestamp-fraction",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-timestamp-seconds",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-transit-delay",
+        "sid": "80031"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trace-type",
+        "sid": "80032"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "direct-export",
+        "sid": "80033"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "edge-to-edge",
+        "sid": "80034"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "incremental-trace",
+        "sid": "80035"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "preallocated-trace",
+        "sid": "80036"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "proof-of-transit",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/admin-config",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/admin-config/enabled",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/info",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/info/available-interface",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/info/available-interface/if-name",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/info/timestamp-type",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/direct-export-profile",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/direct-export-profile/enable-sequence-number",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/direct-export-profile/flow-id",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/direct-export-profile/max-length",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/direct-export-profile/node-action",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/direct-export-profile/trace-types",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/direct-export-profile/trace-types/trace-type",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/direct-export-profile/trace-types/use-namespace",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/e2e-profile",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/e2e-profile/e2e-types",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/e2e-profile/e2e-types/e2e-type",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/e2e-profile/e2e-types/use-namespace",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/e2e-profile/node-action",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/filter",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/filter/ace-name",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/filter/filter-type",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/incremental-tracing-profile",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/incremental-tracing-profile/max-length",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/incremental-tracing-profile/node-action",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/incremental-tracing-profile/trace-types",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/incremental-tracing-profile/trace-types/trace-type",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/incremental-tracing-profile/trace-types/use-namespace",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/pot-profile",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/pot-profile/pot-type",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/pot-profile/use-namespace",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/preallocated-tracing-profile",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/preallocated-tracing-profile/max-length",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/preallocated-tracing-profile/node-action",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/preallocated-tracing-profile/trace-types",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/preallocated-tracing-profile/trace-types/trace-type",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/preallocated-tracing-profile/trace-types/use-namespace",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/profile-name",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ioam:ioam/profiles/profile/protocol-type",
+        "sid": "80079"
+      }
+    ]
+  }
+}

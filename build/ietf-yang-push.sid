@@ -1,0 +1,876 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-yang-push",
+    "module-revision": "2019-09-09",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-subscribed-notifications",
+        "module-revision": "2019-09-09"
+      },
+      {
+        "module-name": "ietf-datastores",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-restconf",
+        "module-revision": "2017-01-26"
+      },
+      {
+        "module-name": "ietf-yang-patch",
+        "module-revision": "2017-02-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-yang-push",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cant-exclude",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "datastore-not-subscribable",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "no-such-subscription-resync",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "on-change-sync-unsupported",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "on-change-unsupported",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "period-unsupported",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "resync-subscription-error",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sync-too-big",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unchanging-selection",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "update-too-big",
+        "sid": "80010"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "on-change",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore/datastore",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore/selection-filter",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore/selection-filter/by-reference",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore/selection-filter/by-reference/selection-filter-ref",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-subtree-filter",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-subtree-filter/datastore-subtree-filter",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-xpath-filter",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-xpath-filter/datastore-xpath-filter",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/ietf-yang-push:selection-filter",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/ietf-yang-push:selection-filter/filter-id",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/ietf-yang-push:selection-filter/filter-spec",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/ietf-yang-push:selection-filter/filter-spec/datastore-subtree-filter",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/ietf-yang-push:selection-filter/filter-spec/datastore-subtree-filter/datastore-subtree-filter",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/ietf-yang-push:selection-filter/filter-spec/datastore-xpath-filter",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/ietf-yang-push:selection-filter/filter-spec/datastore-xpath-filter/datastore-xpath-filter",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore/datastore",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore/selection-filter",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore/selection-filter/by-reference",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore/selection-filter/by-reference/selection-filter-ref",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-subtree-filter",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-subtree-filter/datastore-subtree-filter",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-xpath-filter",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-xpath-filter/datastore-xpath-filter",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore/datastore",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore/selection-filter",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore/selection-filter/by-reference",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore/selection-filter/by-reference/selection-filter-ref",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore/selection-filter/within-subscription",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-subtree-filter",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-subtree-filter/datastore-subtree-filter",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-xpath-filter",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-xpath-filter/datastore-xpath-filter",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore/datastore",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore/selection-filter",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore/selection-filter/by-reference",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore/selection-filter/by-reference/selection-filter-ref",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore/selection-filter/within-subscription",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-subtree-filter",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-subtree-filter/datastore-subtree-filter",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-xpath-filter",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-xpath-filter/datastore-xpath-filter",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore/datastore",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore/selection-filter",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore/selection-filter/by-reference",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore/selection-filter/by-reference/selection-filter-ref",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore/selection-filter/within-subscription",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-subtree-filter",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-subtree-filter/datastore-subtree-filter",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-xpath-filter",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/ietf-yang-push:datastore/selection-filter/within-subscription/filter-spec/datastore-xpath-filter/datastore-xpath-filter",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:establish-subscription/sn:input/update-trigger",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:establish-subscription/sn:input/update-trigger/on-change",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:establish-subscription/sn:input/update-trigger/on-change/on-change",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:establish-subscription/sn:input/update-trigger/on-change/on-change/dampening-period",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:establish-subscription/sn:input/update-trigger/on-change/on-change/excluded-change",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:establish-subscription/sn:input/update-trigger/on-change/on-change/sync-on-start",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:establish-subscription/sn:input/update-trigger/periodic",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:establish-subscription/sn:input/update-trigger/periodic/periodic",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:establish-subscription/sn:input/update-trigger/periodic/periodic/anchor-time",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:establish-subscription/sn:input/update-trigger/periodic/periodic/period",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:modify-subscription/sn:input/update-trigger",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:modify-subscription/sn:input/update-trigger/on-change",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:modify-subscription/sn:input/update-trigger/on-change/on-change",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:modify-subscription/sn:input/update-trigger/on-change/on-change/dampening-period",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:modify-subscription/sn:input/update-trigger/periodic",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:modify-subscription/sn:input/update-trigger/periodic/periodic",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:modify-subscription/sn:input/update-trigger/periodic/periodic/anchor-time",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:modify-subscription/sn:input/update-trigger/periodic/periodic/period",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-modified/update-trigger",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-modified/update-trigger/on-change",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-modified/update-trigger/on-change/on-change",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-modified/update-trigger/on-change/on-change/dampening-period",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-modified/update-trigger/on-change/on-change/excluded-change",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-modified/update-trigger/on-change/on-change/sync-on-start",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-modified/update-trigger/periodic",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-modified/update-trigger/periodic/periodic",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-modified/update-trigger/periodic/periodic/anchor-time",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-modified/update-trigger/periodic/periodic/period",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-started/update-trigger",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-started/update-trigger/on-change",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-started/update-trigger/on-change/on-change",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-started/update-trigger/on-change/on-change/dampening-period",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-started/update-trigger/on-change/on-change/excluded-change",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-started/update-trigger/on-change/on-change/sync-on-start",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-started/update-trigger/periodic",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-started/update-trigger/periodic/periodic",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-started/update-trigger/periodic/periodic/anchor-time",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscription-started/update-trigger/periodic/periodic/period",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscriptions/sn:subscription/update-trigger",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscriptions/sn:subscription/update-trigger/on-change",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscriptions/sn:subscription/update-trigger/on-change/on-change",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscriptions/sn:subscription/update-trigger/on-change/on-change/dampening-period",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscriptions/sn:subscription/update-trigger/on-change/on-change/excluded-change",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscriptions/sn:subscription/update-trigger/on-change/on-change/sync-on-start",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscriptions/sn:subscription/update-trigger/periodic",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscriptions/sn:subscription/update-trigger/periodic/periodic",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscriptions/sn:subscription/update-trigger/periodic/periodic/anchor-time",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:/sn:subscriptions/sn:subscription/update-trigger/periodic/periodic/period",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:establish-subscription-datastore-error-info",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:establish-subscription-datastore-error-info/filter-failure-hint",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:establish-subscription-datastore-error-info/kilobytes-estimate",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:establish-subscription-datastore-error-info/kilobytes-limit",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:establish-subscription-datastore-error-info/object-count-estimate",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:establish-subscription-datastore-error-info/object-count-limit",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:establish-subscription-datastore-error-info/period-hint",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:establish-subscription-datastore-error-info/reason",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:modify-subscription-datastore-error-info",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:modify-subscription-datastore-error-info/filter-failure-hint",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:modify-subscription-datastore-error-info/kilobytes-estimate",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:modify-subscription-datastore-error-info/kilobytes-limit",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:modify-subscription-datastore-error-info/object-count-estimate",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:modify-subscription-datastore-error-info/object-count-limit",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:modify-subscription-datastore-error-info/period-hint",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:modify-subscription-datastore-error-info/reason",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes/yang-patch",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes/yang-patch/comment",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes/yang-patch/edit",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes/yang-patch/edit/edit-id",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes/yang-patch/edit/operation",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes/yang-patch/edit/point",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes/yang-patch/edit/target",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes/yang-patch/edit/value",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes/yang-patch/edit/where",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/datastore-changes/yang-patch/patch-id",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/id",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-change-update/incomplete-update",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-update",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-update/datastore-contents",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-update/id",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:push-update/incomplete-update",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription-error",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription-error/filter-failure-hint",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription-error/kilobytes-estimate",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription-error/kilobytes-limit",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription-error/object-count-estimate",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription-error/object-count-limit",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription-error/period-hint",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription-error/reason",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription/input",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription/input/id",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-push:resync-subscription/output",
+        "sid": "80167"
+      }
+    ]
+  }
+}

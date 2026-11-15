@@ -1,0 +1,742 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-i2nsf-ike",
+    "module-revision": "2021-07-14",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-i2nsf-ikec",
+        "module-revision": "2021-07-14"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-i2nsf-ike",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/autostartup",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-hard",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-hard/bytes",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-hard/idle",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-hard/packets",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-hard/time",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-soft",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-soft/action",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-soft/bytes",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-soft/idle",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-soft/packets",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/child-sa-lifetime-soft/time",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/fs-groups",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/dh-group",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/encapsulation-type",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/encapsulation-type/dport",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/encapsulation-type/espencap",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/encapsulation-type/oaddr",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/encapsulation-type/sport",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/fragmentation",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/fragmentation/enabled",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/fragmentation/mtu",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/half-open-ike-sa-cookie-threshold",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/half-open-ike-sa-timer",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/ike-sa-encr-alg",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/ike-sa-encr-alg/algorithm-type",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/ike-sa-encr-alg/id",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/ike-sa-encr-alg/key-length",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/ike-sa-intr-alg",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/ike-sa-lifetime-hard",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/ike-sa-lifetime-hard/over-time",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/ike-sa-lifetime-soft",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/ike-sa-lifetime-soft/reauth-time",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/ike-sa-lifetime-soft/rekey-time",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/initial-contact",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/local",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/local/local-pad-entry-name",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/name",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/remote",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/remote/remote-pad-entry-name",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/anti-replay-window-size",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/action",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/esp-algorithms",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/esp-algorithms/encryption",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/esp-algorithms/encryption/algorithm-type",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/esp-algorithms/encryption/id",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/esp-algorithms/encryption/key-length",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/esp-algorithms/integrity",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/esp-algorithms/tfc-pad",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/ext-seq-num",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/mode",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/pfp-flag",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/protocol-parameters",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/seq-overflow",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/stateful-frag-check",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/tunnel",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/tunnel/bypass-dscp",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/tunnel/df-bit",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/tunnel/dscp-mapping",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/tunnel/dscp-mapping/id",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/tunnel/dscp-mapping/inner-dscp",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/tunnel/dscp-mapping/outer-dscp",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/tunnel/local",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/processing-info/ipsec-sa-cfg/tunnel/remote",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/traffic-selector",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/traffic-selector/inner-protocol",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/traffic-selector/local-ports",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/traffic-selector/local-ports/end",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/traffic-selector/local-ports/start",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/traffic-selector/local-prefix",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/traffic-selector/remote-ports",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/traffic-selector/remote-ports/end",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/traffic-selector/remote-ports/start",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/ipsec-policy-config/traffic-selector/remote-prefix",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/spd/spd-entry/name",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/current-reauth-time",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/current-rekey-time",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/encapsulation-type",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/encapsulation-type/dport",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/encapsulation-type/espencap",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/encapsulation-type/oaddr",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/encapsulation-type/sport",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/established",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/initiator",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/initiator-ikesa-spi",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/nat-local",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/nat-remote",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/state/responder-ikesa-spi",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/version",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/number-ike-sas",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/number-ike-sas/half-open",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/number-ike-sas/half-open-cookies",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/number-ike-sas/total",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/auth-protocol",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/dnx509",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/dnx509/dnx509",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/fqdn-string",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/fqdn-string/fqdn-string",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/gnx509",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/gnx509/gnx509",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/id-key",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/id-key/id-key",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/id-null",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/id-null/id-null",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/ipv4-address",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/ipv4-address/ipv4-address",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/ipv6-address",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/ipv6-address/ipv6-address",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/rfc822-address-string",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/identity/rfc822-address-string/rfc822-address-string",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/name",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/auth-method",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/ca-data",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/crl-data",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/crl-uri",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/ds-algorithm",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/oscp-uri",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/private-key",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/public-key",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/public-key/cert-data",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/public-key/cert-data/cert-data",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/public-key/raw-public-key",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/digital-signature/public-key/raw-public-key/raw-public-key",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/eap-method",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/eap-method/eap-type",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/pre-shared",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/pad/pad-entry/peer-authentication/pre-shared/secret",
+        "sid": "80141"
+      }
+    ]
+  }
+}

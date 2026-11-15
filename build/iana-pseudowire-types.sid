@@ -1,0 +1,184 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "iana-pseudowire-types",
+    "module-revision": "2022-09-20",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "iana-pseudowire-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-aal5",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-aal5-vcc",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-cell",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-one-to-one-vcc",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-one-to-one-vpc",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-to-vcc",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-to-vpc",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm-vp-virtual-trunk",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ces-over-psn",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ces-over-psn-cas",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "circuit-emulation-mpls",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "circuit-emulation-packet",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "crtp",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dlci",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e1",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e3",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ecrtp",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ethernet",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ethernet-tagged-mode",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fc-port-mode",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fr-port-mode",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frame-relay",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hdlc",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iana-pw-types",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iphc",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "layer-2-transport",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ppp",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rohc",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "t1",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "t3",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tdm-over-ip-aal1",
+        "sid": "80031"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tdm-over-ip-aal2",
+        "sid": "80032"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "wildcard",
+        "sid": "80033"
+      }
+    ]
+  }
+}

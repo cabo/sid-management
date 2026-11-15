@@ -1,0 +1,281 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-tcp",
+    "module-revision": "2024-10-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-tcp-common",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-key-chain",
+        "module-revision": "2017-06-15"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-tcp",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aes-128",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "authentication",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "statistics",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-key-chain:key-chains/key-chain/key/ietf-tcp:authentication",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-key-chain:key-chains/key-chain/key/ietf-tcp:authentication/authentication",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-key-chain:key-chains/key-chain/key/ietf-tcp:authentication/authentication/ao/ao",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-key-chain:key-chains/key-chain/key/ietf-tcp:authentication/authentication/ao/ao/accept-key-mismatch",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-key-chain:key-chains/key-chain/key/ietf-tcp:authentication/authentication/ao/ao/include-tcp-options",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-key-chain:key-chains/key-chain/key/ietf-tcp:authentication/authentication/ao/ao/r-next-key-id",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-key-chain:key-chains/key-chain/key/ietf-tcp:authentication/authentication/ao/ao/recv-id",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-key-chain:key-chains/key-chain/key/ietf-tcp:authentication/authentication/ao/ao/send-id",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-key-chain:key-chains/key-chain/key/ietf-tcp:authentication/authentication/md5/md5",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-key-chain:key-chains/key-chain/key/ietf-tcp:authentication/keychain",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/keepalives",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/keepalives/idle-time",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/keepalives/max-probes",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/keepalives/probe-interval",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/local-address",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/local-port",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/mss",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/pmtud",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/remote-address",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/remote-port",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/connections/connection/state",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/active-opens",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/attempt-fails",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/auth-failures",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/currently-established",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/establish-resets",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/in-errors",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/in-segments",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/out-resets",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/out-segments",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/passive-opens",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/reset",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/reset/input",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/reset/input/reset-at",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/reset/output",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/reset/output/reset-finished-at",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/statistics/retransmitted-segments",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/tcp-listeners",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/tcp-listeners/address",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/tcp-listeners/port",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-tcp:tcp/tcp-listeners/type",
+        "sid": "80048"
+      }
+    ]
+  }
+}

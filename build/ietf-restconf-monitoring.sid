@@ -1,0 +1,89 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-restconf-monitoring",
+    "module-revision": "2017-01-26",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-restconf-monitoring",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/capabilities",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/capabilities/capability",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/streams",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/streams/stream",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/streams/stream/access",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/streams/stream/access/encoding",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/streams/stream/access/location",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/streams/stream/description",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/streams/stream/name",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/streams/stream/replay-log-creation-time",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-monitoring:restconf-state/streams/stream/replay-support",
+        "sid": "80012"
+      }
+    ]
+  }
+}

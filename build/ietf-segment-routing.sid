@@ -1,0 +1,30 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-segment-routing",
+    "module-revision": "2021-05-26",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-segment-routing",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/ietf-segment-routing:segment-routing",
+        "sid": "80001"
+      }
+    ]
+  }
+}

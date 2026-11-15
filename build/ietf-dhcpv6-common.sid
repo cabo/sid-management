@@ -1,0 +1,19 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dhcpv6-common",
+    "module-revision": "2022-06-20",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dhcpv6-common",
+        "sid": "80000"
+      }
+    ]
+  }
+}

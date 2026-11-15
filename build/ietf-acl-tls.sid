@@ -1,0 +1,133 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-acl-tls",
+    "module-revision": "2025-04-18",
+    "dependency-revision": [
+      {
+        "module-name": "iana-tls-profile",
+        "module-revision": "2025-04-18"
+      },
+      {
+        "module-name": "ietf-crypto-types",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-access-control-list",
+        "module-revision": "2019-03-04"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-acl-tls",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "dtls12",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "dtls13",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "match-on-tls-dtls",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tls12",
+        "sid": "80004"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tls13",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/accept-list-ta-cert",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/application-protocol",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/cert-compression-algorithm",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/certificate-authorities",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/cipher-suite",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/extension-type",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/name",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/psk-key-exchange-mode",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/signature-algorithm",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/signature-algorithm-cert",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/supported-dtls-version",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/supported-group",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-access-control-list:acls/acl/aces/ace/matches/ietf-acl-tls:client-profiles/tls-dtls-profile/supported-tls-version",
+        "sid": "80020"
+      }
+    ]
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-service-assurance",
+    "module-revision": "2023-07-11",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-service-assurance",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dependency-type",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "impacting",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "informational",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "service-instance-type",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "subservice-base",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:agents",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:agents/agent",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:agents/agent/id",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:agents/agent/symptoms",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:agents/agent/symptoms/description",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:agents/agent/symptoms/id",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:assurance-graph-last-change",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:assured-services",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:assured-services/assured-service",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:assured-services/assured-service/instances",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:assured-services/assured-service/instances/name",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:assured-services/assured-service/instances/subservices",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:assured-services/assured-service/instances/subservices/id",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:assured-services/assured-service/instances/subservices/type",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:assured-services/assured-service/service",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/dependencies",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/dependencies/dependency",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/dependencies/dependency/dependency-type",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/dependencies/dependency/id",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/dependencies/dependency/type",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/health-score",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/id",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/label",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/last-change",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/parameter",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/parameter/service-instance-parameter",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/parameter/service-instance-parameter/service-instance-parameter",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/parameter/service-instance-parameter/service-instance-parameter/instance-name",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/parameter/service-instance-parameter/service-instance-parameter/service",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/symptoms",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/symptoms-history-start",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/symptoms/symptom",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/symptoms/symptom/agent-id",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/symptoms/symptom/health-score-weight",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/symptoms/symptom/start-date-time",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/symptoms/symptom/stop-date-time",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/symptoms/symptom/symptom-id",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/type",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/under-maintenance",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-service-assurance:subservices/subservice/under-maintenance/contact",
+        "sid": "80047"
+      }
+    ]
+  }
+}

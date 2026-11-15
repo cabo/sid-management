@@ -1,0 +1,146 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-yang-instance-data",
+    "module-revision": "2022-02-17",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-structure-ext",
+        "module-revision": "2020-06-17"
+      },
+      {
+        "module-name": "ietf-datastores",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-netconf-with-defaults",
+        "module-revision": "2011-06-01"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-yang-instance-data",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/contact",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/content-data",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/content-schema",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/content-schema/content-schema-spec",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/content-schema/content-schema-spec/inline",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/content-schema/content-schema-spec/inline/inline-yang-library",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/content-schema/content-schema-spec/simplified-inline",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/content-schema/content-schema-spec/simplified-inline/module",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/content-schema/content-schema-spec/uri",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/content-schema/content-schema-spec/uri/same-schema-as-file",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/datastore",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/description",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/format-version",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/includes-defaults",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/name",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/organization",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/revision",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/revision/date",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/revision/description",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-instance-data:instance-data-set/timestamp",
+        "sid": "80021"
+      }
+    ]
+  }
+}

@@ -1,0 +1,661 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dots-signal-channel",
+    "module-revision": "2021-09-02",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-dots-data-channel",
+        "module-revision": "2020-05-28"
+      },
+      {
+        "module-name": "iana-dots-signal-channel",
+        "module-revision": "2021-09-02"
+      },
+      {
+        "module-name": "ietf-yang-structure-ext",
+        "module-revision": "2020-06-17"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dots-signal-channel",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/heartbeat",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/heartbeat/peer-hb-status",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/alias-name",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/client-to-server-only",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/client-to-server-only/attack-status",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/bps-dropped",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/bytes-dropped",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-cause",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/acl-list",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/acl-list/acl-name",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/acl-list/acl-type",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/alias-name",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/mid",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/target-fqdn",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/target-port-range",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/target-port-range/lower-port",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/target-port-range/upper-port",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/target-prefix",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/target-protocol",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-scope/target-uri",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/conflict-status",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/conflict-information/retry-timer",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/mid",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/mitigation-start",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/pkts-dropped",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/pps-dropped",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/direction/server-to-client-only/status",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/lifetime",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/target-fqdn",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/target-port-range",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/target-port-range/lower-port",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/target-port-range/upper-port",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/target-prefix",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/target-protocol",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/target-uri",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/trigger-mitigation",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/redirected-signal",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/redirected-signal/direction",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/redirected-signal/direction/server-to-client-only",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/redirected-signal/direction/server-to-client-only/alt-server",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/redirected-signal/direction/server-to-client-only/alt-server-record",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-random-factor",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-random-factor/current-value-decimal",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-random-factor/direction",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-random-factor/direction/server-to-client-only",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-random-factor/direction/server-to-client-only/max-value-decimal",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-random-factor/direction/server-to-client-only/min-value-decimal",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-timeout",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-timeout/current-value-decimal",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-timeout/direction",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-timeout/direction/server-to-client-only",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-timeout/direction/server-to-client-only/max-value-decimal",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/ack-timeout/direction/server-to-client-only/min-value-decimal",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/heartbeat-interval",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/heartbeat-interval/current-value",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/heartbeat-interval/direction",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/heartbeat-interval/direction/server-to-client-only",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/heartbeat-interval/direction/server-to-client-only/max-value",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/heartbeat-interval/direction/server-to-client-only/min-value",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/max-retransmit",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/max-retransmit/current-value",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/max-retransmit/direction",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/max-retransmit/direction/server-to-client-only",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/max-retransmit/direction/server-to-client-only/max-value",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/max-retransmit/direction/server-to-client-only/min-value",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/missing-hb-allowed",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/missing-hb-allowed/current-value",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/missing-hb-allowed/direction",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/missing-hb-allowed/direction/server-to-client-only",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/missing-hb-allowed/direction/server-to-client-only/max-value",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/missing-hb-allowed/direction/server-to-client-only/min-value",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/probing-rate",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/probing-rate/current-value",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/probing-rate/direction",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/probing-rate/direction/server-to-client-only",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/probing-rate/direction/server-to-client-only/max-value",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/idle-config/probing-rate/direction/server-to-client-only/min-value",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-random-factor",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-random-factor/current-value-decimal",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-random-factor/direction",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-random-factor/direction/server-to-client-only",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-random-factor/direction/server-to-client-only/max-value-decimal",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-random-factor/direction/server-to-client-only/min-value-decimal",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-timeout",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-timeout/current-value-decimal",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-timeout/direction",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-timeout/direction/server-to-client-only",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-timeout/direction/server-to-client-only/max-value-decimal",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/ack-timeout/direction/server-to-client-only/min-value-decimal",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/heartbeat-interval",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/heartbeat-interval/current-value",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/heartbeat-interval/direction",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/heartbeat-interval/direction/server-to-client-only",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/heartbeat-interval/direction/server-to-client-only/max-value",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/heartbeat-interval/direction/server-to-client-only/min-value",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/max-retransmit",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/max-retransmit/current-value",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/max-retransmit/direction",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/max-retransmit/direction/server-to-client-only",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/max-retransmit/direction/server-to-client-only/max-value",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/max-retransmit/direction/server-to-client-only/min-value",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/missing-hb-allowed",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/missing-hb-allowed/current-value",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/missing-hb-allowed/direction",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/missing-hb-allowed/direction/server-to-client-only",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/missing-hb-allowed/direction/server-to-client-only/max-value",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/missing-hb-allowed/direction/server-to-client-only/min-value",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/probing-rate",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/probing-rate/current-value",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/probing-rate/direction",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/probing-rate/direction/server-to-client-only",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/probing-rate/direction/server-to-client-only/max-value",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/signal-config/mitigating-config/probing-rate/direction/server-to-client-only/min-value",
+        "sid": "80124"
+      }
+    ]
+  }
+}

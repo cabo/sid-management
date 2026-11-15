@@ -1,0 +1,30 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-mud-detext-example",
+    "module-revision": "2019-01-28",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-mud",
+        "module-revision": "2019-01-28"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-mud-detext-example",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mud:mud/ietf-mud-detext-example:is-detnet-required",
+        "sid": "80001"
+      }
+    ]
+  }
+}

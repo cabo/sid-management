@@ -1,0 +1,839 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-pcep-stats",
+    "module-revision": "2025-09-12",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-pcep",
+        "module-revision": "2025-09-12"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-pcep-stats",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "reset-all",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep-stats:reset-pcep-statistics-all",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep-stats:reset-pcep-statistics-all/input",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep-stats:reset-pcep-statistics-all/output",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep-stats:reset-statistics/input",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep-stats:reset-statistics/output",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/corrupt-rcvd",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/discontinuity-time",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/keepalive-rcvd",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/keepalive-sent",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/path-key",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/path-key/dup-path-key",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/path-key/exp-path-key",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/path-key/path-key-no-attempt",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/path-key/unknown-path-key",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcc",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcc/req-rcvd",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcc/req-rcvd-cancel-rcvd",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcc/req-rcvd-cancel-sent",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcc/req-rcvd-ero-sent",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcc/req-rcvd-error-sent",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcc/req-rcvd-nopath-sent",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcc/req-rcvd-pend-rep",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcc/req-rcvd-unknown",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/pcrep-rcvd",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/pcrep-sent",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/pcreq-rcvd",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/pcreq-sent",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/rep-rcvd-unknown",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/req-sent",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/req-sent-cancel-rcvd",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/req-sent-cancel-sent",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/req-sent-ero-rcvd",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/req-sent-error-rcvd",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/req-sent-nopath-rcvd",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/req-sent-pend-rep",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/req-sent-timeout",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/rsp-time-avg",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/rsp-time-hwm",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pce/rsp-time-lwm",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcerr-rcvd",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcerr-sent",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcntf-rcvd",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/pcntf-sent",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/req-rcvd-closed",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/req-sent-closed",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/reset-statistics",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/reset-statistics/input",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/reset-statistics/input/reset-at",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/reset-statistics/output",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/reset-statistics/output/reset-finished-at",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/sess-setup-fail",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/sess-setup-ok",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/initiation",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/initiation/pcc",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/initiation/pcc/initiate-sent",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/initiation/pcc/pcinitiate-sent",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/initiation/pce",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/initiation/pce/initiate-rcvd",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/initiation/pce/initiate-rcvd-error-sent",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/initiation/pce/pcinitiate-rcvd",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pcc",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pcc/pcrpt-rcvd",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pcc/pcupd-sent",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pcc/rpt-rcvd",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pcc/rpt-rcvd-error-sent",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pcc/upd-sent",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pce",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pce/pcrpt-sent",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pce/pcupd-rcvd",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pce/rpt-sent",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pce/upd-rcvd",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pce/upd-rcvd-error-sent",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pce/upd-rcvd-undelegated",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/stateful/pce/upd-rcvd-unknown",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/svec",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/svec/pcc",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/svec/pcc/svec-rcvd",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/svec/pcc/svec-req-rcvd",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/svec/pce",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/svec/pce/svec-req-sent",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/svec/pce/svec-sent",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/ietf-pcep-stats:stats/unknown-rcvd",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/corrupt-rcvd",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/discontinuity-time",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/keepalive-rcvd",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/keepalive-sent",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/path-key",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/path-key/dup-path-key",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/path-key/exp-path-key",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/path-key/path-key-no-attempt",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/path-key/unknown-path-key",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcc",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcc/req-rcvd",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcc/req-rcvd-cancel-rcvd",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcc/req-rcvd-cancel-sent",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcc/req-rcvd-ero-sent",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcc/req-rcvd-error-sent",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcc/req-rcvd-nopath-sent",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcc/req-rcvd-pend-rep",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcc/req-rcvd-unknown",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/pcrep-rcvd",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/pcrep-sent",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/pcreq-rcvd",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/pcreq-sent",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/rep-rcvd-unknown",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/req-sent",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/req-sent-cancel-rcvd",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/req-sent-cancel-sent",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/req-sent-ero-rcvd",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/req-sent-error-rcvd",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/req-sent-nopath-rcvd",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/req-sent-pend-rep",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/req-sent-timeout",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/rsp-time-avg",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/rsp-time-hwm",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pce/rsp-time-lwm",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcerr-rcvd",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcerr-sent",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcntf-rcvd",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/pcntf-sent",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/reset-statistics",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/reset-statistics/input",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/reset-statistics/input/reset-at",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/reset-statistics/output",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/reset-statistics/output/reset-finished-at",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/initiation",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/initiation/pcc",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/initiation/pcc/initiate-sent",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/initiation/pcc/pcinitiate-sent",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/initiation/pce",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/initiation/pce/initiate-rcvd",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/initiation/pce/initiate-rcvd-error-sent",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/initiation/pce/pcinitiate-rcvd",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pcc",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pcc/pcrpt-rcvd",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pcc/pcupd-sent",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pcc/rpt-rcvd",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pcc/rpt-rcvd-error-sent",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pcc/upd-sent",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pce",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pce/pcrpt-sent",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pce/pcupd-rcvd",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pce/rpt-sent",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pce/upd-rcvd",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pce/upd-rcvd-error-sent",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pce/upd-rcvd-undelegated",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/stateful/pce/upd-rcvd-unknown",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/svec",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/svec/pcc",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/svec/pcc/svec-rcvd",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/svec/pcc/svec-req-rcvd",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/svec/pce",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/svec/pce/svec-req-sent",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/svec/pce/svec-sent",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pcep:pcep/entity/peers/peer/sessions/session/ietf-pcep-stats:stats/unknown-rcvd",
+        "sid": "80162"
+      }
+    ]
+  }
+}

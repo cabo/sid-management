@@ -1,0 +1,94 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "iana-hardware",
+    "module-revision": "2018-03-13",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "iana-hardware",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "backplane",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "battery",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "chassis",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "container",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cpu",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "energy-object",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fan",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hardware-class",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "module",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "port",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "power-supply",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sensor",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "stack",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "storage-drive",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unknown",
+        "sid": "80015"
+      }
+    ]
+  }
+}

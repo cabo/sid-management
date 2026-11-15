@@ -1,0 +1,80 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-network-state",
+    "module-revision": "2018-02-26",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-network",
+        "module-revision": "2018-02-26"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-network-state",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/network-id",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/network-types",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/node-id",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/supporting-node",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/supporting-node/network-ref",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/supporting-node/node-ref",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/supporting-network",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/supporting-network/network-ref",
+        "sid": "80011"
+      }
+    ]
+  }
+}

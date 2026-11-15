@@ -1,0 +1,1460 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-system-tacacs-plus",
+    "module-revision": "2026-03-31",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-system",
+        "module-revision": "2014-08-06"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-network-instance",
+        "module-revision": "2019-01-21"
+      },
+      {
+        "module-name": "ietf-crypto-types",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-truststore",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-keystore",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-tls-common",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-tls-client",
+        "module-revision": "2024-10-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-system-tacacs-plus",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tacacs-plus",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "credential-reference",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/central-keystore",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/central-keystore/central-keystore-reference",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/central-keystore/central-keystore-reference/asymmetric-key",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/central-keystore/central-keystore-reference/certificate",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/cert-data",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/certificate-expiration",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/certificate-expiration/expiration-date",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/input",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/input/csr-format",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/input/csr-info",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/output",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/output/csr-type",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/output/csr-type/p10-csr",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/output/csr-type/p10-csr/p10-csr",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-format",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/cleartext-private-key",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/cleartext-private-key/cleartext-private-key",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-by",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-value",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-value-format",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/hidden-private-key",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/hidden-private-key/hidden-private-key",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/public-key",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/public-key-format",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/central-keystore",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/central-keystore/central-keystore-reference",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-format",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/cleartext-private-key",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/cleartext-private-key/cleartext-private-key",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-by",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-value",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-value-format",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/hidden-private-key",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/hidden-private-key/hidden-private-key",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/public-key",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/public-key-format",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/context",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/external-identity",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/hash",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/central-keystore",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/central-keystore/central-keystore-reference",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-format",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/cleartext-symmetric-key",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/cleartext-symmetric-key/cleartext-symmetric-key",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/encrypted-symmetric-key",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/encrypted-symmetric-key/encrypted-symmetric-key",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/encrypted-symmetric-key/encrypted-symmetric-key/encrypted-by",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/encrypted-symmetric-key/encrypted-symmetric-key/encrypted-value",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/encrypted-symmetric-key/encrypted-symmetric-key/encrypted-value-format",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/hidden-symmetric-key",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/hidden-symmetric-key/hidden-symmetric-key",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/target-kdf",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/auth-type/tls13-epsk/tls13-epsk/target-protocol",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/client-credentials/id",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs/inline-or-truststore",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs/inline-or-truststore/central-truststore",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs/inline-or-truststore/central-truststore/central-truststore-reference",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs/inline-or-truststore/inline",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs/inline-or-truststore/inline/inline-definition",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs/inline-or-truststore/inline/inline-definition/certificate",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs/inline-or-truststore/inline/inline-definition/certificate/cert-data",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs/inline-or-truststore/inline/inline-definition/certificate/certificate-expiration",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs/inline-or-truststore/inline/inline-definition/certificate/certificate-expiration/expiration-date",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ca-certs/inline-or-truststore/inline/inline-definition/certificate/name",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs/inline-or-truststore",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs/inline-or-truststore/central-truststore",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs/inline-or-truststore/central-truststore/central-truststore-reference",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs/inline-or-truststore/inline",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs/inline-or-truststore/inline/inline-definition",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs/inline-or-truststore/inline/inline-definition/certificate",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs/inline-or-truststore/inline/inline-definition/certificate/cert-data",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs/inline-or-truststore/inline/inline-definition/certificate/certificate-expiration",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs/inline-or-truststore/inline/inline-definition/certificate/certificate-expiration/expiration-date",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/ee-certs/inline-or-truststore/inline/inline-definition/certificate/name",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/id",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/raw-public-keys",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/raw-public-keys/inline-or-truststore",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/raw-public-keys/inline-or-truststore/central-truststore",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/raw-public-keys/inline-or-truststore/central-truststore/central-truststore-reference",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/raw-public-keys/inline-or-truststore/inline",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/raw-public-keys/inline-or-truststore/inline/inline-definition",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/raw-public-keys/inline-or-truststore/inline/inline-definition/public-key",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/raw-public-keys/inline-or-truststore/inline/inline-definition/public-key/name",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/raw-public-keys/inline-or-truststore/inline/inline-definition/public-key/public-key",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/raw-public-keys/inline-or-truststore/inline/inline-definition/public-key/public-key-format",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server-credentials/tls13-epsks",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/address",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/domain-name",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/name",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/port",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/obfuscation",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/obfuscation/shared-secret",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/central-keystore",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/central-keystore/central-keystore-reference",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/central-keystore/central-keystore-reference/asymmetric-key",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/central-keystore/central-keystore-reference/certificate",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/cert-data",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/certificate-expiration",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/certificate-expiration/expiration-date",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/input",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/input/csr-format",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/input/csr-info",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/output",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/output/csr-type",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/output/csr-type/p10-csr",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/output/csr-type/p10-csr/p10-csr",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-format",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/cleartext-private-key",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/cleartext-private-key/cleartext-private-key",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-by",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-value",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-value-format",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/hidden-private-key",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/private-key-type/hidden-private-key/hidden-private-key",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/public-key",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/public-key-format",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/central-keystore",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/central-keystore/central-keystore-reference",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-format",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/cleartext-private-key",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/cleartext-private-key/cleartext-private-key",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-by",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-value",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/encrypted-private-key/encrypted-private-key/encrypted-value-format",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/hidden-private-key",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/private-key-type/hidden-private-key/hidden-private-key",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/public-key",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/raw-public-key/raw-private-key/inline-or-keystore/inline/inline-definition/public-key-format",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/context",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/external-identity",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/hash",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/central-keystore",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/central-keystore/central-keystore-reference",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-format",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/cleartext-symmetric-key",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/cleartext-symmetric-key/cleartext-symmetric-key",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/encrypted-symmetric-key",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/encrypted-symmetric-key/encrypted-symmetric-key",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/encrypted-symmetric-key/encrypted-symmetric-key/encrypted-by",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/encrypted-symmetric-key/encrypted-symmetric-key/encrypted-value",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/encrypted-symmetric-key/encrypted-symmetric-key/encrypted-value-format",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/hidden-symmetric-key",
+        "sid": "80203"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/inline-or-keystore/inline/inline-definition/key-type/hidden-symmetric-key/hidden-symmetric-key",
+        "sid": "80204"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/target-kdf",
+        "sid": "80205"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/tls13-epsk/tls13-epsk/target-protocol",
+        "sid": "80206"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/ref",
+        "sid": "80207"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/client-identity/ref-or-explicit/ref/credentials-reference",
+        "sid": "80208"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/hello-params",
+        "sid": "80209"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/hello-params/cipher-suites",
+        "sid": "80210"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/hello-params/cipher-suites/cipher-suite",
+        "sid": "80211"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/hello-params/tls-versions",
+        "sid": "80212"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/hello-params/tls-versions/max",
+        "sid": "80213"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/hello-params/tls-versions/min",
+        "sid": "80214"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication",
+        "sid": "80215"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit",
+        "sid": "80216"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit",
+        "sid": "80217"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs",
+        "sid": "80218"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs/inline-or-truststore",
+        "sid": "80219"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs/inline-or-truststore/central-truststore",
+        "sid": "80220"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs/inline-or-truststore/central-truststore/central-truststore-reference",
+        "sid": "80221"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs/inline-or-truststore/inline",
+        "sid": "80222"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs/inline-or-truststore/inline/inline-definition",
+        "sid": "80223"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs/inline-or-truststore/inline/inline-definition/certificate",
+        "sid": "80224"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs/inline-or-truststore/inline/inline-definition/certificate/cert-data",
+        "sid": "80225"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs/inline-or-truststore/inline/inline-definition/certificate/certificate-expiration",
+        "sid": "80226"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs/inline-or-truststore/inline/inline-definition/certificate/certificate-expiration/expiration-date",
+        "sid": "80227"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ca-certs/inline-or-truststore/inline/inline-definition/certificate/name",
+        "sid": "80228"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs",
+        "sid": "80229"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs/inline-or-truststore",
+        "sid": "80230"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs/inline-or-truststore/central-truststore",
+        "sid": "80231"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs/inline-or-truststore/central-truststore/central-truststore-reference",
+        "sid": "80232"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs/inline-or-truststore/inline",
+        "sid": "80233"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs/inline-or-truststore/inline/inline-definition",
+        "sid": "80234"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs/inline-or-truststore/inline/inline-definition/certificate",
+        "sid": "80235"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs/inline-or-truststore/inline/inline-definition/certificate/cert-data",
+        "sid": "80236"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs/inline-or-truststore/inline/inline-definition/certificate/certificate-expiration",
+        "sid": "80237"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs/inline-or-truststore/inline/inline-definition/certificate/certificate-expiration/expiration-date",
+        "sid": "80238"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/ee-certs/inline-or-truststore/inline/inline-definition/certificate/name",
+        "sid": "80239"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/raw-public-keys",
+        "sid": "80240"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/raw-public-keys/inline-or-truststore",
+        "sid": "80241"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/raw-public-keys/inline-or-truststore/central-truststore",
+        "sid": "80242"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/raw-public-keys/inline-or-truststore/central-truststore/central-truststore-reference",
+        "sid": "80243"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/raw-public-keys/inline-or-truststore/inline",
+        "sid": "80244"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/raw-public-keys/inline-or-truststore/inline/inline-definition",
+        "sid": "80245"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/raw-public-keys/inline-or-truststore/inline/inline-definition/public-key",
+        "sid": "80246"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/raw-public-keys/inline-or-truststore/inline/inline-definition/public-key/name",
+        "sid": "80247"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/raw-public-keys/inline-or-truststore/inline/inline-definition/public-key/public-key",
+        "sid": "80248"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/raw-public-keys/inline-or-truststore/inline/inline-definition/public-key/public-key-format",
+        "sid": "80249"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/explicit/tls13-epsks",
+        "sid": "80250"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/ref",
+        "sid": "80251"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/security/tls/server-authentication/ref-or-explicit/ref/credentials-reference",
+        "sid": "80252"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/server-type",
+        "sid": "80253"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/single-connection",
+        "sid": "80254"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/sni-enabled",
+        "sid": "80255"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/source-type",
+        "sid": "80256"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/source-type/source-interface",
+        "sid": "80257"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/source-type/source-interface/source-interface",
+        "sid": "80258"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/source-type/source-ip",
+        "sid": "80259"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/source-type/source-ip/source-ip",
+        "sid": "80260"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics",
+        "sid": "80261"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/cert-errors",
+        "sid": "80262"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/connection-aborts",
+        "sid": "80263"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/connection-closes",
+        "sid": "80264"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/connection-failures",
+        "sid": "80265"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/connection-opens",
+        "sid": "80266"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/connection-timeouts",
+        "sid": "80267"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/discontinuity-time",
+        "sid": "80268"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/errors-received",
+        "sid": "80269"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/messages-received",
+        "sid": "80270"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/messages-sent",
+        "sid": "80271"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/rpk-errors",
+        "sid": "80272"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/statistics/sessions",
+        "sid": "80273"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/timeout",
+        "sid": "80274"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:/sys:system/tacacs-plus/server/vrf-instance",
+        "sid": "80275"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/input",
+        "sid": "80276"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:tacacs-plus/client-credentials/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/output",
+        "sid": "80277"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/input",
+        "sid": "80278"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-tacacs-plus:tacacs-plus/server/security/tls/client-identity/ref-or-explicit/explicit/auth-type/certificate/certificate/inline-or-keystore/inline/inline-definition/generate-csr/output",
+        "sid": "80279"
+      }
+    ]
+  }
+}

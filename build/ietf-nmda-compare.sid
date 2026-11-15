@@ -1,0 +1,177 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-nmda-compare",
+    "module-revision": "2021-12-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-datastores",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-yang-patch",
+        "module-revision": "2017-02-22"
+      },
+      {
+        "module-name": "ietf-netconf",
+        "module-revision": "2011-06-01"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-nmda-compare",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/input",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/input/all",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/input/filter-spec",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/input/filter-spec/subtree-filter",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/input/filter-spec/subtree-filter/subtree-filter",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/input/filter-spec/xpath-filter",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/input/filter-spec/xpath-filter/xpath-filter",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/input/report-origin",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/input/source",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/input/target",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch/comment",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch/edit",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch/edit/edit-id",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch/edit/operation",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch/edit/point",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch/edit/source-value",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch/edit/target",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch/edit/value",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch/edit/where",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/differences/differences/yang-patch/patch-id",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/no-matches",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-nmda-compare:compare/output/compare-response/no-matches/no-matches",
+        "sid": "80028"
+      }
+    ]
+  }
+}

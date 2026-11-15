@@ -1,0 +1,64 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-system-capabilities",
+    "module-revision": "2022-02-17",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-yang-library",
+        "module-revision": "2019-01-04"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-system-capabilities",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-capabilities:system-capabilities",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-capabilities:system-capabilities/datastore-capabilities",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-capabilities:system-capabilities/datastore-capabilities/datastore",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-capabilities:system-capabilities/datastore-capabilities/per-node-capabilities",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-capabilities:system-capabilities/datastore-capabilities/per-node-capabilities/node-selection",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-capabilities:system-capabilities/datastore-capabilities/per-node-capabilities/node-selection/node-selector",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-system-capabilities:system-capabilities/datastore-capabilities/per-node-capabilities/node-selection/node-selector/node-selector",
+        "sid": "80007"
+      }
+    ]
+  }
+}

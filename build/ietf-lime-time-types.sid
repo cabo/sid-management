@@ -1,0 +1,84 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-lime-time-types",
+    "module-revision": "2019-04-16",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-lime-time-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hours",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "icmp",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "microseconds",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "milliseconds",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "minutes",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "nanoseconds",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ntp64",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ptp80",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "seconds",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "time-unit-type",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "timestamp-type",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "truncated-ntp",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "truncated-ptp",
+        "sid": "80013"
+      }
+    ]
+  }
+}

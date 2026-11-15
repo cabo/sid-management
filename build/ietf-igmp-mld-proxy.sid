@@ -1,0 +1,221 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-igmp-mld-proxy",
+    "module-revision": "2023-05-30",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ietf-pim-base",
+        "module-revision": "2022-10-19"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-igmp-mld-proxy",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "igmp-proxy",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mld-proxy",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "igmp-proxy",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mld-proxy",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/enabled",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/group",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/group/filter-mode",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/group/group-address",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/group/source",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/group/source/downstream-interface",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/group/source/downstream-interface/name",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/group/source/source-address",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/group/source/up-time",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/group/up-time",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/igmp-version",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/name",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:igmp-proxy/interfaces/interface/sender-source-address",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/enabled",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/group",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/group/filter-mode",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/group/group-address",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/group/source",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/group/source/downstream-interface",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/group/source/downstream-interface/name",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/group/source/source-address",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/group/source/up-time",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/group/up-time",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/mld-version",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/name",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-proxy:mld-proxy/interfaces/interface/sender-source-address",
+        "sid": "80036"
+      }
+    ]
+  }
+}

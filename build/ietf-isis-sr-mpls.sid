@@ -1,0 +1,1064 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-isis-sr-mpls",
+    "module-revision": "2025-12-09",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-segment-routing-common",
+        "module-revision": "2021-05-26"
+      },
+      {
+        "module-name": "ietf-segment-routing-mpls",
+        "module-revision": "2021-05-26"
+      },
+      {
+        "module-name": "ietf-isis",
+        "module-revision": "2022-10-19"
+      },
+      {
+        "module-name": "iana-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-isis-sr-mpls",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "a-flag",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "adj-sid-flag",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "af-flag",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "b-flag",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "d-flag",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e-flag",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "f-flag",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l-flag",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lg-flag",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "m-flag",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mpls-ipv4",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mpls-ipv6",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "n-flag",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "p-flag",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pe-flag",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "prefix-sid-flag",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "r-flag",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "s-flag",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sf-flag",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sid-binding-flag",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sr-capability",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "v-flag",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vi-flag",
+        "sid": "80023"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "remote-lfa-sr",
+        "sid": "80024"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ti-lfa",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags/flag",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/adj-sid-flags",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/adj-sid-flags/flag",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/neighbor-id",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-index",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-label",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:extended-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/weight",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags/flag",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags/flag",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-extended-ipv4-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags/flag",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-ipv6-reachability/isis:prefixes/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/adj-sid-flags",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/adj-sid-flags/flag",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/neighbor-id",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-index",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-label",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:mt-is-neighbor/isis:neighbor/isis:instances/isis:instance/adj-sid-sub-tlvs/adj-sid-sub-tlv/weight",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/local-blocks",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/local-blocks/local-block",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/local-blocks/local-block/range-size",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/local-blocks/local-block/sid",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/local-blocks/local-block/sid/sid-index",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/local-blocks/local-block/sid/sid-index/index-value",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/local-blocks/local-block/sid/sid-label",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/local-blocks/local-block/sid/sid-label/label-value",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-algorithms",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-algorithms/sr-algorithm",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-capability",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-capability/global-blocks",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-capability/global-blocks/global-block",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-capability/global-blocks/global-block/range-size",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-capability/global-blocks/global-block/sid",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-capability/global-blocks/global-block/sid/sid-index",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-capability/global-blocks/global-block/sid/sid-index/index-value",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-capability/global-blocks/global-block/sid/sid-label",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-capability/global-blocks/global-block/sid/sid-label/label-value",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/sr-capability/sr-capability-flag",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/srms-preference",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:database/isis:levels/isis:lsp/isis:router-capabilities/isis:router-capability/srms-preference/preference",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/isis:adjacencies/isis:adjacency/adjacency-sid",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/isis:adjacencies/isis:adjacency/adjacency-sid/address-family",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/isis:adjacencies/isis:adjacency/adjacency-sid/protection-requested",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/isis:adjacencies/isis:adjacency/adjacency-sid/value",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/isis:adjacencies/isis:adjacency/adjacency-sid/weight",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/segment-routing",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/segment-routing/adjacency-sid",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/segment-routing/adjacency-sid/adj-sids",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/segment-routing/adjacency-sid/adj-sids/protected",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/segment-routing/adjacency-sid/adj-sids/value",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/segment-routing/adjacency-sid/adj-sids/value-type",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/segment-routing/adjacency-sid/adj-sids/weight",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/segment-routing/adjacency-sid/advertise-adj-group-sid",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/segment-routing/adjacency-sid/advertise-adj-group-sid/group-id",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/isis:interfaces/isis:interface/segment-routing/adjacency-sid/advertise-protection",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/segment-routing",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/segment-routing/bindings",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/segment-routing/bindings/advertise",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/segment-routing/bindings/advertise/policies",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/segment-routing/bindings/receive",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis-sr-mpls:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/isis:isis/segment-routing/enabled",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/mt-id",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags/flag",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/range",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/sid-binding-flags",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/sid-binding-flags/flag",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/sid-sub-tlv",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/sid-sub-tlv/sid",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/sid-sub-tlv/sid/sid-index",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/sid-sub-tlv/sid/sid-label",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/unknown-tlvs",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/unknown-tlvs/unknown-tlv",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/unknown-tlvs/unknown-tlv/length",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/unknown-tlvs/unknown-tlv/type",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:mt-sid-binding-tlvs/mt-sid-binding-tlv/unknown-tlvs/unknown-tlv/value",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/algorithm",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/prefix-sid-flags/flag",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/prefix-sid-sub-tlvs/prefix-sid-sub-tlvs/prefix-sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/range",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/sid-binding-flags",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/sid-binding-flags/flag",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/sid-sub-tlv",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/sid-sub-tlv/sid",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/sid-sub-tlv/sid/sid-index",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/sid-sub-tlv/sid/sid-index/index-value",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/sid-sub-tlv/sid/sid-label",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/sid-sub-tlv/sid/sid-label/label-value",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/unknown-tlvs",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/unknown-tlvs/unknown-tlv",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/unknown-tlvs/unknown-tlv/length",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/unknown-tlvs/unknown-tlv/type",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ietf-isis-sr-mpls:sid-binding-tlvs/sid-binding-tlv/unknown-tlvs/unknown-tlv/value",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/ietf-isis-sr-mpls:protocol-srgb",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/ietf-isis-sr-mpls:protocol-srgb/srgb",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/ietf-isis-sr-mpls:protocol-srgb/srgb/lower-bound",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/ietf-isis-sr-mpls:protocol-srgb/srgb/upper-bound",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/ietf-isis-sr-mpls:ti-lfa",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/ietf-isis-sr-mpls:ti-lfa/enabled",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/ietf-isis-sr-mpls:ti-lfa/selection-tie-breakers",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/ietf-isis-sr-mpls:ti-lfa/selection-tie-breakers/node-protection",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/ietf-isis-sr-mpls:ti-lfa/selection-tie-breakers/node-protection/priority",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/ietf-isis-sr-mpls:ti-lfa/selection-tie-breakers/srlg-disjoint",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/ietf-isis-sr-mpls:ti-lfa/selection-tie-breakers/srlg-disjoint/priority",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-1/ietf-isis-sr-mpls:ti-lfa",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-1/ietf-isis-sr-mpls:ti-lfa/enabled",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-2/ietf-isis-sr-mpls:ti-lfa",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-2/ietf-isis-sr-mpls:ti-lfa/enabled",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/remote-lfa/ietf-isis-sr-mpls:use-segment-routing-path",
+        "sid": "80203"
+      }
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-bfd-types",
+    "module-revision": "2022-09-22",
+    "dependency-revision": [
+      {
+        "module-name": "iana-bfd-types",
+        "module-revision": "2021-10-21"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-key-chain",
+        "module-revision": "2017-06-15"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-bfd-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bfdv1",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "encap-ip",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "encap-type",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "path-ip-mh",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "path-ip-sh",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "path-lag",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "path-mpls-lsp",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "path-mpls-te",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "path-type",
+        "sid": "80009"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "authentication",
+        "sid": "80010"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "client-base-cfg-parms",
+        "sid": "80011"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "demand-mode",
+        "sid": "80012"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "echo-mode",
+        "sid": "80013"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "single-minimum-interval",
+        "sid": "80014"
+      }
+    ]
+  }
+}

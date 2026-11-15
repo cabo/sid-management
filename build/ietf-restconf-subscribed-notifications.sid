@@ -1,0 +1,44 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-restconf-subscribed-notifications",
+    "module-revision": "2019-11-17",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-subscribed-notifications",
+        "module-revision": "2019-09-09"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-restconf-subscribed-notifications",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-subscribed-notifications:/sn:establish-subscription/sn:output/uri",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-subscribed-notifications:/sn:subscription-modified/uri",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-restconf-subscribed-notifications:/sn:subscriptions/sn:subscription/uri",
+        "sid": "80003"
+      }
+    ]
+  }
+}

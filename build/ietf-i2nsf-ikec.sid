@@ -1,0 +1,25 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-i2nsf-ikec",
+    "module-revision": "2021-07-14",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-i2nsf-ikec",
+        "sid": "80000"
+      }
+    ]
+  }
+}

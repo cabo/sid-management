@@ -1,0 +1,19 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "iana-dots-signal-channel",
+    "module-revision": "2021-09-02",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "iana-dots-signal-channel",
+        "sid": "80000"
+      }
+    ]
+  }
+}

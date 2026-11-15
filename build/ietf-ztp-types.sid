@@ -1,0 +1,45 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ztp-types",
+    "module-revision": "2024-10-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-crypto-types",
+        "module-revision": "2024-10-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ztp-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "certificate-request-format",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cmc-csr",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cmp-csr",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "p10-csr",
+        "sid": "80004"
+      }
+    ]
+  }
+}

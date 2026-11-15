@@ -1,0 +1,974 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ntp",
+    "module-revision": "2022-07-05",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-system",
+        "module-revision": "2014-08-06"
+      },
+      {
+        "module-name": "ietf-access-control-list",
+        "module-revision": "2019-03-04"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ntp",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "access-mode",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "active",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aes-cmac",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "association-mode",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "broadcast-client",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "broadcast-server",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "client",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "clock-never-set",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "clock-state",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "clock-synchronized",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "crypto-algorithm",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "freq",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "freq-set-by-cfg",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hmac-sha-1",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hmac-sha-256",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hmac-sha-384",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hmac-sha-512",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hmac-sha1-12",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "md5",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ntp-sync-state",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "passive",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "peer-access-mode",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "query-only-access-mode",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "server",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "server-access-mode",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "server-only-access-mode",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sha-1",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "spike",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "synchronized",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "uc-peer",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "uc-server",
+        "sid": "80031"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unicast-configuration-type",
+        "sid": "80032"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unsynchronized",
+        "sid": "80033"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "access-rules",
+        "sid": "80034"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "authentication",
+        "sid": "80035"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "broadcast-client",
+        "sid": "80036"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "broadcast-server",
+        "sid": "80037"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "deprecated",
+        "sid": "80038"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "hex-key-string",
+        "sid": "80039"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "manycast-client",
+        "sid": "80040"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "manycast-server",
+        "sid": "80041"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "multicast-client",
+        "sid": "80042"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "multicast-server",
+        "sid": "80043"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ntp-port",
+        "sid": "80044"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "unicast-configuration",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/access-rules",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/access-rules/access-rule",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/access-rules/access-rule/access-mode",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/access-rules/access-rule/acl",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/address",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/authentication",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/delay",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/dispersion",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/input-time",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/isconfigured",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/local-mode",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/maxpoll",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/minpoll",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/now",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/ntp-statistics",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/ntp-statistics/discontinuity-time",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/ntp-statistics/packet-dropped",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/ntp-statistics/packet-received",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/ntp-statistics/packet-sent",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/ntp-statistics/packet-sent-fail",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/offset",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/originate-time",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/peer-interface",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/poll",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/port",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/prefer",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/reach",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/receive-time",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/refid",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/stratum",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/transmit-time",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/unreach",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/associations/association/version",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/auth-enabled",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/authentication-keys",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/authentication-keys/algorithm",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/authentication-keys/istrusted",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/authentication-keys/key",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/authentication-keys/key/key-string-style",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/authentication-keys/key/key-string-style/hexadecimal",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/authentication-keys/key/key-string-style/hexadecimal/hexadecimal-string",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/authentication-keys/key/key-string-style/keystring",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/authentication-keys/key/key-string-style/keystring/keystring",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/authentication/authentication-keys/keyid",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/actual-freq",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/associations-address",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/associations-isconfigured",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/associations-local-mode",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/clock-offset",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/clock-precision",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/clock-refid",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/clock-state",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/clock-stratum",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/nominal-freq",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/reference-time",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/root-delay",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/root-dispersion",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/clock-state/system-status/sync-state",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-client",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-server",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-server/authentication",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-server/authentication/authentication-type",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-server/authentication/authentication-type/symmetric-key",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-server/authentication/authentication-type/symmetric-key/keyid",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-server/maxpoll",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-server/minpoll",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-server/port",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-server/ttl",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/broadcast-server/version",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/address",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/authentication",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/authentication/authentication-type",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/authentication/authentication-type/symmetric-key",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/authentication/authentication-type/symmetric-key/keyid",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/beacon",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/maxclock",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/maxpoll",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/minclock",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/minpoll",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/port",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/ttl",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-client/version",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-server",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/manycast-server/address",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-client",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-client/address",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server/address",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server/authentication",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server/authentication/authentication-type",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server/authentication/authentication-type/symmetric-key",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server/authentication/authentication-type/symmetric-key/keyid",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server/maxpoll",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server/minpoll",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server/port",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server/ttl",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/multicast-server/version",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/interfaces/interface/name",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/ntp-statistics",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/ntp-statistics/discontinuity-time",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/ntp-statistics/packet-dropped",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/ntp-statistics/packet-received",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/ntp-statistics/packet-sent",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/ntp-statistics/packet-sent-fail",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/port",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/refclock-master",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/refclock-master/master-stratum",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/address",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/authentication",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/authentication/authentication-type",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/authentication/authentication-type/symmetric-key",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/authentication/authentication-type/symmetric-key/keyid",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/burst",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/iburst",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/maxpoll",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/minpoll",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/port",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/prefer",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/source",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/type",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:ntp/unicast-configuration/version",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:statistics-reset",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:statistics-reset/input",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:statistics-reset/input/association-or-all",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:statistics-reset/input/association-or-all/all",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:statistics-reset/input/association-or-all/association",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:statistics-reset/input/association-or-all/association/associations-address",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:statistics-reset/input/association-or-all/association/associations-isconfigured",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:statistics-reset/input/association-or-all/association/associations-local-mode",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ntp:statistics-reset/output",
+        "sid": "80185"
+      }
+    ]
+  }
+}

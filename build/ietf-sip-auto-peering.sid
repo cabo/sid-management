@@ -1,0 +1,406 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-sip-auto-peering",
+    "module-revision": "2026-06-15",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "iana-crypt-hash",
+        "module-revision": "2014-08-06"
+      },
+      {
+        "module-name": "ietf-tls-common",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "iana-sip-option-tags",
+        "module-revision": "2026-08-17"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-sip-auto-peering",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "capability-doc-variant",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "codec-variant",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "g722",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "g729",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "opus",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pcma",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pcmu",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sip-transport-protocol",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tcp",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "udp",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "v1-0",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/caller-id",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/caller-id/e164-format",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/caller-id/preferred-method",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/early-media",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/number-range",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/number-range/count",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/number-range/index",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/number-range/type",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/number-range/value",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/signaling-forking",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/call-spec/supported-method",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/dtmf",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/dtmf/iteration",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/dtmf/payload-number",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/extension",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/fax",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/fax/protocol",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/media-type-audio",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/media-type-audio/media-format",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/media-type-audio/parameter",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/media-type-audio/ptime",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/media-type-audio/rate",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/rtcp",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/rtcp/rtcp-feedback",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/rtcp/symmetric-rtcp",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/rtp",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/rtp/rtp-trigger",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/media/rtp/symmetric-rtp",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/revision",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/revision/location",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/revision/not-before",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security/certificate-location",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security/media-security",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security/media-security/key-management",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security/secure-telephony-identity",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security/secure-telephony-identity/acme-directory",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security/secure-telephony-identity/certificate-delegation",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security/secure-telephony-identity/stir-compliance",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security/signaling",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security/signaling/secure",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/security/signaling/version",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/call-control",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/call-control/host",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/call-control/port",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/dns-server",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/outbound-proxy",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/outbound-proxy/host",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/outbound-proxy/port",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/realm",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/realm/name",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/realm/password",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/realm/username",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/registrar",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/registrar/host",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/registrar/port",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/transport-info/transport",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sip-auto-peering:sip-auto-peering/variant",
+        "sid": "80073"
+      }
+    ]
+  }
+}

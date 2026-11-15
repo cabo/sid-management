@@ -1,0 +1,220 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-yang-patch",
+    "module-revision": "2017-02-22",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-restconf",
+        "module-revision": "2017-01-26"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-yang-patch",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-id",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/errors",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/errors/errors",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/errors/errors/error",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/errors/errors/error/error-app-tag",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/errors/errors/error/error-info",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/errors/errors/error/error-message",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/errors/errors/error/error-path",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/errors/errors/error/error-tag",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/errors/errors/error/error-type",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/ok",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/edit-status/edit/edit-status-choice/ok/ok",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/global-errors",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/global-errors/errors",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/global-errors/errors/error",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/global-errors/errors/error/error-app-tag",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/global-errors/errors/error/error-info",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/global-errors/errors/error/error-message",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/global-errors/errors/error/error-path",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/global-errors/errors/error/error-tag",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/global-errors/errors/error/error-type",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/ok",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/global-status/ok/ok",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch-status/patch-id",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch/comment",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch/edit",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch/edit/edit-id",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch/edit/operation",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch/edit/point",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch/edit/target",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch/edit/value",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch/edit/where",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-yang-patch:yang-patch/patch-id",
+        "sid": "80039"
+      }
+    ]
+  }
+}

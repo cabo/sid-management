@@ -1,0 +1,93 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dots-call-home",
+    "module-revision": "2021-12-09",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-dots-signal-channel",
+        "module-revision": "2021-09-02"
+      },
+      {
+        "module-name": "ietf-yang-structure-ext",
+        "module-revision": "2020-06-17"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dots-call-home",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/ietf-dots-call-home:source-icmp-type-range",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/ietf-dots-call-home:source-icmp-type-range/lower-type",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/ietf-dots-call-home:source-icmp-type-range/upper-type",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/ietf-dots-call-home:source-port-range",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/ietf-dots-call-home:source-port-range/lower-port",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/ietf-dots-call-home:source-port-range/upper-port",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/mitigation-scope/scope/ietf-dots-call-home:source-prefix",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/redirected-signal/ietf-dots-call-home:type",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/redirected-signal/ietf-dots-call-home:type/call-home-only",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/redirected-signal/ietf-dots-call-home:type/call-home-only/alt-ch-client",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/redirected-signal/ietf-dots-call-home:type/call-home-only/alt-ch-client-record",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-signal-channel:dots-signal/message-type/redirected-signal/ietf-dots-call-home:type/call-home-only/ttl",
+        "sid": "80012"
+      }
+    ]
+  }
+}

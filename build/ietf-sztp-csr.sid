@@ -1,0 +1,158 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-sztp-csr",
+    "module-revision": "2024-10-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-sztp-bootstrap-server",
+        "module-revision": "2019-04-30"
+      },
+      {
+        "module-name": "ietf-yang-structure-ext",
+        "module-revision": "2020-06-17"
+      },
+      {
+        "module-name": "ietf-ztp-types",
+        "module-revision": "2024-10-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-sztp-csr",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr-support",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr-support/csr-support",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr-support/csr-support/csr-generation",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr-support/csr-support/csr-generation/supported-formats",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr-support/csr-support/csr-generation/supported-formats/format-identifier",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr-support/csr-support/key-generation",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr-support/csr-support/key-generation/supported-algorithms",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr-support/csr-support/key-generation/supported-algorithms/algorithm-identifier",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr/csr-type",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr/csr-type/cmc-csr",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr/csr-type/cmc-csr/cmc-csr",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr/csr-type/cmp-csr",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr/csr-type/cmp-csr/cmp-csr",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr/csr-type/p10-csr",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-bootstrap-server:get-bootstrapping-data/input/ietf-sztp-csr:msg-type/csr/csr-type/p10-csr/p10-csr",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-csr:csr-request",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-csr:csr-request/cert-req-info",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-csr:csr-request/csr-generation",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-csr:csr-request/csr-generation/selected-format",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-csr:csr-request/csr-generation/selected-format/format-identifier",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-csr:csr-request/key-generation",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-csr:csr-request/key-generation/selected-algorithm",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-csr:csr-request/key-generation/selected-algorithm/algorithm-identifier",
+        "sid": "80025"
+      }
+    ]
+  }
+}

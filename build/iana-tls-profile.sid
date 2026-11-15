@@ -1,0 +1,19 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "iana-tls-profile",
+    "module-revision": "2025-04-18",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "iana-tls-profile",
+        "sid": "80000"
+      }
+    ]
+  }
+}

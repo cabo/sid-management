@@ -1,0 +1,147 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-bfd-unsolicited",
+    "module-revision": "2023-08-31",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-bfd-types",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd-ip-sh",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-bfd-unsolicited",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "active",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "passive",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "role",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "unsolicited-params-per-interface",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/ietf-bfd-unsolicited:unsolicited",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/ietf-bfd-unsolicited:unsolicited/interval-config-type",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/ietf-bfd-unsolicited:unsolicited/interval-config-type/single-interval",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/ietf-bfd-unsolicited:unsolicited/interval-config-type/single-interval/min-interval",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/ietf-bfd-unsolicited:unsolicited/interval-config-type/tx-rx-intervals",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/ietf-bfd-unsolicited:unsolicited/interval-config-type/tx-rx-intervals/desired-min-tx-interval",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/ietf-bfd-unsolicited:unsolicited/interval-config-type/tx-rx-intervals/required-min-rx-interval",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/ietf-bfd-unsolicited:unsolicited/local-multiplier",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/interfaces/ietf-bfd-unsolicited:unsolicited",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/interfaces/ietf-bfd-unsolicited:unsolicited/enabled",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/interfaces/ietf-bfd-unsolicited:unsolicited/interval-config-type",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/interfaces/ietf-bfd-unsolicited:unsolicited/interval-config-type/single-interval",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/interfaces/ietf-bfd-unsolicited:unsolicited/interval-config-type/single-interval/min-interval",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/interfaces/ietf-bfd-unsolicited:unsolicited/interval-config-type/tx-rx-intervals",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/interfaces/ietf-bfd-unsolicited:unsolicited/interval-config-type/tx-rx-intervals/desired-min-tx-interval",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/interfaces/ietf-bfd-unsolicited:unsolicited/interval-config-type/tx-rx-intervals/required-min-rx-interval",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/interfaces/ietf-bfd-unsolicited:unsolicited/local-multiplier",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/ietf-bfd-ip-sh:ip-sh/sessions/session/ietf-bfd-unsolicited:role",
+        "sid": "80022"
+      }
+    ]
+  }
+}

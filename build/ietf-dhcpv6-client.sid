@@ -1,0 +1,597 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dhcpv6-client",
+    "module-revision": "2022-06-20",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-dhcpv6-common",
+        "module-revision": "2022-06-20"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dhcpv6-client",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "anon-profile",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "non-temp-addr",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "prefix-delegation",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "temp-addr",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/option-request-option",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/option-request-option/oro-option",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/rapid-commit-option",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/reconfigure-accept-option",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/user-class-option",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/user-class-option/user-class-data-instance",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/user-class-option/user-class-data-instance/user-class-data",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/user-class-option/user-class-data-instance/user-class-data-id",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-class-option",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-class-option/vendor-class-option-instances",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-class-option/vendor-class-option-instances/enterprise-number",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-class-option/vendor-class-option-instances/vendor-class-data-element",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-class-option/vendor-class-option-instances/vendor-class-data-element/vendor-class-data",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-class-option/vendor-class-option-instances/vendor-class-data-element/vendor-class-data-id",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-specific-information-options",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-specific-information-options/vendor-specific-information-option",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-specific-information-options/vendor-specific-information-option/enterprise-number",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-specific-information-options/vendor-specific-information-option/vendor-option-data",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-specific-information-options/vendor-specific-information-option/vendor-option-data/sub-option-code",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/client-configured-options/vendor-specific-information-options/vendor-specific-information-option/vendor-option-data/sub-option-data",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/enabled",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/ia-id",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/ia-na-options",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/allocation-time",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/ia-na-address",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/last-renew-rebind",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/lease-t1",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/lease-t2",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/preferred-lifetime",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/server-duid",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/status",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/status/code",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/status/message",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-na/lease-state/valid-lifetime",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/ia-id",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/ia-pd-options",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/allocation-time",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/ia-pd-prefix",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/last-renew-rebind",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/lease-t1",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/lease-t2",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/preferred-lifetime",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/server-duid",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/status",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/status/code",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/status/message",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/lease-state/valid-lifetime",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-pd/prefix-length-hint",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/ia-id",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/ia-ta-options",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/lease-state",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/lease-state/allocation-time",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/lease-state/ia-ta-address",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/lease-state/last-renew-rebind",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/lease-state/preferred-lifetime",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/lease-state/server-duid",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/lease-state/status",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/lease-state/status/code",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/lease-state/status/message",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/ia-ta/lease-state/valid-lifetime",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/if-name",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/interface-duid",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/advertise-count",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/confirm-count",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/decline-count",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/discarded-message-count",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/discontinuity-time",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/information-request-count",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/rebind-count",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/reconfigure-count",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/release-count",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/renew-count",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/reply-count",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/request-count",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/client-if/statistics/solicit-count",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:dhcpv6-client/enabled",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:invalid-ia-address-detected",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:invalid-ia-address-detected/description",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:invalid-ia-address-detected/ia-id",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:invalid-ia-address-detected/ia-na-t1-timer",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:invalid-ia-address-detected/ia-na-t2-timer",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:invalid-ia-address-detected/ia-options",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:invalid-ia-address-detected/invalid-address",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:invalid-ia-address-detected/preferred-lifetime",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:invalid-ia-address-detected/valid-lifetime",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:server-duid-changed",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:server-duid-changed/lease-ia-na",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:server-duid-changed/lease-ia-pd",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:server-duid-changed/lease-ia-ta",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:server-duid-changed/new-server-duid",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:server-duid-changed/previous-server-duid",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:transmission-failed",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:transmission-failed/description",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:transmission-failed/failure-type",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:unsuccessful-status-code",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:unsuccessful-status-code/server-duid",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:unsuccessful-status-code/status",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:unsuccessful-status-code/status/code",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dhcpv6-client:unsuccessful-status-code/status/message",
+        "sid": "80112"
+      }
+    ]
+  }
+}

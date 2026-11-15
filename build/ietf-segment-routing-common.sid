@@ -1,0 +1,45 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-segment-routing-common",
+    "module-revision": "2021-05-26",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-segment-routing-common",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "prefix-sid-algorithm",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "prefix-sid-algorithm-shortest-path",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "prefix-sid-algorithm-strict-spf",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "sid-last-hop-behavior",
+        "sid": "80004"
+      }
+    ]
+  }
+}

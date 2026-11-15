@@ -1,0 +1,162 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-pim-sm",
+    "module-revision": "2022-10-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-pim-base",
+        "module-revision": "2022-10-19"
+      },
+      {
+        "module-name": "ietf-pim-rp",
+        "module-revision": "2022-10-19"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-pim-sm",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rp-sm",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "spt-switch-infinity",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "spt-switch-policy",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-sm:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv4-rp/sm",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-sm:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv4-rp/sm/override",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-sm:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv4-rp/sm/policy-name",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-sm:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv6-rp/sm",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-sm:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv6-rp/sm/override",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-sm:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv6-rp/sm/policy-name",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm/anycast-rp",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm/anycast-rp/ipv4-anycast-rp",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm/anycast-rp/ipv4-anycast-rp/anycast-address",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm/anycast-rp/ipv4-anycast-rp/rp-address",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm/anycast-rp/ipv6-anycast-rp",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm/anycast-rp/ipv6-anycast-rp/anycast-address",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm/anycast-rp/ipv6-anycast-rp/rp-address",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm/spt-switch",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm/spt-switch/infinity",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/asm/spt-switch/infinity/policy-name",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/ssm",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-sm:sm/ssm/range-policy",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/interfaces/interface/address-family/ietf-pim-sm:sm",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/interfaces/interface/address-family/ietf-pim-sm:sm/passive",
+        "sid": "80025"
+      }
+    ]
+  }
+}

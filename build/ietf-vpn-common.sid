@@ -1,0 +1,1027 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-vpn-common",
+    "module-revision": "2022-02-11",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-packet-fields",
+        "module-revision": "2019-03-04"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-vpn-common",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "address-family",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "admin-down",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "admin-pre-deployment",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "admin-testing",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "admin-up",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "administrative-status",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "all2one-bundling",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "any-routing",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "any-to-any",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "any-to-any-role",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "asm-tree-type",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "auto-neg",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "auto-rp",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bearer-diverse",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bfd-session-type",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bgp-lu",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bgp-mode",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bgp-routing",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bgp-signaling",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bidir-tree-type",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "both",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "broadcast-traffic",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bsr-rp",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bundling-type",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-direction",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-per-cos",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-per-port",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-per-service",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-per-site",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bw-type",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "c-vlan",
+        "sid": "80031"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "classic-bfd",
+        "sid": "80032"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "control-mode",
+        "sid": "80033"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "custom",
+        "sid": "80034"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "custom-role",
+        "sid": "80035"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "customer-application",
+        "sid": "80036"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "database",
+        "sid": "80037"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "direct-routing",
+        "sid": "80038"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "discard",
+        "sid": "80039"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dot1q",
+        "sid": "80040"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dual-stack",
+        "sid": "80041"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dynamic-mapping",
+        "sid": "80042"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "embb",
+        "sid": "80043"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "encapsulation-type",
+        "sid": "80044"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "enhanced-vpn",
+        "sid": "80045"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ethernet-type",
+        "sid": "80046"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "export",
+        "sid": "80047"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "file-transfer",
+        "sid": "80048"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "full-duplex",
+        "sid": "80049"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "games",
+        "sid": "80050"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "geneve",
+        "sid": "80051"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gre",
+        "sid": "80052"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gre-v4",
+        "sid": "80053"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gre-v6",
+        "sid": "80054"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "group-management-protocol",
+        "sid": "80055"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hub-role",
+        "sid": "80056"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hub-spoke",
+        "sid": "80057"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hub-spoke-disjoint",
+        "sid": "80058"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ie-type",
+        "sid": "80059"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ietf-network-slice",
+        "sid": "80060"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "igmp-proto",
+        "sid": "80061"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "igmp-version",
+        "sid": "80062"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "igmpv1",
+        "sid": "80063"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "igmpv2",
+        "sid": "80064"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "igmpv3",
+        "sid": "80065"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "import",
+        "sid": "80066"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "import-export",
+        "sid": "80067"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "inbound-bw",
+        "sid": "80068"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ip-in-ip",
+        "sid": "80069"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ip-in-ipv4",
+        "sid": "80070"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ip-in-ipv6",
+        "sid": "80071"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipv4",
+        "sid": "80072"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipv6",
+        "sid": "80073"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "irb",
+        "sid": "80074"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isis-level",
+        "sid": "80075"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isis-routing",
+        "sid": "80076"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l2tp-signaling",
+        "sid": "80077"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l3vpn",
+        "sid": "80078"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lag-int",
+        "sid": "80079"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ldp",
+        "sid": "80080"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ldp-signaling",
+        "sid": "80081"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "level-1",
+        "sid": "80082"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "level-1-2",
+        "sid": "80083"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "level-2",
+        "sid": "80084"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "linecard-diverse",
+        "sid": "80085"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "loopback",
+        "sid": "80086"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mail",
+        "sid": "80087"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mld-proto",
+        "sid": "80088"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mld-version",
+        "sid": "80089"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mldv1",
+        "sid": "80090"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mldv2",
+        "sid": "80091"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mmtc",
+        "sid": "80092"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mpls-evpn",
+        "sid": "80093"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mpls-in-udp",
+        "sid": "80094"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "multi-svc-bundling",
+        "sid": "80095"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "multicast-gp-address-mapping",
+        "sid": "80096"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "multicast-rp-discovery-type",
+        "sid": "80097"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "multicast-traffic",
+        "sid": "80098"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "multicast-tree-type",
+        "sid": "80099"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "multipoint",
+        "sid": "80100"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "neg-mode",
+        "sid": "80101"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "network-management",
+        "sid": "80102"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "one2one-bundling",
+        "sid": "80103"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "op-down",
+        "sid": "80104"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "op-unknown",
+        "sid": "80105"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "op-up",
+        "sid": "80106"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "operational-status",
+        "sid": "80107"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-routing",
+        "sid": "80108"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "outbound-bw",
+        "sid": "80109"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "p2p",
+        "sid": "80110"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pbb-evpn",
+        "sid": "80111"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pe-diverse",
+        "sid": "80112"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "peer",
+        "sid": "80113"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pim-proto",
+        "sid": "80114"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "placement-diversity",
+        "sid": "80115"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "point-to-point",
+        "sid": "80116"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pop-diverse",
+        "sid": "80117"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "priority-tagged",
+        "sid": "80118"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protocol-type",
+        "sid": "80119"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qinany",
+        "sid": "80120"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qinq",
+        "sid": "80121"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qos-profile-direction",
+        "sid": "80122"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rip-routing",
+        "sid": "80123"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "role",
+        "sid": "80124"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "routing-protocol-type",
+        "sid": "80125"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rsvp-te",
+        "sid": "80126"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "s-bfd",
+        "sid": "80127"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "s-c-vlan",
+        "sid": "80128"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "s-vlan",
+        "sid": "80129"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "same-bearer",
+        "sid": "80130"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "same-pe",
+        "sid": "80131"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "service-type",
+        "sid": "80132"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "site-network-access-type",
+        "sid": "80133"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "site-to-wan",
+        "sid": "80134"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "social",
+        "sid": "80135"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "spoke-role",
+        "sid": "80136"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sr",
+        "sid": "80137"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sr-mpls",
+        "sid": "80138"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sr-mpls-over-ip",
+        "sid": "80139"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "srv6",
+        "sid": "80140"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ssm-tree-type",
+        "sid": "80141"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "static-mapping",
+        "sid": "80142"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "static-mode",
+        "sid": "80143"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "static-routing",
+        "sid": "80144"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "static-rp",
+        "sid": "80145"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tag-type",
+        "sid": "80146"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tagged-int",
+        "sid": "80147"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tf-type",
+        "sid": "80148"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "transport-instance-type",
+        "sid": "80149"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tunnel",
+        "sid": "80150"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unknown",
+        "sid": "80151"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unknown-unicast-traffic",
+        "sid": "80152"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "untagged-int",
+        "sid": "80153"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "urllc",
+        "sid": "80154"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "video",
+        "sid": "80155"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "virtual-network",
+        "sid": "80156"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vlan-type",
+        "sid": "80157"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voice",
+        "sid": "80158"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vpls",
+        "sid": "80159"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vpn-signaling-type",
+        "sid": "80160"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vpn-topology",
+        "sid": "80161"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vpws",
+        "sid": "80162"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vpws-evpn",
+        "sid": "80163"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vrrp-routing",
+        "sid": "80164"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vxlan",
+        "sid": "80165"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vxlan-evpn",
+        "sid": "80166"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vxlan-peer-mode",
+        "sid": "80167"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vxlan-trans",
+        "sid": "80168"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "wan-to-site",
+        "sid": "80169"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "web",
+        "sid": "80170"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "bearer-reference",
+        "sid": "80171"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "bfd",
+        "sid": "80172"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "carriers-carrier",
+        "sid": "80173"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "dot1q",
+        "sid": "80174"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "encryption",
+        "sid": "80175"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "external-connectivity",
+        "sid": "80176"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "extranet-vpn",
+        "sid": "80177"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "fast-reroute",
+        "sid": "80178"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "igmp",
+        "sid": "80179"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "inbound-bw",
+        "sid": "80180"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ipv4",
+        "sid": "80181"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ipv6",
+        "sid": "80182"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "lag-interface",
+        "sid": "80183"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mld",
+        "sid": "80184"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "multicast",
+        "sid": "80185"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "outbound-bw",
+        "sid": "80186"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "pim",
+        "sid": "80187"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "placement-diversity",
+        "sid": "80188"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "qinany",
+        "sid": "80189"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "qinq",
+        "sid": "80190"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "qos",
+        "sid": "80191"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "rtg-bgp",
+        "sid": "80192"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "rtg-isis",
+        "sid": "80193"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "rtg-ospf",
+        "sid": "80194"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "rtg-ospf-sham-link",
+        "sid": "80195"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "rtg-rip",
+        "sid": "80196"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "rtg-vrrp",
+        "sid": "80197"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "vxlan",
+        "sid": "80198"
+      }
+    ]
+  }
+}

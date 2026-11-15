@@ -1,0 +1,1169 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-mpls-ldp",
+    "module-revision": "2022-03-14",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-ip",
+        "module-revision": "2018-02-22"
+      },
+      {
+        "module-name": "ietf-key-chain",
+        "module-revision": "2017-06-15"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-mpls-ldp",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "adjacency-flag-active",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "adjacency-flag-base",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "adjacency-flag-passive",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mpls-ldp",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input/hello-adjacency",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input/hello-adjacency/hello-adjacency-type",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input/hello-adjacency/hello-adjacency-type/link",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input/hello-adjacency/hello-adjacency-type/link/link",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input/hello-adjacency/hello-adjacency-type/link/link/next-hop-address",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input/hello-adjacency/hello-adjacency-type/link/link/next-hop-interface",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input/hello-adjacency/hello-adjacency-type/targeted",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input/hello-adjacency/hello-adjacency-type/targeted/targeted",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input/hello-adjacency/hello-adjacency-type/targeted/targeted/target-address",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/input/hello-adjacency/protocol-name",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-hello-adjacency/output",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer-statistics",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer-statistics/input",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer-statistics/input/label-space-id",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer-statistics/input/lsr-id",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer-statistics/input/protocol-name",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer-statistics/output",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer/input",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer/input/label-space-id",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer/input/lsr-id",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer/input/protocol-name",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-clear-peer/output",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-fec-event",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-fec-event/event-type",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-fec-event/fec",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-fec-event/protocol-name",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event/event-type",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event/hello-adjacency-type",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event/hello-adjacency-type/link",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event/hello-adjacency-type/link/link",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event/hello-adjacency-type/link/link/next-hop-address",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event/hello-adjacency-type/link/link/next-hop-interface",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event/hello-adjacency-type/targeted",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event/hello-adjacency-type/targeted/targeted",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event/hello-adjacency-type/targeted/targeted/target-address",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-hello-adjacency-event/protocol-name",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-peer-event",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-peer-event/event-type",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-peer-event/peer",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-peer-event/peer/label-space-id",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-peer-event/peer/lsr-id",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-mpls-ldp:mpls-ldp-peer-event/peer/protocol-name",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/hello-holdtime",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/hello-interval",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/enabled",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/adjacent-address",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/flag",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime/adjacent",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime/negotiated",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime/remaining",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/next-hello",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/peer",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/peer/label-space-id",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/peer/lsr-id",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics/discontinuity-time",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics/hello-dropped",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics/hello-received",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/name",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/interfaces/interface/next-hello",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/adjacent-address",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/flag",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime/adjacent",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime/negotiated",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime/remaining",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/local-address",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/next-hello",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/peer",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/peer/label-space-id",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/peer/lsr-id",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics/discontinuity-time",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics/hello-dropped",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics/hello-received",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/target",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/target/adjacent-address",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/target/enabled",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/address-families/ipv4/target/local-address",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/hello-accept",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/hello-accept/enabled",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/hello-holdtime",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/discovery/targeted/hello-interval",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/address",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/address/address",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/address/advertisement-type",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/address/peer",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/address/peer/label-space-id",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/address/peer/lsr-id",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/fec-label",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/fec-label/fec",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/fec-label/peer",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/fec-label/peer/advertisement-type",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/fec-label/peer/label",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/fec-label/peer/label-space-id",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/fec-label/peer/lsr-id",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/bindings/fec-label/peer/used-in-forwarding",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/enabled",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/address-families/ipv4/label-distribution-control-mode",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/capability",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/graceful-restart",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/graceful-restart/enabled",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/graceful-restart/forwarding-holdtime",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/graceful-restart/reconnect-time",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/graceful-restart/recovery-time",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/global/lsr-id",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/authentication",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/authentication/authentication-type",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/authentication/authentication-type/password",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/authentication/authentication-type/password/crypto-algorithm",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/authentication/authentication-type/password/key",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/adjacent-address",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/flag",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime/adjacent",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime/negotiated",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/hello-holdtime/remaining",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/interface",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/local-address",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/next-hello",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics/discontinuity-time",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics/hello-dropped",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/address-families/ipv4/hello-adjacencies/hello-adjacency/statistics/hello-received",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/authentication",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/authentication/authentication-type",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/authentication/authentication-type/password",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/authentication/authentication-type/password/crypto-algorithm",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/authentication/authentication-type/password/key",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/label-advertisement-mode",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/label-advertisement-mode/local",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/label-advertisement-mode/negotiated",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/label-advertisement-mode/peer",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/label-space-id",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/lsr-id",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/next-keep-alive",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/capability",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/capability/end-of-lib",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/capability/end-of-lib/enabled",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/capability/typed-wildcard-fec",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/capability/typed-wildcard-fec/enabled",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/capability/upstream-label-assignment",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/capability/upstream-label-assignment/enabled",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/graceful-restart",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/graceful-restart/enabled",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/graceful-restart/reconnect-time",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/received-peer-state/graceful-restart/recovery-time",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/session-holdtime",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/session-holdtime/negotiated",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/session-holdtime/peer",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/session-holdtime/remaining",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/session-state",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/discontinuity-time",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/address",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/address-withdraw",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/initialization",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/keepalive",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/label-abort-request",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/label-mapping",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/label-release",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/label-request",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/label-withdraw",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/notification",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/total-messages",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/received/total-octets",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/address",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/address-withdraw",
+        "sid": "80203"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/initialization",
+        "sid": "80204"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/keepalive",
+        "sid": "80205"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/label-abort-request",
+        "sid": "80206"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/label-mapping",
+        "sid": "80207"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/label-release",
+        "sid": "80208"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/label-request",
+        "sid": "80209"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/label-withdraw",
+        "sid": "80210"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/notification",
+        "sid": "80211"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/total-messages",
+        "sid": "80212"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/sent/total-octets",
+        "sid": "80213"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/total-addresses",
+        "sid": "80214"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/total-fec-label-bindings",
+        "sid": "80215"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/statistics/total-labels",
+        "sid": "80216"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/tcp-connection",
+        "sid": "80217"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/tcp-connection/local-address",
+        "sid": "80218"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/tcp-connection/local-port",
+        "sid": "80219"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/tcp-connection/remote-address",
+        "sid": "80220"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/tcp-connection/remote-port",
+        "sid": "80221"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/peer/up-time",
+        "sid": "80222"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/session-ka-holdtime",
+        "sid": "80223"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-mpls-ldp:mpls-ldp/peers/session-ka-interval",
+        "sid": "80224"
+      }
+    ]
+  }
+}

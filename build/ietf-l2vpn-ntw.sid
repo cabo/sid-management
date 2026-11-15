@@ -1,0 +1,2578 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-l2vpn-ntw",
+    "module-revision": "2022-09-20",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-vpn-common",
+        "module-revision": "2022-02-11"
+      },
+      {
+        "module-name": "iana-bgp-l2-encaps",
+        "module-revision": "2022-09-20"
+      },
+      {
+        "module-name": "iana-pseudowire-types",
+        "module-revision": "2022-09-20"
+      },
+      {
+        "module-name": "ietf-ethernet-segment",
+        "module-revision": "2022-09-20"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ieee802-dot1q-types",
+        "module-revision": "2023-10-26"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-l2vpn-ntw",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "color-type",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "control-plane",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "data-plane",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "delay",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "drop",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ethernet",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ethernet-tagged",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "evpn-service-interface-type",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "flood",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "green",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hvpls",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lacp-active",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lacp-mode",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lacp-passive",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ldp-pw-type",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "loop-prevention-type",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "loss",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mac-action",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mac-learning-mode",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mapping-type",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pm-type",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "precedence-type",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "primary",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "red",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "secondary",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "shut",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "t-ldp-pw-type",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "trap",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vlan-aware-bundle-service-interface",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vlan-based-service-interface",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vlan-bundle-service-interface",
+        "sid": "80031"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vpls-type",
+        "sid": "80032"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vpws-type",
+        "sid": "80033"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "warning",
+        "sid": "80034"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "yellow",
+        "sid": "80035"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "oam-3ah",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/bfd-profile-identifier",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/bfd-profile-identifier/id",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/encryption-profile-identifier",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/encryption-profile-identifier/id",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/external-connectivity-identifier",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/external-connectivity-identifier/id",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/forwarding-profile-identifier",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/forwarding-profile-identifier/id",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/qos-profile-identifier",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/qos-profile-identifier/id",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/routing-profile-identifier",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-profiles/valid-provider-identifiers/routing-profile-identifier/id",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/bgp-ad-enabled",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/customer-name",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/ce-vlan-cos-preservation",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/ce-vlan-preservation",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/control-word-negotiation",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/local-autonomous-system",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/mac-policies",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/mac-policies/mac-addr-limit",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/mac-policies/mac-addr-limit/action",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/mac-policies/mac-addr-limit/limit-number",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/mac-policies/mac-addr-limit/time-interval",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/mac-policies/mac-loop-prevention",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/mac-policies/mac-loop-prevention/frequency",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/mac-policies/mac-loop-prevention/protection-type",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/mac-policies/mac-loop-prevention/retry-timer",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/mac-policies/mac-loop-prevention/window",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/multicast",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/multicast/customer-tree-flavors",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/multicast/customer-tree-flavors/tree-flavor",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/multicast/enabled",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/profile-id",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned-suffix",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned-suffix/rd-auto-suffix",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-assigned-rd-suffix",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-mode",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-mode/from-pool",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-mode/from-pool/rd-pool-name",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-mode/full-auto",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-mode/full-auto/auto",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned/rd-auto",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned/rd-auto/auto-assigned-rd",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned/rd-auto/auto-mode",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned/rd-auto/auto-mode/from-pool",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned/rd-auto/auto-mode/from-pool/rd-pool-name",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned/rd-auto/auto-mode/full-auto",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/auto-assigned/rd-auto/auto-mode/full-auto/auto",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/directly-assigned",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/directly-assigned-suffix",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/directly-assigned-suffix/rd-suffix",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/directly-assigned/rd",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/no-rd",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/rd-choice/no-rd/no-rd",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/svc-mtu",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/vpn-policies",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/vpn-policies/export-policy",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/vpn-policies/import-policy",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/vpn-target",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/vpn-target/id",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/vpn-target/route-target-type",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/vpn-target/route-targets",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/global-parameters-profiles/global-parameters-profile/vpn-target/route-targets/route-target",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/parent-service-id",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/signaling-type",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/status",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/status/admin-status",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/status/admin-status/last-change",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/status/admin-status/status",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/status/oper-status",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/status/oper-status/last-change",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/status/oper-status/status",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/underlay-transport",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/underlay-transport/type",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/underlay-transport/type/abstract",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/underlay-transport/type/abstract/instance-type",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/underlay-transport/type/abstract/transport-instance-id",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/underlay-transport/type/protocol",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/underlay-transport/type/protocol/protocol",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-description",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-id",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-name",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/ce-vlan-cos-preservation",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/ce-vlan-preservation",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/control-word-negotiation",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/local-autonomous-system",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/mac-policies",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/mac-policies/mac-addr-limit",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/mac-policies/mac-addr-limit/action",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/mac-policies/mac-addr-limit/limit-number",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/mac-policies/mac-addr-limit/time-interval",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/mac-policies/mac-loop-prevention",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/mac-policies/mac-loop-prevention/frequency",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/mac-policies/mac-loop-prevention/protection-type",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/mac-policies/mac-loop-prevention/retry-timer",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/mac-policies/mac-loop-prevention/window",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/multicast",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/multicast/customer-tree-flavors",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/multicast/customer-tree-flavors/tree-flavor",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/multicast/enabled",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/profile-id",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/active-global-parameters-profiles/global-parameters-profile/svc-mtu",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/bgp-type",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/bgp-type/evpn-bgp",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/bgp-type/evpn-bgp/auto-route-target",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/bgp-type/evpn-bgp/auto-rt-enable",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/bgp-type/evpn-bgp/evpn-type",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/bgp-type/l2vpn-bgp",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/bgp-type/l2vpn-bgp/vpn-id",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned-suffix",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned-suffix/rd-auto-suffix",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-assigned-rd-suffix",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-mode",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-mode/from-pool",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-mode/from-pool/rd-pool-name",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-mode/full-auto",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned-suffix/rd-auto-suffix/auto-mode/full-auto/auto",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned/rd-auto",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned/rd-auto/auto-assigned-rd",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned/rd-auto/auto-mode",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned/rd-auto/auto-mode/from-pool",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned/rd-auto/auto-mode/from-pool/rd-pool-name",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned/rd-auto/auto-mode/full-auto",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/auto-assigned/rd-auto/auto-mode/full-auto/auto",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/directly-assigned",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/directly-assigned-suffix",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/directly-assigned-suffix/rd-suffix",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/directly-assigned/rd",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/no-rd",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/rd-choice/no-rd/no-rd",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/vpn-policies",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/vpn-policies/export-policy",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/vpn-policies/import-policy",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/vpn-target",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/vpn-target/id",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/vpn-target/route-target-type",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/vpn-target/route-targets",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/bgp-auto-discovery/vpn-target/route-targets/route-target",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/description",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/ne-id",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/role",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/router-id",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/advertise-mtu",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/mtu-allow-mismatch",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/arp-proxy",
+        "sid": "80203"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/arp-proxy/arp-suppression",
+        "sid": "80204"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/arp-proxy/duplicate-ip-detection-interval",
+        "sid": "80205"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/arp-proxy/enable",
+        "sid": "80206"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/arp-proxy/ip-mobility-threshold",
+        "sid": "80207"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/bum-management",
+        "sid": "80208"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/bum-management/discard-broadcast",
+        "sid": "80209"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/bum-management/discard-unknown-multicast",
+        "sid": "80210"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/bum-management/discard-unknown-unicast",
+        "sid": "80211"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/flood-unknown-unicast-suppression",
+        "sid": "80212"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/ingress-replication",
+        "sid": "80213"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/mac-learning-mode",
+        "sid": "80214"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/nd-proxy",
+        "sid": "80215"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/nd-proxy/duplicate-ip-detection-interval",
+        "sid": "80216"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/nd-proxy/enable",
+        "sid": "80217"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/nd-proxy/ip-mobility-threshold",
+        "sid": "80218"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/nd-proxy/nd-suppression",
+        "sid": "80219"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/p2mp-replication",
+        "sid": "80220"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/pbb",
+        "sid": "80221"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/pbb/backbone-src-mac",
+        "sid": "80222"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/underlay-multicast",
+        "sid": "80223"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-policies/vpws-vlan-aware",
+        "sid": "80224"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/evpn-type",
+        "sid": "80225"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/evpn-bgp/service-interface-type",
+        "sid": "80226"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/l2vpn-bgp",
+        "sid": "80227"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/l2vpn-bgp/ce-range",
+        "sid": "80228"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/l2vpn-bgp/pw-encapsulation-type",
+        "sid": "80229"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/l2vpn-bgp/vpls-instance",
+        "sid": "80230"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/l2vpn-bgp/vpls-instance/vpls-edge-id",
+        "sid": "80231"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/bgp/bgp-type/l2vpn-bgp/vpls-instance/vpls-edge-id-range",
+        "sid": "80232"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp",
+        "sid": "80233"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp",
+        "sid": "80234"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/agi",
+        "sid": "80235"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp",
+        "sid": "80236"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/l2tp",
+        "sid": "80237"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/l2tp/pseudowire-type",
+        "sid": "80238"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/l2tp/router-id",
+        "sid": "80239"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp",
+        "sid": "80240"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/mac-addr-withdraw",
+        "sid": "80241"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/pw-description",
+        "sid": "80242"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/pw-peer-list",
+        "sid": "80243"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/pw-peer-list/peer-addr",
+        "sid": "80244"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/pw-peer-list/pw-priority",
+        "sid": "80245"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/pw-peer-list/vc-id",
+        "sid": "80246"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/pw-type",
+        "sid": "80247"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/qinq",
+        "sid": "80248"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/qinq/c-tag",
+        "sid": "80249"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/qinq/s-tag",
+        "sid": "80250"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/ldp-or-l2tp/ldp/t-ldp-pw-type",
+        "sid": "80251"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/remote-targets",
+        "sid": "80252"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/remote-targets/peer-addr",
+        "sid": "80253"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/remote-targets/taii",
+        "sid": "80254"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-option/ldp-or-l2tp/ldp-or-l2tp/saii",
+        "sid": "80255"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/signaling-option/signaling-type",
+        "sid": "80256"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/status",
+        "sid": "80257"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/status/admin-status",
+        "sid": "80258"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/status/admin-status/last-change",
+        "sid": "80259"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/status/admin-status/status",
+        "sid": "80260"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/status/oper-status",
+        "sid": "80261"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/status/oper-status/last-change",
+        "sid": "80262"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/status/oper-status/status",
+        "sid": "80263"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses",
+        "sid": "80264"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access",
+        "sid": "80265"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/active-vpn-node-profile",
+        "sid": "80266"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection",
+        "sid": "80267"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/bearer-reference",
+        "sid": "80268"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation",
+        "sid": "80269"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q",
+        "sid": "80270"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/cvlan-id",
+        "sid": "80271"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations",
+        "sid": "80272"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/op-choice",
+        "sid": "80273"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/op-choice/pop",
+        "sid": "80274"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/op-choice/pop/pop",
+        "sid": "80275"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/op-choice/push",
+        "sid": "80276"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/op-choice/push/push",
+        "sid": "80277"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/op-choice/translate",
+        "sid": "80278"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/op-choice/translate/translate",
+        "sid": "80279"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/tag-1",
+        "sid": "80280"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/tag-1-type",
+        "sid": "80281"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/tag-2",
+        "sid": "80282"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-operations/tag-2-type",
+        "sid": "80283"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/dot1q/tag-type",
+        "sid": "80284"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/encap-type",
+        "sid": "80285"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/priority-tagged",
+        "sid": "80286"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/priority-tagged/tag-type",
+        "sid": "80287"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq",
+        "sid": "80288"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/cvlan-id",
+        "sid": "80289"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/svlan-id",
+        "sid": "80290"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations",
+        "sid": "80291"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/op-choice",
+        "sid": "80292"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/op-choice/pop",
+        "sid": "80293"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/op-choice/pop/pop",
+        "sid": "80294"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/op-choice/push",
+        "sid": "80295"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/op-choice/push/push",
+        "sid": "80296"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/op-choice/translate",
+        "sid": "80297"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/op-choice/translate/translate",
+        "sid": "80298"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/tag-1",
+        "sid": "80299"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/tag-1-type",
+        "sid": "80300"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/tag-2",
+        "sid": "80301"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-operations/tag-2-type",
+        "sid": "80302"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/encapsulation/qinq/tag-type",
+        "sid": "80303"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/l2-termination-point",
+        "sid": "80304"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface",
+        "sid": "80305"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp",
+        "sid": "80306"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/admin-key",
+        "sid": "80307"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/flow-control",
+        "sid": "80308"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/lacp-state",
+        "sid": "80309"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/lldp",
+        "sid": "80310"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/member-link-list",
+        "sid": "80311"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/member-link-list/member-link",
+        "sid": "80312"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/member-link-list/member-link/link-mtu",
+        "sid": "80313"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/member-link-list/member-link/mode",
+        "sid": "80314"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/member-link-list/member-link/name",
+        "sid": "80315"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/member-link-list/member-link/oam-802.3ah-link",
+        "sid": "80316"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/member-link-list/member-link/oam-802.3ah-link/enable",
+        "sid": "80317"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/member-link-list/member-link/speed",
+        "sid": "80318"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/mini-link-num",
+        "sid": "80319"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/mode",
+        "sid": "80320"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/speed",
+        "sid": "80321"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/system-id",
+        "sid": "80322"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lacp/system-priority",
+        "sid": "80323"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/lag-interface-id",
+        "sid": "80324"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/split-horizon",
+        "sid": "80325"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/lag-interface/split-horizon/group-name",
+        "sid": "80326"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/connection/local-bridge-reference",
+        "sid": "80327"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/description",
+        "sid": "80328"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam",
+        "sid": "80329"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag",
+        "sid": "80330"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-c",
+        "sid": "80331"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-c/ccm-holdtime",
+        "sid": "80332"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-c/ccm-interval",
+        "sid": "80333"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-c/ccm-p-bits-pri",
+        "sid": "80334"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-c/cos-for-cfm-pdus",
+        "sid": "80335"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-c/maid",
+        "sid": "80336"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-c/mep-id",
+        "sid": "80337"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-c/mep-level",
+        "sid": "80338"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-c/mep-up-down",
+        "sid": "80339"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-c/remote-mep-id",
+        "sid": "80340"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-n",
+        "sid": "80341"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-n/ccm-holdtime",
+        "sid": "80342"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-n/ccm-interval",
+        "sid": "80343"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-n/ccm-p-bits-pri",
+        "sid": "80344"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-n/cos-for-cfm-pdus",
+        "sid": "80345"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-n/maid",
+        "sid": "80346"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-n/mep-id",
+        "sid": "80347"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-n/mep-level",
+        "sid": "80348"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-n/mep-up-down",
+        "sid": "80349"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/cfm-802.1-ag/n2-uni-n/remote-mep-id",
+        "sid": "80350"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/md-level",
+        "sid": "80351"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/md-name",
+        "sid": "80352"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731",
+        "sid": "80353"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/cos",
+        "sid": "80354"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/delay-measurement",
+        "sid": "80355"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/delay-measurement/enable-dm",
+        "sid": "80356"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/delay-measurement/two-way",
+        "sid": "80357"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/frame-size",
+        "sid": "80358"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/loss-measurement",
+        "sid": "80359"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/maid",
+        "sid": "80360"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/measurement-interval",
+        "sid": "80361"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/mep-id",
+        "sid": "80362"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/message-period",
+        "sid": "80363"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/pm-type",
+        "sid": "80364"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/remote-mep-id",
+        "sid": "80365"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/session-type",
+        "sid": "80366"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/ethernet-service-oam/y-1731/synthetic-loss-measurement",
+        "sid": "80367"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/group",
+        "sid": "80368"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/group/ethernet-segment-identifier",
+        "sid": "80369"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/group/group-id",
+        "sid": "80370"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/group/precedence",
+        "sid": "80371"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/id",
+        "sid": "80372"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/interface-id",
+        "sid": "80373"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service",
+        "sid": "80374"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/broadcast-unknown-unicast-multicast",
+        "sid": "80375"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/broadcast-unknown-unicast-multicast/bum-overall-rate",
+        "sid": "80376"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/broadcast-unknown-unicast-multicast/multicast-gp-address-mapping",
+        "sid": "80377"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/broadcast-unknown-unicast-multicast/multicast-gp-address-mapping/id",
+        "sid": "80378"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/broadcast-unknown-unicast-multicast/multicast-gp-address-mapping/mac-gp-address",
+        "sid": "80379"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/broadcast-unknown-unicast-multicast/multicast-gp-address-mapping/port-lag-number",
+        "sid": "80380"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/broadcast-unknown-unicast-multicast/multicast-gp-address-mapping/vlan-id",
+        "sid": "80381"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/broadcast-unknown-unicast-multicast/multicast-site-type",
+        "sid": "80382"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies",
+        "sid": "80383"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/access-control-list",
+        "sid": "80384"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/access-control-list/action",
+        "sid": "80385"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/access-control-list/dst-mac-address",
+        "sid": "80386"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/access-control-list/dst-mac-address-mask",
+        "sid": "80387"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/access-control-list/name",
+        "sid": "80388"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/access-control-list/rate-limit",
+        "sid": "80389"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/access-control-list/src-mac-address",
+        "sid": "80390"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/access-control-list/src-mac-address-mask",
+        "sid": "80391"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/mac-addr-limit",
+        "sid": "80392"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/mac-addr-limit/action",
+        "sid": "80393"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/mac-addr-limit/limit-number",
+        "sid": "80394"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/mac-addr-limit/time-interval",
+        "sid": "80395"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/mac-loop-prevention",
+        "sid": "80396"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/mac-loop-prevention/frequency",
+        "sid": "80397"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/mac-loop-prevention/protection-type",
+        "sid": "80398"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/mac-loop-prevention/retry-timer",
+        "sid": "80399"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mac-policies/mac-loop-prevention/window",
+        "sid": "80400"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/mtu",
+        "sid": "80401"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos",
+        "sid": "80402"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy",
+        "sid": "80403"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule",
+        "sid": "80404"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/id",
+        "sid": "80405"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type",
+        "sid": "80406"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-application",
+        "sid": "80407"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-application/match-application",
+        "sid": "80408"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-flow",
+        "sid": "80409"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-flow/match-flow",
+        "sid": "80410"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-flow/match-flow/any",
+        "sid": "80411"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-flow/match-flow/color-type",
+        "sid": "80412"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-flow/match-flow/dot1q",
+        "sid": "80413"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-flow/match-flow/dscp",
+        "sid": "80414"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-flow/match-flow/dst-mac-address",
+        "sid": "80415"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-flow/match-flow/pcp",
+        "sid": "80416"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/match-type/match-flow/match-flow/src-mac-address",
+        "sid": "80417"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-classification-policy/rule/target-class-id",
+        "sid": "80418"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-profile",
+        "sid": "80419"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-profile/qos-profile",
+        "sid": "80420"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-profile/qos-profile/direction",
+        "sid": "80421"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/qos/qos-profile/qos-profile/profile",
+        "sid": "80422"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth",
+        "sid": "80423"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth",
+        "sid": "80424"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/bw-type",
+        "sid": "80425"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type",
+        "sid": "80426"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/other",
+        "sid": "80427"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/other/cbs",
+        "sid": "80428"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/other/cir",
+        "sid": "80429"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/other/ebs",
+        "sid": "80430"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/other/eir",
+        "sid": "80431"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/other/pbs",
+        "sid": "80432"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/other/pir",
+        "sid": "80433"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/per-cos",
+        "sid": "80434"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/per-cos/cos",
+        "sid": "80435"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/per-cos/cos/cbs",
+        "sid": "80436"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/per-cos/cos/cir",
+        "sid": "80437"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/per-cos/cos/cos-id",
+        "sid": "80438"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/per-cos/cos/ebs",
+        "sid": "80439"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/per-cos/cos/eir",
+        "sid": "80440"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/per-cos/cos/pbs",
+        "sid": "80441"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-ce-to-pe-bandwidth/ce-to-pe-bandwidth/type/per-cos/cos/pir",
+        "sid": "80442"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth",
+        "sid": "80443"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth",
+        "sid": "80444"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/bw-type",
+        "sid": "80445"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type",
+        "sid": "80446"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/other",
+        "sid": "80447"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/other/cbs",
+        "sid": "80448"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/other/cir",
+        "sid": "80449"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/other/ebs",
+        "sid": "80450"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/other/eir",
+        "sid": "80451"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/other/pbs",
+        "sid": "80452"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/other/pir",
+        "sid": "80453"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/per-cos",
+        "sid": "80454"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/per-cos/cos",
+        "sid": "80455"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/per-cos/cos/cbs",
+        "sid": "80456"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/per-cos/cos/cir",
+        "sid": "80457"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/per-cos/cos/cos-id",
+        "sid": "80458"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/per-cos/cos/ebs",
+        "sid": "80459"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/per-cos/cos/eir",
+        "sid": "80460"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/per-cos/cos/pbs",
+        "sid": "80461"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/service/svc-pe-to-ce-bandwidth/pe-to-ce-bandwidth/type/per-cos/cos/pir",
+        "sid": "80462"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option",
+        "sid": "80463"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp",
+        "sid": "80464"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type",
+        "sid": "80465"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp",
+        "sid": "80466"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/df-preference",
+        "sid": "80467"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance",
+        "sid": "80468"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice",
+        "sid": "80469"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice/auto-assigned",
+        "sid": "80470"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice/auto-assigned/local-vsi-auto",
+        "sid": "80471"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice/auto-assigned/local-vsi-auto/auto-local-vsi",
+        "sid": "80472"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice/auto-assigned/local-vsi-auto/auto-mode",
+        "sid": "80473"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice/auto-assigned/local-vsi-auto/auto-mode/from-pool",
+        "sid": "80474"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice/auto-assigned/local-vsi-auto/auto-mode/from-pool/vsi-pool-name",
+        "sid": "80475"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice/auto-assigned/local-vsi-auto/auto-mode/full-auto",
+        "sid": "80476"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice/auto-assigned/local-vsi-auto/auto-mode/full-auto/auto",
+        "sid": "80477"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice/directly-assigned",
+        "sid": "80478"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/local-vsi-choice/directly-assigned/local-vpws-service-instance",
+        "sid": "80479"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice",
+        "sid": "80480"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice/auto-assigned",
+        "sid": "80481"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice/auto-assigned/remote-vsi-auto",
+        "sid": "80482"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice/auto-assigned/remote-vsi-auto/auto-mode",
+        "sid": "80483"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice/auto-assigned/remote-vsi-auto/auto-mode/from-pool",
+        "sid": "80484"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice/auto-assigned/remote-vsi-auto/auto-mode/from-pool/vsi-pool-name",
+        "sid": "80485"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice/auto-assigned/remote-vsi-auto/auto-mode/full-auto",
+        "sid": "80486"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice/auto-assigned/remote-vsi-auto/auto-mode/full-auto/auto",
+        "sid": "80487"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice/auto-assigned/remote-vsi-auto/auto-remote-vsi",
+        "sid": "80488"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice/directly-assigned",
+        "sid": "80489"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/evpn-bgp/vpws-service-instance/remote-vsi-choice/directly-assigned/remote-vpws-service-instance",
+        "sid": "80490"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/l2vpn-bgp",
+        "sid": "80491"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/l2vpn-bgp/ce-id",
+        "sid": "80492"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/l2vpn-bgp/remote-ce-id",
+        "sid": "80493"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/l2vpn-bgp/vpls-instance",
+        "sid": "80494"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/signaling-option/bgp/bgp-type/l2vpn-bgp/vpls-instance/vpls-edge-id",
+        "sid": "80495"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/status",
+        "sid": "80496"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/status/admin-status",
+        "sid": "80497"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/status/admin-status/last-change",
+        "sid": "80498"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/status/admin-status/status",
+        "sid": "80499"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/status/oper-status",
+        "sid": "80500"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/status/oper-status/last-change",
+        "sid": "80501"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-network-accesses/vpn-network-access/status/oper-status/status",
+        "sid": "80502"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-nodes/vpn-node/vpn-node-id",
+        "sid": "80503"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-service-topology",
+        "sid": "80504"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2vpn-ntw:l2vpn-ntw/vpn-services/vpn-service/vpn-type",
+        "sid": "80505"
+      }
+    ]
+  }
+}

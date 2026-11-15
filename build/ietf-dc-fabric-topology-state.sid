@@ -1,0 +1,139 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dc-fabric-topology-state",
+    "module-revision": "2019-02-25",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-network-state",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-dc-fabric-types",
+        "module-revision": "2019-02-25"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dc-fabric-topology-state",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dc-fabric-topology-state:/nws:networks/nws:network/nws:network-types/fabric-network",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/description",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/device-links",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/device-links/link-ref",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/device-nodes",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/device-nodes/device-ref",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/device-nodes/role",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/device-ports",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/device-ports/bandwidth",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/device-ports/port-ref",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/device-ports/port-type",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/fabric-id",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/name",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/options",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/options/capability-supported",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/options/gateway-mode",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/options/traffic-behavior",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/type",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/vni-capacity",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/vni-capacity/max",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network-state:networks/network/node/ietf-dc-fabric-topology-state:fabric-attributes-state/vni-capacity/min",
+        "sid": "80022"
+      }
+    ]
+  }
+}

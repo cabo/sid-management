@@ -1,0 +1,232 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-sap-ntw",
+    "module-revision": "2023-06-20",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-network-topology",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-network",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-vpn-common",
+        "module-revision": "2022-02-11"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-sap-ntw",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "basic-connectivity",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "enhanced-vpn",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "interface-role",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "interface-type",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "irb",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lag",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "local-bridge",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "logical",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "loopback",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "network-slice",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "nni",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "phy",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sdwan",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "uni",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "virtual-network",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/network-types/ietf-sap-ntw:sap-network",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/network-types/ietf-sap-ntw:sap-network/service-type",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/allows-child-saps",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/attachment-interface",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/description",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/encapsulation-type",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/interface-type",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/parent-termination-point",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/peer-sap-id",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/role",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/sap-id",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/sap-status",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/sap-status/last-change",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/sap-status/status",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/service-status",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/service-status/admin-status",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/service-status/admin-status/last-change",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/service-status/admin-status/status",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/service-status/oper-status",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/service-status/oper-status/last-change",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/sap/service-status/oper-status/status",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-sap-ntw:service/service-type",
+        "sid": "80039"
+      }
+    ]
+  }
+}

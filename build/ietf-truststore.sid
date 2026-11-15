@@ -1,0 +1,139 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-truststore",
+    "module-revision": "2024-10-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-crypto-types",
+        "module-revision": "2024-10-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-truststore",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "central-truststore-supported",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "certificates",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "inline-definitions-supported",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "public-keys",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/certificate-bags",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/certificate-bags/certificate-bag",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/certificate-bags/certificate-bag/certificate",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/certificate-bags/certificate-bag/certificate/cert-data",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/certificate-bags/certificate-bag/certificate/certificate-expiration",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/certificate-bags/certificate-bag/certificate/certificate-expiration/expiration-date",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/certificate-bags/certificate-bag/certificate/name",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/certificate-bags/certificate-bag/description",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/certificate-bags/certificate-bag/name",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/public-key-bags",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/public-key-bags/public-key-bag",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/public-key-bags/public-key-bag/description",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/public-key-bags/public-key-bag/name",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/public-key-bags/public-key-bag/public-key",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/public-key-bags/public-key-bag/public-key/name",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/public-key-bags/public-key-bag/public-key/public-key",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-truststore:truststore/public-key-bags/public-key-bag/public-key/public-key-format",
+        "sid": "80022"
+      }
+    ]
+  }
+}

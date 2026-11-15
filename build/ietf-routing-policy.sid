@@ -1,0 +1,422 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-routing-policy",
+    "module-revision": "2021-10-11",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-routing-policy",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bgp-external",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bgp-internal",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isis-external-metric",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isis-internal-metric",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isis-level-1",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isis-level-1-2",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isis-level-1-type",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isis-level-2",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isis-level-2-type",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "metric-type",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-external-t1-type",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-external-t2-type",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-external-type",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-internal-type",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-normal",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-normal-nssa",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-nssa-only",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-nssa-t1-type",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-nssa-t2-type",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-nssa-type",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-type-1-metric",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ospf-type-2-metric",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "proto-route-type",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "route-level",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/neighbor-sets",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/neighbor-sets/neighbor-set",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/neighbor-sets/neighbor-set/address",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/neighbor-sets/neighbor-set/name",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/prefix-sets",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/prefix-sets/prefix-set",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/prefix-sets/prefix-set/mode",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/prefix-sets/prefix-set/name",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/prefix-sets/prefix-set/prefixes",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/prefix-sets/prefix-set/prefixes/prefix-list",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/prefix-sets/prefix-set/prefixes/prefix-list/ip-prefix",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/prefix-sets/prefix-set/prefixes/prefix-list/mask-length-lower",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/prefix-sets/prefix-set/prefixes/prefix-list/mask-length-upper",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/tag-sets",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/tag-sets/tag-set",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/tag-sets/tag-set/name",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/defined-sets/tag-sets/tag-set/tag-value",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/match-modified-attributes",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/name",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/policy-result",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/set-application-tag",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/set-metric",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/set-metric-type",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/set-metric-type/metric-type",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/set-metric/metric",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/set-metric/metric-modification",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/set-route-level",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/set-route-level/route-level",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/set-route-preference",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/actions/set-tag",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/call-policy",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-interface",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-interface/interface",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-neighbor-set",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-neighbor-set/neighbor-set",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-prefix-set",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-prefix-set/match-set-options",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-prefix-set/prefix-set",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-route-type",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-route-type/route-type",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-tag-set",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-tag-set/match-set-options",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/match-tag-set/tag-set",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/conditions/source-protocol",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing-policy:routing-policy/policy-definitions/policy-definition/statements/statement/name",
+        "sid": "80077"
+      }
+    ]
+  }
+}

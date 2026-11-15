@@ -1,0 +1,1035 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-subscribed-notifications",
+    "module-revision": "2019-09-09",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-network-instance",
+        "module-revision": "2019-01-21"
+      },
+      {
+        "module-name": "ietf-restconf",
+        "module-revision": "2017-01-26"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-subscribed-notifications",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "configurable-encoding",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "delete-subscription-error",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dscp-unavailable",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "encode-json",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "encode-xml",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "encoding",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "encoding-unsupported",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "establish-subscription-error",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "filter-unavailable",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "filter-unsupported",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "insufficient-resources",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "modify-subscription-error",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "no-such-subscription",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "replay-unsupported",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "stream-unavailable",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "subscription-suspended-reason",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "subscription-terminated-reason",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "suspension-timeout",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "transport",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unsupportable-volume",
+        "sid": "80020"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "configured",
+        "sid": "80021"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "dscp",
+        "sid": "80022"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "encode-json",
+        "sid": "80023"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "encode-xml",
+        "sid": "80024"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "interface-designation",
+        "sid": "80025"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "qos",
+        "sid": "80026"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "replay",
+        "sid": "80027"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "subtree",
+        "sid": "80028"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "supports-vrf",
+        "sid": "80029"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "xpath",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:delete-subscription",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:delete-subscription-error-info",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:delete-subscription-error-info/reason",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:delete-subscription/input",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:delete-subscription/input/id",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:delete-subscription/output",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription-stream-error-info",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription-stream-error-info/filter-failure-hint",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription-stream-error-info/reason",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/dependency",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/dscp",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/encoding",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/stop-time",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/replay-start-time",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/stream",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/stream-filter",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/stream-filter/by-reference",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/stream-filter/by-reference/stream-filter-name",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/stream-filter/within-subscription",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/stream-filter/within-subscription/filter-spec",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/stream-filter/within-subscription/filter-spec/stream-subtree-filter",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/stream-filter/within-subscription/filter-spec/stream-subtree-filter/stream-subtree-filter",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/stream-filter/within-subscription/filter-spec/stream-xpath-filter",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/target/stream/stream-filter/within-subscription/filter-spec/stream-xpath-filter/stream-xpath-filter",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/input/weighting",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/output",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/output/id",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:establish-subscription/output/replay-start-time-revision",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/stream-filter",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/stream-filter/filter-spec",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/stream-filter/filter-spec/stream-subtree-filter",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/stream-filter/filter-spec/stream-subtree-filter/stream-subtree-filter",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/stream-filter/filter-spec/stream-xpath-filter",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/stream-filter/filter-spec/stream-xpath-filter/stream-xpath-filter",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:filters/stream-filter/name",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:kill-subscription",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:kill-subscription/input",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:kill-subscription/input/id",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:kill-subscription/output",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription-stream-error-info",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription-stream-error-info/filter-failure-hint",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription-stream-error-info/reason",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/id",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/stop-time",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/stream",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/stream/stream-filter",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/stream/stream-filter/by-reference",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/stream/stream-filter/by-reference/stream-filter-name",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/stream/stream-filter/within-subscription",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/stream/stream-filter/within-subscription/filter-spec",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/stream/stream-filter/within-subscription/filter-spec/stream-subtree-filter",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/stream/stream-filter/within-subscription/filter-spec/stream-subtree-filter/stream-subtree-filter",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/stream/stream-filter/within-subscription/filter-spec/stream-xpath-filter",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/input/target/stream/stream-filter/within-subscription/filter-spec/stream-xpath-filter/stream-xpath-filter",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:modify-subscription/output",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:replay-completed",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:replay-completed/id",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:streams",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:streams/stream",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:streams/stream/description",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:streams/stream/name",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:streams/stream/replay-log-aged-time",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:streams/stream/replay-log-creation-time",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:streams/stream/replay-support",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-completed",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-completed/id",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/dependency",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/dscp",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/encoding",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/id",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/purpose",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/stop-time",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/replay-start-time",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/stream",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/stream-filter",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/stream-filter/by-reference",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/stream-filter/by-reference/stream-filter-name",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/stream-filter/within-subscription",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/stream-filter/within-subscription/filter-spec",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/stream-filter/within-subscription/filter-spec/stream-subtree-filter",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/stream-filter/within-subscription/filter-spec/stream-subtree-filter/stream-subtree-filter",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/stream-filter/within-subscription/filter-spec/stream-xpath-filter",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/target/stream/stream-filter/within-subscription/filter-spec/stream-xpath-filter/stream-xpath-filter",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/transport",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-modified/weighting",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-resumed",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-resumed/id",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/dependency",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/dscp",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/encoding",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/id",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/purpose",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/stop-time",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/replay-previous-event-time",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/replay-start-time",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/stream",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/stream-filter",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/stream-filter/by-reference",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/stream-filter/by-reference/stream-filter-name",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/stream-filter/within-subscription",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/stream-filter/within-subscription/filter-spec",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/stream-filter/within-subscription/filter-spec/stream-subtree-filter",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/stream-filter/within-subscription/filter-spec/stream-subtree-filter/stream-subtree-filter",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/stream-filter/within-subscription/filter-spec/stream-xpath-filter",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/target/stream/stream-filter/within-subscription/filter-spec/stream-xpath-filter/stream-xpath-filter",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/transport",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-started/weighting",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-suspended",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-suspended/id",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-suspended/reason",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-terminated",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-terminated/id",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscription-terminated/reason",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/configured-subscription-state",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/dependency",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/dscp",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/encoding",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/id",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/notification-message-origin",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/notification-message-origin/address-originated",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/notification-message-origin/address-originated/source-address",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/notification-message-origin/address-originated/source-vrf",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/notification-message-origin/interface-originated",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/notification-message-origin/interface-originated/source-interface",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/purpose",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/receivers",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/receivers/receiver",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/receivers/receiver/excluded-event-records",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/receivers/receiver/name",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/receivers/receiver/reset",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/receivers/receiver/reset/input",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/receivers/receiver/reset/output",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/receivers/receiver/reset/output/time",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/receivers/receiver/sent-event-records",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/receivers/receiver/state",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/stop-time",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/configured-replay",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/replay-start-time",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/stream",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/stream-filter",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/stream-filter/by-reference",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/stream-filter/by-reference/stream-filter-name",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/stream-filter/within-subscription",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/stream-filter/within-subscription/filter-spec",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/stream-filter/within-subscription/filter-spec/stream-subtree-filter",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/stream-filter/within-subscription/filter-spec/stream-subtree-filter/stream-subtree-filter",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/stream-filter/within-subscription/filter-spec/stream-xpath-filter",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/target/stream/stream-filter/within-subscription/filter-spec/stream-xpath-filter/stream-xpath-filter",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/transport",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-subscribed-notifications:subscriptions/subscription/weighting",
+        "sid": "80198"
+      }
+    ]
+  }
+}

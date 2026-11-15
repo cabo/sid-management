@@ -1,0 +1,550 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-twamp",
+    "module-revision": "2021-11-17",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-twamp",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "control-client",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "server",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "session-reflector",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "session-sender",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/admin-state",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/client-ip",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/client-iv",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/client-tcp-port",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/control-packet-dscp",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/key-id",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/max-count-exponent",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/name",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/repeat-count",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/selected-mode",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/server-ip",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/server-start-time",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/server-tcp-port",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/state",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/name",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/padding-length",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/pm-reg-list",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/pm-reg-list/pm-index",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/reflector-ip",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/reflector-udp-port",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/repeat",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/repeat-interval",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/sender-ip",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/sender-udp-port",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/sid",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/start-time",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/state",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/test-packet-dscp",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/test-session-request/timeout",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/ctrl-connection/token",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/key-chain",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/key-chain/key-id",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/key-chain/secret-key",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/mode-preference-chain",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/mode-preference-chain/mode",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/client/mode-preference-chain/priority",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/admin-state",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/control-packet-dscp",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/count",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/challenge",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/client-ip",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/client-tcp-port",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/control-packet-dscp",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/count",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/key-id",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/max-count-exponent",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/salt",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/selected-mode",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/server-ip",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/server-iv",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/server-tcp-port",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/ctrl-connection/state",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/key-chain",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/key-chain/key-id",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/key-chain/secret-key",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/max-count-exponent",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/modes",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/server-tcp-port",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/server/servwait",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/admin-state",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/refwait",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/last-rcv-seq",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/last-sent-seq",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/parent-connection-client-ip",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/parent-connection-client-tcp-port",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/parent-connection-server-ip",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/parent-connection-server-tcp-port",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/rcv-packets",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/reflector-ip",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/reflector-udp-port",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/sender-ip",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/sender-udp-port",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/sent-packets",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/sid",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-reflector/test-session/test-packet-dscp",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/admin-state",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/ctrl-connection-name",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/fill-mode",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/last-rcv-seq",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/last-sent-seq",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/name",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/number-of-packets",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/packet-distribution",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/packet-distribution/periodic",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/packet-distribution/periodic/periodic-interval",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/packet-distribution/poisson",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/packet-distribution/poisson/lambda",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/packet-distribution/poisson/max-interval",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/rcv-packets",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/sent-packets",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-twamp:twamp/session-sender/test-session/state",
+        "sid": "80105"
+      }
+    ]
+  }
+}

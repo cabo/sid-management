@@ -1,0 +1,487 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-bearer-svc",
+    "module-revision": "2025-09-29",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-vpn-common",
+        "module-revision": "2022-02-11"
+      },
+      {
+        "module-name": "ietf-ac-common",
+        "module-revision": "2025-09-29"
+      },
+      {
+        "module-name": "ietf-ac-svc",
+        "module-revision": "2025-09-29"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-bearer-svc",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bearer-type",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "custom",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "device-id",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ethernet",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "identification-type",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lag",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "network-termination-hint",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "site-and-device-id",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "site-id",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sync-e",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sync-phy-type",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "wireless",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/actual-start",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/actual-stop",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/ac-svc-ref",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/actual-start",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/actual-stop",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/bearer-lag-member",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/bearer-parent-ref",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/bearer-reference",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-name",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/custom-id",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/device",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/device/device-id",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/device/location",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/device/location/address",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/device/location/city",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/device/location/country-code",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/device/location/name",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/device/location/postal-code",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/device/location/state",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/identified-by",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/site",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/site/location",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/site/location/address",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/site/location/city",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/site/location/country-code",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/site/location/name",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/site/location/postal-code",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/site/location/state",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/customer-point/site/site-id",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/description",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/groups",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/groups/group",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/groups/group/group-id",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/name",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/op-comment",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/provider-location-reference",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/requested-start",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/requested-stop",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/status",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/status/admin-status",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/status/admin-status/last-change",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/status/admin-status/status",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/status/oper-status",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/status/oper-status/last-change",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/status/oper-status/status",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/sync-phy-capable",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/sync-phy-enabled",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/sync-phy-type",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/test-only",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/bearer/type",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint/constraint-type",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint/target",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint/target/target-flavor",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint/target/target-flavor/all-bearers",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint/target/target-flavor/all-bearers/all-other-bearers",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint/target/target-flavor/all-groups",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint/target/target-flavor/all-groups/all-other-groups",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint/target/target-flavor/id",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint/target/target-flavor/id/group",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/placement-constraints/constraint/target/target-flavor/id/group/group-id",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/requested-start",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:bearers/requested-stop",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations/customer",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations/customer/location",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations/customer/location/address",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations/customer/location/city",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations/customer/location/country-code",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations/customer/location/name",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations/customer/location/postal-code",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations/customer/location/state",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations/customer/name",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bearer-svc:locations/customer/peer-as",
+        "sid": "80090"
+      }
+    ]
+  }
+}

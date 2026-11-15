@@ -1,0 +1,705 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-igmp-mld-snooping",
+    "module-revision": "2022-01-31",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ieee802-dot1q-bridge",
+        "module-revision": "2023-10-26"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-igmp-mld-snooping",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bridge",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "exclude",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "filter-mode",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "igmp-snooping",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "include",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l2-service-type",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mld-snooping",
+        "sid": "80007"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "action-clear-groups",
+        "sid": "80008"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "explicit-tracking",
+        "sid": "80009"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "fast-leave",
+        "sid": "80010"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "igmp-snooping",
+        "sid": "80011"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "lite-exclude-filter",
+        "sid": "80012"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mld-snooping",
+        "sid": "80013"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "require-router-alert",
+        "sid": "80014"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "static-l2-multicast-group",
+        "sid": "80015"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "static-mrouter-interface",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ieee802-dot1q-bridge:bridges/bridge/component/bridge-vlan/vlan/ietf-igmp-mld-snooping:igmp-snooping-instance",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ieee802-dot1q-bridge:bridges/bridge/component/bridge-vlan/vlan/ietf-igmp-mld-snooping:mld-snooping-instance",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ieee802-dot1q-bridge:bridges/bridge/ietf-igmp-mld-snooping:igmp-snooping-instance",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ieee802-dot1q-bridge:bridges/bridge/ietf-igmp-mld-snooping:mld-snooping-instance",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/bridge-mrouter-interface",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/enabled",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/entries-count",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/explicit-tracking",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/fast-leave",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/forwarding-table-type",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/address",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/expire",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/last-reporter",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/mac-address",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/source",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/source/address",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/source/bridge-outgoing-interface",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/source/expire",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/source/host",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/source/host-count",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/source/host/address",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/source/host/filter-mode",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/source/last-reporter",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/source/up-time",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/group/up-time",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/igmp-version",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/name",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/discontinuity-time",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/received",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/received/leave-count",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/received/membership-report-v1-count",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/received/membership-report-v2-count",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/received/membership-report-v3-count",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/received/pim-hello-count",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/received/query-count",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/sent",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/sent/leave-count",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/sent/membership-report-v1-count",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/sent/membership-report-v2-count",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/sent/membership-report-v3-count",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/sent/pim-hello-count",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/interfaces/interface/statistics/sent/query-count",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/l2-service-type",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/last-member-query-interval",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/lite-exclude-filter",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/querier-source",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/query-interval",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/query-max-response-time",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/require-router-alert",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/robustness-variable",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/send-query",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/static-bridge-mrouter-interface",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/static-l2-multicast-group",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/static-l2-multicast-group/bridge-outgoing-interface",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/static-l2-multicast-group/group",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:igmp-snooping-instance/static-l2-multicast-group/source-addr",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/bridge-mrouter-interface",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/enabled",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/entries-count",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/explicit-tracking",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/fast-leave",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/forwarding-table-type",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/address",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/expire",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/last-reporter",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/mac-address",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/source",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/source/address",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/source/bridge-outgoing-interface",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/source/expire",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/source/host",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/source/host-count",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/source/host/address",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/source/host/filter-mode",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/source/last-reporter",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/source/up-time",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/group/up-time",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/name",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/discontinuity-time",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/received",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/received/done-count",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/received/pim-hello-count",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/received/query-count",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/received/report-v1-count",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/received/report-v2-count",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/sent",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/sent/done-count",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/sent/pim-hello-count",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/sent/query-count",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/sent/report-v1-count",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/interfaces/interface/statistics/sent/report-v2-count",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/l2-service-type",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/last-member-query-interval",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/lite-exclude-filter",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/mld-version",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/querier-source",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/query-interval",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/query-max-response-time",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/require-router-alert",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/robustness-variable",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/send-query",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/static-bridge-mrouter-interface",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/static-l2-multicast-group",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/static-l2-multicast-group/bridge-outgoing-interface",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/static-l2-multicast-group/group",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-igmp-mld-snooping:mld-snooping-instance/static-l2-multicast-group/source-addr",
+        "sid": "80132"
+      }
+    ]
+  }
+}

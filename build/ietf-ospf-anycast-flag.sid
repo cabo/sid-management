@@ -1,0 +1,39 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ospf-anycast-flag",
+    "module-revision": "2026-05-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-ospf",
+        "module-revision": "2022-10-19"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ospf-anycast-flag",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ac-flag",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/ietf-ospf-anycast-flag:anycast-flag",
+        "sid": "80002"
+      }
+    ]
+  }
+}

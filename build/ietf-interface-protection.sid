@@ -1,0 +1,60 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-interface-protection",
+    "module-revision": "2019-06-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-interface-protection",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "one-plus-one-type",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "one-to-n-type",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protected",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protection-architecture-type",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "protection-states",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unable-to-protect",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unprotected",
+        "sid": "80007"
+      }
+    ]
+  }
+}

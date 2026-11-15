@@ -1,0 +1,69 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-netconf-partial-lock",
+    "module-revision": "2009-10-19",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-netconf-partial-lock",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-partial-lock:partial-lock",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-partial-lock:partial-lock/input",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-partial-lock:partial-lock/input/select",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-partial-lock:partial-lock/output",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-partial-lock:partial-lock/output/lock-id",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-partial-lock:partial-lock/output/locked-node",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-partial-lock:partial-unlock",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-partial-lock:partial-unlock/input",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-partial-lock:partial-unlock/input/lock-id",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-partial-lock:partial-unlock/output",
+        "sid": "80010"
+      }
+    ]
+  }
+}

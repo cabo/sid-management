@@ -1,0 +1,1035 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-alarms",
+    "module-revision": "2019-09-11",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-alarms",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "alarm-type-id",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "alarm-correlation",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "alarm-history",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "alarm-profile",
+        "sid": "80004"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "alarm-shelving",
+        "sid": "80005"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "alarm-summary",
+        "sid": "80006"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "operator-actions",
+        "sid": "80007"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "root-cause-analysis",
+        "sid": "80008"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "service-impact-analysis",
+        "sid": "80009"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "severity-assignment",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-inventory-changed",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/alarm-text",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/alarm-type-id",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/alarm-type-qualifier",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/alt-resource",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/impacted-resource",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/perceived-severity",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/related-alarm",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/related-alarm/alarm-type-id",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/related-alarm/alarm-type-qualifier",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/related-alarm/resource",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/resource",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/root-cause-resource",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarm-notification/time",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-inventory",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-inventory/alarm-type",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-inventory/alarm-type/alarm-type-id",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-inventory/alarm-type/alarm-type-qualifier",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-inventory/alarm-type/description",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-inventory/alarm-type/resource",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-inventory/alarm-type/severity-level",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-inventory/alarm-type/will-clear",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/alarm-text",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/alarm-type-id",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/alarm-type-qualifier",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/alt-resource",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/impacted-resource",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/is-cleared",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/last-changed",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/last-raised",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/operator-action",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/operator-action/operator",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/operator-action/state",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/operator-action/text",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/operator-action/time",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/operator-state-change",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/operator-state-change/operator",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/operator-state-change/state",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/operator-state-change/text",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/operator-state-change/time",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/perceived-severity",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/related-alarm",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/related-alarm/alarm-type-id",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/related-alarm/alarm-type-qualifier",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/related-alarm/resource",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/resource",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/root-cause-resource",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/set-operator-state",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/set-operator-state/input",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/set-operator-state/input/state",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/set-operator-state/input/text",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/set-operator-state/output",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/status-change",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/status-change/alarm-text",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/status-change/perceived-severity",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/status-change/time",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/alarm/time-created",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/compress-alarms",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/compress-alarms/input",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/compress-alarms/input/alarm-type-id",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/compress-alarms/input/alarm-type-qualifier",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/compress-alarms/input/resource",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/compress-alarms/output",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/compress-alarms/output/compressed-alarms",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/last-changed",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/number-of-alarms",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/alarm-clearance-status",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec/days",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec/days/days",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec/hours",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec/hours/hours",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec/minutes",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec/minutes/minutes",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec/seconds",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec/seconds/seconds",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec/weeks",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/older-than/age-spec/weeks/weeks",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/operator-state-filter",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/operator-state-filter/state",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/operator-state-filter/user",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/severity",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/severity/sev-spec",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/severity/sev-spec/above",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/severity/sev-spec/above/above",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/severity/sev-spec/below",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/severity/sev-spec/below/below",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/severity/sev-spec/is",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/input/severity/sev-spec/is/is",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/output",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-list/purge-alarms/output/purged-alarms",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-profile",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-profile/alarm-severity-assignment-profile",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-profile/alarm-severity-assignment-profile/severity-level",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-profile/alarm-type-id",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-profile/alarm-type-qualifier-match",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-profile/description",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/alarm-profile/resource",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/alarm-shelving",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/alarm-shelving/shelf",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/alarm-shelving/shelf/alarm-type",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/alarm-shelving/shelf/alarm-type/alarm-type-id",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/alarm-shelving/shelf/alarm-type/alarm-type-qualifier-match",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/alarm-shelving/shelf/description",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/alarm-shelving/shelf/name",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/alarm-shelving/shelf/resource",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/max-alarm-status-changes",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/notify-severity-level",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/control/notify-status-changes",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/compress-shelved-alarms",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/compress-shelved-alarms/input",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/compress-shelved-alarms/input/alarm-type-id",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/compress-shelved-alarms/input/alarm-type-qualifier",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/compress-shelved-alarms/input/resource",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/compress-shelved-alarms/output",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/compress-shelved-alarms/output/compressed-alarms",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/number-of-shelved-alarms",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/alarm-clearance-status",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec/days",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec/days/days",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec/hours",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec/hours/hours",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec/minutes",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec/minutes/minutes",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec/seconds",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec/seconds/seconds",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec/weeks",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/older-than/age-spec/weeks/weeks",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/operator-state-filter",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/operator-state-filter/state",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/operator-state-filter/user",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/severity",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/severity/sev-spec",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/severity/sev-spec/above",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/severity/sev-spec/above/above",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/severity/sev-spec/below",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/severity/sev-spec/below/below",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/severity/sev-spec/is",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/input/severity/sev-spec/is/is",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/output",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/purge-shelved-alarms/output/purged-alarms",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/alarm-text",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/alarm-type-id",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/alarm-type-qualifier",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/alt-resource",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/impacted-resource",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/is-cleared",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/last-changed",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/last-raised",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/operator-state-change",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/operator-state-change/operator",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/operator-state-change/state",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/operator-state-change/text",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/operator-state-change/time",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/perceived-severity",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/related-alarm",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/related-alarm/alarm-type-id",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/related-alarm/alarm-type-qualifier",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/related-alarm/resource",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/resource",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/root-cause-resource",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/shelf-name",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/status-change",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/status-change/alarm-text",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/status-change/perceived-severity",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarm/status-change/time",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/shelved-alarms/shelved-alarms-last-changed",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary/alarm-summary",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary/alarm-summary/cleared",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary/alarm-summary/cleared-closed",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary/alarm-summary/cleared-not-closed",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary/alarm-summary/not-cleared",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary/alarm-summary/not-cleared-closed",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary/alarm-summary/not-cleared-not-closed",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary/alarm-summary/severity",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary/alarm-summary/total",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-alarms:alarms/summary/shelves-active",
+        "sid": "80202"
+      }
+    ]
+  }
+}

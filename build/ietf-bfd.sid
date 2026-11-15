@@ -1,0 +1,59 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-bfd",
+    "module-revision": "2022-09-22",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-bfd-types",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-bfd",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/summary",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/summary/number-of-sessions",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/summary/number-of-sessions-admin-down",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/summary/number-of-sessions-down",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-bfd:bfd/summary/number-of-sessions-up",
+        "sid": "80006"
+      }
+    ]
+  }
+}

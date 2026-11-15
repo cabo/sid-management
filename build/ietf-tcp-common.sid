@@ -1,0 +1,24 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-tcp-common",
+    "module-revision": "2024-10-10",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-tcp-common",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "keepalives-supported",
+        "sid": "80001"
+      }
+    ]
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ip",
+    "module-revision": "2018-02-22",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ip",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ipv4-non-contiguous-netmasks",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ipv6-privacy-autoconf",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/address",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/address/ip",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/address/origin",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/address/subnet",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/address/subnet/netmask/netmask",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/address/subnet/prefix-length/prefix-length",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/forwarding",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/mtu",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/neighbor",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/neighbor/ip",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/neighbor/link-layer-address",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv4/neighbor/origin",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/address",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/address/ip",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/address/origin",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/address/prefix-length",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/address/status",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/forwarding",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/mtu",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/neighbor",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/neighbor/ip",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/neighbor/is-router",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/neighbor/link-layer-address",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/neighbor/origin",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces-state/interface/ietf-ip:ipv6/neighbor/state",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/address",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/address/ip",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/address/origin",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/address/subnet",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/address/subnet/netmask/netmask",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/address/subnet/prefix-length/prefix-length",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/enabled",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/forwarding",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/mtu",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/neighbor",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/neighbor/ip",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/neighbor/link-layer-address",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv4/neighbor/origin",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/address",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/address/ip",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/address/origin",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/address/prefix-length",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/address/status",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/autoconf",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/autoconf/create-global-addresses",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/autoconf/create-temporary-addresses",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/autoconf/temporary-preferred-lifetime",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/autoconf/temporary-valid-lifetime",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/dup-addr-detect-transmits",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/enabled",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/forwarding",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/mtu",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/neighbor",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/neighbor/ip",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/neighbor/is-router",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/neighbor/link-layer-address",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/neighbor/origin",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-ip:ipv6/neighbor/state",
+        "sid": "80064"
+      }
+    ]
+  }
+}

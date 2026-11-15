@@ -1,0 +1,49 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-acldns",
+    "module-revision": "2019-01-28",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-access-control-list",
+        "module-revision": "2019-03-04"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-acldns",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-acldns:/acl:acls/acl:acl/acl:aces/acl:ace/acl:matches/acl:l3/acl:ipv4/acl:ipv4/dst-dnsname",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-acldns:/acl:acls/acl:acl/acl:aces/acl:ace/acl:matches/acl:l3/acl:ipv4/acl:ipv4/src-dnsname",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-acldns:/acl:acls/acl:acl/acl:aces/acl:ace/acl:matches/acl:l3/acl:ipv6/acl:ipv6/dst-dnsname",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-acldns:/acl:acls/acl:acl/acl:aces/acl:ace/acl:matches/acl:l3/acl:ipv6/acl:ipv6/src-dnsname",
+        "sid": "80004"
+      }
+    ]
+  }
+}

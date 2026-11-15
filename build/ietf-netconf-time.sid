@@ -1,0 +1,213 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-netconf-time",
+    "module-revision": "2016-01-26",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-netconf",
+        "module-revision": "2011-06-01"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-netconf-monitoring",
+        "module-revision": "2010-10-04"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-netconf-time",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/ietf-netconf-time:scheduling-tolerance",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/ietf-netconf-time:scheduling-tolerance/sched-max-future",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/ietf-netconf-time:scheduling-tolerance/sched-max-past",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-time:cancel-schedule",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-time:cancel-schedule/input",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-time:cancel-schedule/input/cancelled-message-id",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-time:cancel-schedule/input/get-time",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-time:cancel-schedule/output",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-time:cancel-schedule/output/execution-time",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-time:netconf-scheduled-message",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-time:netconf-scheduled-message/schedule-id",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-time:netconf-scheduled-message/scheduled-time",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:commit/input/ietf-netconf-time:get-time",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:commit/input/ietf-netconf-time:scheduled-time",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:commit/output/ietf-netconf-time:execution-time",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:copy-config/input/ietf-netconf-time:get-time",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:copy-config/input/ietf-netconf-time:scheduled-time",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:copy-config/output/ietf-netconf-time:execution-time",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:delete-config/input/ietf-netconf-time:get-time",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:delete-config/input/ietf-netconf-time:scheduled-time",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:delete-config/output/ietf-netconf-time:execution-time",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:edit-config/input/ietf-netconf-time:get-time",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:edit-config/input/ietf-netconf-time:scheduled-time",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:edit-config/output/ietf-netconf-time:execution-time",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:get-config/input/ietf-netconf-time:get-time",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:get-config/input/ietf-netconf-time:scheduled-time",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:get-config/output/ietf-netconf-time:execution-time",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:get/input/ietf-netconf-time:get-time",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:get/input/ietf-netconf-time:scheduled-time",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:get/output/ietf-netconf-time:execution-time",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:lock/input/ietf-netconf-time:get-time",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:lock/input/ietf-netconf-time:scheduled-time",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:lock/output/ietf-netconf-time:execution-time",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:unlock/input/ietf-netconf-time:get-time",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:unlock/input/ietf-netconf-time:scheduled-time",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:unlock/output/ietf-netconf-time:execution-time",
+        "sid": "80036"
+      }
+    ]
+  }
+}

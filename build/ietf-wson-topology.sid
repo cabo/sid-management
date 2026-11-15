@@ -1,0 +1,2852 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-wson-topology",
+    "module-revision": "2021-08-13",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-network",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-network-topology",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-te-topology",
+        "module-revision": "2020-08-06"
+      },
+      {
+        "module-name": "ietf-layer0-types",
+        "module-revision": "2021-08-13"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-wson-topology",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/ietf-te-topology:te/templates/link-template/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/information-source-entry/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/network-types/ietf-te-topology:te-topology/ietf-wson-topology:wson-topology",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80203"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80204"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80205"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80206"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80207"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80208"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80209"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80210"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80211"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80212"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80213"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80214"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80215"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80216"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80217"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80218"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80219"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80220"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80221"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80222"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80223"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80224"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80225"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80226"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80227"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80228"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80229"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80230"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80231"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80232"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80233"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80234"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80235"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80236"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80237"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80238"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80239"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80240"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80241"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80242"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80243"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80244"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80245"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80246"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80247"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80248"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/information-source-entry/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80249"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80250"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80251"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80252"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80253"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80254"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80255"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80256"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80257"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80258"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80259"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80260"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80261"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80262"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80263"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80264"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80265"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80266"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/from/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80267"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80268"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80269"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80270"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80271"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80272"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80273"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80274"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80275"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80276"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80277"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80278"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80279"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80280"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80281"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80282"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80283"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80284"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80285"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80286"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80287"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80288"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80289"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80290"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80291"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80292"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80293"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80294"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80295"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80296"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80297"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80298"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80299"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80300"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80301"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80302"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80303"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80304"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80305"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80306"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80307"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80308"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80309"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80310"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80311"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80312"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80313"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80314"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/to/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80315"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80316"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80317"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80318"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80319"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80320"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80321"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80322"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80323"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80324"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80325"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80326"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80327"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80328"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80329"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80330"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80331"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80332"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80333"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80334"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/connectivity-matrix/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80335"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80336"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80337"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80338"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80339"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80340"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80341"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80342"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80343"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80344"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80345"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80346"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80347"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80348"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80349"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80350"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80351"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80352"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80353"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80354"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80355"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80356"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80357"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80358"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80359"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80360"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80361"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80362"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80363"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80364"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80365"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80366"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80367"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80368"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80369"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80370"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80371"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80372"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80373"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80374"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80375"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80376"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80377"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80378"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80379"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80380"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80381"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80382"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80383"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80384"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80385"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80386"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80387"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80388"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80389"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80390"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80391"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80392"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80393"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80394"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80395"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80396"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80397"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80398"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80399"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80400"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80401"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80402"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/connectivity-matrices/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80403"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/ietf-wson-topology:wson-node",
+        "sid": "80404"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/ietf-wson-topology:wson-node/is-reconfigurable-node",
+        "sid": "80405"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80406"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80407"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80408"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80409"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80410"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80411"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80412"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80413"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80414"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80415"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80416"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80417"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80418"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80419"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80420"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80421"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80422"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80423"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80424"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80425"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80426"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80427"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80428"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-end/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80429"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80430"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80431"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80432"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80433"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80434"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-start/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/dwdm-n",
+        "sid": "80435"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson",
+        "sid": "80436"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type",
+        "sid": "80437"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm",
+        "sid": "80438"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/cwdm/wson-cwdm-channel-spacing",
+        "sid": "80439"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm",
+        "sid": "80440"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/label-restrictions/label-restriction/label-step/technology/ietf-wson-topology:wson/l0-grid-type/dwdm/wson-dwdm-channel-spacing",
+        "sid": "80441"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80442"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80443"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80444"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80445"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80446"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80447"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80448"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80449"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80450"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80451"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80452"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80453"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80454"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80455"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80456"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80457"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80458"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80459"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80460"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80461"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80462"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80463"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80464"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80465"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80466"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80467"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80468"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80469"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80470"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80471"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80472"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80473"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80474"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80475"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80476"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80477"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80478"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80479"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80480"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80481"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80482"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80483"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80484"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80485"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80486"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80487"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80488"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80489"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80490"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/local-link-connectivity/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80491"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80492"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80493"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80494"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80495"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80496"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80497"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80498"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80499"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80500"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-exclude-objects/route-object-exclude-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80501"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80502"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80503"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80504"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80505"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80506"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80507"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80508"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80509"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80510"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/optimizations/algorithm/metric/optimization-metric/explicit-route-include-objects/route-object-include-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80511"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80512"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80513"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80514"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80515"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80516"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80517"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80518"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80519"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80520"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/path-properties/path-route-objects/path-route-object/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80521"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80522"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80523"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80524"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80525"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80526"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80527"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80528"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80529"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80530"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/backup-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80531"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson",
+        "sid": "80532"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type",
+        "sid": "80533"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm",
+        "sid": "80534"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/cwdm/cwdm-n",
+        "sid": "80535"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm",
+        "sid": "80536"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel",
+        "sid": "80537"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single",
+        "sid": "80538"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/single/dwdm-n",
+        "sid": "80539"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super",
+        "sid": "80540"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/tunnel-termination-point/local-link-connectivities/underlay/primary-path/path-element/type/label/label-hop/te-label/technology/ietf-wson-topology:wson/grid-type/dwdm/single-or-super-channel/super/subcarrier-dwdm-n",
+        "sid": "80541"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nt:link/tet:te/tet:information-source-entry/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80542"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nt:link/tet:te/tet:information-source-entry/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80543"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nt:link/tet:te/tet:te-link-attributes/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80544"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nt:link/tet:te/tet:te-link-attributes/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80545"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:information-source-entry/tet:connectivity-matrices/tet:connectivity-matrix/tet:from/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80546"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:information-source-entry/tet:connectivity-matrices/tet:connectivity-matrix/tet:from/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80547"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:information-source-entry/tet:connectivity-matrices/tet:connectivity-matrix/tet:to/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80548"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:information-source-entry/tet:connectivity-matrices/tet:connectivity-matrix/tet:to/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80549"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:information-source-entry/tet:connectivity-matrices/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80550"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:information-source-entry/tet:connectivity-matrices/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80551"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:te-node-attributes/tet:connectivity-matrices/tet:connectivity-matrix/tet:from/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80552"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:te-node-attributes/tet:connectivity-matrices/tet:connectivity-matrix/tet:from/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80553"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:te-node-attributes/tet:connectivity-matrices/tet:connectivity-matrix/tet:to/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80554"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:te-node-attributes/tet:connectivity-matrices/tet:connectivity-matrix/tet:to/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80555"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:te-node-attributes/tet:connectivity-matrices/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80556"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:te-node-attributes/tet:connectivity-matrices/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80557"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:tunnel-termination-point/tet:local-link-connectivities/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80558"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:tunnel-termination-point/tet:local-link-connectivities/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80559"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:tunnel-termination-point/tet:local-link-connectivities/tet:local-link-connectivity/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80560"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/nw:network/nw:node/tet:te/tet:tunnel-termination-point/tet:local-link-connectivities/tet:local-link-connectivity/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80561"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/tet:te/tet:templates/tet:link-template/tet:te-link-attributes/tet:label-restrictions/tet:label-restriction/grid-type",
+        "sid": "80562"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-wson-topology:/nw:networks/tet:te/tet:templates/tet:link-template/tet:te-link-attributes/tet:label-restrictions/tet:label-restriction/priority",
+        "sid": "80563"
+      }
+    ]
+  }
+}

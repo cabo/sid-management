@@ -1,0 +1,54 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-factory-default",
+    "module-revision": "2020-08-31",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-datastores",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-factory-default",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "factory-default",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "factory-default-datastore",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-factory-default:factory-reset",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-factory-default:factory-reset/input",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-factory-default:factory-reset/output",
+        "sid": "80005"
+      }
+    ]
+  }
+}

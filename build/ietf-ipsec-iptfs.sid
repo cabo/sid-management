@@ -1,0 +1,583 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ipsec-iptfs",
+    "module-revision": "2023-01-31",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-i2nsf-ike",
+        "module-revision": "2021-07-14"
+      },
+      {
+        "module-name": "ietf-i2nsf-ikeless",
+        "module-revision": "2021-07-14"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ipsec-iptfs",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ipsec-stats",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "iptfs-stats",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:ipsec-stats",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:ipsec-stats/rx-drop-pkts",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:ipsec-stats/rx-octets",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:ipsec-stats/rx-pkts",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:ipsec-stats/tx-drop-pkts",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:ipsec-stats/tx-octets",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:ipsec-stats/tx-pkts",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-inner-pkt-stats",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-inner-pkt-stats/rx-incomplete-pkts",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-inner-pkt-stats/rx-octets",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-inner-pkt-stats/rx-pkts",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-inner-pkt-stats/tx-octets",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-inner-pkt-stats/tx-pkts",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-all-pad-octets",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-all-pad-pkts",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-errored-pkts",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-extra-pad-octets",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-extra-pad-pkts",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-missed-pkts",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/tx-all-pad-octets",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/tx-all-pad-pkts",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/tx-extra-pad-octets",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ike:ipsec-ike/conn-entry/child-sa-info/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/tx-extra-pad-pkts",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:ipsec-stats",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:ipsec-stats/rx-drop-pkts",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:ipsec-stats/rx-octets",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:ipsec-stats/rx-pkts",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:ipsec-stats/tx-drop-pkts",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:ipsec-stats/tx-octets",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:ipsec-stats/tx-pkts",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-inner-pkt-stats",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-inner-pkt-stats/rx-incomplete-pkts",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-inner-pkt-stats/rx-octets",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-inner-pkt-stats/rx-pkts",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-inner-pkt-stats/tx-octets",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-inner-pkt-stats/tx-pkts",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-all-pad-octets",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-all-pad-pkts",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-errored-pkts",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-extra-pad-octets",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-extra-pad-pkts",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/rx-missed-pkts",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/tx-all-pad-octets",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/tx-all-pad-pkts",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/tx-extra-pad-octets",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-i2nsf-ikeless:ipsec-ikeless/sad/sad-entry/ietf-ipsec-iptfs:iptfs-outer-pkt-stats/tx-extra-pad-pkts",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/congestion-control",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/dont-fragment",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/lost-packet-timer-interval",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/max-aggregation-time",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/packet-size",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/packet-size/outer-packet-size",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/packet-size/use-path-mtu-discovery",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/send-immediately",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/tunnel-rate",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/tunnel-rate/l2-fixed-rate",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/tunnel-rate/l2-fixed-rate/l2-fixed-rate",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/tunnel-rate/l3-fixed-rate",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/tunnel-rate/l3-fixed-rate/l3-fixed-rate",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:child-sa-info/traffic-flow-security/window-size",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/congestion-control",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/dont-fragment",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/lost-packet-timer-interval",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/max-aggregation-time",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/packet-size",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/packet-size/outer-packet-size",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/packet-size/use-path-mtu-discovery",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/send-immediately",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/tunnel-rate",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/tunnel-rate/l2-fixed-rate",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/tunnel-rate/l2-fixed-rate/l2-fixed-rate",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/tunnel-rate/l3-fixed-rate",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/tunnel-rate/l3-fixed-rate/l3-fixed-rate",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfike:ipsec-ike/nsfike:conn-entry/nsfike:spd/nsfike:spd-entry/nsfike:ipsec-policy-config/nsfike:processing-info/nsfike:ipsec-sa-cfg/traffic-flow-security/window-size",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/congestion-control",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/dont-fragment",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/lost-packet-timer-interval",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/max-aggregation-time",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/packet-size",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/packet-size/outer-packet-size",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/packet-size/use-path-mtu-discovery",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/send-immediately",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/tunnel-rate",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/tunnel-rate/l2-fixed-rate",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/tunnel-rate/l2-fixed-rate/l2-fixed-rate",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/tunnel-rate/l3-fixed-rate",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/tunnel-rate/l3-fixed-rate/l3-fixed-rate",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:sad/nsfikels:sad-entry/traffic-flow-security/window-size",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/congestion-control",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/dont-fragment",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/lost-packet-timer-interval",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/max-aggregation-time",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/packet-size",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/packet-size/outer-packet-size",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/packet-size/use-path-mtu-discovery",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/send-immediately",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/tunnel-rate",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/tunnel-rate/l2-fixed-rate",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/tunnel-rate/l2-fixed-rate/l2-fixed-rate",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/tunnel-rate/l3-fixed-rate",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/tunnel-rate/l3-fixed-rate/l3-fixed-rate",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ipsec-iptfs:/nsfikels:ipsec-ikeless/nsfikels:spd/nsfikels:spd-entry/nsfikels:ipsec-policy-config/nsfikels:processing-info/nsfikels:ipsec-sa-cfg/traffic-flow-security/window-size",
+        "sid": "80110"
+      }
+    ]
+  }
+}

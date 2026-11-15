@@ -1,0 +1,73 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-tcp-client",
+    "module-revision": "2024-10-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-crypto-types",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-tcp-common",
+        "module-revision": "2024-10-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-tcp-client",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "local-binding-supported",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "proxy-connect",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "socks4-supported",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "socks4a-supported",
+        "sid": "80004"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "socks5-gss-api",
+        "sid": "80005"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "socks5-supported",
+        "sid": "80006"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "socks5-username-password",
+        "sid": "80007"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tcp-client-keepalives",
+        "sid": "80008"
+      }
+    ]
+  }
+}

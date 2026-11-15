@@ -1,0 +1,215 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-netconf-nmda",
+    "module-revision": "2019-01-07",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-datastores",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-origin",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-netconf",
+        "module-revision": "2011-06-01"
+      },
+      {
+        "module-name": "ietf-netconf-with-defaults",
+        "module-revision": "2011-06-01"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-netconf-nmda",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "origin",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "with-defaults",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:edit-data",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:edit-data/input",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:edit-data/input/datastore",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:edit-data/input/default-operation",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:edit-data/input/edit-content",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:edit-data/input/edit-content/config",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:edit-data/input/edit-content/config/config",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:edit-data/input/edit-content/url",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:edit-data/input/edit-content/url/url",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:edit-data/output",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/config-filter",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/datastore",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/filter-spec",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/filter-spec/subtree-filter",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/filter-spec/subtree-filter/subtree-filter",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/filter-spec/xpath-filter",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/filter-spec/xpath-filter/xpath-filter",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/max-depth",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/origin-filters",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/origin-filters/negated-origin-filter",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/origin-filters/negated-origin-filter/negated-origin-filter",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/origin-filters/origin-filter",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/origin-filters/origin-filter/origin-filter",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/with-defaults",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/input/with-origin",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/output",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-nmda:get-data/output/data",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:lock/input/target/config-target/ietf-netconf-nmda:datastore/datastore",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:unlock/input/target/config-target/ietf-netconf-nmda:datastore/datastore",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf:validate/input/source/config-source/ietf-netconf-nmda:datastore/datastore",
+        "sid": "80034"
+      }
+    ]
+  }
+}

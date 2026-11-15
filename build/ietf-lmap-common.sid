@@ -1,0 +1,25 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-lmap-common",
+    "module-revision": "2017-08-08",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-lmap-common",
+        "sid": "80000"
+      }
+    ]
+  }
+}

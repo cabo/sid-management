@@ -1,0 +1,354 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-netconf-monitoring",
+    "module-revision": "2010-10-04",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-netconf-monitoring",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "netconf-beep",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "netconf-soap-over-beep",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "netconf-soap-over-https",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "netconf-ssh",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "netconf-tls",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rnc",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rng",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "schema-format",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "transport",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "xsd",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "yang",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "yin",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:get-schema",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:get-schema/input",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:get-schema/input/format",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:get-schema/input/identifier",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:get-schema/input/version",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:get-schema/output",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:get-schema/output/data",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/capabilities",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/capabilities/capability",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/global-lock",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/global-lock/global-lock",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/global-lock/global-lock/locked-by-session",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/global-lock/global-lock/locked-time",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/partial-lock",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/partial-lock/partial-lock",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/partial-lock/partial-lock/lock-id",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/partial-lock/partial-lock/locked-by-session",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/partial-lock/partial-lock/locked-node",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/partial-lock/partial-lock/locked-time",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/locks/lock-type/partial-lock/partial-lock/select",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/datastores/datastore/name",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/schemas",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/schemas/schema",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/schemas/schema/format",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/schemas/schema/identifier",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/schemas/schema/location",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/schemas/schema/namespace",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/schemas/schema/version",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions/session",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions/session/in-bad-rpcs",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions/session/in-rpcs",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions/session/login-time",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions/session/out-notifications",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions/session/out-rpc-errors",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions/session/session-id",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions/session/source-host",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions/session/transport",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/sessions/session/username",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/statistics",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/statistics/dropped-sessions",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/statistics/in-bad-hellos",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/statistics/in-bad-rpcs",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/statistics/in-rpcs",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/statistics/in-sessions",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/statistics/netconf-start-time",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/statistics/out-notifications",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-monitoring:netconf-state/statistics/out-rpc-errors",
+        "sid": "80065"
+      }
+    ]
+  }
+}

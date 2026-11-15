@@ -1,0 +1,265 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-pim-bidir",
+    "module-revision": "2022-10-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-pim-base",
+        "module-revision": "2022-10-19"
+      },
+      {
+        "module-name": "ietf-pim-rp",
+        "module-revision": "2022-10-19"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-pim-bidir",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "df-state",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "df-state-backoff",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "df-state-lose",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "df-state-offer",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "df-state-win",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rp-bidir",
+        "sid": "80006"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "intf-df-election",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-bidir:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv4-rp/bidir",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-bidir:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv4-rp/bidir/override",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-bidir:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv4-rp/bidir/policy-name",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-bidir:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv6-rp/bidir",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-bidir:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv6-rp/bidir/override",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-pim-bidir:/rt:routing/rt:control-plane-protocols/pim-base:pim/pim-base:address-family/pim-rp:rp/pim-rp:static-rp/pim-rp:ipv6-rp/bidir/policy-name",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-bidir:bidir",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/df-election",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/df-election/ipv4-rp",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/df-election/ipv4-rp/rp-address",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/df-election/ipv6-rp",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/df-election/ipv6-rp/rp-address",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv4-rp",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv4-rp/df-address",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv4-rp/interface-name",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv4-rp/interface-state",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv4-rp/rp-address",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv4-rp/up-time",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv4-rp/winner-metric",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv4-rp/winner-metric-preference",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv6-rp",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv6-rp/df-address",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv6-rp/interface-name",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv6-rp/interface-state",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv6-rp/rp-address",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv6-rp/up-time",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv6-rp/winner-metric",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/address-family/ietf-pim-rp:rp/ietf-pim-bidir:bidir/interface-df-election/ipv6-rp/winner-metric-preference",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/interfaces/interface/address-family/ietf-pim-bidir:bidir",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/interfaces/interface/address-family/ietf-pim-bidir:bidir/df-election",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/interfaces/interface/address-family/ietf-pim-bidir:bidir/df-election/backoff-interval",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/interfaces/interface/address-family/ietf-pim-bidir:bidir/df-election/offer-interval",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/interfaces/interface/address-family/ietf-pim-bidir:bidir/df-election/offer-multiplier",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/interfaces/interface/address-family/neighbors/ipv4-neighbor/ietf-pim-bidir:bidir-capable",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/ietf-pim-base:pim/interfaces/interface/address-family/neighbors/ipv6-neighbor/ietf-pim-bidir:bidir-capable",
+        "sid": "80044"
+      }
+    ]
+  }
+}

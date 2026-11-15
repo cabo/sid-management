@@ -1,0 +1,133 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-sztp-conveyed-info",
+    "module-revision": "2019-04-30",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-restconf",
+        "module-revision": "2017-01-26"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-sztp-conveyed-info",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hash-algorithm",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sha-256",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/boot-image",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/boot-image/download-uri",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/boot-image/image-verification",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/boot-image/image-verification/hash-algorithm",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/boot-image/image-verification/hash-value",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/boot-image/os-name",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/boot-image/os-version",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/configuration",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/configuration-handling",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/post-configuration-script",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/onboarding-information/onboarding-information/pre-configuration-script",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/redirect-information/redirect-information",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/redirect-information/redirect-information/bootstrap-server",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/redirect-information/redirect-information/bootstrap-server/address",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/redirect-information/redirect-information/bootstrap-server/port",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-sztp-conveyed-info:information-type/redirect-information/redirect-information/bootstrap-server/trust-anchor",
+        "sid": "80020"
+      }
+    ]
+  }
+}

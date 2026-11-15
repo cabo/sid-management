@@ -1,0 +1,954 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-snmp",
+    "module-revision": "2014-12-10",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp",
+        "sid": "80000"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-common",
+        "sid": "80001"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-community",
+        "sid": "80002"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-engine",
+        "sid": "80003"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-notification",
+        "sid": "80004"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-proxy",
+        "sid": "80005"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-ssh",
+        "sid": "80006"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-target",
+        "sid": "80007"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-tls",
+        "sid": "80008"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-tsm",
+        "sid": "80009"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-usm",
+        "sid": "80010"
+      },
+      {
+        "namespace": "module",
+        "identifier": "ietf-snmp-vacm",
+        "sid": "80011"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "notification-filter",
+        "sid": "80012"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "proxy",
+        "sid": "80013"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "sshtm",
+        "sid": "80014"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tlstm",
+        "sid": "80015"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tsm",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community/context",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community/engine-id",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community/index",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community/name",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community/name/binary-name",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community/name/binary-name/binary-name",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community/name/text-name",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community/name/text-name/text-name",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community/security-name",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-community:community/target-tag",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/enable-authen-traps",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/enabled",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/engine-id",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/name",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-ssh:ssh",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-ssh:ssh/ssh",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-ssh:ssh/ssh/ip",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-ssh:ssh/ssh/port",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-tls:dtls",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-tls:dtls/dtls",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-tls:dtls/dtls/ip",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-tls:dtls/dtls/port",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-tls:tls",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-tls:tls/tls",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-tls:tls/tls/ip",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/ietf-snmp-tls:tls/tls/port",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/udp",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/udp/udp",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/udp/udp/ip",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/listen/transport/udp/udp/port",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/version",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/version/v1",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/version/v2c",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-engine:engine/version/v3",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-notification:notify",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-notification:notify-filter-profile",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-notification:notify-filter-profile/exclude",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-notification:notify-filter-profile/include",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-notification:notify-filter-profile/name",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-notification:notify/name",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-notification:notify/tag",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-notification:notify/type",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-proxy:proxy",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-proxy:proxy/context-engine-id",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-proxy:proxy/context-name",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-proxy:proxy/multiple-target-out",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-proxy:proxy/name",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-proxy:proxy/single-target-out",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-proxy:proxy/target-params-in",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-proxy:proxy/type",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/ietf-snmp-notification:notify-filter-profile",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/name",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-community:v1",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-community:v1/v1",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-community:v1/v1/security-name",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-community:v2c",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-community:v2c/v2c",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-community:v2c/v2c/security-name",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-tsm:tsm",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-tsm:tsm/tsm",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-tsm:tsm/tsm/security-level",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-tsm:tsm/tsm/security-name",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-usm:usm",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-usm:usm/usm",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-usm:usm/usm/security-level",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target-params/params/ietf-snmp-usm:usm/usm/user-name",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/ietf-snmp-community:mms",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/name",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/retries",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/tag",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/target-params",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/timeout",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-ssh:ssh",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-ssh:ssh/ssh",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-ssh:ssh/ssh/ip",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-ssh:ssh/ssh/port",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-ssh:ssh/ssh/username",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:dtls",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:dtls/dtls",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:dtls/dtls/client-fingerprint",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:dtls/dtls/ip",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:dtls/dtls/port",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:dtls/dtls/server-fingerprint",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:dtls/dtls/server-identity",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:tls",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:tls/tls",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:tls/tls/client-fingerprint",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:tls/tls/ip",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:tls/tls/port",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:tls/tls/server-fingerprint",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/ietf-snmp-tls:tls/tls/server-identity",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/udp",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/udp/udp",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/udp/udp/ip",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/udp/udp/port",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-target:target/transport/udp/udp/prefix-length",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-tls:tlstm",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-tls:tlstm/cert-to-name",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-tls:tlstm/cert-to-name/fingerprint",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-tls:tlstm/cert-to-name/id",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-tls:tlstm/cert-to-name/map-type",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-tls:tlstm/cert-to-name/name",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-tsm:tsm",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-tsm:tsm/use-prefix",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/auth",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/auth/protocol",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/auth/protocol/md5",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/auth/protocol/md5/md5",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/auth/protocol/md5/md5/key",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/auth/protocol/sha",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/auth/protocol/sha/sha",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/auth/protocol/sha/sha/key",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/name",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/priv",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/priv/protocol",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/priv/protocol/aes",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/priv/protocol/aes/aes",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/priv/protocol/aes/aes/key",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/priv/protocol/des",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/priv/protocol/des/des",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/local/user/priv/protocol/des/des/key",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/engine-id",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/auth",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/auth/protocol",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/auth/protocol/md5",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/auth/protocol/md5/md5",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/auth/protocol/md5/md5/key",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/auth/protocol/sha",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/auth/protocol/sha/sha",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/auth/protocol/sha/sha/key",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/name",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/priv",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/priv/protocol",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/priv/protocol/aes",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/priv/protocol/aes/aes",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/priv/protocol/aes/aes/key",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/priv/protocol/des",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/priv/protocol/des/des",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-usm:usm/remote/user/priv/protocol/des/des/key",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/access",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/access/context",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/access/context-match",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/access/notify-view",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/access/read-view",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/access/security-level",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/access/security-model",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/access/write-view",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/member",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/member/security-model",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/member/security-name",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/group/name",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/view",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/view/exclude",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/view/include",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-snmp-common:snmp/ietf-snmp-vacm:vacm/view/name",
+        "sid": "80187"
+      }
+    ]
+  }
+}

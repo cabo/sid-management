@@ -1,0 +1,413 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-l2-topology-state",
+    "module-revision": "2020-11-15",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-network-state",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-network-topology-state",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-l2-topology",
+        "module-revision": "2020-11-15"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-l2-topology-state",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/l2-topology-attributes",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/l2-topology-attributes/flags",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/l2-topology-attributes/name",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l2-link-attributes",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l2-link-attributes/auto-nego",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l2-link-attributes/delay",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l2-link-attributes/duplex",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l2-link-attributes/flags",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l2-link-attributes/name",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nt-s:link/l2-link-attributes/rate",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:network-types/l2-topology",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l2-node-attributes",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l2-node-attributes/bridge-id",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l2-node-attributes/flags",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l2-node-attributes/management-address",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l2-node-attributes/management-mac",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l2-node-attributes/management-vlan",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/l2-node-attributes/name",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/encapsulation-type",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/inner-tag",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/inner-tpid",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/interface-name",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/lag",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/mac-address",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/member-link-tp",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/outer-tag",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/outer-tpid",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/port-number",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/unnumbered-id",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/vxlan",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:/nw-s:networks/nw-s:network/nw-s:node/nt-s:termination-point/l2-termination-point-attributes/vxlan/vni-id",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/event-type",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/l2-link-attributes",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/l2-link-attributes/auto-nego",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/l2-link-attributes/delay",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/l2-link-attributes/duplex",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/l2-link-attributes/flags",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/l2-link-attributes/name",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/l2-link-attributes/rate",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/l2-topology",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/link-ref",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-link-event/network-ref",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/event-type",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/l2-node-attributes",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/l2-node-attributes/bridge-id",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/l2-node-attributes/flags",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/l2-node-attributes/management-address",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/l2-node-attributes/management-mac",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/l2-node-attributes/management-vlan",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/l2-node-attributes/name",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/l2-topology",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/network-ref",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-node-event/node-ref",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/event-type",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/encapsulation-type",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/inner-tag",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/inner-tpid",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/interface-name",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/lag",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/mac-address",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/member-link-tp",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/outer-tag",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/outer-tpid",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/port-number",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/unnumbered-id",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/vxlan",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-termination-point-attributes/vxlan/vni-id",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/l2-topology",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/network-ref",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/node-ref",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-l2-topology-state:l2-termination-point-event/tp-ref",
+        "sid": "80076"
+      }
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-isis-reverse-metric",
+    "module-revision": "2022-10-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-isis",
+        "module-revision": "2022-10-19"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-isis-reverse-metric",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/ietf-isis-reverse-metric:reverse-metric",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/ietf-isis-reverse-metric:reverse-metric/enable-receive",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/ietf-isis-reverse-metric:reverse-metric",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/ietf-isis-reverse-metric:reverse-metric/flags",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/ietf-isis-reverse-metric:reverse-metric/flags/allow-unreachable",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/ietf-isis-reverse-metric:reverse-metric/flags/whole-lan",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/ietf-isis-reverse-metric:reverse-metric/metric",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/ietf-isis-reverse-metric:reverse-metric/te-metric",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/exclude-te-metric",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/flags",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/flags/allow-unreachable",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/flags/whole-lan",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-1",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-1/exclude-te-metric",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-1/flags",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-1/flags/allow-unreachable",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-1/flags/whole-lan",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-1/metric",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-2",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-2/exclude-te-metric",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-2/flags",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-2/flags/allow-unreachable",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-2/flags/whole-lan",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/level-2/metric",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/ietf-isis-reverse-metric:reverse-metric/metric",
+        "sid": "80026"
+      }
+    ]
+  }
+}

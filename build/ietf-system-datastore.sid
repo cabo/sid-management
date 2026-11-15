@@ -1,0 +1,30 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-system-datastore",
+    "module-revision": "2026-09-16",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-datastores",
+        "module-revision": "2018-02-14"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-system-datastore",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "system",
+        "sid": "80001"
+      }
+    ]
+  }
+}

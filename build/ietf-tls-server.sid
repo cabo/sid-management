@@ -1,0 +1,91 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-tls-server",
+    "module-revision": "2024-10-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-crypto-types",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-truststore",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-keystore",
+        "module-revision": "2024-10-10"
+      },
+      {
+        "module-name": "ietf-tls-common",
+        "module-revision": "2024-10-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-tls-server",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "client-auth-raw-public-key",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "client-auth-supported",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "client-auth-tls12-psk",
+        "sid": "80003"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "client-auth-tls13-epsk",
+        "sid": "80004"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "client-auth-x509-cert",
+        "sid": "80005"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "server-ident-raw-public-key",
+        "sid": "80006"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "server-ident-tls12-psk",
+        "sid": "80007"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "server-ident-tls13-epsk",
+        "sid": "80008"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "server-ident-x509-cert",
+        "sid": "80009"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tls-server-keepalives",
+        "sid": "80010"
+      }
+    ]
+  }
+}

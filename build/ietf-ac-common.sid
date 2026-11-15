@@ -1,0 +1,231 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ac-common",
+    "module-revision": "2025-09-29",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-vpn-common",
+        "module-revision": "2022-02-11"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-key-chain",
+        "module-revision": "2017-06-15"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ac-common",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "address-allocation-type",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "admin-prohibited",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "awaiting-processing",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "awaiting-validation",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bgp-role",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "client",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "discard",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dynamic-infra",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gre",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ip-in-ip",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipsec",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l2-tunnel-type",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l3-tunnel-type",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "local-defined-next-hop",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "local-link",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "nni",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "peer",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "precedence-type",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "primary",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "provider",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "provider-dhcp",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "provider-dhcp-relay",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "provider-dhcp-slaac",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pseudowire",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "public-nni",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rejected",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "role",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rs",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rs-client",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "secondary",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "slaac",
+        "sid": "80031"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "static-address",
+        "sid": "80032"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "uni",
+        "sid": "80033"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vpls",
+        "sid": "80034"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vxlan",
+        "sid": "80035"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "layer2-ac",
+        "sid": "80036"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "layer3-ac",
+        "sid": "80037"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "server-assigned-reference",
+        "sid": "80038"
+      }
+    ]
+  }
+}

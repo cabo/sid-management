@@ -1,0 +1,4293 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-isis",
+    "module-revision": "2022-10-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-key-chain",
+        "module-revision": "2017-06-15"
+      },
+      {
+        "module-name": "ietf-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "iana-routing-types",
+        "module-revision": "2017-12-04"
+      },
+      {
+        "module-name": "ietf-bfd-types",
+        "module-revision": "2022-09-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-isis",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "content-change",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-alternate-mrt",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-alternate-other",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-alternate-tilfa",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-alternate-type",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-alternate-type-equal-cost",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-alternate-type-lfa",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-alternate-type-remote-lfa",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-alternate-type-tunnel",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-protection-available-downstream-type",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-protection-available-link-type",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-protection-available-node-type",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-protection-available-other-type",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-protection-available-srlg-type",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-protection-available-type",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-protection-method",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-protection-method-lfa",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-protection-method-rlfa",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frr-protection-method-rsvpte",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isis",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lsp-attached-default-metric-flag",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lsp-attached-delay-metric-flag",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lsp-attached-error-metric-flag",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lsp-attached-expense-metric-flag",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lsp-flag",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lsp-l1-system-flag",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lsp-l2-system-flag",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lsp-log-reason",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lsp-overload-flag",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lsp-partitioned-flag",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "min-max-unidirectional-link-delay-subtlv-a-flag",
+        "sid": "80031"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "min-max-unidirectional-link-delay-subtlv-flag",
+        "sid": "80032"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "refresh",
+        "sid": "80033"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "router-capability-down-flag",
+        "sid": "80034"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "router-capability-flag",
+        "sid": "80035"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "router-capability-flooding-flag",
+        "sid": "80036"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tlv229-attached-flag",
+        "sid": "80037"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tlv229-flag",
+        "sid": "80038"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tlv229-overload-flag",
+        "sid": "80039"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unidirectional-link-delay-subtlv-a-flag",
+        "sid": "80040"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unidirectional-link-delay-subtlv-flag",
+        "sid": "80041"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unidirectional-link-loss-subtlv-a-flag",
+        "sid": "80042"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "unidirectional-link-loss-subtlv-flag",
+        "sid": "80043"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "admin-control",
+        "sid": "80044"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "auto-cost",
+        "sid": "80045"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "bfd",
+        "sid": "80046"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "fast-reroute",
+        "sid": "80047"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "graceful-restart",
+        "sid": "80048"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ietf-spf-delay",
+        "sid": "80049"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "key-chain",
+        "sid": "80050"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ldp-igp-sync",
+        "sid": "80051"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "lfa",
+        "sid": "80052"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "lsp-refresh",
+        "sid": "80053"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "max-ecmp",
+        "sid": "80054"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "maximum-area-addresses",
+        "sid": "80055"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "multi-topology",
+        "sid": "80056"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "nlpid-control",
+        "sid": "80057"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "node-flag",
+        "sid": "80058"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "node-tag",
+        "sid": "80059"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "nsr",
+        "sid": "80060"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "osi-interface",
+        "sid": "80061"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "overload-max-metric",
+        "sid": "80062"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "poi-tlv",
+        "sid": "80063"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "prefix-tag",
+        "sid": "80064"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "prefix-tag64",
+        "sid": "80065"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "remote-lfa",
+        "sid": "80066"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "te-rid",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-isis:clns-mtu",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:/rt:routing/rt:ribs/rt:rib/rt:routes/rt:route/metric",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:/rt:routing/rt:ribs/rt:rib/rt:routes/rt:route/route-type",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:/rt:routing/rt:ribs/rt:rib/rt:routes/rt:route/tag",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:adjacency-state-change",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:adjacency-state-change/extended-circuit-id",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:adjacency-state-change/interface-level",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:adjacency-state-change/interface-name",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:adjacency-state-change/isis-level",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:adjacency-state-change/neighbor",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:adjacency-state-change/neighbor-system-id",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:adjacency-state-change/reason",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:adjacency-state-change/routing-protocol-name",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:adjacency-state-change/state",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:area-mismatch",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:area-mismatch/extended-circuit-id",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:area-mismatch/interface-level",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:area-mismatch/interface-name",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:area-mismatch/isis-level",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:area-mismatch/raw-pdu",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:area-mismatch/routing-protocol-name",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:attempt-to-exceed-max-sequence",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:attempt-to-exceed-max-sequence/isis-level",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:attempt-to-exceed-max-sequence/lsp-id",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:attempt-to-exceed-max-sequence/routing-protocol-name",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-failure",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-failure/extended-circuit-id",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-failure/interface-level",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-failure/interface-name",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-failure/isis-level",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-failure/raw-pdu",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-failure/routing-protocol-name",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-type-failure",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-type-failure/extended-circuit-id",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-type-failure/interface-level",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-type-failure/interface-name",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-type-failure/isis-level",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-type-failure/raw-pdu",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:authentication-type-failure/routing-protocol-name",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-adjacency",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-adjacency/input",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-adjacency/input/interface",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-adjacency/input/level",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-adjacency/input/routing-protocol-instance-name",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-adjacency/output",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-database",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-database/input",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-database/input/level",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-database/input/routing-protocol-instance-name",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:clear-database/output",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:corrupted-lsp-detected",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:corrupted-lsp-detected/isis-level",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:corrupted-lsp-detected/lsp-id",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:corrupted-lsp-detected/routing-protocol-name",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:database-overload",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:database-overload/isis-level",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:database-overload/overload",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:database-overload/routing-protocol-name",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:id-len-mismatch",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:id-len-mismatch/extended-circuit-id",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:id-len-mismatch/interface-level",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:id-len-mismatch/interface-name",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:id-len-mismatch/isis-level",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:id-len-mismatch/pdu-field-len",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:id-len-mismatch/raw-pdu",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:id-len-mismatch/routing-protocol-name",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:if-state-change",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:if-state-change/extended-circuit-id",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:if-state-change/interface-level",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:if-state-change/interface-name",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:if-state-change/isis-level",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:if-state-change/routing-protocol-name",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:if-state-change/state",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-error-detected",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-error-detected/error-offset",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-error-detected/extended-circuit-id",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-error-detected/interface-level",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-error-detected/interface-name",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-error-detected/isis-level",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-error-detected/lsp-id",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-error-detected/raw-pdu",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-error-detected/routing-protocol-name",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-error-detected/tlv-type",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-generation",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-generation/isis-level",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-generation/lsp-id",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-generation/routing-protocol-name",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-generation/send-timestamp",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-generation/sequence",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-received",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-received/extended-circuit-id",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-received/interface-level",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-received/interface-name",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-received/isis-level",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-received/lsp-id",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-received/neighbor-system-id",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-received/received-timestamp",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-received/routing-protocol-name",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-received/sequence",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-too-large",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-too-large/extended-circuit-id",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-too-large/interface-level",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-too-large/interface-name",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-too-large/isis-level",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-too-large/lsp-id",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-too-large/pdu-size",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:lsp-too-large/routing-protocol-name",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:max-area-addresses-mismatch",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:max-area-addresses-mismatch/extended-circuit-id",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:max-area-addresses-mismatch/interface-level",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:max-area-addresses-mismatch/interface-name",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:max-area-addresses-mismatch/isis-level",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:max-area-addresses-mismatch/max-area-addresses",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:max-area-addresses-mismatch/raw-pdu",
+        "sid": "80181"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:max-area-addresses-mismatch/routing-protocol-name",
+        "sid": "80182"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:own-lsp-purge",
+        "sid": "80183"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:own-lsp-purge/extended-circuit-id",
+        "sid": "80184"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:own-lsp-purge/interface-level",
+        "sid": "80185"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:own-lsp-purge/interface-name",
+        "sid": "80186"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:own-lsp-purge/isis-level",
+        "sid": "80187"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:own-lsp-purge/lsp-id",
+        "sid": "80188"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:own-lsp-purge/routing-protocol-name",
+        "sid": "80189"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:protocols-supported-mismatch",
+        "sid": "80190"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:protocols-supported-mismatch/extended-circuit-id",
+        "sid": "80191"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:protocols-supported-mismatch/interface-level",
+        "sid": "80192"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:protocols-supported-mismatch/interface-name",
+        "sid": "80193"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:protocols-supported-mismatch/isis-level",
+        "sid": "80194"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:protocols-supported-mismatch/protocols",
+        "sid": "80195"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:protocols-supported-mismatch/raw-pdu",
+        "sid": "80196"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:protocols-supported-mismatch/routing-protocol-name",
+        "sid": "80197"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:rejected-adjacency",
+        "sid": "80198"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:rejected-adjacency/extended-circuit-id",
+        "sid": "80199"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:rejected-adjacency/interface-level",
+        "sid": "80200"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:rejected-adjacency/interface-name",
+        "sid": "80201"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:rejected-adjacency/isis-level",
+        "sid": "80202"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:rejected-adjacency/raw-pdu",
+        "sid": "80203"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:rejected-adjacency/reason",
+        "sid": "80204"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:rejected-adjacency/routing-protocol-name",
+        "sid": "80205"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:sequence-number-skipped",
+        "sid": "80206"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:sequence-number-skipped/extended-circuit-id",
+        "sid": "80207"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:sequence-number-skipped/interface-level",
+        "sid": "80208"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:sequence-number-skipped/interface-name",
+        "sid": "80209"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:sequence-number-skipped/isis-level",
+        "sid": "80210"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:sequence-number-skipped/lsp-id",
+        "sid": "80211"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:sequence-number-skipped/routing-protocol-name",
+        "sid": "80212"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:version-skew",
+        "sid": "80213"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:version-skew/extended-circuit-id",
+        "sid": "80214"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:version-skew/interface-level",
+        "sid": "80215"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:version-skew/interface-name",
+        "sid": "80216"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:version-skew/isis-level",
+        "sid": "80217"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:version-skew/protocol-version",
+        "sid": "80218"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:version-skew/raw-pdu",
+        "sid": "80219"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-isis:version-skew/routing-protocol-name",
+        "sid": "80220"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis",
+        "sid": "80221"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/address-families",
+        "sid": "80222"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/address-families/address-family-list",
+        "sid": "80223"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/address-families/address-family-list/address-family",
+        "sid": "80224"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/address-families/address-family-list/enabled",
+        "sid": "80225"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/area-address",
+        "sid": "80226"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication",
+        "sid": "80227"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/authentication-type",
+        "sid": "80228"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/authentication-type/key-chain",
+        "sid": "80229"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/authentication-type/key-chain/key-chain",
+        "sid": "80230"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/authentication-type/password",
+        "sid": "80231"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/authentication-type/password/crypto-algorithm",
+        "sid": "80232"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/authentication-type/password/key",
+        "sid": "80233"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-1",
+        "sid": "80234"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-1/authentication-type",
+        "sid": "80235"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-1/authentication-type/key-chain",
+        "sid": "80236"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-1/authentication-type/key-chain/key-chain",
+        "sid": "80237"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-1/authentication-type/password",
+        "sid": "80238"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-1/authentication-type/password/crypto-algorithm",
+        "sid": "80239"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-1/authentication-type/password/key",
+        "sid": "80240"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-2",
+        "sid": "80241"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-2/authentication-type",
+        "sid": "80242"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-2/authentication-type/key-chain",
+        "sid": "80243"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-2/authentication-type/key-chain/key-chain",
+        "sid": "80244"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-2/authentication-type/password",
+        "sid": "80245"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-2/authentication-type/password/crypto-algorithm",
+        "sid": "80246"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/authentication/level-2/authentication-type/password/key",
+        "sid": "80247"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/auto-cost",
+        "sid": "80248"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/auto-cost/enabled",
+        "sid": "80249"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/auto-cost/reference-bandwidth",
+        "sid": "80250"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database",
+        "sid": "80251"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels",
+        "sid": "80252"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/level",
+        "sid": "80253"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp",
+        "sid": "80254"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/attributes",
+        "sid": "80255"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/attributes/lsp-flags",
+        "sid": "80256"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/authentication",
+        "sid": "80257"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/authentication/authentication-key",
+        "sid": "80258"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/authentication/authentication-type",
+        "sid": "80259"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/checksum",
+        "sid": "80260"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/decoded-completed",
+        "sid": "80261"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/dynamic-hostname",
+        "sid": "80262"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability",
+        "sid": "80263"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes",
+        "sid": "80264"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/external-prefix-flag",
+        "sid": "80265"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/ip-prefix",
+        "sid": "80266"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/ipv4-source-router-id",
+        "sid": "80267"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/ipv6-source-router-id",
+        "sid": "80268"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/metric",
+        "sid": "80269"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/node-flag",
+        "sid": "80270"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/prefix-len",
+        "sid": "80271"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/readvertisement-flag",
+        "sid": "80272"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/tag",
+        "sid": "80273"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/tag64",
+        "sid": "80274"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/unknown-tlvs",
+        "sid": "80275"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/unknown-tlvs/unknown-tlv",
+        "sid": "80276"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/unknown-tlvs/unknown-tlv/length",
+        "sid": "80277"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/unknown-tlvs/unknown-tlv/type",
+        "sid": "80278"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/unknown-tlvs/unknown-tlv/value",
+        "sid": "80279"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-ipv4-reachability/prefixes/up-down",
+        "sid": "80280"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor",
+        "sid": "80281"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor",
+        "sid": "80282"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances",
+        "sid": "80283"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance",
+        "sid": "80284"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/admin-group",
+        "sid": "80285"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/id",
+        "sid": "80286"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability",
+        "sid": "80287"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/encoding",
+        "sid": "80288"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/max-lsp-bandwidths",
+        "sid": "80289"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/max-lsp-bandwidths/max-lsp-bandwidth",
+        "sid": "80290"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/max-lsp-bandwidths/max-lsp-bandwidth/bandwidth",
+        "sid": "80291"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/max-lsp-bandwidths/max-lsp-bandwidth/priority",
+        "sid": "80292"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/psc-specific",
+        "sid": "80293"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/psc-specific/minimum-lsp-bandwidth",
+        "sid": "80294"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/psc-specific/mtu",
+        "sid": "80295"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/switching-capability",
+        "sid": "80296"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/tdm-specific",
+        "sid": "80297"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/tdm-specific/indication",
+        "sid": "80298"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/interface-switching-capability/tdm-specific/minimum-lsp-bandwidth",
+        "sid": "80299"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/link-attributes-flags",
+        "sid": "80300"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/link-local-id",
+        "sid": "80301"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/local-if-ipv4-addrs",
+        "sid": "80302"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/local-if-ipv4-addrs/local-if-ipv4-addr",
+        "sid": "80303"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/max-bandwidth",
+        "sid": "80304"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/max-reservable-bandwidth",
+        "sid": "80305"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/metric",
+        "sid": "80306"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/min-max-unidirectional-link-delay",
+        "sid": "80307"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/min-max-unidirectional-link-delay/flags",
+        "sid": "80308"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/min-max-unidirectional-link-delay/flags/min-max-unidirectional-link-delay-subtlv-flags",
+        "sid": "80309"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/min-max-unidirectional-link-delay/max-value",
+        "sid": "80310"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/min-max-unidirectional-link-delay/min-value",
+        "sid": "80311"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/protection-capability",
+        "sid": "80312"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/remote-if-ipv4-addrs",
+        "sid": "80313"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/remote-if-ipv4-addrs/remote-if-ipv4-addr",
+        "sid": "80314"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/remote-local-id",
+        "sid": "80315"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/te-metric",
+        "sid": "80316"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-available-bandwidth",
+        "sid": "80317"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-available-bandwidth/value",
+        "sid": "80318"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-delay",
+        "sid": "80319"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-delay-variation",
+        "sid": "80320"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-delay-variation/value",
+        "sid": "80321"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-delay/flags",
+        "sid": "80322"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-delay/flags/unidirectional-link-delay-subtlv-flags",
+        "sid": "80323"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-delay/value",
+        "sid": "80324"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-loss",
+        "sid": "80325"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-loss/flags",
+        "sid": "80326"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-loss/flags/unidirectional-link-loss-subtlv-flags",
+        "sid": "80327"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-loss/value",
+        "sid": "80328"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-residual-bandwidth",
+        "sid": "80329"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-residual-bandwidth/value",
+        "sid": "80330"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-utilized-bandwidth",
+        "sid": "80331"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unidirectional-link-utilized-bandwidth/value",
+        "sid": "80332"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unknown-tlvs",
+        "sid": "80333"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unknown-tlvs/unknown-tlv",
+        "sid": "80334"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unknown-tlvs/unknown-tlv/length",
+        "sid": "80335"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unknown-tlvs/unknown-tlv/type",
+        "sid": "80336"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unknown-tlvs/unknown-tlv/value",
+        "sid": "80337"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unreserved-bandwidths",
+        "sid": "80338"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unreserved-bandwidths/unreserved-bandwidth",
+        "sid": "80339"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unreserved-bandwidths/unreserved-bandwidth/priority",
+        "sid": "80340"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/instances/instance/unreserved-bandwidths/unreserved-bandwidth/unreserved-bandwidth",
+        "sid": "80341"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/extended-is-neighbor/neighbor/neighbor-id",
+        "sid": "80342"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-addresses",
+        "sid": "80343"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability",
+        "sid": "80344"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes",
+        "sid": "80345"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/default-metric",
+        "sid": "80346"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/default-metric/metric",
+        "sid": "80347"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/delay-metric",
+        "sid": "80348"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/delay-metric/metric",
+        "sid": "80349"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/delay-metric/supported",
+        "sid": "80350"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/error-metric",
+        "sid": "80351"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/error-metric/metric",
+        "sid": "80352"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/error-metric/supported",
+        "sid": "80353"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/expense-metric",
+        "sid": "80354"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/expense-metric/metric",
+        "sid": "80355"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/expense-metric/supported",
+        "sid": "80356"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/i-e",
+        "sid": "80357"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/ip-prefix",
+        "sid": "80358"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-external-reachability/prefixes/prefix-len",
+        "sid": "80359"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability",
+        "sid": "80360"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes",
+        "sid": "80361"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/default-metric",
+        "sid": "80362"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/default-metric/metric",
+        "sid": "80363"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/delay-metric",
+        "sid": "80364"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/delay-metric/metric",
+        "sid": "80365"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/delay-metric/supported",
+        "sid": "80366"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/error-metric",
+        "sid": "80367"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/error-metric/metric",
+        "sid": "80368"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/error-metric/supported",
+        "sid": "80369"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/expense-metric",
+        "sid": "80370"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/expense-metric/metric",
+        "sid": "80371"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/expense-metric/supported",
+        "sid": "80372"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/i-e",
+        "sid": "80373"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/ip-prefix",
+        "sid": "80374"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-internal-reachability/prefixes/prefix-len",
+        "sid": "80375"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv4-te-routerid",
+        "sid": "80376"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-addresses",
+        "sid": "80377"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability",
+        "sid": "80378"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes",
+        "sid": "80379"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/external-prefix-flag",
+        "sid": "80380"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/ip-prefix",
+        "sid": "80381"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/ipv4-source-router-id",
+        "sid": "80382"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/ipv6-source-router-id",
+        "sid": "80383"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/metric",
+        "sid": "80384"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/node-flag",
+        "sid": "80385"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/prefix-len",
+        "sid": "80386"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/readvertisement-flag",
+        "sid": "80387"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/tag",
+        "sid": "80388"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/tag64",
+        "sid": "80389"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/unknown-tlvs",
+        "sid": "80390"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/unknown-tlvs/unknown-tlv",
+        "sid": "80391"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/unknown-tlvs/unknown-tlv/length",
+        "sid": "80392"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/unknown-tlvs/unknown-tlv/type",
+        "sid": "80393"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/unknown-tlvs/unknown-tlv/value",
+        "sid": "80394"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-reachability/prefixes/up-down",
+        "sid": "80395"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/ipv6-te-routerid",
+        "sid": "80396"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor",
+        "sid": "80397"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor",
+        "sid": "80398"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances",
+        "sid": "80399"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance",
+        "sid": "80400"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/default-metric",
+        "sid": "80401"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/default-metric/metric",
+        "sid": "80402"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/delay-metric",
+        "sid": "80403"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/delay-metric/metric",
+        "sid": "80404"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/delay-metric/supported",
+        "sid": "80405"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/error-metric",
+        "sid": "80406"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/error-metric/metric",
+        "sid": "80407"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/error-metric/supported",
+        "sid": "80408"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/expense-metric",
+        "sid": "80409"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/expense-metric/metric",
+        "sid": "80410"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/expense-metric/supported",
+        "sid": "80411"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/i-e",
+        "sid": "80412"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/instances/instance/id",
+        "sid": "80413"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/is-neighbor/neighbor/neighbor-id",
+        "sid": "80414"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/links-srlgs",
+        "sid": "80415"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/links-srlgs/links",
+        "sid": "80416"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/links-srlgs/links/flags",
+        "sid": "80417"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/links-srlgs/links/link-local-id",
+        "sid": "80418"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/links-srlgs/links/link-remote-id",
+        "sid": "80419"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/links-srlgs/links/neighbor-id",
+        "sid": "80420"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/links-srlgs/links/srlgs",
+        "sid": "80421"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/links-srlgs/links/srlgs/srlg",
+        "sid": "80422"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/lsp-id",
+        "sid": "80423"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-entries",
+        "sid": "80424"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-entries/topology",
+        "sid": "80425"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-entries/topology/attributes",
+        "sid": "80426"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-entries/topology/attributes/flags",
+        "sid": "80427"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-entries/topology/mt-id",
+        "sid": "80428"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability",
+        "sid": "80429"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes",
+        "sid": "80430"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/external-prefix-flag",
+        "sid": "80431"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/ip-prefix",
+        "sid": "80432"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/ipv4-source-router-id",
+        "sid": "80433"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/ipv6-source-router-id",
+        "sid": "80434"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/metric",
+        "sid": "80435"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/mt-id",
+        "sid": "80436"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/node-flag",
+        "sid": "80437"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/prefix-len",
+        "sid": "80438"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/readvertisement-flag",
+        "sid": "80439"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/tag",
+        "sid": "80440"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/tag64",
+        "sid": "80441"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/unknown-tlvs",
+        "sid": "80442"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/unknown-tlvs/unknown-tlv",
+        "sid": "80443"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/unknown-tlvs/unknown-tlv/length",
+        "sid": "80444"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/unknown-tlvs/unknown-tlv/type",
+        "sid": "80445"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/unknown-tlvs/unknown-tlv/value",
+        "sid": "80446"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-extended-ipv4-reachability/prefixes/up-down",
+        "sid": "80447"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability",
+        "sid": "80448"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes",
+        "sid": "80449"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/external-prefix-flag",
+        "sid": "80450"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/ip-prefix",
+        "sid": "80451"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/ipv4-source-router-id",
+        "sid": "80452"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/ipv6-source-router-id",
+        "sid": "80453"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/metric",
+        "sid": "80454"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/mt-id",
+        "sid": "80455"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/node-flag",
+        "sid": "80456"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/prefix-len",
+        "sid": "80457"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/readvertisement-flag",
+        "sid": "80458"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/tag",
+        "sid": "80459"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/tag64",
+        "sid": "80460"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/unknown-tlvs",
+        "sid": "80461"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/unknown-tlvs/unknown-tlv",
+        "sid": "80462"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/unknown-tlvs/unknown-tlv/length",
+        "sid": "80463"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/unknown-tlvs/unknown-tlv/type",
+        "sid": "80464"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/unknown-tlvs/unknown-tlv/value",
+        "sid": "80465"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-ipv6-reachability/prefixes/up-down",
+        "sid": "80466"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor",
+        "sid": "80467"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor",
+        "sid": "80468"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances",
+        "sid": "80469"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance",
+        "sid": "80470"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/admin-group",
+        "sid": "80471"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/id",
+        "sid": "80472"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability",
+        "sid": "80473"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/encoding",
+        "sid": "80474"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/max-lsp-bandwidths",
+        "sid": "80475"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/max-lsp-bandwidths/max-lsp-bandwidth",
+        "sid": "80476"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/max-lsp-bandwidths/max-lsp-bandwidth/bandwidth",
+        "sid": "80477"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/max-lsp-bandwidths/max-lsp-bandwidth/priority",
+        "sid": "80478"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/psc-specific",
+        "sid": "80479"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/psc-specific/minimum-lsp-bandwidth",
+        "sid": "80480"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/psc-specific/mtu",
+        "sid": "80481"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/switching-capability",
+        "sid": "80482"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/tdm-specific",
+        "sid": "80483"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/tdm-specific/indication",
+        "sid": "80484"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/interface-switching-capability/tdm-specific/minimum-lsp-bandwidth",
+        "sid": "80485"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/link-attributes-flags",
+        "sid": "80486"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/link-local-id",
+        "sid": "80487"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/local-if-ipv4-addrs",
+        "sid": "80488"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/local-if-ipv4-addrs/local-if-ipv4-addr",
+        "sid": "80489"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/max-bandwidth",
+        "sid": "80490"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/max-reservable-bandwidth",
+        "sid": "80491"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/metric",
+        "sid": "80492"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/min-max-unidirectional-link-delay",
+        "sid": "80493"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/min-max-unidirectional-link-delay/flags",
+        "sid": "80494"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/min-max-unidirectional-link-delay/flags/min-max-unidirectional-link-delay-subtlv-flags",
+        "sid": "80495"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/min-max-unidirectional-link-delay/max-value",
+        "sid": "80496"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/min-max-unidirectional-link-delay/min-value",
+        "sid": "80497"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/protection-capability",
+        "sid": "80498"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/remote-if-ipv4-addrs",
+        "sid": "80499"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/remote-if-ipv4-addrs/remote-if-ipv4-addr",
+        "sid": "80500"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/remote-local-id",
+        "sid": "80501"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/te-metric",
+        "sid": "80502"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-available-bandwidth",
+        "sid": "80503"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-available-bandwidth/value",
+        "sid": "80504"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-delay",
+        "sid": "80505"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-delay-variation",
+        "sid": "80506"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-delay-variation/value",
+        "sid": "80507"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-delay/flags",
+        "sid": "80508"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-delay/flags/unidirectional-link-delay-subtlv-flags",
+        "sid": "80509"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-delay/value",
+        "sid": "80510"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-loss",
+        "sid": "80511"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-loss/flags",
+        "sid": "80512"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-loss/flags/unidirectional-link-loss-subtlv-flags",
+        "sid": "80513"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-loss/value",
+        "sid": "80514"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-residual-bandwidth",
+        "sid": "80515"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-residual-bandwidth/value",
+        "sid": "80516"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-utilized-bandwidth",
+        "sid": "80517"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unidirectional-link-utilized-bandwidth/value",
+        "sid": "80518"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unknown-tlvs",
+        "sid": "80519"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unknown-tlvs/unknown-tlv",
+        "sid": "80520"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unknown-tlvs/unknown-tlv/length",
+        "sid": "80521"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unknown-tlvs/unknown-tlv/type",
+        "sid": "80522"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unknown-tlvs/unknown-tlv/value",
+        "sid": "80523"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unreserved-bandwidths",
+        "sid": "80524"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unreserved-bandwidths/unreserved-bandwidth",
+        "sid": "80525"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unreserved-bandwidths/unreserved-bandwidth/priority",
+        "sid": "80526"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/instances/instance/unreserved-bandwidths/unreserved-bandwidth/unreserved-bandwidth",
+        "sid": "80527"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/mt-id",
+        "sid": "80528"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/mt-is-neighbor/neighbor/neighbor-id",
+        "sid": "80529"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/protocol-supported",
+        "sid": "80530"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/raw-data",
+        "sid": "80531"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/remaining-lifetime",
+        "sid": "80532"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities",
+        "sid": "80533"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability",
+        "sid": "80534"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability/flags",
+        "sid": "80535"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability/flags/router-capability-flags",
+        "sid": "80536"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability/node-tags",
+        "sid": "80537"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability/node-tags/node-tag",
+        "sid": "80538"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability/node-tags/node-tag/tag",
+        "sid": "80539"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability/unknown-tlvs",
+        "sid": "80540"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability/unknown-tlvs/unknown-tlv",
+        "sid": "80541"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability/unknown-tlvs/unknown-tlv/length",
+        "sid": "80542"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability/unknown-tlvs/unknown-tlv/type",
+        "sid": "80543"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/router-capabilities/router-capability/unknown-tlvs/unknown-tlv/value",
+        "sid": "80544"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/sequence",
+        "sid": "80545"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/unknown-tlvs",
+        "sid": "80546"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/unknown-tlvs/unknown-tlv",
+        "sid": "80547"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/unknown-tlvs/unknown-tlv/length",
+        "sid": "80548"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/unknown-tlvs/unknown-tlv/type",
+        "sid": "80549"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/database/levels/lsp/unknown-tlvs/unknown-tlv/value",
+        "sid": "80550"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/default-metric",
+        "sid": "80551"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/default-metric/level-1",
+        "sid": "80552"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/default-metric/level-1/value",
+        "sid": "80553"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/default-metric/level-2",
+        "sid": "80554"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/default-metric/level-2/value",
+        "sid": "80555"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/default-metric/value",
+        "sid": "80556"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/discontinuity-time",
+        "sid": "80557"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/enabled",
+        "sid": "80558"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/fast-reroute",
+        "sid": "80559"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/fast-reroute/lfa",
+        "sid": "80560"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/graceful-restart",
+        "sid": "80561"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/graceful-restart/enabled",
+        "sid": "80562"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/graceful-restart/helper-enabled",
+        "sid": "80563"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/graceful-restart/restart-interval",
+        "sid": "80564"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/hostnames",
+        "sid": "80565"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/hostnames/hostname",
+        "sid": "80566"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/hostnames/hostname/hostname",
+        "sid": "80567"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/hostnames/hostname/system-id",
+        "sid": "80568"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces",
+        "sid": "80569"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface",
+        "sid": "80570"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/address-families",
+        "sid": "80571"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/address-families/address-family-list",
+        "sid": "80572"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/address-families/address-family-list/address-family",
+        "sid": "80573"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies",
+        "sid": "80574"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency",
+        "sid": "80575"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/hold-timer",
+        "sid": "80576"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/lastuptime",
+        "sid": "80577"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/neighbor-extended-circuit-id",
+        "sid": "80578"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/neighbor-priority",
+        "sid": "80579"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/neighbor-snpa",
+        "sid": "80580"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/neighbor-sys-type",
+        "sid": "80581"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/neighbor-sysid",
+        "sid": "80582"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/state",
+        "sid": "80583"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/adjacencies/adjacency/usage",
+        "sid": "80584"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/bfd",
+        "sid": "80585"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/bfd/enabled",
+        "sid": "80586"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/bfd/interval-config-type",
+        "sid": "80587"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/bfd/interval-config-type/single-interval",
+        "sid": "80588"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/bfd/interval-config-type/single-interval/min-interval",
+        "sid": "80589"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/bfd/interval-config-type/tx-rx-intervals",
+        "sid": "80590"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/bfd/interval-config-type/tx-rx-intervals/desired-min-tx-interval",
+        "sid": "80591"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/bfd/interval-config-type/tx-rx-intervals/required-min-rx-interval",
+        "sid": "80592"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/bfd/local-multiplier",
+        "sid": "80593"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/csnp-interval",
+        "sid": "80594"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/discontinuity-time",
+        "sid": "80595"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/enabled",
+        "sid": "80596"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/event-counters",
+        "sid": "80597"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/event-counters/adjacency-changes",
+        "sid": "80598"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/event-counters/adjacency-number",
+        "sid": "80599"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/event-counters/adjacency-rejects",
+        "sid": "80600"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/event-counters/authentication-fails",
+        "sid": "80601"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/event-counters/authentication-type-fails",
+        "sid": "80602"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/event-counters/id-len-mismatch",
+        "sid": "80603"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/event-counters/init-fails",
+        "sid": "80604"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/event-counters/lan-dis-changes",
+        "sid": "80605"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/event-counters/max-area-addresses-mismatch",
+        "sid": "80606"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute",
+        "sid": "80607"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa",
+        "sid": "80608"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/candidate-enabled",
+        "sid": "80609"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/enabled",
+        "sid": "80610"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-1",
+        "sid": "80611"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-1/candidate-enabled",
+        "sid": "80612"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-1/enabled",
+        "sid": "80613"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-1/remote-lfa",
+        "sid": "80614"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-1/remote-lfa/enabled",
+        "sid": "80615"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-2",
+        "sid": "80616"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-2/candidate-enabled",
+        "sid": "80617"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-2/enabled",
+        "sid": "80618"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-2/remote-lfa",
+        "sid": "80619"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/level-2/remote-lfa/enabled",
+        "sid": "80620"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/remote-lfa",
+        "sid": "80621"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/fast-reroute/lfa/remote-lfa/enabled",
+        "sid": "80622"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication",
+        "sid": "80623"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/authentication-type",
+        "sid": "80624"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/authentication-type/key-chain",
+        "sid": "80625"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/authentication-type/key-chain/key-chain",
+        "sid": "80626"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/authentication-type/password",
+        "sid": "80627"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/authentication-type/password/crypto-algorithm",
+        "sid": "80628"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/authentication-type/password/key",
+        "sid": "80629"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-1",
+        "sid": "80630"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-1/authentication-type",
+        "sid": "80631"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-1/authentication-type/key-chain",
+        "sid": "80632"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-1/authentication-type/key-chain/key-chain",
+        "sid": "80633"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-1/authentication-type/password",
+        "sid": "80634"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-1/authentication-type/password/crypto-algorithm",
+        "sid": "80635"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-1/authentication-type/password/key",
+        "sid": "80636"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-2",
+        "sid": "80637"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-2/authentication-type",
+        "sid": "80638"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-2/authentication-type/key-chain",
+        "sid": "80639"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-2/authentication-type/key-chain/key-chain",
+        "sid": "80640"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-2/authentication-type/password",
+        "sid": "80641"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-2/authentication-type/password/crypto-algorithm",
+        "sid": "80642"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-authentication/level-2/authentication-type/password/key",
+        "sid": "80643"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-interval",
+        "sid": "80644"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-interval/level-1",
+        "sid": "80645"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-interval/level-1/value",
+        "sid": "80646"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-interval/level-2",
+        "sid": "80647"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-interval/level-2/value",
+        "sid": "80648"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-interval/value",
+        "sid": "80649"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-multiplier",
+        "sid": "80650"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-multiplier/level-1",
+        "sid": "80651"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-multiplier/level-1/value",
+        "sid": "80652"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-multiplier/level-2",
+        "sid": "80653"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-multiplier/level-2/value",
+        "sid": "80654"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-multiplier/value",
+        "sid": "80655"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-padding",
+        "sid": "80656"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/hello-padding/enabled",
+        "sid": "80657"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/interface-type",
+        "sid": "80658"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/level-type",
+        "sid": "80659"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/lsp-pacing-interval",
+        "sid": "80660"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/lsp-retransmit-interval",
+        "sid": "80661"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/mesh-group",
+        "sid": "80662"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/mesh-group-enabled",
+        "sid": "80663"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/metric",
+        "sid": "80664"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/metric/level-1",
+        "sid": "80665"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/metric/level-1/value",
+        "sid": "80666"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/metric/level-2",
+        "sid": "80667"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/metric/level-2/value",
+        "sid": "80668"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/metric/value",
+        "sid": "80669"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/mpls",
+        "sid": "80670"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/mpls/ldp",
+        "sid": "80671"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/mpls/ldp/igp-sync",
+        "sid": "80672"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/name",
+        "sid": "80673"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/node-flag",
+        "sid": "80674"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters",
+        "sid": "80675"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level",
+        "sid": "80676"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/csnp",
+        "sid": "80677"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/csnp/in",
+        "sid": "80678"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/csnp/out",
+        "sid": "80679"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/esh",
+        "sid": "80680"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/esh/in",
+        "sid": "80681"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/esh/out",
+        "sid": "80682"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/iih",
+        "sid": "80683"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/iih/in",
+        "sid": "80684"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/iih/out",
+        "sid": "80685"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/ish",
+        "sid": "80686"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/ish/in",
+        "sid": "80687"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/ish/out",
+        "sid": "80688"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/level",
+        "sid": "80689"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/lsp",
+        "sid": "80690"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/lsp/in",
+        "sid": "80691"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/lsp/out",
+        "sid": "80692"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/psnp",
+        "sid": "80693"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/psnp/in",
+        "sid": "80694"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/psnp/out",
+        "sid": "80695"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/unknown",
+        "sid": "80696"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/packet-counters/level/unknown/in",
+        "sid": "80697"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/passive",
+        "sid": "80698"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/priority",
+        "sid": "80699"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/priority/level-1",
+        "sid": "80700"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/priority/level-1/value",
+        "sid": "80701"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/priority/level-2",
+        "sid": "80702"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/priority/level-2/value",
+        "sid": "80703"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/priority/value",
+        "sid": "80704"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/tag",
+        "sid": "80705"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/tag64",
+        "sid": "80706"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/topologies",
+        "sid": "80707"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/topologies/topology",
+        "sid": "80708"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/topologies/topology/metric",
+        "sid": "80709"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/topologies/topology/metric/level-1",
+        "sid": "80710"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/topologies/topology/metric/level-1/value",
+        "sid": "80711"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/topologies/topology/metric/level-2",
+        "sid": "80712"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/topologies/topology/metric/level-2/value",
+        "sid": "80713"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/topologies/topology/metric/value",
+        "sid": "80714"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/interfaces/interface/topologies/topology/name",
+        "sid": "80715"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/level-type",
+        "sid": "80716"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/local-rib",
+        "sid": "80717"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/local-rib/route",
+        "sid": "80718"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/local-rib/route/level",
+        "sid": "80719"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/local-rib/route/metric",
+        "sid": "80720"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/local-rib/route/next-hops",
+        "sid": "80721"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/local-rib/route/next-hops/next-hop",
+        "sid": "80722"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/local-rib/route/next-hops/next-hop/next-hop",
+        "sid": "80723"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/local-rib/route/next-hops/next-hop/outgoing-interface",
+        "sid": "80724"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/local-rib/route/prefix",
+        "sid": "80725"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/local-rib/route/route-tag",
+        "sid": "80726"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-lifetime",
+        "sid": "80727"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-log",
+        "sid": "80728"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-log/event",
+        "sid": "80729"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-log/event/id",
+        "sid": "80730"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-log/event/level",
+        "sid": "80731"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-log/event/lsp",
+        "sid": "80732"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-log/event/lsp/lsp",
+        "sid": "80733"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-log/event/lsp/sequence",
+        "sid": "80734"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-log/event/reason",
+        "sid": "80735"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-log/event/received-timestamp",
+        "sid": "80736"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-mtu",
+        "sid": "80737"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/lsp-refresh",
+        "sid": "80738"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/maximum-area-addresses",
+        "sid": "80739"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/metric-type",
+        "sid": "80740"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/metric-type/level-1",
+        "sid": "80741"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/metric-type/level-1/value",
+        "sid": "80742"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/metric-type/level-2",
+        "sid": "80743"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/metric-type/level-2/value",
+        "sid": "80744"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/metric-type/value",
+        "sid": "80745"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/mpls",
+        "sid": "80746"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/mpls/ldp",
+        "sid": "80747"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/mpls/ldp/igp-sync",
+        "sid": "80748"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/mpls/te-rid",
+        "sid": "80749"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/mpls/te-rid/ipv4-router-id",
+        "sid": "80750"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/mpls/te-rid/ipv6-router-id",
+        "sid": "80751"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/node-tags",
+        "sid": "80752"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/node-tags/node-tag",
+        "sid": "80753"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/node-tags/node-tag/tag",
+        "sid": "80754"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/nsr",
+        "sid": "80755"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/nsr/enabled",
+        "sid": "80756"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/overload",
+        "sid": "80757"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/overload-max-metric",
+        "sid": "80758"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/overload-max-metric/timeout",
+        "sid": "80759"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/overload/status",
+        "sid": "80760"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/poi-tlv",
+        "sid": "80761"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/preference",
+        "sid": "80762"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/preference/granularity",
+        "sid": "80763"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/preference/granularity/coarse",
+        "sid": "80764"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/preference/granularity/coarse/default",
+        "sid": "80765"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/preference/granularity/detail",
+        "sid": "80766"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/preference/granularity/detail/external",
+        "sid": "80767"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/preference/granularity/detail/internal",
+        "sid": "80768"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes",
+        "sid": "80769"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats",
+        "sid": "80770"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/address-family",
+        "sid": "80771"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/alternate",
+        "sid": "80772"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/alternate-metric-1",
+        "sid": "80773"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/alternate-metric-2",
+        "sid": "80774"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/alternate-metric-3",
+        "sid": "80775"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/alternate-type",
+        "sid": "80776"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/best",
+        "sid": "80777"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/non-best-reason",
+        "sid": "80778"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/prefix",
+        "sid": "80779"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/protection-available",
+        "sid": "80780"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protected-routes/address-family-stats/protection-available/protection-types",
+        "sid": "80781"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protection-statistics",
+        "sid": "80782"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protection-statistics/address-family-stats",
+        "sid": "80783"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protection-statistics/address-family-stats/address-family",
+        "sid": "80784"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protection-statistics/address-family-stats/link-protected-routes",
+        "sid": "80785"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protection-statistics/address-family-stats/node-protected-routes",
+        "sid": "80786"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protection-statistics/address-family-stats/protected-routes",
+        "sid": "80787"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protection-statistics/address-family-stats/total-routes",
+        "sid": "80788"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protection-statistics/address-family-stats/unprotected-routes",
+        "sid": "80789"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/protection-statistics/frr-protection-method",
+        "sid": "80790"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control",
+        "sid": "80791"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay",
+        "sid": "80792"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/current-state",
+        "sid": "80793"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/hold-down",
+        "sid": "80794"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/initial-delay",
+        "sid": "80795"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/last-event-received",
+        "sid": "80796"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/last-spf-time",
+        "sid": "80797"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/long-delay",
+        "sid": "80798"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/next-spf-time",
+        "sid": "80799"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/remaining-hold-down",
+        "sid": "80800"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/remaining-time-to-learn",
+        "sid": "80801"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/short-delay",
+        "sid": "80802"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/ietf-spf-delay/time-to-learn",
+        "sid": "80803"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-control/paths",
+        "sid": "80804"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log",
+        "sid": "80805"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log/event",
+        "sid": "80806"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log/event/end-timestamp",
+        "sid": "80807"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log/event/id",
+        "sid": "80808"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log/event/level",
+        "sid": "80809"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log/event/schedule-timestamp",
+        "sid": "80810"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log/event/spf-type",
+        "sid": "80811"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log/event/start-timestamp",
+        "sid": "80812"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log/event/trigger-lsp",
+        "sid": "80813"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log/event/trigger-lsp/lsp",
+        "sid": "80814"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/spf-log/event/trigger-lsp/sequence",
+        "sid": "80815"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters",
+        "sid": "80816"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level",
+        "sid": "80817"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/authentication-fails",
+        "sid": "80818"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/authentication-type-fails",
+        "sid": "80819"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/corrupted-lsps",
+        "sid": "80820"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/database-overload",
+        "sid": "80821"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/id-len-mismatch",
+        "sid": "80822"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/level",
+        "sid": "80823"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/lsp-errors",
+        "sid": "80824"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/manual-address-drop-from-area",
+        "sid": "80825"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/max-sequence",
+        "sid": "80826"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/own-lsp-purge",
+        "sid": "80827"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/partition-changes",
+        "sid": "80828"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/sequence-number-skipped",
+        "sid": "80829"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-counters/level/spf-runs",
+        "sid": "80830"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/system-id",
+        "sid": "80831"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies",
+        "sid": "80832"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology",
+        "sid": "80833"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/default-metric",
+        "sid": "80834"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/default-metric/level-1",
+        "sid": "80835"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/default-metric/level-1/value",
+        "sid": "80836"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/default-metric/level-2",
+        "sid": "80837"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/default-metric/level-2/value",
+        "sid": "80838"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/default-metric/value",
+        "sid": "80839"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/enabled",
+        "sid": "80840"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/name",
+        "sid": "80841"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/node-tags",
+        "sid": "80842"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/node-tags/node-tag",
+        "sid": "80843"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/topologies/topology/node-tags/node-tag/tag",
+        "sid": "80844"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/unprotected-routes",
+        "sid": "80845"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/unprotected-routes/prefixes",
+        "sid": "80846"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/unprotected-routes/prefixes/address-family",
+        "sid": "80847"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-isis:isis/unprotected-routes/prefixes/prefix",
+        "sid": "80848"
+      }
+    ]
+  }
+}

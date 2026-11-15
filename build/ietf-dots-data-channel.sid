@@ -1,0 +1,938 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-dots-data-channel",
+    "module-revision": "2020-05-28",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-access-control-list",
+        "module-revision": "2019-03-04"
+      },
+      {
+        "module-name": "ietf-packet-fields",
+        "module-revision": "2019-03-04"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-dots-data-channel",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/address-family",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/forwarding-actions",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/icmp",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/icmp/code",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/icmp/rest-of-header",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/icmp/type",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/destination-prefix",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/dscp",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/ecn",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/flags",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/fragment",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/identification",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/ihl",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/length",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/offset",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/protocol",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/source-prefix",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv4/ttl",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv6",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv6/destination-prefix",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv6/dscp",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv6/ecn",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv6/flow-label",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv6/fragment",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv6/hoplimit",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv6/length",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv6/protocol",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/ipv6/source-prefix",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/rate-limit",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/acknowledgement-number",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/data-offset",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/destination-port",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/flags",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/flags-bitmask",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/options",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/port-range",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/reserved",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/sequence-number",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/source-port",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/urgent-pointer",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/tcp/window-size",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/transport-protocols",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/udp",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/udp/destination-port",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/udp/length",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/udp/port-range",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/capabilities/udp/source-port",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/actions",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/actions/forwarding",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/actions/rate-limit",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/destination-network",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/destination-network/destination-ipv4-network",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/destination-network/destination-ipv4-network/destination-ipv4-network",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/dscp",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/ecn",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/flags",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/fragment",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/fragment/operator",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/fragment/type",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/identification",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/ihl",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/length",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/offset",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/protocol",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/source-network",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/source-network/source-ipv4-network",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/source-network/source-ipv4-network/source-ipv4-network",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv4/ipv4/ttl",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/destination-network",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/destination-network/destination-ipv6-network",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/destination-network/destination-ipv6-network/destination-ipv6-network",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/dscp",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/ecn",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/flow-label",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/fragment",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/fragment/operator",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/fragment/type",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/length",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/protocol",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/source-network",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/source-network/source-ipv6-network",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/source-network/source-ipv6-network/source-ipv6-network",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l3/ipv6/ipv6/ttl",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/icmp",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/icmp/icmp",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/icmp/icmp/code",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/icmp/icmp/rest-of-header",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/icmp/icmp/type",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/acknowledgement-number",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/data-offset",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port-range-or-operator",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/operator",
+        "sid": "80113"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/operator/operator",
+        "sid": "80114"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/operator/port",
+        "sid": "80115"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/range",
+        "sid": "80116"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/range/lower-port",
+        "sid": "80117"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/range/upper-port",
+        "sid": "80118"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/flags",
+        "sid": "80119"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/flags-bitmask",
+        "sid": "80120"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/flags-bitmask/bitmask",
+        "sid": "80121"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/flags-bitmask/operator",
+        "sid": "80122"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/options",
+        "sid": "80123"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/reserved",
+        "sid": "80124"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/sequence-number",
+        "sid": "80125"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/source-port",
+        "sid": "80126"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port-range-or-operator",
+        "sid": "80127"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port-range-or-operator/source-port-range-or-operator",
+        "sid": "80128"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator",
+        "sid": "80129"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/operator",
+        "sid": "80130"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/operator/operator",
+        "sid": "80131"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/operator/port",
+        "sid": "80132"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/range",
+        "sid": "80133"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/range/lower-port",
+        "sid": "80134"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/range/upper-port",
+        "sid": "80135"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/urgent-pointer",
+        "sid": "80136"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/tcp/tcp/window-size",
+        "sid": "80137"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp",
+        "sid": "80138"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp",
+        "sid": "80139"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/destination-port",
+        "sid": "80140"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port-range-or-operator",
+        "sid": "80141"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator",
+        "sid": "80142"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator",
+        "sid": "80143"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/operator",
+        "sid": "80144"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/operator/operator",
+        "sid": "80145"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/operator/port",
+        "sid": "80146"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/range",
+        "sid": "80147"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/range/lower-port",
+        "sid": "80148"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/destination-port/destination-port-range-or-operator/destination-port-range-or-operator/port-range-or-operator/range/upper-port",
+        "sid": "80149"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/length",
+        "sid": "80150"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/source-port",
+        "sid": "80151"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port-range-or-operator",
+        "sid": "80152"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port-range-or-operator/source-port-range-or-operator",
+        "sid": "80153"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator",
+        "sid": "80154"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/operator",
+        "sid": "80155"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/operator/operator",
+        "sid": "80156"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/operator/port",
+        "sid": "80157"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/range",
+        "sid": "80158"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/range/lower-port",
+        "sid": "80159"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/matches/l4/udp/udp/source-port/source-port-range-or-operator/source-port-range-or-operator/port-range-or-operator/range/upper-port",
+        "sid": "80160"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/name",
+        "sid": "80161"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/statistics",
+        "sid": "80162"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/statistics/matched-octets",
+        "sid": "80163"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/aces/ace/statistics/matched-packets",
+        "sid": "80164"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/activation-type",
+        "sid": "80165"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/name",
+        "sid": "80166"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/pending-lifetime",
+        "sid": "80167"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/acls/acl/type",
+        "sid": "80168"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases",
+        "sid": "80169"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases/alias",
+        "sid": "80170"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases/alias/name",
+        "sid": "80171"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases/alias/pending-lifetime",
+        "sid": "80172"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases/alias/target-fqdn",
+        "sid": "80173"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases/alias/target-port-range",
+        "sid": "80174"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases/alias/target-port-range/lower-port",
+        "sid": "80175"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases/alias/target-port-range/upper-port",
+        "sid": "80176"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases/alias/target-prefix",
+        "sid": "80177"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases/alias/target-protocol",
+        "sid": "80178"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/aliases/alias/target-uri",
+        "sid": "80179"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/cdid",
+        "sid": "80180"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-dots-data-channel:dots-data/dots-client/cuid",
+        "sid": "80181"
+      }
+    ]
+  }
+}

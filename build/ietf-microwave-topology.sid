@@ -1,0 +1,157 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-microwave-topology",
+    "module-revision": "2024-09-30",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-network",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-network-topology",
+        "module-revision": "2018-02-26"
+      },
+      {
+        "module-name": "ietf-te-topology",
+        "module-revision": "2020-08-06"
+      },
+      {
+        "module-name": "ietf-microwave-types",
+        "module-revision": "2019-06-19"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-microwave-topology",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-topology:/nw:networks/nw:network/nt:link/tet:te/tet:te-link-attributes/tet:max-link-bandwidth/tet:te-bandwidth/mw-bandwidth",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-carrier",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-carrier/microwave-carrier",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-carrier/microwave-carrier/actual-rx-frequency",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-carrier/microwave-carrier/actual-snir",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-carrier/microwave-carrier/actual-transmitted-level",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-carrier/microwave-carrier/actual-tx-cm",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-carrier/microwave-carrier/channel-separation",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-carrier/microwave-carrier/tx-frequency",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-radio-link",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-radio-link/microwave-radio-link",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-radio-link/microwave-radio-link/rlt-mode",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-radio-link/microwave-radio-link/rlt-mode/num-bonded-carriers",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/ietf-network-topology:link/ietf-te-topology:te/te-link-attributes/ietf-microwave-topology:mw-link/mw-link-option/microwave-radio-link/microwave-radio-link/rlt-mode/num-protecting-carriers",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/network-types/ietf-te-topology:te-topology/ietf-microwave-topology:mw-topology",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-te-topology:te/ietf-microwave-topology:mw-tp",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-te-topology:te/ietf-microwave-topology:mw-tp/mw-tp-option",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-te-topology:te/ietf-microwave-topology:mw-tp/mw-tp-option/microwave-ctp",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-te-topology:te/ietf-microwave-topology:mw-tp/mw-tp-option/microwave-ctp/microwave-ctp",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-te-topology:te/ietf-microwave-topology:mw-tp/mw-tp-option/microwave-rltp",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-network-topology:termination-point/ietf-te-topology:te/ietf-microwave-topology:mw-tp/mw-tp-option/microwave-rltp/microwave-rltp",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-network:networks/network/node/ietf-te-topology:te/te-node-attributes/ietf-microwave-topology:mw-node",
+        "sid": "80024"
+      }
+    ]
+  }
+}

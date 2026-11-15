@@ -1,0 +1,50 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-schc-compound-ack",
+    "module-revision": "2023-07-26",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-schc",
+        "module-revision": "2023-03-01"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-schc-compound-ack",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bitmap-RFC8724",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bitmap-compound-ack",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bitmap-format-base-type",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-schc:schc/rule/nature/fragmentation/mode/ack-on-error/ietf-schc-compound-ack:bitmap-format",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-schc:schc/rule/nature/fragmentation/mode/ack-on-error/ietf-schc-compound-ack:last-bitmap-compression",
+        "sid": "80005"
+      }
+    ]
+  }
+}

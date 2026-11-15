@@ -1,0 +1,345 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ptp",
+    "module-revision": "2019-05-07",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ptp",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/current-ds",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/current-ds/mean-path-delay",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/current-ds/offset-from-master",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/current-ds/steps-removed",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/clock-identity",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/clock-quality",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/clock-quality/clock-accuracy",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/clock-quality/clock-class",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/clock-quality/offset-scaled-log-variance",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/domain-number",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/number-ports",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/priority1",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/priority2",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/slave-only",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/default-ds/two-step-flag",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/instance-number",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/grandmaster-clock-quality",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/grandmaster-clock-quality/clock-accuracy",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/grandmaster-clock-quality/clock-class",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/grandmaster-clock-quality/offset-scaled-log-variance",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/grandmaster-identity",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/grandmaster-priority1",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/grandmaster-priority2",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/observed-parent-clock-phase-change-rate",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/observed-parent-offset-scaled-log-variance",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/parent-port-identity",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/parent-port-identity/clock-identity",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/parent-port-identity/port-number",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/parent-ds/parent-stats",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/announce-receipt-timeout",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/delay-mechanism",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/log-announce-interval",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/log-min-delay-req-interval",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/log-min-pdelay-req-interval",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/log-sync-interval",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/peer-mean-path-delay",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/port-number",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/port-state",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/underlying-interface",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/port-ds-list/version-number",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/time-properties-ds",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/time-properties-ds/current-utc-offset",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/time-properties-ds/current-utc-offset-valid",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/time-properties-ds/frequency-traceable",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/time-properties-ds/leap59",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/time-properties-ds/leap61",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/time-properties-ds/ptp-timescale",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/time-properties-ds/time-source",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/instance-list/time-properties-ds/time-traceable",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/transparent-clock-default-ds",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/transparent-clock-default-ds/clock-identity",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/transparent-clock-default-ds/delay-mechanism",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/transparent-clock-default-ds/number-ports",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/transparent-clock-default-ds/primary-domain",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/transparent-clock-port-ds-list",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/transparent-clock-port-ds-list/faulty-flag",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/transparent-clock-port-ds-list/log-min-pdelay-req-interval",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/transparent-clock-port-ds-list/peer-mean-path-delay",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ptp:ptp/transparent-clock-port-ds-list/port-number",
+        "sid": "80064"
+      }
+    ]
+  }
+}

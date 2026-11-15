@@ -1,0 +1,170 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ac-glue",
+    "module-revision": "2025-09-29",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-l3vpn-svc",
+        "module-revision": "2018-01-19"
+      },
+      {
+        "module-name": "ietf-l2vpn-svc",
+        "module-revision": "2018-10-09"
+      },
+      {
+        "module-name": "ietf-l3vpn-ntw",
+        "module-revision": "2022-02-14"
+      },
+      {
+        "module-name": "ietf-l2vpn-ntw",
+        "module-revision": "2022-09-20"
+      },
+      {
+        "module-name": "ietf-ac-svc",
+        "module-revision": "2025-09-29"
+      },
+      {
+        "module-name": "ietf-ac-ntw",
+        "module-revision": "2025-09-29"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ac-glue",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "ac-glue",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2nm:l2vpn-ntw/l2nm:vpn-services/l2nm:vpn-service/l2nm:vpn-nodes/l2nm:vpn-node/l2nm:vpn-network-accesses/ac-ntw-ref",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2nm:l2vpn-ntw/l2nm:vpn-services/l2nm:vpn-service/l2nm:vpn-nodes/l2nm:vpn-node/l2nm:vpn-network-accesses/ac-ntw-ref/ac-ref",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2nm:l2vpn-ntw/l2nm:vpn-services/l2nm:vpn-service/l2nm:vpn-nodes/l2nm:vpn-node/l2nm:vpn-network-accesses/ac-ntw-ref/network-ref",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2nm:l2vpn-ntw/l2nm:vpn-services/l2nm:vpn-service/l2nm:vpn-nodes/l2nm:vpn-node/l2nm:vpn-network-accesses/ac-ntw-ref/node-ref",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2nm:l2vpn-ntw/l2nm:vpn-services/l2nm:vpn-service/l2nm:vpn-nodes/l2nm:vpn-node/l2nm:vpn-network-accesses/ac-svc-ref",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2nm:l2vpn-ntw/l2nm:vpn-services/l2nm:vpn-service/l2nm:vpn-nodes/l2nm:vpn-node/l2nm:vpn-network-accesses/l2nm:vpn-network-access/ac-ntw-ref",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2nm:l2vpn-ntw/l2nm:vpn-services/l2nm:vpn-service/l2nm:vpn-nodes/l2nm:vpn-node/l2nm:vpn-network-accesses/l2nm:vpn-network-access/ac-ntw-ref/ac-ref",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2nm:l2vpn-ntw/l2nm:vpn-services/l2nm:vpn-service/l2nm:vpn-nodes/l2nm:vpn-node/l2nm:vpn-network-accesses/l2nm:vpn-network-access/ac-ntw-ref/network-ref",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2nm:l2vpn-ntw/l2nm:vpn-services/l2nm:vpn-service/l2nm:vpn-nodes/l2nm:vpn-node/l2nm:vpn-network-accesses/l2nm:vpn-network-access/ac-ntw-ref/node-ref",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2nm:l2vpn-ntw/l2nm:vpn-services/l2nm:vpn-service/l2nm:vpn-nodes/l2nm:vpn-node/l2nm:vpn-network-accesses/l2nm:vpn-network-access/ac-svc-ref",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2vpn-svc:l2vpn-svc/l2vpn-svc:sites/l2vpn-svc:site/l2vpn-svc:site-network-accesses/ac-svc-ref",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l2vpn-svc:l2vpn-svc/l2vpn-svc:sites/l2vpn-svc:site/l2vpn-svc:site-network-accesses/l2vpn-svc:site-network-access/ac-svc-ref",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3nm:l3vpn-ntw/l3nm:vpn-services/l3nm:vpn-service/l3nm:vpn-nodes/l3nm:vpn-node/l3nm:vpn-network-accesses/ac-ntw-ref",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3nm:l3vpn-ntw/l3nm:vpn-services/l3nm:vpn-service/l3nm:vpn-nodes/l3nm:vpn-node/l3nm:vpn-network-accesses/ac-ntw-ref/ac-ref",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3nm:l3vpn-ntw/l3nm:vpn-services/l3nm:vpn-service/l3nm:vpn-nodes/l3nm:vpn-node/l3nm:vpn-network-accesses/ac-ntw-ref/network-ref",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3nm:l3vpn-ntw/l3nm:vpn-services/l3nm:vpn-service/l3nm:vpn-nodes/l3nm:vpn-node/l3nm:vpn-network-accesses/ac-ntw-ref/node-ref",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3nm:l3vpn-ntw/l3nm:vpn-services/l3nm:vpn-service/l3nm:vpn-nodes/l3nm:vpn-node/l3nm:vpn-network-accesses/ac-svc-ref",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3nm:l3vpn-ntw/l3nm:vpn-services/l3nm:vpn-service/l3nm:vpn-nodes/l3nm:vpn-node/l3nm:vpn-network-accesses/l3nm:vpn-network-access/ac-ntw-ref",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3nm:l3vpn-ntw/l3nm:vpn-services/l3nm:vpn-service/l3nm:vpn-nodes/l3nm:vpn-node/l3nm:vpn-network-accesses/l3nm:vpn-network-access/ac-ntw-ref/ac-ref",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3nm:l3vpn-ntw/l3nm:vpn-services/l3nm:vpn-service/l3nm:vpn-nodes/l3nm:vpn-node/l3nm:vpn-network-accesses/l3nm:vpn-network-access/ac-ntw-ref/network-ref",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3nm:l3vpn-ntw/l3nm:vpn-services/l3nm:vpn-service/l3nm:vpn-nodes/l3nm:vpn-node/l3nm:vpn-network-accesses/l3nm:vpn-network-access/ac-ntw-ref/node-ref",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3nm:l3vpn-ntw/l3nm:vpn-services/l3nm:vpn-service/l3nm:vpn-nodes/l3nm:vpn-node/l3nm:vpn-network-accesses/l3nm:vpn-network-access/ac-svc-ref",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3vpn-svc:l3vpn-svc/l3vpn-svc:sites/l3vpn-svc:site/l3vpn-svc:site-network-accesses/ac-svc-ref",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ac-glue:/l3vpn-svc:l3vpn-svc/l3vpn-svc:sites/l3vpn-svc:site/l3vpn-svc:site-network-accesses/l3vpn-svc:site-network-access/ac-svc-ref",
+        "sid": "80025"
+      }
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-ospf-admin-tags",
+    "module-revision": "2025-07-31",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-ospf",
+        "module-revision": "2022-10-19"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-ospfv3-extended-lsa",
+        "module-revision": "2024-06-07"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-ospf-admin-tags",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-admin-tag-sub-tlv",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-admin-tag-sub-tlv/admin-tag",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/prefix-admin-tag-sub-tlv",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-inter-area-prefix/ospfv3-e-lsa:e-inter-prefix-tlvs/ospfv3-e-lsa:inter-prefix-tlv/prefix-admin-tag-sub-tlv/admin-tag",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/prefix-admin-tag-sub-tlv",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-intra-area-prefix/ospfv3-e-lsa:e-intra-prefix-tlvs/ospfv3-e-lsa:intra-prefix-tlv/prefix-admin-tag-sub-tlv/admin-tag",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/prefix-admin-tag-sub-tlv",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:database/ospf:area-scope-lsa-type/ospf:area-scope-lsas/ospf:area-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-nssa/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/prefix-admin-tag-sub-tlv/admin-tag",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-admin-tag-sub-tlv",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:areas/ospf:area/ospf:interfaces/ospf:interface/ospf:database/ospf:link-scope-lsa-type/ospf:link-scope-lsas/ospf:link-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-admin-tag-sub-tlv/admin-tag",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-admin-tag-sub-tlv",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv2/ospf:ospfv2/ospf:body/ospf:opaque/ospf:extended-prefix-opaque/ospf:extended-prefix-tlv/prefix-admin-tag-sub-tlv/admin-tag",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/prefix-admin-tag-sub-tlv",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-ospf-admin-tags:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/ospf:ospf/ospf:database/ospf:as-scope-lsa-type/ospf:as-scope-lsas/ospf:as-scope-lsa/ospf:version/ospf:ospfv3/ospf:ospfv3/ospf:body/ospfv3-e-lsa:e-as-external/ospfv3-e-lsa:e-external-tlvs/ospfv3-e-lsa:external-prefix-tlv/prefix-admin-tag-sub-tlv/admin-tag",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/ietf-ospf-admin-tags:local-prefix-admin-tags",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/ietf-ospf-admin-tags:local-prefix-admin-tags/default-admin-tag",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/ietf-ospf-admin-tags:local-prefix-admin-tags/specific-prefix-admin-tag",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/ietf-ospf-admin-tags:local-prefix-admin-tags/specific-prefix-admin-tag/admin-tag",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/interfaces/interface/ietf-ospf-admin-tags:local-prefix-admin-tags/specific-prefix-admin-tag/prefix",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/ranges/range/ietf-ospf-admin-tags:admin-tags",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/areas/area/ranges/range/ietf-ospf-admin-tags:admin-tags/admin-tag",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-routing:routing/control-plane-protocols/control-plane-protocol/ietf-ospf:ospf/local-rib/route/next-hops/next-hop/ietf-ospf-admin-tags:admin-tag",
+        "sid": "80022"
+      }
+    ]
+  }
+}

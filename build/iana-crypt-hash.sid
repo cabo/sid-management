@@ -1,0 +1,34 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "iana-crypt-hash",
+    "module-revision": "2014-08-06",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "iana-crypt-hash",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "crypt-hash-md5",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "crypt-hash-sha-256",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "crypt-hash-sha-512",
+        "sid": "80003"
+      }
+    ]
+  }
+}

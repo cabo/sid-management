@@ -1,0 +1,74 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-routing-types",
+    "module-revision": "2017-12-04",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-routing-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "entropy-label-indicator",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "extension-label",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gal-label",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "implicit-null-label",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipv4-explicit-null-label",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipv6-explicit-null-label",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mpls-label-special-purpose-value",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "oam-alert-label",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "router-alert-label",
+        "sid": "80009"
+      }
+    ]
+  }
+}

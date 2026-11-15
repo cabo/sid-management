@@ -1,0 +1,598 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-softwire-br",
+    "module-revision": "2019-11-16",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-softwire-common",
+        "module-revision": "2019-11-16"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-softwire-br",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "binding-mode",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "map-e",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "map-t",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/algo-versioning",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/algo-versioning/date",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/algo-versioning/version",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/data-plane",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/data-plane/encapsulation",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/data-plane/encapsulation/br-ipv6-addr",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/data-plane/translation",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/data-plane/translation/dmr-ipv6-prefix",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/ea-len",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/enable",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/forwarding",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/name",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/port-set",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/port-set/psid",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/port-set/psid-len",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/port-set/psid-offset",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/rule-ipv4-prefix",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/rule-ipv6-prefix",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/discontinuity-time",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/dropped-ipv4-bytes",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/dropped-ipv4-fragment-bytes",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/dropped-ipv4-fragments",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/dropped-ipv4-packets",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/dropped-ipv6-bytes",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/dropped-ipv6-packets",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/ipv6-fragments-bytes-reassembled",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/ipv6-fragments-reassembled",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/out-icmpv4-error-bytes",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/out-icmpv4-error-packets",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/out-icmpv6-error-bytes",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/out-icmpv6-error-packets",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/rcvd-ipv4-bytes",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/rcvd-ipv4-packets",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/rcvd-ipv6-bytes",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/rcvd-ipv6-packets",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/sent-ipv4-bytes",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/sent-ipv4-packets",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/sent-ipv6-bytes",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/algo/algorithm/algo-instance/traffic-stat/sent-ipv6-packets",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table-versioning",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table-versioning/date",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table-versioning/version",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table/binding-entry",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table/binding-entry/binding-ipv4-addr",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table/binding-entry/binding-ipv6info",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table/binding-entry/br-ipv6-addr",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table/binding-entry/port-set",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table/binding-entry/port-set/psid",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table/binding-entry/port-set/psid-len",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/binding-table/binding-entry/port-set/psid-offset",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/enable-hairpinning",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/icmp-policy",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/icmp-policy/icmpv4-errors",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/icmp-policy/icmpv4-errors/allow-incoming-icmpv4",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/icmp-policy/icmpv4-errors/generate-icmpv4-errors",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/icmp-policy/icmpv4-errors/icmpv4-rate",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/icmp-policy/icmpv6-errors",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/icmp-policy/icmpv6-errors/generate-icmpv6-errors",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/icmp-policy/icmpv6-errors/icmpv6-rate",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/name",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/softwire-num-max",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/softwire-path-mru",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/softwire-payload-mtu",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/active-softwire-num",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/discontinuity-time",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/dropped-icmpv4-bytes",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/dropped-icmpv4-packets",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/dropped-ipv4-bytes",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/dropped-ipv4-fragment-bytes",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/dropped-ipv4-fragments",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/dropped-ipv4-packets",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/dropped-ipv6-bytes",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/dropped-ipv6-packets",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/hairpin-ipv4-bytes",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/hairpin-ipv4-packets",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/ipv6-fragments-bytes-reassembled",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/ipv6-fragments-reassembled",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/out-icmpv4-error-bytes",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/out-icmpv4-error-packets",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/out-icmpv6-error-bytes",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/out-icmpv6-error-packets",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/rcvd-ipv4-bytes",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/rcvd-ipv4-packets",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/rcvd-ipv6-bytes",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/rcvd-ipv6-packets",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/sent-ipv4-bytes",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/sent-ipv4-packets",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/sent-ipv6-bytes",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:br-instances/br-type/binding/binding/bind-instance/traffic-stat/sent-ipv6-packets",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:softwire-algorithm-instance-event",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:softwire-algorithm-instance-event/added-entry",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:softwire-algorithm-instance-event/algo-name",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:softwire-algorithm-instance-event/invalid-entry",
+        "sid": "80107"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:softwire-algorithm-instance-event/modified-entry",
+        "sid": "80108"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:softwire-binding-instance-event",
+        "sid": "80109"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:softwire-binding-instance-event/added-entry",
+        "sid": "80110"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:softwire-binding-instance-event/bind-name",
+        "sid": "80111"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:softwire-binding-instance-event/invalid-entry",
+        "sid": "80112"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-softwire-br:softwire-binding-instance-event/modified-entry",
+        "sid": "80113"
+      }
+    ]
+  }
+}

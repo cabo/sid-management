@@ -1,0 +1,70 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-bfd-opt-auth",
+    "module-revision": "2026-06-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-routing",
+        "module-revision": "2018-03-13"
+      },
+      {
+        "module-name": "ietf-bfd",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd-ip-sh",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd-ip-mh",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd-lag",
+        "module-revision": "2022-09-22"
+      },
+      {
+        "module-name": "ietf-bfd-mpls",
+        "module-revision": "2022-09-22"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-bfd-opt-auth",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "optimized-auth",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-opt-auth:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/bfd:bfd/bfd-ip-mh:ip-mh/bfd-ip-mh:session-groups/bfd-ip-mh:session-group/bfd-ip-mh:authentication/reauth-interval",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-opt-auth:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/bfd:bfd/bfd-ip-sh:ip-sh/bfd-ip-sh:sessions/bfd-ip-sh:session/bfd-ip-sh:authentication/reauth-interval",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-opt-auth:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/bfd:bfd/bfd-lag:lag/bfd-lag:sessions/bfd-lag:session/bfd-lag:authentication/reauth-interval",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-bfd-opt-auth:/rt:routing/rt:control-plane-protocols/rt:control-plane-protocol/bfd:bfd/bfd-mpls:mpls/bfd-mpls:session-groups/bfd-mpls:session-group/bfd-mpls:authentication/reauth-interval",
+        "sid": "80005"
+      }
+    ]
+  }
+}

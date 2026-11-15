@@ -1,0 +1,64 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "iana-msd-types",
+    "module-revision": "2025-01-10",
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "iana-msd-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "base-mpls-imposition-msd",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "erld-msd",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "msd-base",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "msd-base-mpls",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "msd-base-srh",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "srh-max-end-d",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "srh-max-end-pop",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "srh-max-h-encaps",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "srh-max-sl",
+        "sid": "80009"
+      }
+    ]
+  }
+}

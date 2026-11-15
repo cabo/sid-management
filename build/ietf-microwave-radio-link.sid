@@ -1,0 +1,576 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-microwave-radio-link",
+    "module-revision": "2019-06-19",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "iana-if-type",
+        "module-revision": "2014-05-08"
+      },
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      },
+      {
+        "module-name": "ietf-interface-protection",
+        "module-revision": "2019-06-19"
+      },
+      {
+        "module-name": "ietf-microwave-types",
+        "module-revision": "2019-06-19"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-microwave-radio-link",
+        "sid": "80000"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "mimo",
+        "sid": "80001"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "tdm",
+        "sid": "80002"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "xpic",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:actual-duplex-distance",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:actual-received-level",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:actual-rx-frequency",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:actual-snir",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:actual-transmitted-level",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:actual-tx-cm",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:actual-xpi",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:capabilities",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:capabilities/available-max-acm",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:capabilities/available-min-acm",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:capabilities/max-rx-frequency",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:capabilities/max-tx-frequency",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:capabilities/maximum-available-power",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:capabilities/min-rx-frequency",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:capabilities/min-tx-frequency",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:capabilities/minimum-power",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:carrier-id",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:carrier-terminations",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:channel-separation",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:coding-modulation-mode",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:coding-modulation-mode/adaptive/adaptive",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:coding-modulation-mode/adaptive/adaptive/selected-max-acm",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:coding-modulation-mode/adaptive/adaptive/selected-min-acm",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:coding-modulation-mode/single/single",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:coding-modulation-mode/single/single/selected-cm",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:ct-performance-thresholds",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:ct-performance-thresholds/ber-alarm-threshold",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:ct-performance-thresholds/received-level-alarm-threshold",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:ct-performance-thresholds/transmitted-level-alarm-threshold",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:error-performance-statistics",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:error-performance-statistics/bbe",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:error-performance-statistics/es",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:error-performance-statistics/ses",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:error-performance-statistics/uas",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:freq-or-distance",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:freq-or-distance/duplex-distance/duplex-distance",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:freq-or-distance/rx-frequency/rx-frequency",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:id",
+        "sid": "80041"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:if-loop",
+        "sid": "80042"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:mimo-groups",
+        "sid": "80043"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:mode",
+        "sid": "80044"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:polarization",
+        "sid": "80045"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:power-mode",
+        "sid": "80046"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:power-mode/atpc/atpc",
+        "sid": "80047"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:power-mode/atpc/atpc/atpc-lower-threshold",
+        "sid": "80048"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:power-mode/atpc/atpc/atpc-upper-threshold",
+        "sid": "80049"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:power-mode/atpc/atpc/maximum-nominal-power",
+        "sid": "80050"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:power-mode/rtpc/rtpc",
+        "sid": "80051"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:power-mode/rtpc/rtpc/maximum-nominal-power",
+        "sid": "80052"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:radio-performance-statistics",
+        "sid": "80053"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:radio-performance-statistics/max-rltm",
+        "sid": "80054"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:radio-performance-statistics/max-tltm",
+        "sid": "80055"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:radio-performance-statistics/min-rltm",
+        "sid": "80056"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:radio-performance-statistics/min-tltm",
+        "sid": "80057"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:rf-loop",
+        "sid": "80058"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:rlp-groups",
+        "sid": "80059"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:tdm-connections",
+        "sid": "80060"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:tdm-connections/tdm-connections",
+        "sid": "80061"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:tdm-connections/tdm-type",
+        "sid": "80062"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:tx-enabled",
+        "sid": "80063"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:tx-frequency",
+        "sid": "80064"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:tx-oper-status",
+        "sid": "80065"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-interfaces:interfaces/interface/ietf-microwave-radio-link:xpic-pairs",
+        "sid": "80066"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:mimo-groups",
+        "sid": "80067"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:mimo-groups/mimo-group",
+        "sid": "80068"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:mimo-groups/mimo-group/enabled",
+        "sid": "80069"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:mimo-groups/mimo-group/members",
+        "sid": "80070"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:mimo-groups/mimo-group/name",
+        "sid": "80071"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups",
+        "sid": "80072"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group",
+        "sid": "80073"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/clear",
+        "sid": "80074"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/clear/input",
+        "sid": "80075"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/clear/output",
+        "sid": "80076"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/exercise",
+        "sid": "80077"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/exercise/input",
+        "sid": "80078"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/exercise/output",
+        "sid": "80079"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/forced-switch",
+        "sid": "80080"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/forced-switch/input",
+        "sid": "80081"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/forced-switch/output",
+        "sid": "80082"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/freeze",
+        "sid": "80083"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/freeze/input",
+        "sid": "80084"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/freeze/output",
+        "sid": "80085"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/hold-off-timer",
+        "sid": "80086"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/lockout-of-protection",
+        "sid": "80087"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/lockout-of-protection/input",
+        "sid": "80088"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/lockout-of-protection/output",
+        "sid": "80089"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/manual-switch-protection",
+        "sid": "80090"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/manual-switch-protection/input",
+        "sid": "80091"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/manual-switch-protection/output",
+        "sid": "80092"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/manual-switch-working",
+        "sid": "80093"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/manual-switch-working/input",
+        "sid": "80094"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/manual-switch-working/output",
+        "sid": "80095"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/members",
+        "sid": "80096"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/name",
+        "sid": "80097"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/operation-type",
+        "sid": "80098"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/protection-architecture-type",
+        "sid": "80099"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/revertive-wait-to-restore",
+        "sid": "80100"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/status",
+        "sid": "80101"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:radio-link-protection-groups/protection-group/working-entity",
+        "sid": "80102"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:xpic-pairs",
+        "sid": "80103"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:xpic-pairs/xpic-pair",
+        "sid": "80104"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:xpic-pairs/xpic-pair/enabled",
+        "sid": "80105"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:xpic-pairs/xpic-pair/members",
+        "sid": "80106"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-microwave-radio-link:xpic-pairs/xpic-pair/name",
+        "sid": "80107"
+      }
+    ]
+  }
+}

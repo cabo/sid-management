@@ -1,0 +1,234 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-netconf-notifications",
+    "module-revision": "2012-02-06",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-inet-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-netconf",
+        "module-revision": "2011-06-01"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-netconf-notifications",
+        "sid": "80000"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change",
+        "sid": "80001"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/added-capability",
+        "sid": "80002"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/changed-by",
+        "sid": "80003"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/changed-by/server-or-user",
+        "sid": "80004"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/changed-by/server-or-user/by-user",
+        "sid": "80005"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/changed-by/server-or-user/by-user/session-id",
+        "sid": "80006"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/changed-by/server-or-user/by-user/source-host",
+        "sid": "80007"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/changed-by/server-or-user/by-user/username",
+        "sid": "80008"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/changed-by/server-or-user/server",
+        "sid": "80009"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/changed-by/server-or-user/server/server",
+        "sid": "80010"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/deleted-capability",
+        "sid": "80011"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-capability-change/modified-capability",
+        "sid": "80012"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change",
+        "sid": "80013"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/changed-by",
+        "sid": "80014"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/changed-by/server-or-user",
+        "sid": "80015"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/changed-by/server-or-user/by-user",
+        "sid": "80016"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/changed-by/server-or-user/by-user/session-id",
+        "sid": "80017"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/changed-by/server-or-user/by-user/source-host",
+        "sid": "80018"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/changed-by/server-or-user/by-user/username",
+        "sid": "80019"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/changed-by/server-or-user/server",
+        "sid": "80020"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/changed-by/server-or-user/server/server",
+        "sid": "80021"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/datastore",
+        "sid": "80022"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/edit",
+        "sid": "80023"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/edit/operation",
+        "sid": "80024"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-config-change/edit/target",
+        "sid": "80025"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-confirmed-commit",
+        "sid": "80026"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-confirmed-commit/confirm-event",
+        "sid": "80027"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-confirmed-commit/session-id",
+        "sid": "80028"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-confirmed-commit/source-host",
+        "sid": "80029"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-confirmed-commit/timeout",
+        "sid": "80030"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-confirmed-commit/username",
+        "sid": "80031"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-session-end",
+        "sid": "80032"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-session-end/killed-by",
+        "sid": "80033"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-session-end/session-id",
+        "sid": "80034"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-session-end/source-host",
+        "sid": "80035"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-session-end/termination-reason",
+        "sid": "80036"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-session-end/username",
+        "sid": "80037"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-session-start",
+        "sid": "80038"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-session-start/session-id",
+        "sid": "80039"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-session-start/source-host",
+        "sid": "80040"
+      },
+      {
+        "namespace": "data",
+        "identifier": "/ietf-netconf-notifications:netconf-session-start/username",
+        "sid": "80041"
+      }
+    ]
+  }
+}

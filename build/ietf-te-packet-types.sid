@@ -1,0 +1,60 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-te-packet-types",
+    "module-revision": "2020-06-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-te-types",
+        "module-revision": "2020-06-10"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-te-packet-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "backup-protection-link",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "backup-protection-node-link",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "backup-protection-type",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bc-model-mam",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bc-model-mar",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bc-model-rdm",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bc-model-type",
+        "sid": "80007"
+      }
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "ietf-crypto-types",
+    "module-revision": "2024-10-10",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-yang-types",
+        "module-revision": "2025-12-22"
+      },
+      {
+        "module-name": "ietf-netconf-acm",
+        "module-revision": "2018-02-14"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "ietf-crypto-types",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "asymmetrically-encrypted-value-format",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cms-encrypted-data-format",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cms-enveloped-data-format",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "csr-format",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ec-private-key-format",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "encrypted-value-format",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "octet-string-key-format",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "one-asymmetric-key-format",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "one-symmetric-key-format",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "p10-csr-format",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "private-key-format",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "public-key-format",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rsa-private-key-format",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ssh-public-key-format",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "subject-public-key-info-format",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "symmetric-key-format",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "symmetrically-encrypted-value-format",
+        "sid": "80017"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "asymmetrically-encrypted-value-format",
+        "sid": "80018"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "certificate-expiration-notification",
+        "sid": "80019"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "cleartext-passwords",
+        "sid": "80020"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "cleartext-private-keys",
+        "sid": "80021"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "cleartext-symmetric-keys",
+        "sid": "80022"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "cms-encrypted-data-format",
+        "sid": "80023"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "cms-enveloped-data-format",
+        "sid": "80024"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "csr-generation",
+        "sid": "80025"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "encrypted-passwords",
+        "sid": "80026"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "encrypted-private-keys",
+        "sid": "80027"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "encrypted-symmetric-keys",
+        "sid": "80028"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "hidden-private-keys",
+        "sid": "80029"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "hidden-symmetric-keys",
+        "sid": "80030"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "one-asymmetric-key-format",
+        "sid": "80031"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "one-symmetric-key-format",
+        "sid": "80032"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "p10-csr-format",
+        "sid": "80033"
+      },
+      {
+        "namespace": "feature",
+        "identifier": "symmetrically-encrypted-value-format",
+        "sid": "80034"
+      }
+    ]
+  }
+}

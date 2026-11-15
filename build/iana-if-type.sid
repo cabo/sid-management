@@ -1,0 +1,1390 @@
+{
+  "ietf-sid-file:sid-file": {
+    "module-name": "iana-if-type",
+    "module-revision": "2014-05-08",
+    "dependency-revision": [
+      {
+        "module-name": "ietf-interfaces",
+        "module-revision": "2018-02-20"
+      }
+    ],
+    "assignment-range": [
+      {
+        "entry-point": "80000",
+        "size": "10000"
+      }
+    ],
+    "item": [
+      {
+        "namespace": "module",
+        "identifier": "iana-if-type",
+        "sid": "80000"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "a12MppSwitch",
+        "sid": "80001"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aal2",
+        "sid": "80002"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aal5",
+        "sid": "80003"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "actelisMetaLOOP",
+        "sid": "80004"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "adsl",
+        "sid": "80005"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "adsl2",
+        "sid": "80006"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "adsl2plus",
+        "sid": "80007"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aflane8023",
+        "sid": "80008"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aflane8025",
+        "sid": "80009"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aluELP",
+        "sid": "80010"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aluEpon",
+        "sid": "80011"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aluEponLogicalLink",
+        "sid": "80012"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aluEponOnu",
+        "sid": "80013"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aluEponPhysicalUni",
+        "sid": "80014"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aluGponOnu",
+        "sid": "80015"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aluGponPhysicalUni",
+        "sid": "80016"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "arap",
+        "sid": "80017"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "arcnet",
+        "sid": "80018"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "arcnetPlus",
+        "sid": "80019"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "async",
+        "sid": "80020"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atm",
+        "sid": "80021"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atmDxi",
+        "sid": "80022"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atmFuni",
+        "sid": "80023"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atmIma",
+        "sid": "80024"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atmLogical",
+        "sid": "80025"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atmRadio",
+        "sid": "80026"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atmSubInterface",
+        "sid": "80027"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atmVciEndPt",
+        "sid": "80028"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atmVirtual",
+        "sid": "80029"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "atmbond",
+        "sid": "80030"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "aviciOpticalEther",
+        "sid": "80031"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "basicISDN",
+        "sid": "80032"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bgppolicyaccounting",
+        "sid": "80033"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bits",
+        "sid": "80034"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bridge",
+        "sid": "80035"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "bsc",
+        "sid": "80036"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cableDownstreamRfPort",
+        "sid": "80037"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "capwapDot11Bss",
+        "sid": "80038"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "capwapDot11Profile",
+        "sid": "80039"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "capwapWtpVirtualRadio",
+        "sid": "80040"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cblVectaStar",
+        "sid": "80041"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cctEmul",
+        "sid": "80042"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ces",
+        "sid": "80043"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "channel",
+        "sid": "80044"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ciscoISLvlan",
+        "sid": "80045"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "cnr",
+        "sid": "80046"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "coffee",
+        "sid": "80047"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "compositeLink",
+        "sid": "80048"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dcn",
+        "sid": "80049"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ddnX25",
+        "sid": "80050"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "digitalPowerline",
+        "sid": "80051"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "digitalWrapperOverheadChannel",
+        "sid": "80052"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dlsw",
+        "sid": "80053"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "docsCableDownstream",
+        "sid": "80054"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "docsCableMCmtsDownstream",
+        "sid": "80055"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "docsCableMaclayer",
+        "sid": "80056"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "docsCableUpstream",
+        "sid": "80057"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "docsCableUpstreamChannel",
+        "sid": "80058"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "docsCableUpstreamRfPort",
+        "sid": "80059"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ds0",
+        "sid": "80060"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ds0Bundle",
+        "sid": "80061"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ds1",
+        "sid": "80062"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ds1FDL",
+        "sid": "80063"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ds3",
+        "sid": "80064"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dtm",
+        "sid": "80065"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dvbAsiIn",
+        "sid": "80066"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dvbAsiOut",
+        "sid": "80067"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dvbRccDownstream",
+        "sid": "80068"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dvbRccMacLayer",
+        "sid": "80069"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dvbRccUpstream",
+        "sid": "80070"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dvbRcsMacLayer",
+        "sid": "80071"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dvbRcsTdma",
+        "sid": "80072"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "dvbTdm",
+        "sid": "80073"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "e1",
+        "sid": "80074"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "econet",
+        "sid": "80075"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "eon",
+        "sid": "80076"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "eplrs",
+        "sid": "80077"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "escon",
+        "sid": "80078"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ethernet3Mbit",
+        "sid": "80079"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ethernetCsmacd",
+        "sid": "80080"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fast",
+        "sid": "80081"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fastEther",
+        "sid": "80082"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fastEtherFX",
+        "sid": "80083"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fcipLink",
+        "sid": "80084"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fddi",
+        "sid": "80085"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "fibreChannel",
+        "sid": "80086"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frDlciEndPt",
+        "sid": "80087"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frForward",
+        "sid": "80088"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frameRelay",
+        "sid": "80089"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frameRelayInterconnect",
+        "sid": "80090"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frameRelayMPI",
+        "sid": "80091"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frameRelayService",
+        "sid": "80092"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "frf16MfrBundle",
+        "sid": "80093"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "g703at2mb",
+        "sid": "80094"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "g703at64k",
+        "sid": "80095"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "g9981",
+        "sid": "80096"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "g9982",
+        "sid": "80097"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "g9983",
+        "sid": "80098"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gfp",
+        "sid": "80099"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gigabitEthernet",
+        "sid": "80100"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gpon",
+        "sid": "80101"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gr303IDT",
+        "sid": "80102"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gr303RDT",
+        "sid": "80103"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "gtp",
+        "sid": "80104"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "h323Gatekeeper",
+        "sid": "80105"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "h323Proxy",
+        "sid": "80106"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hdh1822",
+        "sid": "80107"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hdlc",
+        "sid": "80108"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hdsl2",
+        "sid": "80109"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hiperlan2",
+        "sid": "80110"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hippi",
+        "sid": "80111"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hippiInterface",
+        "sid": "80112"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "homepna",
+        "sid": "80113"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hostPad",
+        "sid": "80114"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hssi",
+        "sid": "80115"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "hyperchannel",
+        "sid": "80116"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iana-interface-type",
+        "sid": "80117"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ibm370parChan",
+        "sid": "80118"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "idsl",
+        "sid": "80119"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ieee1394",
+        "sid": "80120"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ieee80211",
+        "sid": "80121"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ieee80212",
+        "sid": "80122"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ieee802154",
+        "sid": "80123"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ieee80216WMAN",
+        "sid": "80124"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ieee8023adLag",
+        "sid": "80125"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "if-gsn",
+        "sid": "80126"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ifPwType",
+        "sid": "80127"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ifVfiType",
+        "sid": "80128"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ilan",
+        "sid": "80129"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "imt",
+        "sid": "80130"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "infiniband",
+        "sid": "80131"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "interleave",
+        "sid": "80132"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ip",
+        "sid": "80133"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipForward",
+        "sid": "80134"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipOverAtm",
+        "sid": "80135"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipOverCdlc",
+        "sid": "80136"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipOverClaw",
+        "sid": "80137"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ipSwitch",
+        "sid": "80138"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isdn",
+        "sid": "80139"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isdns",
+        "sid": "80140"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isdnu",
+        "sid": "80141"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iso88022llc",
+        "sid": "80142"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iso88023Csmacd",
+        "sid": "80143"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iso88024TokenBus",
+        "sid": "80144"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iso88025CRFPInt",
+        "sid": "80145"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iso88025Dtr",
+        "sid": "80146"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iso88025Fiber",
+        "sid": "80147"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iso88025TokenRing",
+        "sid": "80148"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "iso88026Man",
+        "sid": "80149"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "isup",
+        "sid": "80150"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l2vlan",
+        "sid": "80151"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l3ipvlan",
+        "sid": "80152"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "l3ipxvlan",
+        "sid": "80153"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lapb",
+        "sid": "80154"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lapd",
+        "sid": "80155"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lapf",
+        "sid": "80156"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "linegroup",
+        "sid": "80157"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "lmp",
+        "sid": "80158"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "localTalk",
+        "sid": "80159"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "macSecControlledIF",
+        "sid": "80160"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "macSecUncontrolledIF",
+        "sid": "80161"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mediaMailOverIp",
+        "sid": "80162"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mfSigLink",
+        "sid": "80163"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "miox25",
+        "sid": "80164"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mocaVersion1",
+        "sid": "80165"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "modem",
+        "sid": "80166"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mpc",
+        "sid": "80167"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mpegTransport",
+        "sid": "80168"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mpls",
+        "sid": "80169"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mplsTunnel",
+        "sid": "80170"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "msdsl",
+        "sid": "80171"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "mvl",
+        "sid": "80172"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "myrinet",
+        "sid": "80173"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "nfas",
+        "sid": "80174"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "nsip",
+        "sid": "80175"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "opticalChannel",
+        "sid": "80176"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "opticalChannelGroup",
+        "sid": "80177"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "opticalTransport",
+        "sid": "80178"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "other",
+        "sid": "80179"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "otnOdu",
+        "sid": "80180"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "otnOtu",
+        "sid": "80181"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "para",
+        "sid": "80182"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pdnEtherLoop1",
+        "sid": "80183"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pdnEtherLoop2",
+        "sid": "80184"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pip",
+        "sid": "80185"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "plc",
+        "sid": "80186"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pon155",
+        "sid": "80187"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pon622",
+        "sid": "80188"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pos",
+        "sid": "80189"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ppp",
+        "sid": "80190"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "pppMultilinkBundle",
+        "sid": "80191"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "primaryISDN",
+        "sid": "80192"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "propAtm",
+        "sid": "80193"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "propBWAp2Mp",
+        "sid": "80194"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "propCnls",
+        "sid": "80195"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "propDocsWirelessDownstream",
+        "sid": "80196"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "propDocsWirelessMaclayer",
+        "sid": "80197"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "propDocsWirelessUpstream",
+        "sid": "80198"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "propMultiplexor",
+        "sid": "80199"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "propPointToPointSerial",
+        "sid": "80200"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "propVirtual",
+        "sid": "80201"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "propWirelessP2P",
+        "sid": "80202"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "proteon10Mbit",
+        "sid": "80203"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "proteon80Mbit",
+        "sid": "80204"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "q2931",
+        "sid": "80205"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qam",
+        "sid": "80206"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "qllc",
+        "sid": "80207"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "radioMAC",
+        "sid": "80208"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "radsl",
+        "sid": "80209"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "reachDSL",
+        "sid": "80210"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "regular1822",
+        "sid": "80211"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rfc1483",
+        "sid": "80212"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rfc877x25",
+        "sid": "80213"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rpr",
+        "sid": "80214"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rs232",
+        "sid": "80215"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "rsrb",
+        "sid": "80216"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sdlc",
+        "sid": "80217"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sdsl",
+        "sid": "80218"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "shdsl",
+        "sid": "80219"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sip",
+        "sid": "80220"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sipSig",
+        "sid": "80221"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sipTg",
+        "sid": "80222"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sixToFour",
+        "sid": "80223"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "slip",
+        "sid": "80224"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "smdsDxi",
+        "sid": "80225"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "smdsIcip",
+        "sid": "80226"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "softwareLoopback",
+        "sid": "80227"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sonet",
+        "sid": "80228"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sonetOverheadChannel",
+        "sid": "80229"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sonetPath",
+        "sid": "80230"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "sonetVT",
+        "sid": "80231"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "srp",
+        "sid": "80232"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ss7SigLink",
+        "sid": "80233"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "stackToStack",
+        "sid": "80234"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "starLan",
+        "sid": "80235"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tdlc",
+        "sid": "80236"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "teLink",
+        "sid": "80237"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "termPad",
+        "sid": "80238"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tr008",
+        "sid": "80239"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "transpHdlc",
+        "sid": "80240"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "tunnel",
+        "sid": "80241"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "ultra",
+        "sid": "80242"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "usb",
+        "sid": "80243"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "v11",
+        "sid": "80244"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "v35",
+        "sid": "80245"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "v36",
+        "sid": "80246"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "v37",
+        "sid": "80247"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vdsl",
+        "sid": "80248"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vdsl2",
+        "sid": "80249"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "virtualIpAddress",
+        "sid": "80250"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "virtualTg",
+        "sid": "80251"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vmwareNicTeam",
+        "sid": "80252"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "vmwareVirtualNic",
+        "sid": "80253"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceDID",
+        "sid": "80254"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceEBS",
+        "sid": "80255"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceEM",
+        "sid": "80256"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceEMFGD",
+        "sid": "80257"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceEncap",
+        "sid": "80258"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceFGDEANA",
+        "sid": "80259"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceFGDOS",
+        "sid": "80260"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceFXO",
+        "sid": "80261"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceFXS",
+        "sid": "80262"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceOverAtm",
+        "sid": "80263"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceOverCable",
+        "sid": "80264"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceOverFrameRelay",
+        "sid": "80265"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "voiceOverIp",
+        "sid": "80266"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "wwanPP",
+        "sid": "80267"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "wwanPP2",
+        "sid": "80268"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "x213",
+        "sid": "80269"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "x25huntGroup",
+        "sid": "80270"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "x25mlp",
+        "sid": "80271"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "x25ple",
+        "sid": "80272"
+      },
+      {
+        "namespace": "identity",
+        "identifier": "x86Laps",
+        "sid": "80273"
+      }
+    ]
+  }
+}
