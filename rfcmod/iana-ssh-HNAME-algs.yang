@@ -1,0 +1,44 @@
+module iana-ssh-HNAME-algs {
+  yang-version 1.1;
+  namespace "urn:ietf:params:xml:ns:yang:iana-ssh-HNAME-algs";
+  prefix PREFIX;
+
+  organization
+    "Internet Assigned Numbers Authority (IANA)";
+
+  contact
+    "Postal: ICANN
+             12025 Waterfront Drive, Suite 300
+             Los Angeles, CA  90094-2536
+             United States of America
+     Tel:    +1 310 301 5800
+     Email:  iana@iana.org";
+
+  description
+DESCRIPTION
+
+     Copyright (c) YEAR IETF Trust and the persons identified as
+     authors of the code.  All rights reserved.
+
+     Redistribution and use in source and binary forms, with
+     or without modification, is permitted pursuant to, and
+     subject to the license terms contained in, the Revised
+     BSD License set forth in Section 4.c of the IETF Trust's
+     Legal Provisions Relating to IETF Documents
+     (https://trustee.ietf.org/license-info).
+
+     The initial version of this YANG module is part of RFC 9644
+     (https://www.rfc-editor.org/info/rfc9644); see the RFC
+     itself for full legal notices.
+
+     All versions of this module are published by IANA at
+     https://www.iana.org/assignments/yang-parameters.";
+
+  revision DATE {
+    description
+      "This initial version of the module was created using
+       the script defined in RFC 9644 to reflect the contents
+       of the SNAME algorithms registry maintained by IANA.";
+    reference
+      "RFC 9644: YANG Groupings for SSH Clients and SSH Servers";
+  }
