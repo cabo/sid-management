@@ -130,7 +130,7 @@ task :build_sids do
   end
   
   waste = (total_sids-needed_sids).fdiv(total_sids) * 100
-  warn "#{total_sids} allocated/to be allocated SIDs (#{"%.3g" % waste} % waste); top users:"
+  warn "#{total_sids} allocated/to be allocated ranges for #{needed_sids} SIDs (#{"%.3g" % waste} % waste); top users:"
   warn sid_state.sort_by {-_1[2]}[0..2].inspect
 
 end
